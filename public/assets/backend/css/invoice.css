@@ -1,0 +1,55 @@
+@font-face {
+  font-family: Battambang;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Battambang"), url(./../../backend/fonts/battambang-400.woff2) format("woff2");
+  unicode-range: U+1780-17FF, U+200B-200C, U+25CC;
+}
+@font-face {
+  font-family: Battambang;
+  font-style: normal;
+  font-weight: 700;
+  src: local("Battambang Bold"), local("Battambang-Bold"), url(./../../backend/fonts/battambang-700.woff2) format("woff2");
+  unicode-range: U+1780-17FF, U+200B-200C, U+25CC;
+}
+@font-face {
+  font-family: Koulen;
+  font-style: normal;
+  font-weight: 400;
+  /* src: local("Koulen"), url('{{asset("/public/assets/backend/fonts/moul-kh-400.woff2")}}') format("woff2"); */
+  src: local("Koulen"), url(./../../backend/fonts/moul-kh-400.woff2) format("woff2");
+  unicode-range: U+1780-17FF, U+200B-200C, U+25CC;
+}
+.top-logo{
+	margin-top: 30px;
+}
+.kh-header{
+	font-family: Koulen;
+	font-style: normal;
+	font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 22px;
+}
+.khcontent{
+	font-family: Battambang;
+	font-style: normal;
+	font-weight: 400;
+  font-size: 16px;
+}
+h2.latin{
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+h6.latin{
+  font-weight: 400;
+  font-size: 15px;
+}
+span.latin{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1em;
+  font-weight: bold;
+}
+.footer{
+  margin-top: 20px;
+}
