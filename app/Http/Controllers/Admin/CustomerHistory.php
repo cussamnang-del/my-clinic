@@ -139,6 +139,6 @@ class CustomerHistory extends Controller
     {
         $data['orders'] = Order::latest()->get();
 
-        return view('admin.customer.order',$data);
+        return view('admin.customer.order', $data);
     }
 }

@@ -198,9 +198,9 @@ class ScheduleController extends Controller
         $data['hospitals'] = Hospital::where('customer_id', $data['customer']->id)->get();
         $data['orders'] = Order::where('customer_id', $data['customer']->id)->get();
         $data['hospital_treatments'] = HospitalTreatment::whereIn('hospital_id', $hids)->orderBy('ht_date', 'DESC')->get()->groupBy('ht_date');
-        $data['hnotes'] = HNote::whereIn('hospital_id', $hids)->orderBy('date','DESC')->get()->groupBy('date');
+        $data['hnotes'] = HNote::whereIn('hospital_id', $hids)->orderBy('date', 'DESC')->get()->groupBy('date');
 
         // return $data;
-        return view('admin.schedule.schedule_document_detail',$data);
+        return view('admin.schedule.schedule_document_detail', $data);
     }
 }
