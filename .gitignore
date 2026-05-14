@@ -1,0 +1,79 @@
+# ─── PHP / Composer ─────────────────────────────────────────────
+/vendor/
+composer.phar
+
+# ─── Laravel ────────────────────────────────────────────────────
+/bootstrap/cache/*.php
+/storage/*.key
+/storage/app/public/*
+!/storage/app/public/.gitkeep
+/storage/debugbar/
+/storage/framework/cache/data/*
+!/storage/framework/cache/data/.gitkeep
+/storage/framework/sessions/*
+!/storage/framework/sessions/.gitkeep
+/storage/framework/testing/*
+!/storage/framework/testing/.gitkeep
+/storage/framework/views/*
+!/storage/framework/views/.gitkeep
+/storage/logs/*
+!/storage/logs/.gitkeep
+/storage/pail
+/public/build/
+/public/hot
+/public/storage
+/public/uploads/
+
+# ─── Environment / Secrets ──────────────────────────────────────
+.env
+.env.backup
+.env.production
+.env.*.local
+.phpunit.result.cache
+.phpunit.cache/
+auth.json
+
+# ─── Node / Vite / npm ──────────────────────────────────────────
+/node_modules/
+npm-debug.log
+yarn-error.log
+.npm/
+.pnpm-store/
+.yarn/
+
+# ─── Build artefacts ────────────────────────────────────────────
+/public/mix-manifest.json
+/dist/
+
+# ─── IDE / Editor ───────────────────────────────────────────────
+.idea/
+.vscode/
+.fleet/
+*.swp
+*.swo
+*~
+.project
+.settings/
+nbproject/
+.phpactor.json
+
+# ─── OS junk ────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+
+# ─── Devin / agent junk ─────────────────────────────────────────
+CTempcomposer_output.txt
+*.tmp
+*.log
+*.bak
+
+# ─── Coverage / test reports ────────────────────────────────────
+/coverage/
+/coverage.xml
+/clover.xml
+/.phpunit.cache/
+phpstan.cache/
+.psalm/

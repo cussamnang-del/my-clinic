@@ -1,0 +1,137 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  composer-validate:
+    name: composer.json validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.3"
+          coverage: none
+
+      - name: Validate composer.json
+        run: composer validate --strict --no-check-publish
+
+  php-syntax:
+    name: PHP syntax check (php -l)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.3"
+          coverage: none
+
+      - name: Lint every .php file
+        run: |
+          set -euo pipefail
+          find app bootstrap config database routes tests -type f -name "*.php" -print0 \
+            | xargs -0 -n1 -P4 php -l > /tmp/lint.out 2>&1 || (cat /tmp/lint.out && exit 1)
+          echo "All PHP files passed syntax check."
+
+  node-build:
+    name: Front-end build (Vite)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install npm deps
+        run: npm ci || npm install
+
+      - name: Build assets
+        run: npm run build
+
+  # ┌─────────────────────────────────────────────────────────────────┐
+  # │ The two jobs below are intentionally GATED until the            │
+  # │ composer.json ↔ composer.lock drift documented in               │
+  # │ CONTRIBUTING.md is resolved, and laravel/pint is added.         │
+  # │ They are kept here as the target shape of the pipeline.         │
+  # └─────────────────────────────────────────────────────────────────┘
+
+  pint:
+    name: Code style (Pint)
+    if: ${{ false }}  # enable in Phase 1 once `laravel/pint` is added to require-dev
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.3"
+          coverage: none
+
+      - name: Install Composer deps
+        uses: ramsey/composer-install@v3
+
+      - name: Run Pint in test mode
+        run: ./vendor/bin/pint --test
+
+  phpunit:
+    name: Tests (PHPUnit)
+    if: ${{ false }}  # enable once composer.json ↔ composer.lock drift is resolved
+    runs-on: ubuntu-latest
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_DATABASE: testing
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping -h 127.0.0.1 -uroot -proot"
+          --health-interval=10s --health-timeout=5s --health-retries=10
+    env:
+      DB_CONNECTION: mysql
+      DB_HOST: 127.0.0.1
+      DB_PORT: 3306
+      DB_DATABASE: testing
+      DB_USERNAME: root
+      DB_PASSWORD: root
+      APP_ENV: testing
+      APP_DEBUG: "true"
+      APP_KEY: base64:1111111111111111111111111111111111111111111=
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.3"
+          coverage: none
+          extensions: bcmath,ctype,curl,dom,fileinfo,intl,mbstring,openssl,pdo_mysql,tokenizer,xml,zip,gd
+
+      - name: Install Composer deps
+        uses: ramsey/composer-install@v3
+
+      - name: Run migrations
+        run: php artisan migrate --force
+
+      - name: Run PHPUnit
+        run: php artisan test

@@ -1,0 +1,12 @@
+# Default reviewers for every Pull Request
+*       @cussamnang-del
+
+# Clinical-data models / migrations require explicit review
+/app/Models/                   @cussamnang-del
+/database/migrations/          @cussamnang-del
+/app/Http/Controllers/Admin/   @cussamnang-del
+
+# Security-sensitive files
+SECURITY.md                    @cussamnang-del
+.github/                       @cussamnang-del
+.env.example                   @cussamnang-del
