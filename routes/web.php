@@ -1,70 +1,87 @@
 <?php
 
-use Carbon\Carbon;
+use App\Http\Controllers\Admin\ProvinceDistrictCommuneVillageController;
+use App\Http\Controllers\FullCalenderController;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
-use App\Http\Controllers\FullCalenderController;
-use App\Http\Controllers\Admin\ProvinceDistrictCommuneVillageController;
 
 Route::get('/', function () {
-  // $data = Document::whereDate('visit_date', '>=', '2022-07-26')
-  //                   ->whereDate('visit_date', '<=', '2022-07-27')
-  //                   ->get();
-  // return $data;
-//  return $now = date('Y-m-d');
-  // if(Product::where('id',2)->whereDate('created_at', '=',  $now)->first()){
-  //   return "The same date";
-  // } else {
-  //   return "Deference Date";
-  // }
-  // $admin_permissions = Permission::all();
-  // Role::findOrFail(1)->permissions()->sync($admin_permissions->pluck('id'));
   return redirect()->route('login');
 });
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Route::get('/districts', [ProvinceDistrictCommuneVillageController::class, 'district'])
-  ->name('districts.index');
-
-Route::get('/communes', [ProvinceDistrictCommuneVillageController::class, 'commune'])
-  ->name('communes.index');
-
-Route::get('/villages', [ProvinceDistrictCommuneVillageController::class, 'village'])
-  ->name('villages.index');
-
-//for switching language route
-Route::get('/locale/{locale}', function ($locale) {
-  Session::put('locale', $locale);
-  return redirect()->back();
+/*
+|--------------------------------------------------------------------------
+| Authentication routes
+|--------------------------------------------------------------------------
+|
+| Auth::routes() registers /login, /register, /password/* etc. Wrapping
+| them in a `throttle:login` group enforces a per-email + per-IP rate
+| limit on top of Laravel's default throttle, preventing credential
+| stuffing / password brute-force.
+|
+| See App\Providers\RouteServiceProvider::configureRateLimiting().
+| Maps to: ISO 27001:2022 A.5.17 (authentication information),
+|          OWASP ASVS v4 §2.2 (general authenticator).
+*/
+Route::middleware(['throttle:login'])->group(function () {
+  Auth::routes();
 });
 
-Route::get('full-calendar', [FullCalenderController::class, 'calendar3']);
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])
+  ->middleware(['auth'])
+  ->name('home');
 
-Route::post('full-calendar/action', [FullCalenderController::class, 'action']);
+/*
+|--------------------------------------------------------------------------
+| Public AJAX endpoints (address pickers, calendar, autocomplete)
+|--------------------------------------------------------------------------
+|
+| These endpoints are reachable without authentication in legacy flows.
+| They are rate-limited to make scraping / abuse harder. Auth-gating
+| them properly is tracked as a follow-up in audit-report.md (H-5 / M-1).
+*/
+Route::middleware(['throttle:public'])->group(function () {
+  Route::get('/districts', [ProvinceDistrictCommuneVillageController::class, 'district'])
+    ->name('districts.index');
 
-Route::get('/auto', function () {
-  return view('autocomplete');
-});
+  Route::get('/communes', [ProvinceDistrictCommuneVillageController::class, 'commune'])
+    ->name('communes.index');
 
-Route::get('/get-countries', function (Request $request) {
-  $name = $request->get('name');
-  $fieldName = $request->get('fieldName');
-  $name = strtolower(trim($name));
-  $allowedFields = ['name', 'id', 'code'];
-  if (empty($fieldName) || !in_array($fieldName, $allowedFields)) {
-    $fieldName = 'name';
-  }
-  $countries = DB::table('country')
-    ->select('country.*')
-    ->whereRaw("LOWER(" . $fieldName . ") LIKE ?", ["$name%"])
-    ->limit(25)
-    ->get();
+  Route::get('/villages', [ProvinceDistrictCommuneVillageController::class, 'village'])
+    ->name('villages.index');
 
-  return $countries;
+  // Locale switcher — sets the per-session locale.
+  Route::get('/locale/{locale}', function (string $locale) {
+    // Whitelist supported locales to avoid arbitrary session writes.
+    $allowed = ['en', 'km'];
+    if (in_array($locale, $allowed, true)) {
+      Session::put('locale', $locale);
+    }
+    return redirect()->back();
+  });
+
+  Route::get('full-calendar', [FullCalenderController::class, 'calendar3']);
+  Route::post('full-calendar/action', [FullCalenderController::class, 'action']);
+
+  Route::get('/auto', function () {
+    return view('autocomplete');
+  });
+
+  Route::get('/get-countries', function (Request $request) {
+    $name = strtolower(trim((string) $request->get('name')));
+    $fieldName = (string) $request->get('fieldName');
+    $allowedFields = ['name', 'id', 'code'];
+    if ($fieldName === '' || !in_array($fieldName, $allowedFields, true)) {
+      $fieldName = 'name';
+    }
+
+    return DB::table('country')
+      ->select('country.*')
+      ->whereRaw('LOWER(' . $fieldName . ') LIKE ?', ["$name%"])
+      ->limit(25)
+      ->get();
+  });
 });
