@@ -12,7 +12,74 @@ required by ISO 9001:2015 §7.5.
 
 ## [Unreleased]
 
-### Added — Phase 1b (Security wrap-up: 2FA, password history, CI gates)
+### Added — Phase 2 (Audit-ability foundation)
+- **Blameable columns on every clinical table.** New migration
+  `2026_05_14_040001_add_audit_columns_to_clinical_tables.php` adds
+  `created_by`, `updated_by`, `deleted_by`, and `deleted_at` (soft-delete)
+  to 23 clinical tables — `customers`, `documents`, `document_details`,
+  `bios`, `bio_details`, `pbios`, `pbio_details`, `rxes`, `rx_details`,
+  `hospital_treatments`, `medical_certificates`, `operative_protocols`,
+  `schedules`, `events`, `orders`, etc. Required by ISO 9001:2015 §7.5.3
+  ("control of documented information") and ISO 15189:2022 §8.4 ("control
+  of records").
+- **`App\Concerns\HasAuditColumns` trait.** Automatically stamps the
+  `created_by`/`updated_by`/`deleted_by` columns from `Auth::user()` via
+  the new `AuditableObserver`. Applied to all clinical models.
+- **`SoftDeletes` on clinical models.** Patient/clinical records are no
+  longer hard-deleted; instead `deleted_at` and `deleted_by` capture who
+  withdrew the row and when, and rows are recoverable via `restore()`.
+- **Append-only `activity_logs` table + `App\Models\ActivityLog`.** Stores
+  every create/update/delete/restore on a loggable model with: causer
+  user, IP address, user-agent, full field-level before/after JSON diff,
+  and optional reason. Field-level redaction of passwords / tokens /
+  secrets is performed centrally in `App\Services\ActivityLogService`.
+- **`App\Concerns\IsLoggable` trait + `LoggableObserver`.** Wires any
+  model into the audit log with one line.
+- **Medical Record Number (MRN).** New `customers.mrn` column
+  (`VARCHAR(32) UNIQUE`), populated automatically on create by
+  `App\Services\MrnGenerator` in the deterministic
+  `LAB-YYYY-NNNNNN` format. Race-safe via `SELECT ... FOR UPDATE` on
+  MySQL/Postgres. Required by ISO 15189:2022 §7.2.2 (unique identification
+  of every patient/specimen).
+- **Reference ranges + critical-value flagging.** New
+  `reference_ranges` table (per analyte × sex × age band, with normal
+  and critical thresholds + unit) and `App\Services\ReferenceRangeLookup`
+  which picks the most-specific applicable range and classifies a numeric
+  value as `critical_low` / `low` / `normal` / `high` / `critical_high`.
+  Required by ISO 15189:2022 §7.3.7.2 (biological reference intervals).
+  `ReferenceRangeSeeder` ships a starter CBC / metabolic-panel pack.
+- **Immutable result-release workflow on `bio_details`.** New columns
+  `result_status` (enum: `draft` → `submitted_for_review` → `reviewed`
+  → `released` → `amended`), `result_flag`, `submitted_by/_at`,
+  `reviewed_by/_at`, `released_by/_at`, `amended_by/_at`,
+  `amendment_reason`, and `amends_id` (FK back to `bio_details` for
+  amendment chains). State transitions are owned by
+  `App\Services\ResultReleaseService`, which enforces:
+  - Forward-only progression — no rollback once released.
+  - Segregation of duties — submitter ≠ reviewer ≠ releaser
+    (ISO 15189:2022 §7.3.7.4).
+  - Amendments require a non-empty reason and create a new appended
+    row rather than mutating the released row.
+  - Every transition writes an `activity_logs` row.
+- **`App\Http\Controllers\Admin\ResultReleaseController`** with four
+  POST endpoints under `/admin/results/{biodetail}/{submit|review|release|amend}`,
+  each rate-limited via the `throttle:admin` limiter and each requiring
+  the user's password as an electronic signature (21 CFR Part 11 /
+  ISO 15189:2022 §7.3.7.4).
+- **Tests.** `tests/Feature/AuditTrailTest`, `MrnGeneratorTest`,
+  `ReferenceRangeLookupTest`, `ResultReleaseWorkflowTest` — 15 new
+  feature tests covering the happy paths, segregation-of-duties
+  rejection, amendment chain creation, MRN uniqueness/sequencing,
+  reference-range specificity ordering, and soft-delete/restore.
+
+### Changed — Phase 2
+- `database/factories/UserFactory.php` now populates the legacy
+  `username` and `phone_no` columns so `User::factory()->create()`
+  works against the existing schema (used by all Phase 2 feature tests).
+
+## Phase 1b (Security wrap-up: 2FA, password history, CI gates)
+
+### Added
 - **Two-factor authentication (TOTP, RFC 6238).** New `App\Services\TwoFactorService`
   generates 16-character base32 secrets via `pragmarx/google2fa-laravel`, renders
   QR codes via `bacon/bacon-qr-code`, and issues / verifies 8 single-use bcrypt-

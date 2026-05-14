@@ -13,6 +13,7 @@ use App\Http\Controllers\Admin\LifeSignController;
 use App\Http\Controllers\Admin\OperativeController;
 use App\Http\Controllers\Admin\PermissionController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\ResultReleaseController;
 use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\Admin\RoomController;
 use App\Http\Controllers\Admin\ScheduleController;
@@ -131,4 +132,17 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth', 't
 
     Route::get('company_informations/changeStatus', [CompanyInformationController::class, 'changeStatus'])->name('company_informations.changeStatus');
     Route::resource('company_informations', CompanyInformationController::class)->except('create', 'update');
+
+    // Result-release workflow (Phase 2 — audit-ability foundation).
+    // Each transition is rate-limited and requires the user's password as
+    // an electronic signature (ISO 15189:2022 §7.3.7.4 / 21 CFR Part 11).
+    Route::prefix('results')->name('results.')
+        ->middleware('throttle:admin')
+        ->controller(ResultReleaseController::class)
+        ->group(function () {
+            Route::post('{biodetail}/submit', 'submit')->name('submit');
+            Route::post('{biodetail}/review', 'review')->name('review');
+            Route::post('{biodetail}/release', 'release')->name('release');
+            Route::post('{biodetail}/amend', 'amend')->name('amend');
+        });
 });

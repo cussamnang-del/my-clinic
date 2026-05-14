@@ -2,16 +2,22 @@
 
 namespace App\Models;
 
+use App\Concerns\HasAuditColumns;
+use App\Concerns\IsLoggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Znck\Eloquent\Traits\BelongsToThrough;
 
 class Document extends Model
 {
     use BelongsToThrough;
+    use HasAuditColumns;
     use HasFactory;
+    use IsLoggable;
+    use SoftDeletes;
 
     protected $guarded = [];
 
