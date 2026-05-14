@@ -24,14 +24,14 @@ return new class extends Migration
             $table->unsignedBigInteger('user_id');
             $table->boolean('status')->default(true);
             $table->foreign('hospital_id', 'hospital_id_fk_2046')
-                  ->references('id')->on('hospitals')
-                  ->onDelete('cascade');
+                ->references('id')->on('hospitals')
+                ->onDelete('cascade');
             $table->foreign('product_id', 'product_id_fk_2047')
-                  ->references('id')->on('products')
-                  ->onDelete('cascade');
+                ->references('id')->on('products')
+                ->onDelete('cascade');
             $table->foreign('user_id', 'user_id_fk_2048')
-                  ->references('id')->on('users')
-                  ->onDelete('cascade');
+                ->references('id')->on('users')
+                ->onDelete('cascade');
             $table->timestamps();
         });
     }

@@ -12,6 +12,125 @@ required by ISO 9001:2015 §7.5.
 
 ## [Unreleased]
 
+### Added — Phase 1b (Security wrap-up: 2FA, password history, CI gates)
+- **Two-factor authentication (TOTP, RFC 6238).** New `App\Services\TwoFactorService`
+  generates 16-character base32 secrets via `pragmarx/google2fa-laravel`, renders
+  QR codes via `bacon/bacon-qr-code`, and issues / verifies 8 single-use bcrypt-
+  hashed recovery codes per user. New `users.two_factor_secret` (encrypted),
+  `users.two_factor_recovery_codes` (`encrypted:array`), and
+  `users.two_factor_confirmed_at` columns on `users`.
+- **2FA enrolment & challenge flow.** `Auth\TwoFactorController` exposes
+  `GET /two-factor/setup` (QR + recovery codes), `POST /two-factor/confirm`
+  (6-digit verification), `GET /two-factor/challenge` and
+  `POST /two-factor/verify` (login-time gate accepting either the TOTP or a
+  recovery code), and `POST /two-factor/disable` (password-confirmation).
+- **`EnsureTwoFactorVerified` middleware.** Applied to the entire
+  `routes/admin.php` group — once a user has 2FA enabled, they must complete
+  the challenge for every session before reaching any admin route.
+- **Password-history prevention.** New `password_histories` table records
+  bcrypt hashes (no plaintext) of the last *N* passwords per user, configured
+  via `config/security.php` → `password_history.length` (default 5). The new
+  `App\Rules\PreventPasswordReuse` validation rule blocks reuse and is wired
+  into `UpdateUserRequest` and the password-reset flow.
+  `App\Services\PasswordHistoryService` is invoked from `UserController` and
+  `Auth\ResetPasswordController` to record new passwords and prune older
+  entries.
+- **`config/security.php`** — central feature flags for the 2FA and
+  password-history features.
+- **Tests.** New `tests/Feature/SecurityHeadersTest`,
+  `tests/Feature/RateLimiterRegistrationTest`,
+  `tests/Feature/ExampleTest` (root-redirect + login-renders smoke tests),
+  and `tests/Unit/TwoFactorServiceTest` covering secret generation,
+  verification, and recovery-code generation.
+- **`pint.json`** — Laravel preset, excludes vendor/views/lang/seeders.
+
+### Changed — Phase 1b
+- **`bootstrap/app.php`** — moved the four named rate limiters
+  (`login`, `public`, `admin`, `api`) from `RouteServiceProvider` into the
+  `withRouting(then:)` closure so they are registered before any request
+  middleware runs (previously the `login` limiter was *not* defined at
+  request time in Laravel 12's bootstrap order, causing
+  `Rate limiter [login] is not defined`).
+- **`.github/workflows/ci.yml`** — un-gated the `pint` and `phpunit` jobs.
+  The PHPUnit job now uses in-memory SQLite (see `phpunit.xml`) instead of
+  spinning up a MySQL service; runs all tests on every push / PR.
+
+### Fixed — Phase 1b
+- **Critical: `SecurityHeaders` middleware was not applying any headers.**
+  The Phase 1 guard `method_exists($response, 'headers')` always returned
+  `false` because `headers` is a **property**, not a method, on Symfony's
+  `Response`. Fixed by switching to `property_exists()`. As of this PR all
+  responses correctly receive `X-Frame-Options`, `X-Content-Type-Options`,
+  `Referrer-Policy`, `Permissions-Policy`, `Cross-Origin-Opener-Policy`, and
+  `Content-Security-Policy`.
+
+### Security
+- Closes audit findings **M-1** (2FA), **M-2** (password history), and
+  silently re-asserts **H-3** (security headers — see "Fixed" above) from
+  [`docs/audit-report.md`](docs/audit-report.md).
+- Aligns the codebase with **ISO 27001:2022 A.5.17** (authentication
+  information), **NIST SP 800-63B §5.1.4** (Multi-Factor Authenticators),
+  and **NIST SP 800-63B §5.1.1.2** (memorised secret reuse).
+
+### Added — Phase 1 (Security baseline)
+- `App\Http\Middleware\SecurityHeaders` — applies CSP, HSTS, X-Frame-Options,
+  X-Content-Type-Options, Referrer-Policy, Permissions-Policy, and
+  Cross-Origin-Opener-Policy to every response. CSP is intentionally loose
+  to preserve existing jQuery/Bootstrap/inline-script behaviour; it will be
+  tightened in Phase 4.
+- `App\Http\Middleware\ForceHttpsInProduction` — 301-redirects plain HTTP
+  to HTTPS in any non-`local`/`testing` environment.
+- Named rate limiters in `App\Providers\RouteServiceProvider`:
+  `login` (5/min per email+IP, 20/min per IP), `public` (120/min per IP),
+  `admin` (300/min per user, 600/min per IP), and a per-user `api` limiter.
+- FormRequest classes under `App\Http\Requests\Admin\` for User and Customer
+  store/update flows, with strong password rules (NIST SP 800-63B: min 12,
+  mixed case, digits, symbols) and image-upload constraints
+  (`mimes:jpg,jpeg,png,webp`, `max:2048`).
+- File-upload hardening in `UserController` and `CustomerController`: UUID
+  filenames (no user influence over path or extension), server-side
+  MIME-sniffed extension via `UploadedFile::extension()`, and explicit
+  directory creation with safe permissions.
+
+### Changed — Phase 1
+- `App\Http\Middleware\AuthGates` — refactored to cache the
+  Role → Permission map for 24 hours (`Cache::remember`) instead of
+  rebuilding it from the DB on every request. Cache key:
+  `auth_gates.permission_role_map`.
+- `App\Models\Role` and `App\Models\Permission` — `booted()` hooks now
+  invalidate the AuthGates cache on `saved` / `deleted` / `restored` so
+  freshly granted or revoked permissions take effect on the next request.
+- `routes/web.php` — wrapped `Auth::routes()` in the `throttle:login` group
+  and the public AJAX endpoints (districts/communes/villages/locale/calendar)
+  in the `throttle:public` group. Removed the bare `LIKE` query on the
+  legacy `/get-countries` autocomplete (now uses a whitelisted column).
+- `routes/admin.php` — added the `throttle:admin` middleware to the
+  authenticated admin route group.
+- `App\Http\Controllers\Admin\UserController` and
+  `App\Http\Controllers\Admin\CustomerController` — replaced ad-hoc
+  `Validator::make()` blocks with rules sourced from FormRequest classes,
+  added explicit Gate checks per CRUD verb, and tightened the dual-purpose
+  `store` action so update payloads no longer silently overwrite fields
+  with `null`.
+
+### Fixed — Phase 1
+- XSS risk in `resources/views/vendor/translation/notifications.blade.php`
+  where `Session::get('error')` was emitted via `{!! !!}` — now escaped.
+
+### Security
+- These changes address audit findings **H-3** (security headers), **H-4**
+  (HTTPS enforcement), **H-5** (rate limiting), **H-6** (FormRequest
+  validation), **H-7** (AuthGates N+1), and parts of **H-10** (`{!! !!}`
+  outputs) from [`docs/audit-report.md`](docs/audit-report.md).
+
+### Known issues / deferred
+- Two-factor authentication is intentionally deferred to **Phase 1b** —
+  it requires `pragmarx/google2fa-laravel` and a new `users` column, both
+  of which are blocked on resolving the `composer.json` ↔ `composer.lock`
+  drift first.
+- Password history (preventing reuse of the last N passwords) is also
+  Phase 1b — it requires a new migration.
+
 ### Added — Phase 0 (Emergency hygiene)
 - Comprehensive `.gitignore` covering Laravel, Node, IDE, OS, and coverage files.
 - `.gitattributes` to normalise line endings (LF) and mark archive-ignored files.

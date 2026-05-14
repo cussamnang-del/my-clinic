@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class RxDocfile extends Model
 {
-  use HasFactory;
-  
-  protected $guarded = [];
+    use HasFactory;
+
+    protected $guarded = [];
 }

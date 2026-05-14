@@ -14,17 +14,17 @@ class UserTableSeeder extends Seeder
      */
     public function run()
     {
-      $users = [
-        [
-            'name'           => 'Super Admin',
-            'username'       => 'superadmin',
-            'phone_no'       => '078343143',
-            'email'          => 'superadmin@login.com',
-            'password'       => bcrypt('11223344'),
-            'remember_token' => null,
-        ],
-    ];
+        $users = [
+            [
+                'name' => 'Super Admin',
+                'username' => 'superadmin',
+                'phone_no' => '078343143',
+                'email' => 'superadmin@login.com',
+                'password' => bcrypt('11223344'),
+                'remember_token' => null,
+            ],
+        ];
 
-    User::insert($users);
+        User::insert($users);
     }
 }

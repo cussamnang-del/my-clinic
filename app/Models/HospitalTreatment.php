@@ -2,46 +2,38 @@
 
 namespace App\Models;
 
-use App\Models\Product;
-use App\Models\HospitalTreatmentDetail;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class HospitalTreatment extends Model
 {
-  use HasFactory;
+    use HasFactory;
 
-  protected $guarded = [];
+    protected $guarded = [];
 
-  /**
-   * Get all of the htdetails for the HospitalTreatment
-   *
-   * @return \Illuminate\Database\Eloquent\Relations\HasMany
-   */
-  public function htdetails(): HasMany
-  {
-    return $this->hasMany(HospitalTreatmentDetail::class, 'hospital_treatment_id', 'id');
-  }
+    /**
+     * Get all of the htdetails for the HospitalTreatment
+     */
+    public function htdetails(): HasMany
+    {
+        return $this->hasMany(HospitalTreatmentDetail::class, 'hospital_treatment_id', 'id');
+    }
 
-  /**
-   * Get all of the productDetails for the HospitalTreatment
-   *
-   * @return \Illuminate\Database\Eloquent\Relations\HasMany
-   */
-  public function product_details(): HasMany
-  {
-    return $this->hasMany(HospitalTreatmentDetail::class, 'hospital_treatment_product_id', 'product_id');
-  }
+    /**
+     * Get all of the productDetails for the HospitalTreatment
+     */
+    public function product_details(): HasMany
+    {
+        return $this->hasMany(HospitalTreatmentDetail::class, 'hospital_treatment_product_id', 'product_id');
+    }
 
-  /**
-   * Get the product that owns the HospitalTreatment
-   *
-   * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-   */
-  public function product(): BelongsTo
-  {
-    return $this->belongsTo(Product::class, 'product_id', 'id');
-  }
+    /**
+     * Get the product that owns the HospitalTreatment
+     */
+    public function product(): BelongsTo
+    {
+        return $this->belongsTo(Product::class, 'product_id', 'id');
+    }
 }

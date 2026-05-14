@@ -6,7 +6,6 @@ use Illuminate\Database\Seeder;
 
 class CommunesTableSeeder extends Seeder
 {
-
     /**
      * Auto generated seed file
      *
@@ -14,13 +13,11 @@ class CommunesTableSeeder extends Seeder
      */
     public function run()
     {
-        
 
         \DB::table('communes')->delete();
-        
-        \DB::table('communes')->insert(array (
-            0 => 
-            array (
+
+        \DB::table('communes')->insert([
+            0 => [
                 'id' => 1,
                 'type' => 'ឃុំ',
                 'code' => '10201',
@@ -28,11 +25,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Banteay Neang',
                 'province_id' => 1,
                 'district_id' => 1,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            1 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            1 => [
                 'id' => 2,
                 'type' => 'ឃុំ',
                 'code' => '10202',
@@ -40,11 +36,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Bat Trang',
                 'province_id' => 1,
                 'district_id' => 1,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            2 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            2 => [
                 'id' => 3,
                 'type' => 'ឃុំ',
                 'code' => '10203',
@@ -52,11 +47,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chamnaom',
                 'province_id' => 1,
                 'district_id' => 1,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            3 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            3 => [
                 'id' => 4,
                 'type' => 'ឃុំ',
                 'code' => '10204',
@@ -64,11 +58,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kouk Ballangk',
                 'province_id' => 1,
                 'district_id' => 1,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            4 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            4 => [
                 'id' => 5,
                 'type' => 'ឃុំ',
                 'code' => '10205',
@@ -76,11 +69,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Koy Maeng',
                 'province_id' => 1,
                 'district_id' => 1,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            5 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            5 => [
                 'id' => 6,
                 'type' => 'ឃុំ',
                 'code' => '10206',
@@ -88,11 +80,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Prasat',
                 'province_id' => 1,
                 'district_id' => 1,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            6 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            6 => [
                 'id' => 7,
                 'type' => 'ឃុំ',
                 'code' => '10207',
@@ -100,11 +91,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phnum Touch',
                 'province_id' => 1,
                 'district_id' => 1,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            7 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            7 => [
                 'id' => 8,
                 'type' => 'ឃុំ',
                 'code' => '10208',
@@ -112,11 +102,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Rohat Tuek',
                 'province_id' => 1,
                 'district_id' => 1,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            8 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            8 => [
                 'id' => 9,
                 'type' => 'ឃុំ',
                 'code' => '10209',
@@ -124,11 +113,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ruessei Kraok',
                 'province_id' => 1,
                 'district_id' => 1,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            9 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            9 => [
                 'id' => 10,
                 'type' => 'ឃុំ',
                 'code' => '10210',
@@ -136,11 +124,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sambuor',
                 'province_id' => 1,
                 'district_id' => 1,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            10 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            10 => [
                 'id' => 11,
                 'type' => 'ឃុំ',
                 'code' => '10211',
@@ -148,11 +135,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Soea',
                 'province_id' => 1,
                 'district_id' => 1,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            11 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            11 => [
                 'id' => 12,
                 'type' => 'ឃុំ',
                 'code' => '10212',
@@ -160,11 +146,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srah Reang',
                 'province_id' => 1,
                 'district_id' => 1,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            12 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            12 => [
                 'id' => 13,
                 'type' => 'ឃុំ',
                 'code' => '10213',
@@ -172,11 +157,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Lam',
                 'province_id' => 1,
                 'district_id' => 1,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            13 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            13 => [
                 'id' => 14,
                 'type' => 'ឃុំ',
                 'code' => '10301',
@@ -184,11 +168,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Nam Tau',
                 'province_id' => 1,
                 'district_id' => 2,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            14 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            14 => [
                 'id' => 15,
                 'type' => 'ឃុំ',
                 'code' => '10302',
@@ -196,11 +179,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Poy Char',
                 'province_id' => 1,
                 'district_id' => 2,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            15 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            15 => [
                 'id' => 16,
                 'type' => 'ឃុំ',
                 'code' => '10303',
@@ -208,11 +190,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ponley',
                 'province_id' => 1,
                 'district_id' => 2,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            16 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            16 => [
                 'id' => 17,
                 'type' => 'ឃុំ',
                 'code' => '10304',
@@ -220,11 +201,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Spean Sraeng',
                 'province_id' => 1,
                 'district_id' => 2,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            17 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            17 => [
                 'id' => 18,
                 'type' => 'ឃុំ',
                 'code' => '10305',
@@ -232,11 +212,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srah Chik',
                 'province_id' => 1,
                 'district_id' => 2,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            18 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            18 => [
                 'id' => 19,
                 'type' => 'ឃុំ',
                 'code' => '10306',
@@ -244,11 +223,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phnum Dei',
                 'province_id' => 1,
                 'district_id' => 2,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            19 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            19 => [
                 'id' => 20,
                 'type' => 'ឃុំ',
                 'code' => '10401',
@@ -256,11 +234,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chnuor Mean Chey',
                 'province_id' => 1,
                 'district_id' => 3,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            20 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            20 => [
                 'id' => 21,
                 'type' => 'ឃុំ',
                 'code' => '10402',
@@ -268,11 +245,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chob Vari',
                 'province_id' => 1,
                 'district_id' => 3,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            21 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            21 => [
                 'id' => 22,
                 'type' => 'ឃុំ',
                 'code' => '10403',
@@ -280,11 +256,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phnum Lieb',
                 'province_id' => 1,
                 'district_id' => 3,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            22 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            22 => [
                 'id' => 23,
                 'type' => 'ឃុំ',
                 'code' => '10404',
@@ -292,11 +267,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prasat',
                 'province_id' => 1,
                 'district_id' => 3,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            23 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            23 => [
                 'id' => 24,
                 'type' => 'ឃុំ',
                 'code' => '10405',
@@ -304,11 +278,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preak Netr Preah',
                 'province_id' => 1,
                 'district_id' => 3,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            24 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            24 => [
                 'id' => 25,
                 'type' => 'ឃុំ',
                 'code' => '10406',
@@ -316,11 +289,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Rohal',
                 'province_id' => 1,
                 'district_id' => 3,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            25 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            25 => [
                 'id' => 26,
                 'type' => 'ឃុំ',
                 'code' => '10407',
@@ -328,11 +300,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tean Kam',
                 'province_id' => 1,
                 'district_id' => 3,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            26 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            26 => [
                 'id' => 27,
                 'type' => 'ឃុំ',
                 'code' => '10408',
@@ -340,11 +311,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuek Chour',
                 'province_id' => 1,
                 'district_id' => 3,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            27 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            27 => [
                 'id' => 28,
                 'type' => 'ឃុំ',
                 'code' => '10409',
@@ -352,11 +322,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Bos Sbov',
                 'province_id' => 1,
                 'district_id' => 3,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            28 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            28 => [
                 'id' => 29,
                 'type' => 'ឃុំ',
                 'code' => '10501',
@@ -364,11 +333,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Changha',
                 'province_id' => 1,
                 'district_id' => 4,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            29 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            29 => [
                 'id' => 30,
                 'type' => 'ឃុំ',
                 'code' => '10502',
@@ -376,11 +344,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Koub',
                 'province_id' => 1,
                 'district_id' => 4,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            30 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            30 => [
                 'id' => 31,
                 'type' => 'ឃុំ',
                 'code' => '10503',
@@ -388,11 +355,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kuttasat',
                 'province_id' => 1,
                 'district_id' => 4,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            31 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            31 => [
                 'id' => 32,
                 'type' => 'ឃុំ',
                 'code' => '10505',
@@ -400,11 +366,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Samraong',
                 'province_id' => 1,
                 'district_id' => 4,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            32 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            32 => [
                 'id' => 33,
                 'type' => 'ឃុំ',
                 'code' => '10506',
@@ -412,11 +377,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Souphi',
                 'province_id' => 1,
                 'district_id' => 4,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            33 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            33 => [
                 'id' => 34,
                 'type' => 'ឃុំ',
                 'code' => '10507',
@@ -424,11 +388,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Soengh',
                 'province_id' => 1,
                 'district_id' => 4,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            34 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            34 => [
                 'id' => 35,
                 'type' => 'ឃុំ',
                 'code' => '10509',
@@ -436,11 +399,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Beichoan',
                 'province_id' => 1,
                 'district_id' => 4,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            35 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            35 => [
                 'id' => 36,
                 'type' => 'សង្កាត់',
                 'code' => '10602',
@@ -448,11 +410,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Svay',
                 'province_id' => 1,
                 'district_id' => 5,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            36 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            36 => [
                 'id' => 37,
                 'type' => 'សង្កាត់',
                 'code' => '10603',
@@ -460,11 +421,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Pong Satv',
                 'province_id' => 1,
                 'district_id' => 5,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            37 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            37 => [
                 'id' => 38,
                 'type' => 'សង្កាត់',
                 'code' => '10604',
@@ -472,11 +432,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Mkak',
                 'province_id' => 1,
                 'district_id' => 5,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            38 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            38 => [
                 'id' => 39,
                 'type' => 'សង្កាត់',
                 'code' => '10605',
@@ -484,11 +443,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Ambel',
                 'province_id' => 1,
                 'district_id' => 5,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            39 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            39 => [
                 'id' => 40,
                 'type' => 'សង្កាត់',
                 'code' => '10606',
@@ -496,11 +454,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phniet',
                 'province_id' => 1,
                 'district_id' => 5,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            40 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            40 => [
                 'id' => 41,
                 'type' => 'សង្កាត់',
                 'code' => '10607',
@@ -508,11 +465,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preah Ponlea',
                 'province_id' => 1,
                 'district_id' => 5,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            41 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            41 => [
                 'id' => 42,
                 'type' => 'សង្កាត់',
                 'code' => '10608',
@@ -520,11 +476,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuek Thla',
                 'province_id' => 1,
                 'district_id' => 5,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            42 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            42 => [
                 'id' => 43,
                 'type' => 'ឃុំ',
                 'code' => '10701',
@@ -532,11 +487,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Banteay Chhmar',
                 'province_id' => 1,
                 'district_id' => 6,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            43 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            43 => [
                 'id' => 44,
                 'type' => 'ឃុំ',
                 'code' => '10702',
@@ -544,11 +498,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kouk Romiet',
                 'province_id' => 1,
                 'district_id' => 6,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            44 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            44 => [
                 'id' => 45,
                 'type' => 'ឃុំ',
                 'code' => '10703',
@@ -556,11 +509,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phum Thmei',
                 'province_id' => 1,
                 'district_id' => 6,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            45 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            45 => [
                 'id' => 46,
                 'type' => 'ឃុំ',
                 'code' => '10704',
@@ -568,11 +520,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Thma Puok',
                 'province_id' => 1,
                 'district_id' => 6,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            46 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            46 => [
                 'id' => 47,
                 'type' => 'ឃុំ',
                 'code' => '10705',
@@ -580,11 +531,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kouk Kakthen',
                 'province_id' => 1,
                 'district_id' => 6,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            47 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            47 => [
                 'id' => 48,
                 'type' => 'ឃុំ',
                 'code' => '10706',
@@ -592,11 +542,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kumru',
                 'province_id' => 1,
                 'district_id' => 6,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            48 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            48 => [
                 'id' => 49,
                 'type' => 'ឃុំ',
                 'code' => '10801',
@@ -604,11 +553,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phkoam',
                 'province_id' => 1,
                 'district_id' => 7,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            49 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            49 => [
                 'id' => 50,
                 'type' => 'ឃុំ',
                 'code' => '10802',
@@ -616,11 +564,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sarongk',
                 'province_id' => 1,
                 'district_id' => 7,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            50 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            50 => [
                 'id' => 51,
                 'type' => 'ឃុំ',
                 'code' => '10803',
@@ -628,11 +575,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sla Kram',
                 'province_id' => 1,
                 'district_id' => 7,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            51 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            51 => [
                 'id' => 52,
                 'type' => 'ឃុំ',
                 'code' => '10804',
@@ -640,11 +586,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Chek',
                 'province_id' => 1,
                 'district_id' => 7,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            52 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            52 => [
                 'id' => 53,
                 'type' => 'ឃុំ',
                 'code' => '10805',
@@ -652,11 +597,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Baen',
                 'province_id' => 1,
                 'district_id' => 7,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            53 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            53 => [
                 'id' => 54,
                 'type' => 'ឃុំ',
                 'code' => '10806',
@@ -664,11 +608,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Phou',
                 'province_id' => 1,
                 'district_id' => 7,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            54 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            54 => [
                 'id' => 55,
                 'type' => 'ឃុំ',
                 'code' => '10807',
@@ -676,11 +619,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Treas',
                 'province_id' => 1,
                 'district_id' => 7,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            55 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            55 => [
                 'id' => 56,
                 'type' => 'ឃុំ',
                 'code' => '10808',
@@ -688,11 +630,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Roluos',
                 'province_id' => 1,
                 'district_id' => 7,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            56 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            56 => [
                 'id' => 57,
                 'type' => 'ឃុំ',
                 'code' => '10901',
@@ -700,11 +641,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Beng',
                 'province_id' => 1,
                 'district_id' => 8,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            57 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            57 => [
                 'id' => 58,
                 'type' => 'ឃុំ',
                 'code' => '10902',
@@ -712,11 +652,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Malai',
                 'province_id' => 1,
                 'district_id' => 8,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            58 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            58 => [
                 'id' => 59,
                 'type' => 'ឃុំ',
                 'code' => '10903',
@@ -724,11 +663,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Sampoar',
                 'province_id' => 1,
                 'district_id' => 8,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            59 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            59 => [
                 'id' => 60,
                 'type' => 'ឃុំ',
                 'code' => '10904',
@@ -736,11 +674,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Sralau',
                 'province_id' => 1,
                 'district_id' => 8,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            60 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            60 => [
                 'id' => 61,
                 'type' => 'ឃុំ',
                 'code' => '10905',
@@ -748,11 +685,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuol Pongro',
                 'province_id' => 1,
                 'district_id' => 8,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            61 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            61 => [
                 'id' => 62,
                 'type' => 'ឃុំ',
                 'code' => '10906',
@@ -760,11 +696,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Kong',
                 'province_id' => 1,
                 'district_id' => 8,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            62 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            62 => [
                 'id' => 63,
                 'type' => 'សង្កាត់',
                 'code' => '11001',
@@ -772,11 +707,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Nimitt',
                 'province_id' => 1,
                 'district_id' => 9,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            63 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            63 => [
                 'id' => 64,
                 'type' => 'សង្កាត់',
                 'code' => '11002',
@@ -784,11 +718,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Paoy Paet',
                 'province_id' => 1,
                 'district_id' => 9,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            64 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            64 => [
                 'id' => 65,
                 'type' => 'សង្កាត់',
                 'code' => '11003',
@@ -796,11 +729,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phsar Kandal',
                 'province_id' => 1,
                 'district_id' => 9,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            65 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            65 => [
                 'id' => 66,
                 'type' => 'ឃុំ',
                 'code' => '20101',
@@ -808,11 +740,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kantueu Muoy',
                 'province_id' => 2,
                 'district_id' => 10,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            66 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            66 => [
                 'id' => 67,
                 'type' => 'ឃុំ',
                 'code' => '20102',
@@ -820,11 +751,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kantueu Pir',
                 'province_id' => 2,
                 'district_id' => 10,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            67 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            67 => [
                 'id' => 68,
                 'type' => 'ឃុំ',
                 'code' => '20103',
@@ -832,11 +762,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Bay Damram',
                 'province_id' => 2,
                 'district_id' => 10,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            68 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            68 => [
                 'id' => 69,
                 'type' => 'ឃុំ',
                 'code' => '20104',
@@ -844,11 +773,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chheu Teal',
                 'province_id' => 2,
                 'district_id' => 10,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            69 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            69 => [
                 'id' => 70,
                 'type' => 'ឃុំ',
                 'code' => '20105',
@@ -856,11 +784,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chaeng Mean Chey',
                 'province_id' => 2,
                 'district_id' => 10,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            70 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            70 => [
                 'id' => 71,
                 'type' => 'ឃុំ',
                 'code' => '20106',
@@ -868,11 +795,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phnum Sampov',
                 'province_id' => 2,
                 'district_id' => 10,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            71 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            71 => [
                 'id' => 72,
                 'type' => 'ឃុំ',
                 'code' => '20107',
@@ -880,11 +806,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Snoeng',
                 'province_id' => 2,
                 'district_id' => 10,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            72 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            72 => [
                 'id' => 73,
                 'type' => 'ឃុំ',
                 'code' => '20108',
@@ -892,11 +817,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Kream',
                 'province_id' => 2,
                 'district_id' => 10,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            73 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            73 => [
                 'id' => 74,
                 'type' => 'ឃុំ',
                 'code' => '20201',
@@ -904,11 +828,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Pung',
                 'province_id' => 2,
                 'district_id' => 11,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            74 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            74 => [
                 'id' => 75,
                 'type' => 'ឃុំ',
                 'code' => '20202',
@@ -916,11 +839,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Meun',
                 'province_id' => 2,
                 'district_id' => 11,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            75 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            75 => [
                 'id' => 76,
                 'type' => 'ឃុំ',
                 'code' => '20203',
@@ -928,11 +850,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Ta Ki',
                 'province_id' => 2,
                 'district_id' => 11,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            76 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            76 => [
                 'id' => 77,
                 'type' => 'ឃុំ',
                 'code' => '20204',
@@ -940,11 +861,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chrey',
                 'province_id' => 2,
                 'district_id' => 11,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            77 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            77 => [
                 'id' => 78,
                 'type' => 'ឃុំ',
                 'code' => '20205',
@@ -952,11 +872,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Anlong Run',
                 'province_id' => 2,
                 'district_id' => 11,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            78 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            78 => [
                 'id' => 79,
                 'type' => 'ឃុំ',
                 'code' => '20206',
@@ -964,11 +883,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chrouy Sdau',
                 'province_id' => 2,
                 'district_id' => 11,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            79 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            79 => [
                 'id' => 80,
                 'type' => 'ឃុំ',
                 'code' => '20207',
@@ -976,11 +894,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Pring',
                 'province_id' => 2,
                 'district_id' => 11,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            80 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            80 => [
                 'id' => 81,
                 'type' => 'ឃុំ',
                 'code' => '20208',
@@ -988,11 +905,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kouk Khmum',
                 'province_id' => 2,
                 'district_id' => 11,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            81 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            81 => [
                 'id' => 82,
                 'type' => 'ឃុំ',
                 'code' => '20209',
@@ -1000,11 +916,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Bansay Traeng',
                 'province_id' => 2,
                 'district_id' => 11,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            82 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            82 => [
                 'id' => 83,
                 'type' => 'ឃុំ',
                 'code' => '20210',
@@ -1012,11 +927,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Rung Chrey',
                 'province_id' => 2,
                 'district_id' => 11,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            83 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            83 => [
                 'id' => 84,
                 'type' => 'សង្កាត់',
                 'code' => '20301',
@@ -1024,11 +938,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuol Ta Ek',
                 'province_id' => 2,
                 'district_id' => 12,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            84 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            84 => [
                 'id' => 85,
                 'type' => 'សង្កាត់',
                 'code' => '20302',
@@ -1036,11 +949,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prek Preah Sdach',
                 'province_id' => 2,
                 'district_id' => 12,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            85 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            85 => [
                 'id' => 86,
                 'type' => 'សង្កាត់',
                 'code' => '20303',
@@ -1048,11 +960,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Rottanak',
                 'province_id' => 2,
                 'district_id' => 12,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            86 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            86 => [
                 'id' => 87,
                 'type' => 'សង្កាត់',
                 'code' => '20304',
@@ -1060,11 +971,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chomkar Somraong',
                 'province_id' => 2,
                 'district_id' => 12,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            87 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            87 => [
                 'id' => 88,
                 'type' => 'សង្កាត់',
                 'code' => '20305',
@@ -1072,11 +982,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sla Ket',
                 'province_id' => 2,
                 'district_id' => 12,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            88 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            88 => [
                 'id' => 89,
                 'type' => 'សង្កាត់',
                 'code' => '20306',
@@ -1084,11 +993,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kdol Doun Teav',
                 'province_id' => 2,
                 'district_id' => 12,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            89 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            89 => [
                 'id' => 90,
                 'type' => 'សង្កាត់',
                 'code' => '20307',
@@ -1096,11 +1004,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'OMal',
                 'province_id' => 2,
                 'district_id' => 12,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            90 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            90 => [
                 'id' => 91,
                 'type' => 'សង្កាត់',
                 'code' => '20308',
@@ -1108,11 +1015,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'wat Kor',
                 'province_id' => 2,
                 'district_id' => 12,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            91 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            91 => [
                 'id' => 92,
                 'type' => 'សង្កាត់',
                 'code' => '20309',
@@ -1120,11 +1026,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Char',
                 'province_id' => 2,
                 'district_id' => 12,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            92 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            92 => [
                 'id' => 93,
                 'type' => 'សង្កាត់',
                 'code' => '20310',
@@ -1132,11 +1037,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Por',
                 'province_id' => 2,
                 'district_id' => 12,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            93 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            93 => [
                 'id' => 94,
                 'type' => 'ឃុំ',
                 'code' => '20401',
@@ -1144,11 +1048,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Bavel',
                 'province_id' => 2,
                 'district_id' => 13,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            94 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            94 => [
                 'id' => 95,
                 'type' => 'ឃុំ',
                 'code' => '20402',
@@ -1156,11 +1059,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khnach Romeas',
                 'province_id' => 2,
                 'district_id' => 13,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            95 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            95 => [
                 'id' => 96,
                 'type' => 'ឃុំ',
                 'code' => '20403',
@@ -1168,11 +1070,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Lvea',
                 'province_id' => 2,
                 'district_id' => 13,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            96 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            96 => [
                 'id' => 97,
                 'type' => 'ឃុំ',
                 'code' => '20404',
@@ -1180,11 +1081,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Khpos',
                 'province_id' => 2,
                 'district_id' => 13,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            97 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            97 => [
                 'id' => 98,
                 'type' => 'ឃុំ',
                 'code' => '20405',
@@ -1192,11 +1092,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ampil Pram Daeum',
                 'province_id' => 2,
                 'district_id' => 13,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            98 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            98 => [
                 'id' => 99,
                 'type' => 'ឃុំ',
                 'code' => '20406',
@@ -1204,11 +1103,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kdol Ta Haen',
                 'province_id' => 2,
                 'district_id' => 13,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            99 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            99 => [
                 'id' => 100,
                 'type' => 'ឃុំ',
                 'code' => '20407',
@@ -1216,11 +1114,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khlaeng Meas',
                 'province_id' => 2,
                 'district_id' => 13,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            100 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            100 => [
                 'id' => 101,
                 'type' => 'ឃុំ',
                 'code' => '20408',
@@ -1228,11 +1125,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeung Pram',
                 'province_id' => 2,
                 'district_id' => 13,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            101 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            101 => [
                 'id' => 102,
                 'type' => 'ឃុំ',
                 'code' => '20501',
@@ -1240,11 +1136,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Norint',
                 'province_id' => 2,
                 'district_id' => 14,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            102 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            102 => [
                 'id' => 103,
                 'type' => 'ឃុំ',
                 'code' => '20502',
@@ -1252,11 +1147,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Samraong Knong',
                 'province_id' => 2,
                 'district_id' => 14,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            103 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            103 => [
                 'id' => 104,
                 'type' => 'ឃុំ',
                 'code' => '20503',
@@ -1264,11 +1158,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Khpob',
                 'province_id' => 2,
                 'district_id' => 14,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            104 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            104 => [
                 'id' => 105,
                 'type' => 'ឃុំ',
                 'code' => '20504',
@@ -1276,11 +1169,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Luong',
                 'province_id' => 2,
                 'district_id' => 14,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            105 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            105 => [
                 'id' => 106,
                 'type' => 'ឃុំ',
                 'code' => '20505',
@@ -1288,11 +1180,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Peam Aek',
                 'province_id' => 2,
                 'district_id' => 14,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            106 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            106 => [
                 'id' => 107,
                 'type' => 'ឃុំ',
                 'code' => '20506',
@@ -1300,11 +1191,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Chas',
                 'province_id' => 2,
                 'district_id' => 14,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            107 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            107 => [
                 'id' => 108,
                 'type' => 'ឃុំ',
                 'code' => '20507',
@@ -1312,11 +1202,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Chiveang',
                 'province_id' => 2,
                 'district_id' => 14,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            108 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            108 => [
                 'id' => 109,
                 'type' => 'ឃុំ',
                 'code' => '20601',
@@ -1324,11 +1213,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Moung',
                 'province_id' => 2,
                 'district_id' => 15,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            109 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            109 => [
                 'id' => 110,
                 'type' => 'ឃុំ',
                 'code' => '20602',
@@ -1336,11 +1224,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kear',
                 'province_id' => 2,
                 'district_id' => 15,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            110 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            110 => [
                 'id' => 111,
                 'type' => 'ឃុំ',
                 'code' => '20603',
@@ -1348,11 +1235,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Svay',
                 'province_id' => 2,
                 'district_id' => 15,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            111 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            111 => [
                 'id' => 112,
                 'type' => 'ឃុំ',
                 'code' => '20604',
@@ -1360,11 +1246,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ruessei Krang',
                 'province_id' => 2,
                 'district_id' => 15,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            112 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            112 => [
                 'id' => 113,
                 'type' => 'ឃុំ',
                 'code' => '20605',
@@ -1372,11 +1257,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chrey',
                 'province_id' => 2,
                 'district_id' => 15,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            113 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            113 => [
                 'id' => 114,
                 'type' => 'ឃុំ',
                 'code' => '20606',
@@ -1384,11 +1268,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Loas',
                 'province_id' => 2,
                 'district_id' => 15,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            114 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            114 => [
                 'id' => 115,
                 'type' => 'ឃុំ',
                 'code' => '20607',
@@ -1396,11 +1279,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kakaoh',
                 'province_id' => 2,
                 'district_id' => 15,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            115 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            115 => [
                 'id' => 116,
                 'type' => 'ឃុំ',
                 'code' => '20608',
@@ -1408,11 +1290,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Touch',
                 'province_id' => 2,
                 'district_id' => 15,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            116 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            116 => [
                 'id' => 117,
                 'type' => 'ឃុំ',
                 'code' => '20609',
@@ -1420,11 +1301,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Robas Mongkol',
                 'province_id' => 2,
                 'district_id' => 15,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            117 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            117 => [
                 'id' => 118,
                 'type' => 'ឃុំ',
                 'code' => '20701',
@@ -1432,11 +1312,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sdau',
                 'province_id' => 2,
                 'district_id' => 16,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            118 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            118 => [
                 'id' => 119,
                 'type' => 'ឃុំ',
                 'code' => '20702',
@@ -1444,11 +1323,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Andaeuk Haeb',
                 'province_id' => 2,
                 'district_id' => 16,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            119 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            119 => [
                 'id' => 120,
                 'type' => 'ឃុំ',
                 'code' => '20703',
@@ -1456,11 +1334,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phlov Meas',
                 'province_id' => 2,
                 'district_id' => 16,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            120 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            120 => [
                 'id' => 121,
                 'type' => 'ឃុំ',
                 'code' => '20704',
@@ -1468,11 +1345,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Traeng',
                 'province_id' => 2,
                 'district_id' => 16,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            121 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            121 => [
                 'id' => 122,
                 'type' => 'ឃុំ',
                 'code' => '20705',
@@ -1480,11 +1356,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Reaksmei Songha',
                 'province_id' => 2,
                 'district_id' => 16,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            122 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            122 => [
                 'id' => 123,
                 'type' => 'ឃុំ',
                 'code' => '20801',
@@ -1492,11 +1367,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Anlong Vil',
                 'province_id' => 2,
                 'district_id' => 17,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            123 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            123 => [
                 'id' => 124,
                 'type' => 'ឃុំ',
                 'code' => '20802',
@@ -1504,11 +1378,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Norea',
                 'province_id' => 2,
                 'district_id' => 17,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            124 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            124 => [
                 'id' => 125,
                 'type' => 'ឃុំ',
                 'code' => '20803',
@@ -1516,11 +1389,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Pon',
                 'province_id' => 2,
                 'district_id' => 17,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            125 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            125 => [
                 'id' => 126,
                 'type' => 'ឃុំ',
                 'code' => '20804',
@@ -1528,11 +1400,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Roka',
                 'province_id' => 2,
                 'district_id' => 17,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            126 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            126 => [
                 'id' => 127,
                 'type' => 'ឃុំ',
                 'code' => '20805',
@@ -1540,11 +1411,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Preah',
                 'province_id' => 2,
                 'district_id' => 17,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            127 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            127 => [
                 'id' => 128,
                 'type' => 'ឃុំ',
                 'code' => '20806',
@@ -1552,11 +1422,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Prieng',
                 'province_id' => 2,
                 'district_id' => 17,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            128 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            128 => [
                 'id' => 129,
                 'type' => 'ឃុំ',
                 'code' => '20807',
@@ -1564,11 +1433,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Reang Kesei',
                 'province_id' => 2,
                 'district_id' => 17,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            129 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            129 => [
                 'id' => 130,
                 'type' => 'ឃុំ',
                 'code' => '20808',
@@ -1576,11 +1444,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Dambang Muoy',
                 'province_id' => 2,
                 'district_id' => 17,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            130 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            130 => [
                 'id' => 131,
                 'type' => 'ឃុំ',
                 'code' => '20809',
@@ -1588,11 +1455,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Dambang Pir',
                 'province_id' => 2,
                 'district_id' => 17,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            131 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            131 => [
                 'id' => 132,
                 'type' => 'ឃុំ',
                 'code' => '20810',
@@ -1600,11 +1466,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Vaot Ta Muem',
                 'province_id' => 2,
                 'district_id' => 17,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            132 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            132 => [
                 'id' => 133,
                 'type' => 'ឃុំ',
                 'code' => '20901',
@@ -1612,11 +1477,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Taok',
                 'province_id' => 2,
                 'district_id' => 18,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            133 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            133 => [
                 'id' => 134,
                 'type' => 'ឃុំ',
                 'code' => '20902',
@@ -1624,11 +1488,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Lpov',
                 'province_id' => 2,
                 'district_id' => 18,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            134 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            134 => [
                 'id' => 135,
                 'type' => 'ឃុំ',
                 'code' => '20903',
@@ -1636,11 +1499,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Samril',
                 'province_id' => 2,
                 'district_id' => 18,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            135 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            135 => [
                 'id' => 136,
                 'type' => 'ឃុំ',
                 'code' => '20904',
@@ -1648,11 +1510,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sung',
                 'province_id' => 2,
                 'district_id' => 18,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            136 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            136 => [
                 'id' => 137,
                 'type' => 'ឃុំ',
                 'code' => '20905',
@@ -1660,11 +1521,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Samlout',
                 'province_id' => 2,
                 'district_id' => 18,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            137 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            137 => [
                 'id' => 138,
                 'type' => 'ឃុំ',
                 'code' => '20906',
@@ -1672,11 +1532,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Mean Chey',
                 'province_id' => 2,
                 'district_id' => 18,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            138 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            138 => [
                 'id' => 139,
                 'type' => 'ឃុំ',
                 'code' => '20907',
@@ -1684,11 +1543,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Sanh',
                 'province_id' => 2,
                 'district_id' => 18,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            139 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            139 => [
                 'id' => 140,
                 'type' => 'ឃុំ',
                 'code' => '21001',
@@ -1696,11 +1554,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sampov Lun',
                 'province_id' => 2,
                 'district_id' => 19,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            140 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            140 => [
                 'id' => 141,
                 'type' => 'ឃុំ',
                 'code' => '21002',
@@ -1708,11 +1565,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Angkor Ban',
                 'province_id' => 2,
                 'district_id' => 19,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            141 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            141 => [
                 'id' => 142,
                 'type' => 'ឃុំ',
                 'code' => '21003',
@@ -1720,11 +1576,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Sda',
                 'province_id' => 2,
                 'district_id' => 19,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            142 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            142 => [
                 'id' => 143,
                 'type' => 'ឃុំ',
                 'code' => '21004',
@@ -1732,11 +1587,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Santepheap',
                 'province_id' => 2,
                 'district_id' => 19,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            143 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            143 => [
                 'id' => 144,
                 'type' => 'ឃុំ',
                 'code' => '21005',
@@ -1744,11 +1598,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Serei Mean Chey',
                 'province_id' => 2,
                 'district_id' => 19,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            144 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            144 => [
                 'id' => 145,
                 'type' => 'ឃុំ',
                 'code' => '21006',
@@ -1756,11 +1609,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chrey Seima',
                 'province_id' => 2,
                 'district_id' => 19,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            145 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            145 => [
                 'id' => 146,
                 'type' => 'ឃុំ',
                 'code' => '21101',
@@ -1768,11 +1620,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phnum Proek',
                 'province_id' => 2,
                 'district_id' => 20,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            146 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            146 => [
                 'id' => 147,
                 'type' => 'ឃុំ',
                 'code' => '21102',
@@ -1780,11 +1631,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pech Chenda',
                 'province_id' => 2,
                 'district_id' => 20,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            147 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            147 => [
                 'id' => 148,
                 'type' => 'ឃុំ',
                 'code' => '21103',
@@ -1792,11 +1642,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Bour',
                 'province_id' => 2,
                 'district_id' => 20,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            148 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            148 => [
                 'id' => 149,
                 'type' => 'ឃុំ',
                 'code' => '21104',
@@ -1804,11 +1653,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Barang Thleak',
                 'province_id' => 2,
                 'district_id' => 20,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            149 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            149 => [
                 'id' => 150,
                 'type' => 'ឃុំ',
                 'code' => '21105',
@@ -1816,11 +1664,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Rumduol',
                 'province_id' => 2,
                 'district_id' => 20,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            150 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            150 => [
                 'id' => 151,
                 'type' => 'ឃុំ',
                 'code' => '21201',
@@ -1828,11 +1675,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kamrieng',
                 'province_id' => 2,
                 'district_id' => 21,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            151 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            151 => [
                 'id' => 152,
                 'type' => 'ឃុំ',
                 'code' => '21202',
@@ -1840,11 +1686,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Reang',
                 'province_id' => 2,
                 'district_id' => 21,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            152 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            152 => [
                 'id' => 153,
                 'type' => 'ឃុំ',
                 'code' => '21203',
@@ -1852,11 +1697,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Da',
                 'province_id' => 2,
                 'district_id' => 21,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            153 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            153 => [
                 'id' => 154,
                 'type' => 'ឃុំ',
                 'code' => '21204',
@@ -1864,11 +1708,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trang',
                 'province_id' => 2,
                 'district_id' => 21,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            154 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            154 => [
                 'id' => 155,
                 'type' => 'ឃុំ',
                 'code' => '21205',
@@ -1876,11 +1719,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Saen',
                 'province_id' => 2,
                 'district_id' => 21,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            155 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            155 => [
                 'id' => 156,
                 'type' => 'ឃុំ',
                 'code' => '21206',
@@ -1888,11 +1730,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Krei',
                 'province_id' => 2,
                 'district_id' => 21,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            156 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            156 => [
                 'id' => 157,
                 'type' => 'ឃុំ',
                 'code' => '21301',
@@ -1900,11 +1741,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Thipakdei',
                 'province_id' => 2,
                 'district_id' => 22,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            157 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            157 => [
                 'id' => 158,
                 'type' => 'ឃុំ',
                 'code' => '21302',
@@ -1912,11 +1752,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaos Krala',
                 'province_id' => 2,
                 'district_id' => 22,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            158 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            158 => [
                 'id' => 159,
                 'type' => 'ឃុំ',
                 'code' => '21303',
@@ -1924,11 +1763,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Hab',
                 'province_id' => 2,
                 'district_id' => 22,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            159 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            159 => [
                 'id' => 160,
                 'type' => 'ឃុំ',
                 'code' => '21304',
@@ -1936,11 +1774,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preah Phos',
                 'province_id' => 2,
                 'district_id' => 22,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            160 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            160 => [
                 'id' => 161,
                 'type' => 'ឃុំ',
                 'code' => '21305',
@@ -1948,11 +1785,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Doun Ba',
                 'province_id' => 2,
                 'district_id' => 22,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            161 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            161 => [
                 'id' => 162,
                 'type' => 'ឃុំ',
                 'code' => '21306',
@@ -1960,11 +1796,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chhnal Moan',
                 'province_id' => 2,
                 'district_id' => 22,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            162 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            162 => [
                 'id' => 163,
                 'type' => 'ឃុំ',
                 'code' => '21401',
@@ -1972,11 +1807,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Chik',
                 'province_id' => 2,
                 'district_id' => 23,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            163 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            163 => [
                 'id' => 164,
                 'type' => 'ឃុំ',
                 'code' => '21402',
@@ -1984,11 +1818,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Tralach',
                 'province_id' => 2,
                 'district_id' => 23,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            164 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            164 => [
                 'id' => 165,
                 'type' => 'ឃុំ',
                 'code' => '21403',
@@ -1996,11 +1829,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Mukh Reah',
                 'province_id' => 2,
                 'district_id' => 23,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            165 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            165 => [
                 'id' => 166,
                 'type' => 'ឃុំ',
                 'code' => '21404',
@@ -2008,11 +1840,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sdok Pravoek',
                 'province_id' => 2,
                 'district_id' => 23,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            166 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            166 => [
                 'id' => 167,
                 'type' => 'ឃុំ',
                 'code' => '21405',
@@ -2020,11 +1851,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Basak',
                 'province_id' => 2,
                 'district_id' => 23,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            167 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            167 => [
                 'id' => 168,
                 'type' => 'ឃុំ',
                 'code' => '30101',
@@ -2032,11 +1862,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Batheay',
                 'province_id' => 3,
                 'district_id' => 24,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            168 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            168 => [
                 'id' => 169,
                 'type' => 'ឃុំ',
                 'code' => '30102',
@@ -2044,11 +1873,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chbar Ampov',
                 'province_id' => 3,
                 'district_id' => 24,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            169 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            169 => [
                 'id' => 170,
                 'type' => 'ឃុំ',
                 'code' => '30103',
@@ -2056,11 +1884,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chealea',
                 'province_id' => 3,
                 'district_id' => 24,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            170 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            170 => [
                 'id' => 171,
                 'type' => 'ឃុំ',
                 'code' => '30104',
@@ -2068,11 +1895,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Cheung Prey',
                 'province_id' => 3,
                 'district_id' => 24,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            171 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            171 => [
                 'id' => 172,
                 'type' => 'ឃុំ',
                 'code' => '30105',
@@ -2080,11 +1906,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Me Pring',
                 'province_id' => 3,
                 'district_id' => 24,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            172 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            172 => [
                 'id' => 173,
                 'type' => 'ឃុំ',
                 'code' => '30106',
@@ -2092,11 +1917,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ph\'av',
                 'province_id' => 3,
                 'district_id' => 24,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            173 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            173 => [
                 'id' => 174,
                 'type' => 'ឃុំ',
                 'code' => '30107',
@@ -2104,11 +1928,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sambour',
                 'province_id' => 3,
                 'district_id' => 24,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            174 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            174 => [
                 'id' => 175,
                 'type' => 'ឃុំ',
                 'code' => '30108',
@@ -2116,11 +1939,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sandaek',
                 'province_id' => 3,
                 'district_id' => 24,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            175 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            175 => [
                 'id' => 176,
                 'type' => 'ឃុំ',
                 'code' => '30109',
@@ -2128,11 +1950,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tang Krang',
                 'province_id' => 3,
                 'district_id' => 24,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            176 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            176 => [
                 'id' => 177,
                 'type' => 'ឃុំ',
                 'code' => '30110',
@@ -2140,11 +1961,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tang Krasang',
                 'province_id' => 3,
                 'district_id' => 24,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            177 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            177 => [
                 'id' => 178,
                 'type' => 'ឃុំ',
                 'code' => '30111',
@@ -2152,11 +1972,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trab',
                 'province_id' => 3,
                 'district_id' => 24,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            178 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            178 => [
                 'id' => 179,
                 'type' => 'ឃុំ',
                 'code' => '30112',
@@ -2164,11 +1983,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tumnob',
                 'province_id' => 3,
                 'district_id' => 24,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            179 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            179 => [
                 'id' => 180,
                 'type' => 'ឃុំ',
                 'code' => '30201',
@@ -2176,11 +1994,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Bos Khnor',
                 'province_id' => 3,
                 'district_id' => 25,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            180 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            180 => [
                 'id' => 181,
                 'type' => 'ឃុំ',
                 'code' => '30202',
@@ -2188,11 +2005,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chamkar Andoung',
                 'province_id' => 3,
                 'district_id' => 25,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            181 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            181 => [
                 'id' => 182,
                 'type' => 'ឃុំ',
                 'code' => '30203',
@@ -2200,11 +2016,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Cheyyou',
                 'province_id' => 3,
                 'district_id' => 25,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            182 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            182 => [
                 'id' => 183,
                 'type' => 'ឃុំ',
                 'code' => '30204',
@@ -2212,11 +2027,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Lvea Leu',
                 'province_id' => 3,
                 'district_id' => 25,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            183 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            183 => [
                 'id' => 184,
                 'type' => 'ឃុំ',
                 'code' => '30205',
@@ -2224,11 +2038,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Spueu',
                 'province_id' => 3,
                 'district_id' => 25,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            184 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            184 => [
                 'id' => 185,
                 'type' => 'ឃុំ',
                 'code' => '30206',
@@ -2236,11 +2049,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Teab',
                 'province_id' => 3,
                 'district_id' => 25,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            185 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            185 => [
                 'id' => 186,
                 'type' => 'ឃុំ',
                 'code' => '30207',
@@ -2248,11 +2060,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Ong',
                 'province_id' => 3,
                 'district_id' => 25,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            186 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            186 => [
                 'id' => 187,
                 'type' => 'ឃុំ',
                 'code' => '30208',
@@ -2260,11 +2071,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Prok',
                 'province_id' => 3,
                 'district_id' => 25,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            187 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            187 => [
                 'id' => 188,
                 'type' => 'ឃុំ',
                 'code' => '30301',
@@ -2272,11 +2082,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khnor Dambang',
                 'province_id' => 3,
                 'district_id' => 26,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            188 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            188 => [
                 'id' => 189,
                 'type' => 'ឃុំ',
                 'code' => '30302',
@@ -2284,11 +2093,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kouk Rovieng',
                 'province_id' => 3,
                 'district_id' => 26,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            189 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            189 => [
                 'id' => 190,
                 'type' => 'ឃុំ',
                 'code' => '30303',
@@ -2296,11 +2104,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pdau Chum',
                 'province_id' => 3,
                 'district_id' => 26,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            190 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            190 => [
                 'id' => 191,
                 'type' => 'ឃុំ',
                 'code' => '30304',
@@ -2308,11 +2115,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Char',
                 'province_id' => 3,
                 'district_id' => 26,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            191 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            191 => [
                 'id' => 192,
                 'type' => 'ឃុំ',
                 'code' => '30305',
@@ -2320,11 +2126,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pring Chrum',
                 'province_id' => 3,
                 'district_id' => 26,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            192 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            192 => [
                 'id' => 193,
                 'type' => 'ឃុំ',
                 'code' => '30306',
@@ -2332,11 +2137,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sampong Chey',
                 'province_id' => 3,
                 'district_id' => 26,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            193 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            193 => [
                 'id' => 194,
                 'type' => 'ឃុំ',
                 'code' => '30307',
@@ -2344,11 +2148,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sdaeung Chey',
                 'province_id' => 3,
                 'district_id' => 26,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            194 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            194 => [
                 'id' => 195,
                 'type' => 'ឃុំ',
                 'code' => '30308',
@@ -2356,11 +2159,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Soutib',
                 'province_id' => 3,
                 'district_id' => 26,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            195 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            195 => [
                 'id' => 196,
                 'type' => 'ឃុំ',
                 'code' => '30309',
@@ -2368,11 +2170,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sramar',
                 'province_id' => 3,
                 'district_id' => 26,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            196 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            196 => [
                 'id' => 197,
                 'type' => 'ឃុំ',
                 'code' => '30310',
@@ -2380,11 +2181,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Kor',
                 'province_id' => 3,
                 'district_id' => 26,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            197 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            197 => [
                 'id' => 198,
                 'type' => 'សង្កាត់',
                 'code' => '30501',
@@ -2392,11 +2192,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Kok',
                 'province_id' => 3,
                 'district_id' => 27,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            198 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            198 => [
                 'id' => 199,
                 'type' => 'សង្កាត់',
                 'code' => '30502',
@@ -2404,11 +2203,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Cham',
                 'province_id' => 3,
                 'district_id' => 27,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            199 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            199 => [
                 'id' => 200,
                 'type' => 'សង្កាត់',
                 'code' => '30503',
@@ -2416,11 +2214,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sambuor Meas',
                 'province_id' => 3,
                 'district_id' => 27,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            200 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            200 => [
                 'id' => 201,
                 'type' => 'សង្កាត់',
                 'code' => '30504',
@@ -2428,11 +2225,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Veal Vong',
                 'province_id' => 3,
                 'district_id' => 27,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            201 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            201 => [
                 'id' => 202,
                 'type' => 'ឃុំ',
                 'code' => '30601',
@@ -2440,11 +2236,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ampil',
                 'province_id' => 3,
                 'district_id' => 28,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            202 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            202 => [
                 'id' => 203,
                 'type' => 'ឃុំ',
                 'code' => '30602',
@@ -2452,11 +2247,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Hanchey',
                 'province_id' => 3,
                 'district_id' => 28,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            203 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            203 => [
                 'id' => 204,
                 'type' => 'ឃុំ',
                 'code' => '30603',
@@ -2464,11 +2258,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kien Chrey',
                 'province_id' => 3,
                 'district_id' => 28,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            204 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            204 => [
                 'id' => 205,
                 'type' => 'ឃុំ',
                 'code' => '30604',
@@ -2476,11 +2269,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kokor',
                 'province_id' => 3,
                 'district_id' => 28,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            205 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            205 => [
                 'id' => 206,
                 'type' => 'ឃុំ',
                 'code' => '30605',
@@ -2488,11 +2280,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Mitt',
                 'province_id' => 3,
                 'district_id' => 28,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            206 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            206 => [
                 'id' => 207,
                 'type' => 'ឃុំ',
                 'code' => '30606',
@@ -2500,11 +2291,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Roka',
                 'province_id' => 3,
                 'district_id' => 28,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            207 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            207 => [
                 'id' => 208,
                 'type' => 'ឃុំ',
                 'code' => '30607',
@@ -2512,11 +2302,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Samraong',
                 'province_id' => 3,
                 'district_id' => 28,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            208 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            208 => [
                 'id' => 209,
                 'type' => 'ឃុំ',
                 'code' => '30608',
@@ -2524,11 +2313,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Tontuem',
                 'province_id' => 3,
                 'district_id' => 28,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            209 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            209 => [
                 'id' => 210,
                 'type' => 'ឃុំ',
                 'code' => '30609',
@@ -2536,11 +2324,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Krala',
                 'province_id' => 3,
                 'district_id' => 28,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            210 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            210 => [
                 'id' => 211,
                 'type' => 'ឃុំ',
                 'code' => '30610',
@@ -2548,11 +2335,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Svay',
                 'province_id' => 3,
                 'district_id' => 28,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            211 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            211 => [
                 'id' => 212,
                 'type' => 'ឃុំ',
                 'code' => '30611',
@@ -2560,11 +2346,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ro\'ang',
                 'province_id' => 3,
                 'district_id' => 28,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            212 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            212 => [
                 'id' => 213,
                 'type' => 'ឃុំ',
                 'code' => '30612',
@@ -2572,11 +2357,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Rumchek',
                 'province_id' => 3,
                 'district_id' => 28,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            213 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            213 => [
                 'id' => 214,
                 'type' => 'ឃុំ',
                 'code' => '30613',
@@ -2584,11 +2368,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srak',
                 'province_id' => 3,
                 'district_id' => 28,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            214 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            214 => [
                 'id' => 215,
                 'type' => 'ឃុំ',
                 'code' => '30614',
@@ -2596,11 +2379,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trean',
                 'province_id' => 3,
                 'district_id' => 28,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            215 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            215 => [
                 'id' => 216,
                 'type' => 'ឃុំ',
                 'code' => '30615',
@@ -2608,11 +2390,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Vihear Thum',
                 'province_id' => 3,
                 'district_id' => 28,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            216 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            216 => [
                 'id' => 217,
                 'type' => 'ឃុំ',
                 'code' => '30701',
@@ -2620,11 +2401,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Angkor Ban',
                 'province_id' => 3,
                 'district_id' => 29,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            217 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            217 => [
                 'id' => 218,
                 'type' => 'ឃុំ',
                 'code' => '30702',
@@ -2632,11 +2412,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kang Ta Noeng',
                 'province_id' => 3,
                 'district_id' => 29,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            218 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            218 => [
                 'id' => 219,
                 'type' => 'ឃុំ',
                 'code' => '30703',
@@ -2644,11 +2423,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khchau',
                 'province_id' => 3,
                 'district_id' => 29,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            219 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            219 => [
                 'id' => 220,
                 'type' => 'ឃុំ',
                 'code' => '30704',
@@ -2656,11 +2434,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Peam Chi Kang',
                 'province_id' => 3,
                 'district_id' => 29,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            220 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            220 => [
                 'id' => 221,
                 'type' => 'ឃុំ',
                 'code' => '30705',
@@ -2668,11 +2445,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Koy',
                 'province_id' => 3,
                 'district_id' => 29,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            221 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            221 => [
                 'id' => 222,
                 'type' => 'ឃុំ',
                 'code' => '30706',
@@ -2680,11 +2456,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Krabau',
                 'province_id' => 3,
                 'district_id' => 29,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            222 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            222 => [
                 'id' => 223,
                 'type' => 'ឃុំ',
                 'code' => '30707',
@@ -2692,11 +2467,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Reay Pay',
                 'province_id' => 3,
                 'district_id' => 29,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            223 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            223 => [
                 'id' => 224,
                 'type' => 'ឃុំ',
                 'code' => '30708',
@@ -2704,11 +2478,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Roka Ar',
                 'province_id' => 3,
                 'district_id' => 29,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            224 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            224 => [
                 'id' => 225,
                 'type' => 'ឃុំ',
                 'code' => '30709',
@@ -2716,11 +2489,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Roka Koy',
                 'province_id' => 3,
                 'district_id' => 29,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            225 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            225 => [
                 'id' => 226,
                 'type' => 'ឃុំ',
                 'code' => '30710',
@@ -2728,11 +2500,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sdau',
                 'province_id' => 3,
                 'district_id' => 29,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            226 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            226 => [
                 'id' => 227,
                 'type' => 'ឃុំ',
                 'code' => '30711',
@@ -2740,11 +2511,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sour Kong',
                 'province_id' => 3,
                 'district_id' => 29,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            227 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            227 => [
                 'id' => 228,
                 'type' => 'ឃុំ',
                 'code' => '30801',
@@ -2752,11 +2522,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Reab',
                 'province_id' => 3,
                 'district_id' => 30,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            228 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            228 => [
                 'id' => 229,
                 'type' => 'ឃុំ',
                 'code' => '30802',
@@ -2764,11 +2533,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Sotin',
                 'province_id' => 3,
                 'district_id' => 30,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            229 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            229 => [
                 'id' => 230,
                 'type' => 'ឃុំ',
                 'code' => '30803',
@@ -2776,11 +2544,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Lve',
                 'province_id' => 3,
                 'district_id' => 30,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            230 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            230 => [
                 'id' => 231,
                 'type' => 'ឃុំ',
                 'code' => '30804',
@@ -2788,11 +2555,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Moha Leaph',
                 'province_id' => 3,
                 'district_id' => 30,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            231 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            231 => [
                 'id' => 232,
                 'type' => 'ឃុំ',
                 'code' => '30805',
@@ -2800,11 +2566,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Moha Khnhoung',
                 'province_id' => 3,
                 'district_id' => 30,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            232 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            232 => [
                 'id' => 233,
                 'type' => 'ឃុំ',
                 'code' => '30806',
@@ -2812,11 +2577,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Peam Prathnuoh',
                 'province_id' => 3,
                 'district_id' => 30,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            233 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            233 => [
                 'id' => 234,
                 'type' => 'ឃុំ',
                 'code' => '30807',
@@ -2824,11 +2588,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pongro',
                 'province_id' => 3,
                 'district_id' => 30,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            234 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            234 => [
                 'id' => 235,
                 'type' => 'ឃុំ',
                 'code' => '30808',
@@ -2836,11 +2599,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Ta Nong',
                 'province_id' => 3,
                 'district_id' => 30,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            235 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            235 => [
                 'id' => 236,
                 'type' => 'ឃុំ',
                 'code' => '31301',
@@ -2848,11 +2610,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Baray',
                 'province_id' => 3,
                 'district_id' => 31,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            236 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            236 => [
                 'id' => 237,
                 'type' => 'ឃុំ',
                 'code' => '31302',
@@ -2860,11 +2621,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Nay',
                 'province_id' => 3,
                 'district_id' => 31,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            237 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            237 => [
                 'id' => 238,
                 'type' => 'ឃុំ',
                 'code' => '31303',
@@ -2872,11 +2632,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chrey Vien',
                 'province_id' => 3,
                 'district_id' => 31,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            238 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            238 => [
                 'id' => 239,
                 'type' => 'ឃុំ',
                 'code' => '31304',
@@ -2884,11 +2643,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khvet Thum',
                 'province_id' => 3,
                 'district_id' => 31,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            239 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            239 => [
                 'id' => 240,
                 'type' => 'ឃុំ',
                 'code' => '31305',
@@ -2896,11 +2654,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kor',
                 'province_id' => 3,
                 'district_id' => 31,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            240 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            240 => [
                 'id' => 241,
                 'type' => 'ឃុំ',
                 'code' => '31306',
@@ -2908,11 +2665,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Krouch',
                 'province_id' => 3,
                 'district_id' => 31,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            241 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            241 => [
                 'id' => 242,
                 'type' => 'ឃុំ',
                 'code' => '31307',
@@ -2920,11 +2676,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Lvea',
                 'province_id' => 3,
                 'district_id' => 31,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            242 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            242 => [
                 'id' => 243,
                 'type' => 'ឃុំ',
                 'code' => '31308',
@@ -2932,11 +2687,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Mien',
                 'province_id' => 3,
                 'district_id' => 31,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            243 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            243 => [
                 'id' => 244,
                 'type' => 'ឃុំ',
                 'code' => '31309',
@@ -2944,11 +2698,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Chhor',
                 'province_id' => 3,
                 'district_id' => 31,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            244 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            244 => [
                 'id' => 245,
                 'type' => 'ឃុំ',
                 'code' => '31310',
@@ -2956,11 +2709,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sour Saen',
                 'province_id' => 3,
                 'district_id' => 31,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            245 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            245 => [
                 'id' => 246,
                 'type' => 'ឃុំ',
                 'code' => '31311',
@@ -2968,11 +2720,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Samraong',
                 'province_id' => 3,
                 'district_id' => 31,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            246 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            246 => [
                 'id' => 247,
                 'type' => 'ឃុំ',
                 'code' => '31312',
@@ -2980,11 +2731,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sragnae',
                 'province_id' => 3,
                 'district_id' => 31,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            247 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            247 => [
                 'id' => 248,
                 'type' => 'ឃុំ',
                 'code' => '31313',
@@ -2992,11 +2742,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Thma Pun',
                 'province_id' => 3,
                 'district_id' => 31,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            248 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            248 => [
                 'id' => 249,
                 'type' => 'ឃុំ',
                 'code' => '31314',
@@ -3004,11 +2753,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tong Rong',
                 'province_id' => 3,
                 'district_id' => 31,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            249 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            249 => [
                 'id' => 250,
                 'type' => 'ឃុំ',
                 'code' => '31315',
@@ -3016,11 +2764,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Preah',
                 'province_id' => 3,
                 'district_id' => 31,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            250 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            250 => [
                 'id' => 251,
                 'type' => 'ឃុំ',
                 'code' => '31401',
@@ -3028,11 +2775,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Baray',
                 'province_id' => 3,
                 'district_id' => 32,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            251 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            251 => [
                 'id' => 252,
                 'type' => 'ឃុំ',
                 'code' => '31402',
@@ -3040,11 +2786,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chi Bal',
                 'province_id' => 3,
                 'district_id' => 32,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            252 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            252 => [
                 'id' => 253,
                 'type' => 'ឃុំ',
                 'code' => '31403',
@@ -3052,11 +2797,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khnar Sa',
                 'province_id' => 3,
                 'district_id' => 32,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            253 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            253 => [
                 'id' => 254,
                 'type' => 'ឃុំ',
                 'code' => '31404',
@@ -3064,11 +2808,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Andaet',
                 'province_id' => 3,
                 'district_id' => 32,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            254 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            254 => [
                 'id' => 255,
                 'type' => 'ឃុំ',
                 'code' => '31405',
@@ -3076,11 +2819,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Mean Chey',
                 'province_id' => 3,
                 'district_id' => 32,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            255 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            255 => [
                 'id' => 256,
                 'type' => 'ឃុំ',
                 'code' => '31406',
@@ -3088,11 +2830,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phteah Kandal',
                 'province_id' => 3,
                 'district_id' => 32,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            256 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            256 => [
                 'id' => 257,
                 'type' => 'ឃុំ',
                 'code' => '31407',
@@ -3100,11 +2841,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pram Yam',
                 'province_id' => 3,
                 'district_id' => 32,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            257 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            257 => [
                 'id' => 258,
                 'type' => 'ឃុំ',
                 'code' => '31408',
@@ -3112,11 +2852,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Dambouk',
                 'province_id' => 3,
                 'district_id' => 32,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            258 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            258 => [
                 'id' => 259,
                 'type' => 'ឃុំ',
                 'code' => '31409',
@@ -3124,11 +2863,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Pou',
                 'province_id' => 3,
                 'district_id' => 32,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            259 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            259 => [
                 'id' => 260,
                 'type' => 'ឃុំ',
                 'code' => '31410',
@@ -3136,11 +2874,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Rumdeng',
                 'province_id' => 3,
                 'district_id' => 32,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            260 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            260 => [
                 'id' => 261,
                 'type' => 'ឃុំ',
                 'code' => '31411',
@@ -3148,11 +2885,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ruessei Srok',
                 'province_id' => 3,
                 'district_id' => 32,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            261 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            261 => [
                 'id' => 262,
                 'type' => 'ឃុំ',
                 'code' => '31412',
@@ -3160,11 +2896,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Pou',
                 'province_id' => 3,
                 'district_id' => 32,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            262 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            262 => [
                 'id' => 263,
                 'type' => 'ឃុំ',
                 'code' => '31413',
@@ -3172,11 +2907,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Khsach Phnum',
                 'province_id' => 3,
                 'district_id' => 32,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            263 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            263 => [
                 'id' => 264,
                 'type' => 'ឃុំ',
                 'code' => '31414',
@@ -3184,11 +2918,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tong Tralach',
                 'province_id' => 3,
                 'district_id' => 32,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            264 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            264 => [
                 'id' => 265,
                 'type' => 'ឃុំ',
                 'code' => '31501',
@@ -3196,11 +2929,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Areaks Tnot',
                 'province_id' => 3,
                 'district_id' => 33,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            265 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            265 => [
                 'id' => 266,
                 'type' => 'ឃុំ',
                 'code' => '31503',
@@ -3208,11 +2940,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Dang Kdar',
                 'province_id' => 3,
                 'district_id' => 33,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            266 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            266 => [
                 'id' => 267,
                 'type' => 'ឃុំ',
                 'code' => '31504',
@@ -3220,11 +2951,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khpob Ta Nguon',
                 'province_id' => 3,
                 'district_id' => 33,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            267 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            267 => [
                 'id' => 268,
                 'type' => 'ឃុំ',
                 'code' => '31505',
@@ -3232,11 +2962,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Me Sar Chrey',
                 'province_id' => 3,
                 'district_id' => 33,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            268 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            268 => [
                 'id' => 269,
                 'type' => 'ឃុំ',
                 'code' => '31506',
@@ -3244,11 +2973,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Mlu',
                 'province_id' => 3,
                 'district_id' => 33,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            269 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            269 => [
                 'id' => 270,
                 'type' => 'ឃុំ',
                 'code' => '31507',
@@ -3256,11 +2984,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Peam Kaoh Snar',
                 'province_id' => 3,
                 'district_id' => 33,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            270 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            270 => [
                 'id' => 271,
                 'type' => 'ឃុំ',
                 'code' => '31508',
@@ -3268,11 +2995,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preah Andoung',
                 'province_id' => 3,
                 'district_id' => 33,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            271 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            271 => [
                 'id' => 272,
                 'type' => 'ឃុំ',
                 'code' => '31509',
@@ -3280,11 +3006,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Bak',
                 'province_id' => 3,
                 'district_id' => 33,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            272 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            272 => [
                 'id' => 273,
                 'type' => 'ឃុំ',
                 'code' => '31510',
@@ -3292,11 +3017,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preak Kak',
                 'province_id' => 3,
                 'district_id' => 33,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            273 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            273 => [
                 'id' => 274,
                 'type' => 'ឃុំ',
                 'code' => '31512',
@@ -3304,11 +3028,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Soupheas',
                 'province_id' => 3,
                 'district_id' => 33,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            274 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            274 => [
                 'id' => 275,
                 'type' => 'ឃុំ',
                 'code' => '31513',
@@ -3316,11 +3039,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuol Preah Khleang',
                 'province_id' => 3,
                 'district_id' => 33,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            275 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            275 => [
                 'id' => 276,
                 'type' => 'ឃុំ',
                 'code' => '31514',
@@ -3328,11 +3050,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuol Sambuor',
                 'province_id' => 3,
                 'district_id' => 33,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            276 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            276 => [
                 'id' => 277,
                 'type' => 'ឃុំ',
                 'code' => '40101',
@@ -3340,11 +3061,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Anhchanh Rung',
                 'province_id' => 4,
                 'district_id' => 34,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            277 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            277 => [
                 'id' => 278,
                 'type' => 'ឃុំ',
                 'code' => '40102',
@@ -3352,11 +3072,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chhnok Tru',
                 'province_id' => 4,
                 'district_id' => 34,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            278 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            278 => [
                 'id' => 279,
                 'type' => 'ឃុំ',
                 'code' => '40103',
@@ -3364,11 +3083,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chak',
                 'province_id' => 4,
                 'district_id' => 34,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            279 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            279 => [
                 'id' => 280,
                 'type' => 'ឃុំ',
                 'code' => '40104',
@@ -3376,11 +3094,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khon Rang',
                 'province_id' => 4,
                 'district_id' => 34,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            280 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            280 => [
                 'id' => 281,
                 'type' => 'ឃុំ',
                 'code' => '40105',
@@ -3388,11 +3105,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Preah Kokir',
                 'province_id' => 4,
                 'district_id' => 34,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            281 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            281 => [
                 'id' => 282,
                 'type' => 'ឃុំ',
                 'code' => '40106',
@@ -3400,11 +3116,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Melum',
                 'province_id' => 4,
                 'district_id' => 34,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            282 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            282 => [
                 'id' => 283,
                 'type' => 'ឃុំ',
                 'code' => '40107',
@@ -3412,11 +3127,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phsar',
                 'province_id' => 4,
                 'district_id' => 34,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            283 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            283 => [
                 'id' => 284,
                 'type' => 'ឃុំ',
                 'code' => '40108',
@@ -3424,11 +3138,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pech Changvar',
                 'province_id' => 4,
                 'district_id' => 34,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            284 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            284 => [
                 'id' => 285,
                 'type' => 'ឃុំ',
                 'code' => '40109',
@@ -3436,11 +3149,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Popel',
                 'province_id' => 4,
                 'district_id' => 34,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            285 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            285 => [
                 'id' => 286,
                 'type' => 'ឃុំ',
                 'code' => '40110',
@@ -3448,11 +3160,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ponley',
                 'province_id' => 4,
                 'district_id' => 34,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            286 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            286 => [
                 'id' => 287,
                 'type' => 'ឃុំ',
                 'code' => '40111',
@@ -3460,11 +3171,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Chan',
                 'province_id' => 4,
                 'district_id' => 34,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            287 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            287 => [
                 'id' => 288,
                 'type' => 'ឃុំ',
                 'code' => '40201',
@@ -3472,11 +3182,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chol Sar',
                 'province_id' => 4,
                 'district_id' => 35,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            288 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            288 => [
                 'id' => 289,
                 'type' => 'ឃុំ',
                 'code' => '40202',
@@ -3484,11 +3193,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Thkov',
                 'province_id' => 4,
                 'district_id' => 35,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            289 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            289 => [
                 'id' => 290,
                 'type' => 'ឃុំ',
                 'code' => '40203',
@@ -3496,11 +3204,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Ous',
                 'province_id' => 4,
                 'district_id' => 35,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            290 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            290 => [
                 'id' => 291,
                 'type' => 'ឃុំ',
                 'code' => '40204',
@@ -3508,11 +3215,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Peam Chhkaok',
                 'province_id' => 4,
                 'district_id' => 35,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            291 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            291 => [
                 'id' => 292,
                 'type' => 'ឃុំ',
                 'code' => '40205',
@@ -3520,11 +3226,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Kri',
                 'province_id' => 4,
                 'district_id' => 35,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            292 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            292 => [
                 'id' => 293,
                 'type' => 'សង្កាត់',
                 'code' => '40301',
@@ -3532,11 +3237,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phsar Chhnang',
                 'province_id' => 4,
                 'district_id' => 36,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            293 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            293 => [
                 'id' => 294,
                 'type' => 'សង្កាត់',
                 'code' => '40302',
@@ -3544,11 +3248,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Chhnang',
                 'province_id' => 4,
                 'district_id' => 36,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            294 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            294 => [
                 'id' => 295,
                 'type' => 'សង្កាត់',
                 'code' => '40303',
@@ -3556,11 +3259,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'B\'er',
                 'province_id' => 4,
                 'district_id' => 36,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            295 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            295 => [
                 'id' => 296,
                 'type' => 'សង្កាត់',
                 'code' => '40304',
@@ -3568,11 +3270,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khsam',
                 'province_id' => 4,
                 'district_id' => 36,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            296 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            296 => [
                 'id' => 297,
                 'type' => 'ឃុំ',
                 'code' => '40401',
@@ -3580,11 +3281,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chranouk',
                 'province_id' => 4,
                 'district_id' => 37,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            297 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            297 => [
                 'id' => 298,
                 'type' => 'ឃុំ',
                 'code' => '40402',
@@ -3592,11 +3292,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Dar',
                 'province_id' => 4,
                 'district_id' => 37,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            298 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            298 => [
                 'id' => 299,
                 'type' => 'ឃុំ',
                 'code' => '40403',
@@ -3604,11 +3303,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Hau',
                 'province_id' => 4,
                 'district_id' => 37,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            299 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            299 => [
                 'id' => 300,
                 'type' => 'ឃុំ',
                 'code' => '40404',
@@ -3616,11 +3314,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phlov Tuk',
                 'province_id' => 4,
                 'district_id' => 37,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            300 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            300 => [
                 'id' => 301,
                 'type' => 'ឃុំ',
                 'code' => '40405',
@@ -3628,11 +3325,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pou',
                 'province_id' => 4,
                 'district_id' => 37,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            301 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            301 => [
                 'id' => 302,
                 'type' => 'ឃុំ',
                 'code' => '40406',
@@ -3640,11 +3336,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pralay Meas',
                 'province_id' => 4,
                 'district_id' => 37,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            302 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            302 => [
                 'id' => 303,
                 'type' => 'ឃុំ',
                 'code' => '40407',
@@ -3652,11 +3347,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Samraong Saen',
                 'province_id' => 4,
                 'district_id' => 37,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            303 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            303 => [
                 'id' => 304,
                 'type' => 'ឃុំ',
                 'code' => '40408',
@@ -3664,11 +3358,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Rumpear',
                 'province_id' => 4,
                 'district_id' => 37,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            304 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            304 => [
                 'id' => 305,
                 'type' => 'ឃុំ',
                 'code' => '40409',
@@ -3676,11 +3369,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trangel',
                 'province_id' => 4,
                 'district_id' => 37,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            305 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            305 => [
                 'id' => 306,
                 'type' => 'ឃុំ',
                 'code' => '40501',
@@ -3688,11 +3380,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ampil Tuek',
                 'province_id' => 4,
                 'district_id' => 38,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            306 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            306 => [
                 'id' => 307,
                 'type' => 'ឃុំ',
                 'code' => '40502',
@@ -3700,11 +3391,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chhuk Sa',
                 'province_id' => 4,
                 'district_id' => 38,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            307 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            307 => [
                 'id' => 308,
                 'type' => 'ឃុំ',
                 'code' => '40503',
@@ -3712,11 +3402,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chres',
                 'province_id' => 4,
                 'district_id' => 38,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            308 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            308 => [
                 'id' => 309,
                 'type' => 'ឃុំ',
                 'code' => '40504',
@@ -3724,11 +3413,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Tralach',
                 'province_id' => 4,
                 'district_id' => 38,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            309 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            309 => [
                 'id' => 310,
                 'type' => 'ឃុំ',
                 'code' => '40505',
@@ -3736,11 +3424,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Longveaek',
                 'province_id' => 4,
                 'district_id' => 38,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            310 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            310 => [
                 'id' => 311,
                 'type' => 'ឃុំ',
                 'code' => '40506',
@@ -3748,11 +3435,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Ruessei',
                 'province_id' => 4,
                 'district_id' => 38,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            311 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            311 => [
                 'id' => 312,
                 'type' => 'ឃុំ',
                 'code' => '40507',
@@ -3760,11 +3446,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Peani',
                 'province_id' => 4,
                 'district_id' => 38,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            312 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            312 => [
                 'id' => 313,
                 'type' => 'ឃុំ',
                 'code' => '40508',
@@ -3772,11 +3457,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Saeb',
                 'province_id' => 4,
                 'district_id' => 38,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            313 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            313 => [
                 'id' => 314,
                 'type' => 'ឃុំ',
                 'code' => '40509',
@@ -3784,11 +3468,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Ches',
                 'province_id' => 4,
                 'district_id' => 38,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            314 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            314 => [
                 'id' => 315,
                 'type' => 'ឃុំ',
                 'code' => '40510',
@@ -3796,11 +3479,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Thma Edth',
                 'province_id' => 4,
                 'district_id' => 38,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            315 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            315 => [
                 'id' => 316,
                 'type' => 'ឃុំ',
                 'code' => '40601',
@@ -3808,11 +3490,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Andoung Snay',
                 'province_id' => 4,
                 'district_id' => 39,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            316 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            316 => [
                 'id' => 317,
                 'type' => 'ឃុំ',
                 'code' => '40602',
@@ -3820,11 +3501,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Banteay Preal',
                 'province_id' => 4,
                 'district_id' => 39,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            317 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            317 => [
                 'id' => 318,
                 'type' => 'ឃុំ',
                 'code' => '40603',
@@ -3832,11 +3512,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Cheung Kreav',
                 'province_id' => 4,
                 'district_id' => 39,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            318 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            318 => [
                 'id' => 319,
                 'type' => 'ឃុំ',
                 'code' => '40604',
@@ -3844,11 +3523,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chrey Bak',
                 'province_id' => 4,
                 'district_id' => 39,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            319 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            319 => [
                 'id' => 320,
                 'type' => 'ឃុំ',
                 'code' => '40605',
@@ -3856,11 +3534,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kouk Banteay',
                 'province_id' => 4,
                 'district_id' => 39,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            320 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            320 => [
                 'id' => 321,
                 'type' => 'ឃុំ',
                 'code' => '40606',
@@ -3868,11 +3545,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Krang Leav',
                 'province_id' => 4,
                 'district_id' => 39,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            321 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            321 => [
                 'id' => 322,
                 'type' => 'ឃុំ',
                 'code' => '40607',
@@ -3880,11 +3556,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pongro',
                 'province_id' => 4,
                 'district_id' => 39,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            322 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            322 => [
                 'id' => 323,
                 'type' => 'ឃុំ',
                 'code' => '40608',
@@ -3892,11 +3567,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prasnoeb',
                 'province_id' => 4,
                 'district_id' => 39,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            323 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            323 => [
                 'id' => 324,
                 'type' => 'ឃុំ',
                 'code' => '40609',
@@ -3904,11 +3578,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Mul',
                 'province_id' => 4,
                 'district_id' => 39,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            324 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            324 => [
                 'id' => 325,
                 'type' => 'ឃុំ',
                 'code' => '40610',
@@ -3916,11 +3589,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Rolea B\'ier',
                 'province_id' => 4,
                 'district_id' => 39,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            325 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            325 => [
                 'id' => 326,
                 'type' => 'ឃុំ',
                 'code' => '40611',
@@ -3928,11 +3600,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srae Thmei',
                 'province_id' => 4,
                 'district_id' => 39,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            326 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            326 => [
                 'id' => 327,
                 'type' => 'ឃុំ',
                 'code' => '40612',
@@ -3940,11 +3611,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Chrum',
                 'province_id' => 4,
                 'district_id' => 39,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            327 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            327 => [
                 'id' => 328,
                 'type' => 'ឃុំ',
                 'code' => '40613',
@@ -3952,11 +3622,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuek Hout',
                 'province_id' => 4,
                 'district_id' => 39,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            328 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            328 => [
                 'id' => 329,
                 'type' => 'ឃុំ',
                 'code' => '40701',
@@ -3964,11 +3633,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chhean Laeung',
                 'province_id' => 4,
                 'district_id' => 40,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            329 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            329 => [
                 'id' => 330,
                 'type' => 'ឃុំ',
                 'code' => '40702',
@@ -3976,11 +3644,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khnar Chhmar',
                 'province_id' => 4,
                 'district_id' => 40,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            330 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            330 => [
                 'id' => 331,
                 'type' => 'ឃុំ',
                 'code' => '40703',
@@ -3988,11 +3655,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Krang Lvea',
                 'province_id' => 4,
                 'district_id' => 40,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            331 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            331 => [
                 'id' => 332,
                 'type' => 'ឃុំ',
                 'code' => '40704',
@@ -4000,11 +3666,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Peam',
                 'province_id' => 4,
                 'district_id' => 40,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            332 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            332 => [
                 'id' => 333,
                 'type' => 'ឃុំ',
                 'code' => '40705',
@@ -4012,11 +3677,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sedthei',
                 'province_id' => 4,
                 'district_id' => 40,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            333 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            333 => [
                 'id' => 334,
                 'type' => 'ឃុំ',
                 'code' => '40706',
@@ -4024,11 +3688,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay',
                 'province_id' => 4,
                 'district_id' => 40,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            334 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            334 => [
                 'id' => 335,
                 'type' => 'ឃុំ',
                 'code' => '40707',
@@ -4036,11 +3699,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Chuk',
                 'province_id' => 4,
                 'district_id' => 40,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            335 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            335 => [
                 'id' => 336,
                 'type' => 'ឃុំ',
                 'code' => '40708',
@@ -4048,11 +3710,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tbaeng Khpos',
                 'province_id' => 4,
                 'district_id' => 40,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            336 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            336 => [
                 'id' => 337,
                 'type' => 'ឃុំ',
                 'code' => '40709',
@@ -4060,11 +3721,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Thlok Vien',
                 'province_id' => 4,
                 'district_id' => 40,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            337 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            337 => [
                 'id' => 338,
                 'type' => 'ឃុំ',
                 'code' => '40801',
@@ -4072,11 +3732,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Akphivoadth',
                 'province_id' => 4,
                 'district_id' => 41,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            338 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            338 => [
                 'id' => 339,
                 'type' => 'ឃុំ',
                 'code' => '40802',
@@ -4084,11 +3743,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chieb',
                 'province_id' => 4,
                 'district_id' => 41,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            339 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            339 => [
                 'id' => 340,
                 'type' => 'ឃុំ',
                 'code' => '40803',
@@ -4096,11 +3754,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chaong Maong',
                 'province_id' => 4,
                 'district_id' => 41,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            340 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            340 => [
                 'id' => 341,
                 'type' => 'ឃុំ',
                 'code' => '40804',
@@ -4108,11 +3765,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kbal Tuek',
                 'province_id' => 4,
                 'district_id' => 41,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            341 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            341 => [
                 'id' => 342,
                 'type' => 'ឃុំ',
                 'code' => '40805',
@@ -4120,11 +3776,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khlong Popok',
                 'province_id' => 4,
                 'district_id' => 41,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            342 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            342 => [
                 'id' => 343,
                 'type' => 'ឃុំ',
                 'code' => '40806',
@@ -4132,11 +3787,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Krang Skear',
                 'province_id' => 4,
                 'district_id' => 41,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            343 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            343 => [
                 'id' => 344,
                 'type' => 'ឃុំ',
                 'code' => '40807',
@@ -4144,11 +3798,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tang Krasang',
                 'province_id' => 4,
                 'district_id' => 41,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            344 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            344 => [
                 'id' => 345,
                 'type' => 'ឃុំ',
                 'code' => '40808',
@@ -4156,11 +3809,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuol Khpos',
                 'province_id' => 4,
                 'district_id' => 41,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            345 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            345 => [
                 'id' => 346,
                 'type' => 'ឃុំ',
                 'code' => '40809',
@@ -4168,11 +3820,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kdol Saen Chey',
                 'province_id' => 4,
                 'district_id' => 41,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            346 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            346 => [
                 'id' => 347,
                 'type' => 'ឃុំ',
                 'code' => '50101',
@@ -4180,11 +3831,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Basedth',
                 'province_id' => 5,
                 'district_id' => 42,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            347 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            347 => [
                 'id' => 348,
                 'type' => 'ឃុំ',
                 'code' => '50102',
@@ -4192,11 +3842,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kat Phluk',
                 'province_id' => 5,
                 'district_id' => 42,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            348 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            348 => [
                 'id' => 349,
                 'type' => 'ឃុំ',
                 'code' => '50103',
@@ -4204,11 +3853,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Nitean',
                 'province_id' => 5,
                 'district_id' => 42,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            349 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            349 => [
                 'id' => 350,
                 'type' => 'ឃុំ',
                 'code' => '50104',
@@ -4216,11 +3864,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pheakdei',
                 'province_id' => 5,
                 'district_id' => 42,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            350 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            350 => [
                 'id' => 351,
                 'type' => 'ឃុំ',
                 'code' => '50105',
@@ -4228,11 +3875,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pheari Mean Chey',
                 'province_id' => 5,
                 'district_id' => 42,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            351 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            351 => [
                 'id' => 352,
                 'type' => 'ឃុំ',
                 'code' => '50106',
@@ -4240,11 +3886,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phong',
                 'province_id' => 5,
                 'district_id' => 42,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            352 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            352 => [
                 'id' => 353,
                 'type' => 'ឃុំ',
                 'code' => '50107',
@@ -4252,11 +3897,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pou Angkrang',
                 'province_id' => 5,
                 'district_id' => 42,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            353 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            353 => [
                 'id' => 354,
                 'type' => 'ឃុំ',
                 'code' => '50108',
@@ -4264,11 +3908,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pou Chamraeun',
                 'province_id' => 5,
                 'district_id' => 42,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            354 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            354 => [
                 'id' => 355,
                 'type' => 'ឃុំ',
                 'code' => '50109',
@@ -4276,11 +3919,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pou Mreal',
                 'province_id' => 5,
                 'district_id' => 42,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            355 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            355 => [
                 'id' => 356,
                 'type' => 'ឃុំ',
                 'code' => '50110',
@@ -4288,11 +3930,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Chacheb',
                 'province_id' => 5,
                 'district_id' => 42,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            356 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            356 => [
                 'id' => 357,
                 'type' => 'ឃុំ',
                 'code' => '50111',
@@ -4300,11 +3941,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuol Ampil',
                 'province_id' => 5,
                 'district_id' => 42,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            357 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            357 => [
                 'id' => 358,
                 'type' => 'ឃុំ',
                 'code' => '50112',
@@ -4312,11 +3952,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuol Sala',
                 'province_id' => 5,
                 'district_id' => 42,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            358 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            358 => [
                 'id' => 359,
                 'type' => 'ឃុំ',
                 'code' => '50113',
@@ -4324,11 +3963,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kak',
                 'province_id' => 5,
                 'district_id' => 42,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            359 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            359 => [
                 'id' => 360,
                 'type' => 'ឃុំ',
                 'code' => '50114',
@@ -4336,11 +3974,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Rumpear',
                 'province_id' => 5,
                 'district_id' => 42,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            360 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            360 => [
                 'id' => 361,
                 'type' => 'ឃុំ',
                 'code' => '50115',
@@ -4348,11 +3985,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preah Khae',
                 'province_id' => 5,
                 'district_id' => 42,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            361 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            361 => [
                 'id' => 362,
                 'type' => 'សង្កាត់',
                 'code' => '50201',
@@ -4360,11 +3996,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chbar Mon',
                 'province_id' => 5,
                 'district_id' => 43,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            362 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            362 => [
                 'id' => 363,
                 'type' => 'សង្កាត់',
                 'code' => '50202',
@@ -4372,11 +4007,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kandaol Dom',
                 'province_id' => 5,
                 'district_id' => 43,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            363 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            363 => [
                 'id' => 364,
                 'type' => 'សង្កាត់',
                 'code' => '50203',
@@ -4384,11 +4018,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Rokar Thum',
                 'province_id' => 5,
                 'district_id' => 43,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            364 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            364 => [
                 'id' => 365,
                 'type' => 'សង្កាត់',
                 'code' => '50204',
@@ -4396,11 +4029,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sopoar Tep',
                 'province_id' => 5,
                 'district_id' => 43,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            365 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            365 => [
                 'id' => 366,
                 'type' => 'សង្កាត់',
                 'code' => '50205',
@@ -4408,11 +4040,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Kravan',
                 'province_id' => 5,
                 'district_id' => 43,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            366 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            366 => [
                 'id' => 367,
                 'type' => 'ឃុំ',
                 'code' => '50301',
@@ -4420,11 +4051,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Angk Popel',
                 'province_id' => 5,
                 'district_id' => 44,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            367 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            367 => [
                 'id' => 368,
                 'type' => 'ឃុំ',
                 'code' => '50302',
@@ -4432,11 +4062,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chongruk',
                 'province_id' => 5,
                 'district_id' => 44,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            368 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            368 => [
                 'id' => 369,
                 'type' => 'ឃុំ',
                 'code' => '50303',
@@ -4444,11 +4073,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Moha Ruessei',
                 'province_id' => 5,
                 'district_id' => 44,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            369 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            369 => [
                 'id' => 370,
                 'type' => 'ឃុំ',
                 'code' => '50304',
@@ -4456,11 +4084,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pechr Muni',
                 'province_id' => 5,
                 'district_id' => 44,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            370 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            370 => [
                 'id' => 371,
                 'type' => 'ឃុំ',
                 'code' => '50305',
@@ -4468,11 +4095,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preah Nipean',
                 'province_id' => 5,
                 'district_id' => 44,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            371 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            371 => [
                 'id' => 372,
                 'type' => 'ឃុំ',
                 'code' => '50306',
@@ -4480,11 +4106,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Nheat',
                 'province_id' => 5,
                 'district_id' => 44,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            372 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            372 => [
                 'id' => 373,
                 'type' => 'ឃុំ',
                 'code' => '50307',
@@ -4492,11 +4117,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Vihear',
                 'province_id' => 5,
                 'district_id' => 44,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            373 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            373 => [
                 'id' => 374,
                 'type' => 'ឃុំ',
                 'code' => '50308',
@@ -4504,11 +4128,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Roka Kaoh',
                 'province_id' => 5,
                 'district_id' => 44,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            374 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            374 => [
                 'id' => 375,
                 'type' => 'ឃុំ',
                 'code' => '50309',
@@ -4516,11 +4139,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sdok',
                 'province_id' => 5,
                 'district_id' => 44,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            375 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            375 => [
                 'id' => 376,
                 'type' => 'ឃុំ',
                 'code' => '50310',
@@ -4528,11 +4150,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Snam Krapeu',
                 'province_id' => 5,
                 'district_id' => 44,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            376 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            376 => [
                 'id' => 377,
                 'type' => 'ឃុំ',
                 'code' => '50311',
@@ -4540,11 +4161,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srang',
                 'province_id' => 5,
                 'district_id' => 44,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            377 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            377 => [
                 'id' => 378,
                 'type' => 'ឃុំ',
                 'code' => '50312',
@@ -4552,11 +4172,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuek L\'ak',
                 'province_id' => 5,
                 'district_id' => 44,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            378 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            378 => [
                 'id' => 379,
                 'type' => 'ឃុំ',
                 'code' => '50313',
@@ -4564,11 +4183,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Veal',
                 'province_id' => 5,
                 'district_id' => 44,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            379 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            379 => [
                 'id' => 380,
                 'type' => 'ឃុំ',
                 'code' => '50401',
@@ -4576,11 +4194,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Haong Samnam',
                 'province_id' => 5,
                 'district_id' => 45,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            380 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            380 => [
                 'id' => 381,
                 'type' => 'ឃុំ',
                 'code' => '50402',
@@ -4588,11 +4205,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Reaksmei Sameakki',
                 'province_id' => 5,
                 'district_id' => 45,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            381 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            381 => [
                 'id' => 382,
                 'type' => 'ឃុំ',
                 'code' => '50403',
@@ -4600,11 +4216,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Chour',
                 'province_id' => 5,
                 'district_id' => 45,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            382 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            382 => [
                 'id' => 383,
                 'type' => 'ឃុំ',
                 'code' => '50404',
@@ -4612,11 +4227,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sangkae Satob',
                 'province_id' => 5,
                 'district_id' => 45,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            383 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            383 => [
                 'id' => 384,
                 'type' => 'ឃុំ',
                 'code' => '50405',
@@ -4624,11 +4238,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Sal',
                 'province_id' => 5,
                 'district_id' => 45,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            384 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            384 => [
                 'id' => 385,
                 'type' => 'ឃុំ',
                 'code' => '50501',
@@ -4636,11 +4249,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chan Saen',
                 'province_id' => 5,
                 'district_id' => 46,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            385 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            385 => [
                 'id' => 386,
                 'type' => 'ឃុំ',
                 'code' => '50502',
@@ -4648,11 +4260,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Cheung Roas',
                 'province_id' => 5,
                 'district_id' => 46,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            386 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            386 => [
                 'id' => 387,
                 'type' => 'ឃុំ',
                 'code' => '50503',
@@ -4660,11 +4271,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chumpu Proeks',
                 'province_id' => 5,
                 'district_id' => 46,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            387 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            387 => [
                 'id' => 388,
                 'type' => 'ឃុំ',
                 'code' => '50504',
@@ -4672,11 +4282,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khsem Khsant',
                 'province_id' => 5,
                 'district_id' => 46,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            388 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            388 => [
                 'id' => 389,
                 'type' => 'ឃុំ',
                 'code' => '50505',
@@ -4684,11 +4293,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Krang Chek',
                 'province_id' => 5,
                 'district_id' => 46,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            389 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            389 => [
                 'id' => 390,
                 'type' => 'ឃុំ',
                 'code' => '50506',
@@ -4696,11 +4304,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Mean Chey',
                 'province_id' => 5,
                 'district_id' => 46,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            390 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            390 => [
                 'id' => 391,
                 'type' => 'ឃុំ',
                 'code' => '50507',
@@ -4708,11 +4315,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preah Srae',
                 'province_id' => 5,
                 'district_id' => 46,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            391 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            391 => [
                 'id' => 392,
                 'type' => 'ឃុំ',
                 'code' => '50508',
@@ -4720,11 +4326,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Krasang',
                 'province_id' => 5,
                 'district_id' => 46,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            392 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            392 => [
                 'id' => 393,
                 'type' => 'ឃុំ',
                 'code' => '50509',
@@ -4732,11 +4337,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trach Tong',
                 'province_id' => 5,
                 'district_id' => 46,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            393 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            393 => [
                 'id' => 394,
                 'type' => 'ឃុំ',
                 'code' => '50510',
@@ -4744,11 +4348,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Veal Pong',
                 'province_id' => 5,
                 'district_id' => 46,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            394 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            394 => [
                 'id' => 395,
                 'type' => 'ឃុំ',
                 'code' => '50511',
@@ -4756,11 +4359,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Veang Chas',
                 'province_id' => 5,
                 'district_id' => 46,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            395 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            395 => [
                 'id' => 396,
                 'type' => 'ឃុំ',
                 'code' => '50512',
@@ -4768,11 +4370,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Yutth Sameakki',
                 'province_id' => 5,
                 'district_id' => 46,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            396 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            396 => [
                 'id' => 397,
                 'type' => 'ឃុំ',
                 'code' => '50513',
@@ -4780,11 +4381,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Damnak Reang',
                 'province_id' => 5,
                 'district_id' => 46,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            397 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            397 => [
                 'id' => 398,
                 'type' => 'ឃុំ',
                 'code' => '50514',
@@ -4792,11 +4392,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Peang Lvea',
                 'province_id' => 5,
                 'district_id' => 46,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            398 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            398 => [
                 'id' => 399,
                 'type' => 'ឃុំ',
                 'code' => '50515',
@@ -4804,11 +4403,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phnom Touch',
                 'province_id' => 5,
                 'district_id' => 46,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            399 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            399 => [
                 'id' => 400,
                 'type' => 'ឃុំ',
                 'code' => '50601',
@@ -4816,11 +4414,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chambak',
                 'province_id' => 5,
                 'district_id' => 47,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            400 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            400 => [
                 'id' => 401,
                 'type' => 'ឃុំ',
                 'code' => '50602',
@@ -4828,11 +4425,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Choam Sangkae',
                 'province_id' => 5,
                 'district_id' => 47,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            401 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            401 => [
                 'id' => 402,
                 'type' => 'ឃុំ',
                 'code' => '50603',
@@ -4840,11 +4436,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Dambouk Rung',
                 'province_id' => 5,
                 'district_id' => 47,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            402 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            402 => [
                 'id' => 403,
                 'type' => 'ឃុំ',
                 'code' => '50604',
@@ -4852,11 +4447,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kiri Voan',
                 'province_id' => 5,
                 'district_id' => 47,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            403 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            403 => [
                 'id' => 404,
                 'type' => 'ឃុំ',
                 'code' => '50605',
@@ -4864,11 +4458,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Krang Dei Vay',
                 'province_id' => 5,
                 'district_id' => 47,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            404 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            404 => [
                 'id' => 405,
                 'type' => 'ឃុំ',
                 'code' => '50606',
@@ -4876,11 +4469,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Moha Sang',
                 'province_id' => 5,
                 'district_id' => 47,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            405 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            405 => [
                 'id' => 406,
                 'type' => 'ឃុំ',
                 'code' => '50607',
@@ -4888,11 +4480,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou',
                 'province_id' => 5,
                 'district_id' => 47,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            406 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            406 => [
                 'id' => 407,
                 'type' => 'ឃុំ',
                 'code' => '50608',
@@ -4900,11 +4491,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Rumduol',
                 'province_id' => 5,
                 'district_id' => 47,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            407 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            407 => [
                 'id' => 408,
                 'type' => 'ឃុំ',
                 'code' => '50609',
@@ -4912,11 +4502,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Kmeng',
                 'province_id' => 5,
                 'district_id' => 47,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            408 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            408 => [
                 'id' => 409,
                 'type' => 'ឃុំ',
                 'code' => '50610',
@@ -4924,11 +4513,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tang Samraong',
                 'province_id' => 5,
                 'district_id' => 47,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            409 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            409 => [
                 'id' => 410,
                 'type' => 'ឃុំ',
                 'code' => '50611',
@@ -4936,11 +4524,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tang Sya',
                 'province_id' => 5,
                 'district_id' => 47,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            410 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            410 => [
                 'id' => 411,
                 'type' => 'ឃុំ',
                 'code' => '50613',
@@ -4948,11 +4535,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Traeng Trayueng',
                 'province_id' => 5,
                 'district_id' => 47,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            411 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            411 => [
                 'id' => 412,
                 'type' => 'ឃុំ',
                 'code' => '50701',
@@ -4960,11 +4546,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Roleang Chak',
                 'province_id' => 5,
                 'district_id' => 48,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            412 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            412 => [
                 'id' => 413,
                 'type' => 'ឃុំ',
                 'code' => '50702',
@@ -4972,11 +4557,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kahaeng',
                 'province_id' => 5,
                 'district_id' => 48,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            413 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            413 => [
                 'id' => 414,
                 'type' => 'ឃុំ',
                 'code' => '50703',
@@ -4984,11 +4568,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khtum Krang',
                 'province_id' => 5,
                 'district_id' => 48,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            414 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            414 => [
                 'id' => 415,
                 'type' => 'ឃុំ',
                 'code' => '50704',
@@ -4996,11 +4579,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Krang Ampil',
                 'province_id' => 5,
                 'district_id' => 48,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            415 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            415 => [
                 'id' => 416,
                 'type' => 'ឃុំ',
                 'code' => '50705',
@@ -5008,11 +4590,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pneay',
                 'province_id' => 5,
                 'district_id' => 48,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            416 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            416 => [
                 'id' => 417,
                 'type' => 'ឃុំ',
                 'code' => '50706',
@@ -5020,11 +4601,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Roleang Kreul',
                 'province_id' => 5,
                 'district_id' => 48,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            417 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            417 => [
                 'id' => 418,
                 'type' => 'ឃុំ',
                 'code' => '50707',
@@ -5032,11 +4612,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Samrong Tong',
                 'province_id' => 5,
                 'district_id' => 48,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            418 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            418 => [
                 'id' => 419,
                 'type' => 'ឃុំ',
                 'code' => '50708',
@@ -5044,11 +4623,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sambour',
                 'province_id' => 5,
                 'district_id' => 48,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            419 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            419 => [
                 'id' => 420,
                 'type' => 'ឃុំ',
                 'code' => '50709',
@@ -5056,11 +4634,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Saen Dei',
                 'province_id' => 5,
                 'district_id' => 48,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            420 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            420 => [
                 'id' => 421,
                 'type' => 'ឃុំ',
                 'code' => '50710',
@@ -5068,11 +4645,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Skuh',
                 'province_id' => 5,
                 'district_id' => 48,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            421 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            421 => [
                 'id' => 422,
                 'type' => 'ឃុំ',
                 'code' => '50711',
@@ -5080,11 +4656,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tang Krouch',
                 'province_id' => 5,
                 'district_id' => 48,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            422 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            422 => [
                 'id' => 423,
                 'type' => 'ឃុំ',
                 'code' => '50712',
@@ -5092,11 +4667,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Thummoda Ar',
                 'province_id' => 5,
                 'district_id' => 48,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            423 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            423 => [
                 'id' => 424,
                 'type' => 'ឃុំ',
                 'code' => '50713',
@@ -5104,11 +4678,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Kong',
                 'province_id' => 5,
                 'district_id' => 48,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            424 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            424 => [
                 'id' => 425,
                 'type' => 'ឃុំ',
                 'code' => '50714',
@@ -5116,11 +4689,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tumpoar Meas',
                 'province_id' => 5,
                 'district_id' => 48,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            425 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            425 => [
                 'id' => 426,
                 'type' => 'ឃុំ',
                 'code' => '50715',
@@ -5128,11 +4700,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Voa Sar',
                 'province_id' => 5,
                 'district_id' => 48,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            426 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            426 => [
                 'id' => 427,
                 'type' => 'ឃុំ',
                 'code' => '50801',
@@ -5140,11 +4711,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Amleang',
                 'province_id' => 5,
                 'district_id' => 49,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            427 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            427 => [
                 'id' => 428,
                 'type' => 'ឃុំ',
                 'code' => '50802',
@@ -5152,11 +4722,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Monourom',
                 'province_id' => 5,
                 'district_id' => 49,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            428 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            428 => [
                 'id' => 429,
                 'type' => 'ឃុំ',
                 'code' => '50804',
@@ -5164,11 +4733,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prambei Mum',
                 'province_id' => 5,
                 'district_id' => 49,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            429 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            429 => [
                 'id' => 430,
                 'type' => 'ឃុំ',
                 'code' => '50805',
@@ -5176,11 +4744,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Rung Roeang',
                 'province_id' => 5,
                 'district_id' => 49,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            430 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            430 => [
                 'id' => 431,
                 'type' => 'ឃុំ',
                 'code' => '50806',
@@ -5188,11 +4755,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Toap Mean',
                 'province_id' => 5,
                 'district_id' => 49,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            431 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            431 => [
                 'id' => 432,
                 'type' => 'ឃុំ',
                 'code' => '50807',
@@ -5200,11 +4766,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Veal Pon',
                 'province_id' => 5,
                 'district_id' => 49,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            432 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            432 => [
                 'id' => 433,
                 'type' => 'ឃុំ',
                 'code' => '50808',
@@ -5212,11 +4777,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Yea Angk',
                 'province_id' => 5,
                 'district_id' => 49,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            433 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            433 => [
                 'id' => 434,
                 'type' => 'ឃុំ',
                 'code' => '60101',
@@ -5224,11 +4788,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Bak Sna',
                 'province_id' => 6,
                 'district_id' => 50,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            434 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            434 => [
                 'id' => 435,
                 'type' => 'ឃុំ',
                 'code' => '60102',
@@ -5236,11 +4799,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ballangk',
                 'province_id' => 6,
                 'district_id' => 50,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            435 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            435 => [
                 'id' => 436,
                 'type' => 'ឃុំ',
                 'code' => '60103',
@@ -5248,11 +4810,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Baray',
                 'province_id' => 6,
                 'district_id' => 50,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            436 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            436 => [
                 'id' => 437,
                 'type' => 'ឃុំ',
                 'code' => '60104',
@@ -5260,11 +4821,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng',
                 'province_id' => 6,
                 'district_id' => 50,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            437 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            437 => [
                 'id' => 438,
                 'type' => 'ឃុំ',
                 'code' => '60105',
@@ -5272,11 +4832,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chaeung Daeung',
                 'province_id' => 6,
                 'district_id' => 50,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            438 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            438 => [
                 'id' => 439,
                 'type' => 'ឃុំ',
                 'code' => '60107',
@@ -5284,11 +4843,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chhuk Khsach',
                 'province_id' => 6,
                 'district_id' => 50,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            439 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            439 => [
                 'id' => 440,
                 'type' => 'ឃុំ',
                 'code' => '60108',
@@ -5296,11 +4854,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chong Doung',
                 'province_id' => 6,
                 'district_id' => 50,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            440 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            440 => [
                 'id' => 441,
                 'type' => 'ឃុំ',
                 'code' => '60110',
@@ -5308,11 +4865,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kokir Thum',
                 'province_id' => 6,
                 'district_id' => 50,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            441 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            441 => [
                 'id' => 442,
                 'type' => 'ឃុំ',
                 'code' => '60111',
@@ -5320,11 +4876,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Krava',
                 'province_id' => 6,
                 'district_id' => 50,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            442 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            442 => [
                 'id' => 443,
                 'type' => 'ឃុំ',
                 'code' => '60117',
@@ -5332,11 +4887,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tnaot Chum',
                 'province_id' => 6,
                 'district_id' => 50,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            443 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            443 => [
                 'id' => 444,
                 'type' => 'ឃុំ',
                 'code' => '60201',
@@ -5344,11 +4898,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chey',
                 'province_id' => 6,
                 'district_id' => 51,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            444 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            444 => [
                 'id' => 445,
                 'type' => 'ឃុំ',
                 'code' => '60202',
@@ -5356,11 +4909,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Damrei Slab',
                 'province_id' => 6,
                 'district_id' => 51,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            445 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            445 => [
                 'id' => 446,
                 'type' => 'ឃុំ',
                 'code' => '60203',
@@ -5368,11 +4920,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Kou',
                 'province_id' => 6,
                 'district_id' => 51,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            446 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            446 => [
                 'id' => 447,
                 'type' => 'ឃុំ',
                 'code' => '60204',
@@ -5380,11 +4931,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Svay',
                 'province_id' => 6,
                 'district_id' => 51,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            447 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            447 => [
                 'id' => 448,
                 'type' => 'ឃុំ',
                 'code' => '60205',
@@ -5392,11 +4942,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Nipech',
                 'province_id' => 6,
                 'district_id' => 51,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            448 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            448 => [
                 'id' => 449,
                 'type' => 'ឃុំ',
                 'code' => '60206',
@@ -5404,11 +4953,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phat Sanday',
                 'province_id' => 6,
                 'district_id' => 51,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            449 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            449 => [
                 'id' => 450,
                 'type' => 'ឃុំ',
                 'code' => '60207',
@@ -5416,11 +4964,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'San Kor',
                 'province_id' => 6,
                 'district_id' => 51,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            450 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            450 => [
                 'id' => 451,
                 'type' => 'ឃុំ',
                 'code' => '60208',
@@ -5428,11 +4975,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tbaeng',
                 'province_id' => 6,
                 'district_id' => 51,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            451 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            451 => [
                 'id' => 452,
                 'type' => 'ឃុំ',
                 'code' => '60209',
@@ -5440,11 +4986,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Ruessei',
                 'province_id' => 6,
                 'district_id' => 51,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            452 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            452 => [
                 'id' => 453,
                 'type' => 'ឃុំ',
                 'code' => '60210',
@@ -5452,11 +4997,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kdei Doung',
                 'province_id' => 6,
                 'district_id' => 51,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            453 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            453 => [
                 'id' => 454,
                 'type' => 'ឃុំ',
                 'code' => '60211',
@@ -5464,11 +5008,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Kuy',
                 'province_id' => 6,
                 'district_id' => 51,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            454 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            454 => [
                 'id' => 455,
                 'type' => 'សង្កាត់',
                 'code' => '60301',
@@ -5476,11 +5019,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Damrei Choan Khla',
                 'province_id' => 6,
                 'district_id' => 52,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            455 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            455 => [
                 'id' => 456,
                 'type' => 'សង្កាត់',
                 'code' => '60302',
@@ -5488,11 +5030,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Thum',
                 'province_id' => 6,
                 'district_id' => 52,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            456 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            456 => [
                 'id' => 457,
                 'type' => 'សង្កាត់',
                 'code' => '60303',
@@ -5500,11 +5041,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Roteh',
                 'province_id' => 6,
                 'district_id' => 52,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            457 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            457 => [
                 'id' => 458,
                 'type' => 'សង្កាត់',
                 'code' => '60304',
@@ -5512,11 +5052,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Kanthor',
                 'province_id' => 6,
                 'district_id' => 52,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            458 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            458 => [
                 'id' => 459,
                 'type' => 'សង្កាត់',
                 'code' => '60306',
@@ -5524,11 +5063,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Krabau',
                 'province_id' => 6,
                 'district_id' => 52,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            459 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            459 => [
                 'id' => 460,
                 'type' => 'សង្កាត់',
                 'code' => '60308',
@@ -5536,11 +5074,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Ta Hu',
                 'province_id' => 6,
                 'district_id' => 52,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            460 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            460 => [
                 'id' => 461,
                 'type' => 'សង្កាត់',
                 'code' => '60309',
@@ -5548,11 +5085,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Achar Leak',
                 'province_id' => 6,
                 'district_id' => 52,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            461 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            461 => [
                 'id' => 462,
                 'type' => 'សង្កាត់',
                 'code' => '60310',
@@ -5560,11 +5096,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srayov',
                 'province_id' => 6,
                 'district_id' => 52,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            462 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            462 => [
                 'id' => 463,
                 'type' => 'ឃុំ',
                 'code' => '60401',
@@ -5572,11 +5107,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Doung',
                 'province_id' => 6,
                 'district_id' => 53,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            463 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            463 => [
                 'id' => 464,
                 'type' => 'ឃុំ',
                 'code' => '60402',
@@ -5584,11 +5118,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kraya',
                 'province_id' => 6,
                 'district_id' => 53,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            464 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            464 => [
                 'id' => 465,
                 'type' => 'ឃុំ',
                 'code' => '60403',
@@ -5596,11 +5129,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phan Nheum',
                 'province_id' => 6,
                 'district_id' => 53,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            465 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            465 => [
                 'id' => 466,
                 'type' => 'ឃុំ',
                 'code' => '60404',
@@ -5608,11 +5140,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sakream',
                 'province_id' => 6,
                 'district_id' => 53,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            466 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            466 => [
                 'id' => 467,
                 'type' => 'ឃុំ',
                 'code' => '60405',
@@ -5620,11 +5151,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sala Visai',
                 'province_id' => 6,
                 'district_id' => 53,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            467 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            467 => [
                 'id' => 468,
                 'type' => 'ឃុំ',
                 'code' => '60406',
@@ -5632,11 +5162,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sameakki',
                 'province_id' => 6,
                 'district_id' => 53,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            468 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            468 => [
                 'id' => 469,
                 'type' => 'ឃុំ',
                 'code' => '60407',
@@ -5644,11 +5173,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuol Kreul',
                 'province_id' => 6,
                 'district_id' => 53,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            469 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            469 => [
                 'id' => 470,
                 'type' => 'ឃុំ',
                 'code' => '60501',
@@ -5656,11 +5184,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chhuk',
                 'province_id' => 6,
                 'district_id' => 54,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            470 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            470 => [
                 'id' => 471,
                 'type' => 'ឃុំ',
                 'code' => '60502',
@@ -5668,11 +5195,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Koul',
                 'province_id' => 6,
                 'district_id' => 54,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            471 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            471 => [
                 'id' => 472,
                 'type' => 'ឃុំ',
                 'code' => '60503',
@@ -5680,11 +5206,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sambour',
                 'province_id' => 6,
                 'district_id' => 54,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            472 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            472 => [
                 'id' => 473,
                 'type' => 'ឃុំ',
                 'code' => '60504',
@@ -5692,11 +5217,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sraeung',
                 'province_id' => 6,
                 'district_id' => 54,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            473 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            473 => [
                 'id' => 474,
                 'type' => 'ឃុំ',
                 'code' => '60505',
@@ -5704,11 +5228,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tang Krasau',
                 'province_id' => 6,
                 'district_id' => 54,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            474 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            474 => [
                 'id' => 475,
                 'type' => 'ឃុំ',
                 'code' => '60601',
@@ -5716,11 +5239,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chheu Teal',
                 'province_id' => 6,
                 'district_id' => 55,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            475 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            475 => [
                 'id' => 476,
                 'type' => 'ឃុំ',
                 'code' => '60602',
@@ -5728,11 +5250,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Dang Kambet',
                 'province_id' => 6,
                 'district_id' => 55,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            476 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            476 => [
                 'id' => 477,
                 'type' => 'ឃុំ',
                 'code' => '60603',
@@ -5740,11 +5261,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Klaeng',
                 'province_id' => 6,
                 'district_id' => 55,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            477 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            477 => [
                 'id' => 478,
                 'type' => 'ឃុំ',
                 'code' => '60604',
@@ -5752,11 +5272,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Mean Rith',
                 'province_id' => 6,
                 'district_id' => 55,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            478 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            478 => [
                 'id' => 479,
                 'type' => 'ឃុំ',
                 'code' => '60605',
@@ -5764,11 +5283,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Mean Chey',
                 'province_id' => 6,
                 'district_id' => 55,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            479 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            479 => [
                 'id' => 480,
                 'type' => 'ឃុំ',
                 'code' => '60606',
@@ -5776,11 +5294,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ngan',
                 'province_id' => 6,
                 'district_id' => 55,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            480 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            480 => [
                 'id' => 481,
                 'type' => 'ឃុំ',
                 'code' => '60607',
@@ -5788,11 +5305,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sandan',
                 'province_id' => 6,
                 'district_id' => 55,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            481 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            481 => [
                 'id' => 482,
                 'type' => 'ឃុំ',
                 'code' => '60608',
@@ -5800,11 +5316,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sochet',
                 'province_id' => 6,
                 'district_id' => 55,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            482 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            482 => [
                 'id' => 483,
                 'type' => 'ឃុំ',
                 'code' => '60609',
@@ -5812,11 +5327,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tum Ring',
                 'province_id' => 6,
                 'district_id' => 55,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            483 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            483 => [
                 'id' => 484,
                 'type' => 'ឃុំ',
                 'code' => '60701',
@@ -5824,11 +5338,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Lvea',
                 'province_id' => 6,
                 'district_id' => 56,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            484 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            484 => [
                 'id' => 485,
                 'type' => 'ឃុំ',
                 'code' => '60702',
@@ -5836,11 +5349,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chroab',
                 'province_id' => 6,
                 'district_id' => 56,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            485 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            485 => [
                 'id' => 486,
                 'type' => 'ឃុំ',
                 'code' => '60703',
@@ -5848,11 +5360,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Thma',
                 'province_id' => 6,
                 'district_id' => 56,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            486 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            486 => [
                 'id' => 487,
                 'type' => 'ឃុំ',
                 'code' => '60704',
@@ -5860,11 +5371,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kakaoh',
                 'province_id' => 6,
                 'district_id' => 56,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            487 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            487 => [
                 'id' => 488,
                 'type' => 'ឃុំ',
                 'code' => '60705',
@@ -5872,11 +5382,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kraya',
                 'province_id' => 6,
                 'district_id' => 56,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            488 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            488 => [
                 'id' => 489,
                 'type' => 'ឃុំ',
                 'code' => '60706',
@@ -5884,11 +5393,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pnov',
                 'province_id' => 6,
                 'district_id' => 56,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            489 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            489 => [
                 'id' => 490,
                 'type' => 'ឃុំ',
                 'code' => '60707',
@@ -5896,11 +5404,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prasat',
                 'province_id' => 6,
                 'district_id' => 56,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            490 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            490 => [
                 'id' => 491,
                 'type' => 'ឃុំ',
                 'code' => '60708',
@@ -5908,11 +5415,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tang Krasang',
                 'province_id' => 6,
                 'district_id' => 56,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            491 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            491 => [
                 'id' => 492,
                 'type' => 'ឃុំ',
                 'code' => '60709',
@@ -5920,11 +5426,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ti Pou',
                 'province_id' => 6,
                 'district_id' => 56,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            492 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            492 => [
                 'id' => 493,
                 'type' => 'ឃុំ',
                 'code' => '60710',
@@ -5932,11 +5437,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tboung Krapeu',
                 'province_id' => 6,
                 'district_id' => 56,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            493 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            493 => [
                 'id' => 494,
                 'type' => 'ឃុំ',
                 'code' => '60801',
@@ -5944,11 +5448,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Banteay Stoung',
                 'province_id' => 6,
                 'district_id' => 57,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            494 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            494 => [
                 'id' => 495,
                 'type' => 'ឃុំ',
                 'code' => '60802',
@@ -5956,11 +5459,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chamna Kraom',
                 'province_id' => 6,
                 'district_id' => 57,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            495 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            495 => [
                 'id' => 496,
                 'type' => 'ឃុំ',
                 'code' => '60803',
@@ -5968,11 +5470,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chamna Leu',
                 'province_id' => 6,
                 'district_id' => 57,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            496 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            496 => [
                 'id' => 497,
                 'type' => 'ឃុំ',
                 'code' => '60804',
@@ -5980,11 +5481,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Chen Cheung',
                 'province_id' => 6,
                 'district_id' => 57,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            497 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            497 => [
                 'id' => 498,
                 'type' => 'ឃុំ',
                 'code' => '60805',
@@ -5992,11 +5492,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Chen Tboung',
                 'province_id' => 6,
                 'district_id' => 57,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            498 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            498 => [
                 'id' => 499,
                 'type' => 'ឃុំ',
                 'code' => '60806',
@@ -6004,11 +5503,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Msa Krang',
                 'province_id' => 6,
                 'district_id' => 57,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            499 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            499 => [
                 'id' => 500,
                 'type' => 'ឃុំ',
                 'code' => '60807',
@@ -6016,13 +5514,12 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Peam Bang',
                 'province_id' => 6,
                 'district_id' => 57,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-        ));
-        \DB::table('communes')->insert(array (
-            0 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+        ]);
+        \DB::table('communes')->insert([
+            0 => [
                 'id' => 501,
                 'type' => 'ឃុំ',
                 'code' => '60808',
@@ -6030,11 +5527,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Popok',
                 'province_id' => 6,
                 'district_id' => 57,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            1 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            1 => [
                 'id' => 502,
                 'type' => 'ឃុំ',
                 'code' => '60809',
@@ -6042,11 +5538,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pralay',
                 'province_id' => 6,
                 'district_id' => 57,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            2 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            2 => [
                 'id' => 503,
                 'type' => 'ឃុំ',
                 'code' => '60810',
@@ -6054,11 +5549,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preah Damrei',
                 'province_id' => 6,
                 'district_id' => 57,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            3 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            3 => [
                 'id' => 504,
                 'type' => 'ឃុំ',
                 'code' => '60811',
@@ -6066,11 +5560,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Rung Roeang',
                 'province_id' => 6,
                 'district_id' => 57,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            4 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            4 => [
                 'id' => 505,
                 'type' => 'ឃុំ',
                 'code' => '60812',
@@ -6078,11 +5571,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Samprouch',
                 'province_id' => 6,
                 'district_id' => 57,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            5 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            5 => [
                 'id' => 506,
                 'type' => 'ឃុំ',
                 'code' => '60813',
@@ -6090,11 +5582,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trea',
                 'province_id' => 6,
                 'district_id' => 57,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            6 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            6 => [
                 'id' => 507,
                 'type' => 'ឃុំ',
                 'code' => '60901',
@@ -6102,11 +5593,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pongro',
                 'province_id' => 6,
                 'district_id' => 58,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            7 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            7 => [
                 'id' => 508,
                 'type' => 'ឃុំ',
                 'code' => '60902',
@@ -6114,11 +5604,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chraneang',
                 'province_id' => 6,
                 'district_id' => 58,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            8 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            8 => [
                 'id' => 509,
                 'type' => 'ឃុំ',
                 'code' => '60903',
@@ -6126,11 +5615,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chrolong',
                 'province_id' => 6,
                 'district_id' => 58,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            9 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            9 => [
                 'id' => 510,
                 'type' => 'ឃុំ',
                 'code' => '60904',
@@ -6138,11 +5626,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Triel',
                 'province_id' => 6,
                 'district_id' => 58,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            10 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            10 => [
                 'id' => 511,
                 'type' => 'ឃុំ',
                 'code' => '60905',
@@ -6150,11 +5637,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sou Young',
                 'province_id' => 6,
                 'district_id' => 58,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            11 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            11 => [
                 'id' => 512,
                 'type' => 'ឃុំ',
                 'code' => '60906',
@@ -6162,11 +5648,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sralau',
                 'province_id' => 6,
                 'district_id' => 58,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            12 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            12 => [
                 'id' => 513,
                 'type' => 'ឃុំ',
                 'code' => '60907',
@@ -6174,11 +5659,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Phleung',
                 'province_id' => 6,
                 'district_id' => 58,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            13 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            13 => [
                 'id' => 514,
                 'type' => 'ឃុំ',
                 'code' => '60908',
@@ -6186,11 +5670,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Andoung Pou',
                 'province_id' => 6,
                 'district_id' => 58,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            14 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            14 => [
                 'id' => 515,
                 'type' => 'ឃុំ',
                 'code' => '70101',
@@ -6198,11 +5681,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Angk Phnum Touch',
                 'province_id' => 7,
                 'district_id' => 59,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            15 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            15 => [
                 'id' => 516,
                 'type' => 'ឃុំ',
                 'code' => '70102',
@@ -6210,11 +5692,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ankor Chey',
                 'province_id' => 7,
                 'district_id' => 59,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            16 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            16 => [
                 'id' => 517,
                 'type' => 'ឃុំ',
                 'code' => '70103',
@@ -6222,11 +5703,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Champei',
                 'province_id' => 7,
                 'district_id' => 59,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            17 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            17 => [
                 'id' => 518,
                 'type' => 'ឃុំ',
                 'code' => '70104',
@@ -6234,11 +5714,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Dambouk Khpos',
                 'province_id' => 7,
                 'district_id' => 59,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            18 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            18 => [
                 'id' => 519,
                 'type' => 'ឃុំ',
                 'code' => '70105',
@@ -6246,11 +5725,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Dan Koum',
                 'province_id' => 7,
                 'district_id' => 59,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            19 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            19 => [
                 'id' => 520,
                 'type' => 'ឃុំ',
                 'code' => '70106',
@@ -6258,11 +5736,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Daeum Doung',
                 'province_id' => 7,
                 'district_id' => 59,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            20 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            20 => [
                 'id' => 521,
                 'type' => 'ឃុំ',
                 'code' => '70107',
@@ -6270,11 +5747,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Mroum',
                 'province_id' => 7,
                 'district_id' => 59,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            21 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            21 => [
                 'id' => 522,
                 'type' => 'ឃុំ',
                 'code' => '70108',
@@ -6282,11 +5758,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phnum Kong',
                 'province_id' => 7,
                 'district_id' => 59,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            22 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            22 => [
                 'id' => 523,
                 'type' => 'ឃុំ',
                 'code' => '70109',
@@ -6294,11 +5769,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Praphnum',
                 'province_id' => 7,
                 'district_id' => 59,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            23 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            23 => [
                 'id' => 524,
                 'type' => 'ឃុំ',
                 'code' => '70110',
@@ -6306,11 +5780,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Samlanh',
                 'province_id' => 7,
                 'district_id' => 59,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            24 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            24 => [
                 'id' => 525,
                 'type' => 'ឃុំ',
                 'code' => '70111',
@@ -6318,11 +5791,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tani',
                 'province_id' => 7,
                 'district_id' => 59,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            25 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            25 => [
                 'id' => 526,
                 'type' => 'ឃុំ',
                 'code' => '70201',
@@ -6330,11 +5802,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Banteay Meas Khang Kaeut',
                 'province_id' => 7,
                 'district_id' => 60,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            26 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            26 => [
                 'id' => 527,
                 'type' => 'ឃុំ',
                 'code' => '70202',
@@ -6342,11 +5813,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Banteay Meas Khang lech',
                 'province_id' => 7,
                 'district_id' => 60,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            27 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            27 => [
                 'id' => 528,
                 'type' => 'ឃុំ',
                 'code' => '70203',
@@ -6354,11 +5824,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Tonle',
                 'province_id' => 7,
                 'district_id' => 60,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            28 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            28 => [
                 'id' => 529,
                 'type' => 'ឃុំ',
                 'code' => '70204',
@@ -6366,11 +5835,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Samraong Kraom',
                 'province_id' => 7,
                 'district_id' => 60,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            29 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            29 => [
                 'id' => 530,
                 'type' => 'ឃុំ',
                 'code' => '70205',
@@ -6378,11 +5846,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Samraong Leu',
                 'province_id' => 7,
                 'district_id' => 60,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            30 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            30 => [
                 'id' => 531,
                 'type' => 'ឃុំ',
                 'code' => '70206',
@@ -6390,11 +5857,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sdach Kong Khang Cheung',
                 'province_id' => 7,
                 'district_id' => 60,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            31 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            31 => [
                 'id' => 532,
                 'type' => 'ឃុំ',
                 'code' => '70207',
@@ -6402,11 +5868,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sdach Kong Khang lech',
                 'province_id' => 7,
                 'district_id' => 60,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            32 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            32 => [
                 'id' => 533,
                 'type' => 'ឃុំ',
                 'code' => '70208',
@@ -6414,11 +5879,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sdach Kong Khang Tboung',
                 'province_id' => 7,
                 'district_id' => 60,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            33 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            33 => [
                 'id' => 534,
                 'type' => 'ឃុំ',
                 'code' => '70209',
@@ -6426,11 +5890,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tnoat Chong Srang',
                 'province_id' => 7,
                 'district_id' => 60,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            34 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            34 => [
                 'id' => 535,
                 'type' => 'ឃុំ',
                 'code' => '70210',
@@ -6438,11 +5901,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Sala Khang Kaeut',
                 'province_id' => 7,
                 'district_id' => 60,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            35 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            35 => [
                 'id' => 536,
                 'type' => 'ឃុំ',
                 'code' => '70211',
@@ -6450,11 +5912,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Sala Khang Lech',
                 'province_id' => 7,
                 'district_id' => 60,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            36 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            36 => [
                 'id' => 537,
                 'type' => 'ឃុំ',
                 'code' => '70212',
@@ -6462,11 +5923,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuk Meas Khang Kaeut',
                 'province_id' => 7,
                 'district_id' => 60,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            37 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            37 => [
                 'id' => 538,
                 'type' => 'ឃុំ',
                 'code' => '70213',
@@ -6474,11 +5934,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuk Meas Khang Lech',
                 'province_id' => 7,
                 'district_id' => 60,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            38 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            38 => [
                 'id' => 539,
                 'type' => 'ឃុំ',
                 'code' => '70214',
@@ -6486,11 +5945,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Voat Angk Khang Cheung',
                 'province_id' => 7,
                 'district_id' => 60,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            39 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            39 => [
                 'id' => 540,
                 'type' => 'ឃុំ',
                 'code' => '70215',
@@ -6498,11 +5956,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Voat Angk Khang Tboung',
                 'province_id' => 7,
                 'district_id' => 60,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            40 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            40 => [
                 'id' => 541,
                 'type' => 'ឃុំ',
                 'code' => '70301',
@@ -6510,11 +5967,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Baniev',
                 'province_id' => 7,
                 'district_id' => 61,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            41 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            41 => [
                 'id' => 542,
                 'type' => 'ឃុំ',
                 'code' => '70302',
@@ -6522,11 +5978,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Takaen',
                 'province_id' => 7,
                 'district_id' => 61,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            42 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            42 => [
                 'id' => 543,
                 'type' => 'ឃុំ',
                 'code' => '70303',
@@ -6534,11 +5989,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Nimol',
                 'province_id' => 7,
                 'district_id' => 61,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            43 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            43 => [
                 'id' => 544,
                 'type' => 'ឃុំ',
                 'code' => '70304',
@@ -6546,11 +6000,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chhuk',
                 'province_id' => 7,
                 'district_id' => 61,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            44 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            44 => [
                 'id' => 545,
                 'type' => 'ឃុំ',
                 'code' => '70305',
@@ -6558,11 +6011,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Doun Yay',
                 'province_id' => 7,
                 'district_id' => 61,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            45 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            45 => [
                 'id' => 546,
                 'type' => 'ឃុំ',
                 'code' => '70306',
@@ -6570,11 +6022,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Krang Sbov',
                 'province_id' => 7,
                 'district_id' => 61,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            46 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            46 => [
                 'id' => 547,
                 'type' => 'ឃុំ',
                 'code' => '70307',
@@ -6582,11 +6033,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Krang Snay',
                 'province_id' => 7,
                 'district_id' => 61,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            47 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            47 => [
                 'id' => 548,
                 'type' => 'ឃុំ',
                 'code' => '70308',
@@ -6594,11 +6044,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Lbaeuk',
                 'province_id' => 7,
                 'district_id' => 61,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            48 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            48 => [
                 'id' => 549,
                 'type' => 'ឃុំ',
                 'code' => '70309',
@@ -6606,11 +6055,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Phleang',
                 'province_id' => 7,
                 'district_id' => 61,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            49 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            49 => [
                 'id' => 550,
                 'type' => 'ឃុំ',
                 'code' => '70310',
@@ -6618,11 +6066,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Mean Chey',
                 'province_id' => 7,
                 'district_id' => 61,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            50 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            50 => [
                 'id' => 551,
                 'type' => 'ឃុំ',
                 'code' => '70311',
@@ -6630,11 +6077,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Neareay',
                 'province_id' => 7,
                 'district_id' => 61,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            51 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            51 => [
                 'id' => 552,
                 'type' => 'ឃុំ',
                 'code' => '70312',
@@ -6642,11 +6088,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Satv Pong',
                 'province_id' => 7,
                 'district_id' => 61,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            52 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            52 => [
                 'id' => 553,
                 'type' => 'ឃុំ',
                 'code' => '70313',
@@ -6654,11 +6099,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Bei',
                 'province_id' => 7,
                 'district_id' => 61,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            53 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            53 => [
                 'id' => 554,
                 'type' => 'ឃុំ',
                 'code' => '70314',
@@ -6666,11 +6110,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tramaeng',
                 'province_id' => 7,
                 'district_id' => 61,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            54 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            54 => [
                 'id' => 555,
                 'type' => 'ឃុំ',
                 'code' => '70315',
@@ -6678,11 +6121,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Dechou Akphivoadth',
                 'province_id' => 7,
                 'district_id' => 61,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            55 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            55 => [
                 'id' => 556,
                 'type' => 'ឃុំ',
                 'code' => '70401',
@@ -6690,11 +6132,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chres',
                 'province_id' => 7,
                 'district_id' => 62,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            56 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            56 => [
                 'id' => 557,
                 'type' => 'ឃុំ',
                 'code' => '70402',
@@ -6702,11 +6143,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chumpu Voan',
                 'province_id' => 7,
                 'district_id' => 62,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            57 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            57 => [
                 'id' => 558,
                 'type' => 'ឃុំ',
                 'code' => '70403',
@@ -6714,11 +6154,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Snay Anhchit',
                 'province_id' => 7,
                 'district_id' => 62,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            58 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            58 => [
                 'id' => 559,
                 'type' => 'ឃុំ',
                 'code' => '70404',
@@ -6726,11 +6165,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srae Chaeng',
                 'province_id' => 7,
                 'district_id' => 62,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            59 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            59 => [
                 'id' => 560,
                 'type' => 'ឃុំ',
                 'code' => '70405',
@@ -6738,11 +6176,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srae Knong',
                 'province_id' => 7,
                 'district_id' => 62,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            60 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            60 => [
                 'id' => 561,
                 'type' => 'ឃុំ',
                 'code' => '70406',
@@ -6750,11 +6187,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srae Samraong',
                 'province_id' => 7,
                 'district_id' => 62,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            61 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            61 => [
                 'id' => 562,
                 'type' => 'ឃុំ',
                 'code' => '70407',
@@ -6762,11 +6198,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Reang',
                 'province_id' => 7,
                 'district_id' => 62,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            62 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            62 => [
                 'id' => 563,
                 'type' => 'ឃុំ',
                 'code' => '70501',
@@ -6774,11 +6209,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Damnak Sokram',
                 'province_id' => 7,
                 'district_id' => 63,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            63 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            63 => [
                 'id' => 564,
                 'type' => 'ឃុំ',
                 'code' => '70502',
@@ -6786,11 +6220,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Dang Tong',
                 'province_id' => 7,
                 'district_id' => 63,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            64 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            64 => [
                 'id' => 565,
                 'type' => 'ឃុំ',
                 'code' => '70503',
@@ -6798,11 +6231,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khcheay Khang Cheung',
                 'province_id' => 7,
                 'district_id' => 63,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            65 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            65 => [
                 'id' => 566,
                 'type' => 'ឃុំ',
                 'code' => '70504',
@@ -6810,11 +6242,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khcheay Khang Tboung',
                 'province_id' => 7,
                 'district_id' => 63,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            66 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            66 => [
                 'id' => 567,
                 'type' => 'ឃុំ',
                 'code' => '70505',
@@ -6822,11 +6253,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Mean Ritth',
                 'province_id' => 7,
                 'district_id' => 63,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            67 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            67 => [
                 'id' => 568,
                 'type' => 'ឃុំ',
                 'code' => '70506',
@@ -6834,11 +6264,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srae Chea Khang Cheung',
                 'province_id' => 7,
                 'district_id' => 63,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            68 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            68 => [
                 'id' => 569,
                 'type' => 'ឃុំ',
                 'code' => '70507',
@@ -6846,11 +6275,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srae Chea Khang Tboung',
                 'province_id' => 7,
                 'district_id' => 63,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            69 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            69 => [
                 'id' => 570,
                 'type' => 'ឃុំ',
                 'code' => '70508',
@@ -6858,11 +6286,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Totung',
                 'province_id' => 7,
                 'district_id' => 63,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            70 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            70 => [
                 'id' => 571,
                 'type' => 'ឃុំ',
                 'code' => '70509',
@@ -6870,11 +6297,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Angk  Romeas',
                 'province_id' => 7,
                 'district_id' => 63,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            71 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            71 => [
                 'id' => 572,
                 'type' => 'ឃុំ',
                 'code' => '70510',
@@ -6882,11 +6308,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'L\'ang',
                 'province_id' => 7,
                 'district_id' => 63,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            72 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            72 => [
                 'id' => 573,
                 'type' => 'ឃុំ',
                 'code' => '70601',
@@ -6894,11 +6319,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Sala Khang Cheung',
                 'province_id' => 7,
                 'district_id' => 64,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            73 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            73 => [
                 'id' => 574,
                 'type' => 'ឃុំ',
                 'code' => '70602',
@@ -6906,11 +6330,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Sala Khang Tboung',
                 'province_id' => 7,
                 'district_id' => 64,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            74 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            74 => [
                 'id' => 575,
                 'type' => 'ឃុំ',
                 'code' => '70603',
@@ -6918,11 +6341,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Damnak Kantuot Khang Cheung',
                 'province_id' => 7,
                 'district_id' => 64,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            75 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            75 => [
                 'id' => 576,
                 'type' => 'ឃុំ',
                 'code' => '70604',
@@ -6930,11 +6352,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Damnak Kantuot Khang Tboung',
                 'province_id' => 7,
                 'district_id' => 64,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            76 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            76 => [
                 'id' => 577,
                 'type' => 'ឃុំ',
                 'code' => '70605',
@@ -6942,11 +6363,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Trach Khang Kaeut',
                 'province_id' => 7,
                 'district_id' => 64,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            77 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            77 => [
                 'id' => 578,
                 'type' => 'ឃុំ',
                 'code' => '70606',
@@ -6954,11 +6374,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Trach Khang Lech',
                 'province_id' => 7,
                 'district_id' => 64,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            78 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            78 => [
                 'id' => 579,
                 'type' => 'ឃុំ',
                 'code' => '70607',
@@ -6966,11 +6385,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prasat Phnom Khyang',
                 'province_id' => 7,
                 'district_id' => 64,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            79 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            79 => [
                 'id' => 580,
                 'type' => 'ឃុំ',
                 'code' => '70608',
@@ -6978,11 +6396,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phnom Prasat',
                 'province_id' => 7,
                 'district_id' => 64,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            80 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            80 => [
                 'id' => 581,
                 'type' => 'ឃុំ',
                 'code' => '70609',
@@ -6990,11 +6407,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ang Sophy',
                 'province_id' => 7,
                 'district_id' => 64,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            81 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            81 => [
                 'id' => 582,
                 'type' => 'ឃុំ',
                 'code' => '70612',
@@ -7002,11 +6418,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Kroes',
                 'province_id' => 7,
                 'district_id' => 64,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            82 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            82 => [
                 'id' => 583,
                 'type' => 'ឃុំ',
                 'code' => '70613',
@@ -7014,11 +6429,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ruessei Srok Khang Kaeut',
                 'province_id' => 7,
                 'district_id' => 64,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            83 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            83 => [
                 'id' => 584,
                 'type' => 'ឃុំ',
                 'code' => '70614',
@@ -7026,11 +6440,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ruessei Srok Khang Lech',
                 'province_id' => 7,
                 'district_id' => 64,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            84 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            84 => [
                 'id' => 585,
                 'type' => 'ឃុំ',
                 'code' => '70615',
@@ -7038,11 +6451,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Tong Khang Cheung',
                 'province_id' => 7,
                 'district_id' => 64,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            85 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            85 => [
                 'id' => 586,
                 'type' => 'ឃុំ',
                 'code' => '70616',
@@ -7050,11 +6462,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Tong Khang Tboung',
                 'province_id' => 7,
                 'district_id' => 64,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            86 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            86 => [
                 'id' => 587,
                 'type' => 'ឃុំ',
                 'code' => '70701',
@@ -7062,11 +6473,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Tuk',
                 'province_id' => 7,
                 'district_id' => 65,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            87 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            87 => [
                 'id' => 588,
                 'type' => 'ឃុំ',
                 'code' => '70702',
@@ -7074,11 +6484,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chum Kriel',
                 'province_id' => 7,
                 'district_id' => 65,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            88 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            88 => [
                 'id' => 589,
                 'type' => 'ឃុំ',
                 'code' => '70703',
@@ -7086,11 +6495,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Kraeng',
                 'province_id' => 7,
                 'district_id' => 65,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            89 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            89 => [
                 'id' => 590,
                 'type' => 'ឃុំ',
                 'code' => '70704',
@@ -7098,11 +6506,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Samraong',
                 'province_id' => 7,
                 'district_id' => 65,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            90 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            90 => [
                 'id' => 591,
                 'type' => 'ឃុំ',
                 'code' => '70705',
@@ -7110,11 +6517,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kandaol',
                 'province_id' => 7,
                 'district_id' => 65,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            91 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            91 => [
                 'id' => 592,
                 'type' => 'ឃុំ',
                 'code' => '70707',
@@ -7122,11 +6528,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Touch',
                 'province_id' => 7,
                 'district_id' => 65,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            92 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            92 => [
                 'id' => 593,
                 'type' => 'ឃុំ',
                 'code' => '70708',
@@ -7134,11 +6539,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Koun Satv',
                 'province_id' => 7,
                 'district_id' => 65,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            93 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            93 => [
                 'id' => 594,
                 'type' => 'ឃុំ',
                 'code' => '70709',
@@ -7146,11 +6550,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Makprang',
                 'province_id' => 7,
                 'district_id' => 65,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            94 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            94 => [
                 'id' => 595,
                 'type' => 'ឃុំ',
                 'code' => '70711',
@@ -7158,11 +6561,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Tnoat',
                 'province_id' => 7,
                 'district_id' => 65,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            95 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            95 => [
                 'id' => 596,
                 'type' => 'ឃុំ',
                 'code' => '70712',
@@ -7170,11 +6572,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Khmum',
                 'province_id' => 7,
                 'district_id' => 65,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            96 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            96 => [
                 'id' => 597,
                 'type' => 'ឃុំ',
                 'code' => '70713',
@@ -7182,11 +6583,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Thnang',
                 'province_id' => 7,
                 'district_id' => 65,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            97 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            97 => [
                 'id' => 598,
                 'type' => 'ឃុំ',
                 'code' => '70715',
@@ -7194,11 +6594,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Stueng Kaev',
                 'province_id' => 7,
                 'district_id' => 65,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            98 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            98 => [
                 'id' => 599,
                 'type' => 'ឃុំ',
                 'code' => '70716',
@@ -7206,11 +6605,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Thmei',
                 'province_id' => 7,
                 'district_id' => 65,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            99 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            99 => [
                 'id' => 600,
                 'type' => 'ឃុំ',
                 'code' => '70717',
@@ -7218,11 +6616,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Pring',
                 'province_id' => 7,
                 'district_id' => 65,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            100 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            100 => [
                 'id' => 601,
                 'type' => 'ឃុំ',
                 'code' => '70718',
@@ -7230,11 +6627,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Sangkae',
                 'province_id' => 7,
                 'district_id' => 65,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            101 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            101 => [
                 'id' => 602,
                 'type' => 'ឃុំ',
                 'code' => '70719',
@@ -7242,11 +6638,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Thum',
                 'province_id' => 7,
                 'district_id' => 65,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            102 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            102 => [
                 'id' => 603,
                 'type' => 'សង្កាត់',
                 'code' => '70801',
@@ -7254,11 +6649,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Kandal',
                 'province_id' => 7,
                 'district_id' => 66,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            103 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            103 => [
                 'id' => 604,
                 'type' => 'សង្កាត់',
                 'code' => '70802',
@@ -7266,11 +6660,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Krang Ampil',
                 'province_id' => 7,
                 'district_id' => 66,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            104 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            104 => [
                 'id' => 605,
                 'type' => 'សង្កាត់',
                 'code' => '70803',
@@ -7278,11 +6671,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Bay',
                 'province_id' => 7,
                 'district_id' => 66,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            105 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            105 => [
                 'id' => 606,
                 'type' => 'សង្កាត់',
                 'code' => '70804',
@@ -7290,11 +6682,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Andoung Khmer',
                 'province_id' => 7,
                 'district_id' => 66,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            106 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            106 => [
                 'id' => 607,
                 'type' => 'សង្កាត់',
                 'code' => '70805',
@@ -7302,11 +6693,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Traeuy Kaoh',
                 'province_id' => 7,
                 'district_id' => 66,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            107 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            107 => [
                 'id' => 608,
                 'type' => 'ឃុំ',
                 'code' => '80101',
@@ -7314,11 +6704,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ampov Prey',
                 'province_id' => 8,
                 'district_id' => 67,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            108 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            108 => [
                 'id' => 609,
                 'type' => 'ឃុំ',
                 'code' => '80102',
@@ -7326,11 +6715,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Anlong Romiet',
                 'province_id' => 8,
                 'district_id' => 67,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            109 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            109 => [
                 'id' => 610,
                 'type' => 'ឃុំ',
                 'code' => '80103',
@@ -7338,11 +6726,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Barku',
                 'province_id' => 8,
                 'district_id' => 67,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            110 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            110 => [
                 'id' => 611,
                 'type' => 'ឃុំ',
                 'code' => '80104',
@@ -7350,11 +6737,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Khyang',
                 'province_id' => 8,
                 'district_id' => 67,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            111 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            111 => [
                 'id' => 612,
                 'type' => 'ឃុំ',
                 'code' => '80105',
@@ -7362,11 +6748,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Cheung Kaeub',
                 'province_id' => 8,
                 'district_id' => 67,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            112 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            112 => [
                 'id' => 613,
                 'type' => 'ឃុំ',
                 'code' => '80106',
@@ -7374,11 +6759,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Daeum Rues',
                 'province_id' => 8,
                 'district_id' => 67,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            113 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            113 => [
                 'id' => 614,
                 'type' => 'ឃុំ',
                 'code' => '80107',
@@ -7386,11 +6770,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kandaok',
                 'province_id' => 8,
                 'district_id' => 67,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            114 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            114 => [
                 'id' => 615,
                 'type' => 'ឃុំ',
                 'code' => '80108',
@@ -7398,11 +6781,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Thmei',
                 'province_id' => 8,
                 'district_id' => 67,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            115 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            115 => [
                 'id' => 616,
                 'type' => 'ឃុំ',
                 'code' => '80109',
@@ -7410,11 +6792,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kouk Trab',
                 'province_id' => 8,
                 'district_id' => 67,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            116 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            116 => [
                 'id' => 617,
                 'type' => 'ឃុំ',
                 'code' => '80113',
@@ -7422,11 +6803,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preah Putth',
                 'province_id' => 8,
                 'district_id' => 67,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            117 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            117 => [
                 'id' => 618,
                 'type' => 'ឃុំ',
                 'code' => '80115',
@@ -7434,11 +6814,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Roka',
                 'province_id' => 8,
                 'district_id' => 67,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            118 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            118 => [
                 'id' => 619,
                 'type' => 'ឃុំ',
                 'code' => '80116',
@@ -7446,11 +6825,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Slaeng',
                 'province_id' => 8,
                 'district_id' => 67,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            119 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            119 => [
                 'id' => 620,
                 'type' => 'ឃុំ',
                 'code' => '80117',
@@ -7458,11 +6836,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Roka',
                 'province_id' => 8,
                 'district_id' => 67,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            120 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            120 => [
                 'id' => 621,
                 'type' => 'ឃុំ',
                 'code' => '80118',
@@ -7470,11 +6847,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Roleang Kaen',
                 'province_id' => 8,
                 'district_id' => 67,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            121 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            121 => [
                 'id' => 622,
                 'type' => 'ឃុំ',
                 'code' => '80122',
@@ -7482,11 +6858,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Siem Reab',
                 'province_id' => 8,
                 'district_id' => 67,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            122 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            122 => [
                 'id' => 623,
                 'type' => 'ឃុំ',
                 'code' => '80125',
@@ -7494,11 +6869,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tbaeng',
                 'province_id' => 8,
                 'district_id' => 67,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            123 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            123 => [
                 'id' => 624,
                 'type' => 'ឃុំ',
                 'code' => '80127',
@@ -7506,11 +6880,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Veaeng',
                 'province_id' => 8,
                 'district_id' => 67,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            124 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            124 => [
                 'id' => 625,
                 'type' => 'ឃុំ',
                 'code' => '80128',
@@ -7518,11 +6891,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trea',
                 'province_id' => 8,
                 'district_id' => 67,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            125 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            125 => [
                 'id' => 626,
                 'type' => 'ឃុំ',
                 'code' => '80201',
@@ -7530,11 +6902,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Banteay Daek',
                 'province_id' => 8,
                 'district_id' => 68,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            126 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            126 => [
                 'id' => 627,
                 'type' => 'ឃុំ',
                 'code' => '80202',
@@ -7542,11 +6913,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chheu Teal',
                 'province_id' => 8,
                 'district_id' => 68,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            127 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            127 => [
                 'id' => 628,
                 'type' => 'ឃុំ',
                 'code' => '80203',
@@ -7554,11 +6924,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Dei Edth',
                 'province_id' => 8,
                 'district_id' => 68,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            128 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            128 => [
                 'id' => 629,
                 'type' => 'ឃុំ',
                 'code' => '80204',
@@ -7566,11 +6935,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Svay',
                 'province_id' => 8,
                 'district_id' => 68,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            129 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            129 => [
                 'id' => 630,
                 'type' => 'ឃុំ',
                 'code' => '80206',
@@ -7578,11 +6946,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kokir',
                 'province_id' => 8,
                 'district_id' => 68,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            130 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            130 => [
                 'id' => 631,
                 'type' => 'ឃុំ',
                 'code' => '80207',
@@ -7590,11 +6957,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kokir Thum',
                 'province_id' => 8,
                 'district_id' => 68,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            131 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            131 => [
                 'id' => 632,
                 'type' => 'ឃុំ',
                 'code' => '80208',
@@ -7602,11 +6968,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phum Thum',
                 'province_id' => 8,
                 'district_id' => 68,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            132 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            132 => [
                 'id' => 633,
                 'type' => 'ឃុំ',
                 'code' => '80211',
@@ -7614,11 +6979,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Samraong Thum',
                 'province_id' => 8,
                 'district_id' => 68,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            133 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            133 => [
                 'id' => 634,
                 'type' => 'ឃុំ',
                 'code' => '80301',
@@ -7626,11 +6990,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Bak Dav',
                 'province_id' => 8,
                 'district_id' => 69,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            134 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            134 => [
                 'id' => 635,
                 'type' => 'ឃុំ',
                 'code' => '80302',
@@ -7638,11 +7001,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chey Thum',
                 'province_id' => 8,
                 'district_id' => 69,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            135 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            135 => [
                 'id' => 636,
                 'type' => 'ឃុំ',
                 'code' => '80303',
@@ -7650,11 +7012,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Chamlang',
                 'province_id' => 8,
                 'district_id' => 69,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            136 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            136 => [
                 'id' => 637,
                 'type' => 'ឃុំ',
                 'code' => '80304',
@@ -7662,11 +7023,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Chouram',
                 'province_id' => 8,
                 'district_id' => 69,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            137 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            137 => [
                 'id' => 638,
                 'type' => 'ឃុំ',
                 'code' => '80305',
@@ -7674,11 +7034,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Oknha Tei',
                 'province_id' => 8,
                 'district_id' => 69,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            138 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            138 => [
                 'id' => 639,
                 'type' => 'ឃុំ',
                 'code' => '80306',
@@ -7686,11 +7045,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preah Prasab',
                 'province_id' => 8,
                 'district_id' => 69,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            139 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            139 => [
                 'id' => 640,
                 'type' => 'ឃុំ',
                 'code' => '80307',
@@ -7698,11 +7056,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Ampil',
                 'province_id' => 8,
                 'district_id' => 69,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            140 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            140 => [
                 'id' => 641,
                 'type' => 'ឃុំ',
                 'code' => '80308',
@@ -7710,11 +7067,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Luong',
                 'province_id' => 8,
                 'district_id' => 69,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            141 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            141 => [
                 'id' => 642,
                 'type' => 'ឃុំ',
                 'code' => '80309',
@@ -7722,11 +7078,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Ta kov',
                 'province_id' => 8,
                 'district_id' => 69,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            142 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            142 => [
                 'id' => 643,
                 'type' => 'ឃុំ',
                 'code' => '80310',
@@ -7734,11 +7089,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Ta Meak',
                 'province_id' => 8,
                 'district_id' => 69,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            143 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            143 => [
                 'id' => 644,
                 'type' => 'ឃុំ',
                 'code' => '80311',
@@ -7746,11 +7100,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Puk Ruessei',
                 'province_id' => 8,
                 'district_id' => 69,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            144 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            144 => [
                 'id' => 645,
                 'type' => 'ឃុំ',
                 'code' => '80312',
@@ -7758,11 +7111,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Roka Chonlueng',
                 'province_id' => 8,
                 'district_id' => 69,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            145 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            145 => [
                 'id' => 646,
                 'type' => 'ឃុំ',
                 'code' => '80313',
@@ -7770,11 +7122,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sanlung',
                 'province_id' => 8,
                 'district_id' => 69,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            146 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            146 => [
                 'id' => 647,
                 'type' => 'ឃុំ',
                 'code' => '80314',
@@ -7782,11 +7133,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sithor',
                 'province_id' => 8,
                 'district_id' => 69,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            147 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            147 => [
                 'id' => 648,
                 'type' => 'ឃុំ',
                 'code' => '80315',
@@ -7794,11 +7144,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Chrum',
                 'province_id' => 8,
                 'district_id' => 69,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            148 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            148 => [
                 'id' => 649,
                 'type' => 'ឃុំ',
                 'code' => '80316',
@@ -7806,11 +7155,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Romiet',
                 'province_id' => 8,
                 'district_id' => 69,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            149 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            149 => [
                 'id' => 650,
                 'type' => 'ឃុំ',
                 'code' => '80317',
@@ -7818,11 +7166,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Aek',
                 'province_id' => 8,
                 'district_id' => 69,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            150 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            150 => [
                 'id' => 651,
                 'type' => 'ឃុំ',
                 'code' => '80318',
@@ -7830,11 +7177,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Vihear Suork',
                 'province_id' => 8,
                 'district_id' => 69,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            151 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            151 => [
                 'id' => 652,
                 'type' => 'ឃុំ',
                 'code' => '80401',
@@ -7842,11 +7188,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chheu Kmau',
                 'province_id' => 8,
                 'district_id' => 70,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            152 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            152 => [
                 'id' => 653,
                 'type' => 'ឃុំ',
                 'code' => '80402',
@@ -7854,11 +7199,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chrouy Ta Kaev',
                 'province_id' => 8,
                 'district_id' => 70,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            153 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            153 => [
                 'id' => 654,
                 'type' => 'ឃុំ',
                 'code' => '80403',
@@ -7866,11 +7210,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Kong',
                 'province_id' => 8,
                 'district_id' => 70,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            154 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            154 => [
                 'id' => 655,
                 'type' => 'ឃុំ',
                 'code' => '80404',
@@ -7878,11 +7221,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Thum Ka',
                 'province_id' => 8,
                 'district_id' => 70,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            155 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            155 => [
                 'id' => 656,
                 'type' => 'ឃុំ',
                 'code' => '80405',
@@ -7890,11 +7232,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Thum Kha',
                 'province_id' => 8,
                 'district_id' => 70,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            156 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            156 => [
                 'id' => 657,
                 'type' => 'ឃុំ',
                 'code' => '80407',
@@ -7902,11 +7243,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Leuk Daek',
                 'province_id' => 8,
                 'district_id' => 70,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            157 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            157 => [
                 'id' => 658,
                 'type' => 'ឃុំ',
                 'code' => '80408',
@@ -7914,11 +7254,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pouthi Ban',
                 'province_id' => 8,
                 'district_id' => 70,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            158 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            158 => [
                 'id' => 659,
                 'type' => 'ឃុំ',
                 'code' => '80409',
@@ -7926,11 +7265,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prea​ek Chrey',
                 'province_id' => 8,
                 'district_id' => 70,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            159 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            159 => [
                 'id' => 660,
                 'type' => 'ឃុំ',
                 'code' => '80410',
@@ -7938,11 +7276,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Sdei',
                 'province_id' => 8,
                 'district_id' => 70,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            160 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            160 => [
                 'id' => 661,
                 'type' => 'ឃុំ',
                 'code' => '80411',
@@ -7950,11 +7287,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Thmei',
                 'province_id' => 8,
                 'district_id' => 70,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            161 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            161 => [
                 'id' => 662,
                 'type' => 'ឃុំ',
                 'code' => '80412',
@@ -7962,11 +7298,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sampeou Poun',
                 'province_id' => 8,
                 'district_id' => 70,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            162 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            162 => [
                 'id' => 663,
                 'type' => 'ឃុំ',
                 'code' => '80501',
@@ -7974,11 +7309,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Phnum',
                 'province_id' => 8,
                 'district_id' => 71,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            163 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            163 => [
                 'id' => 664,
                 'type' => 'ឃុំ',
                 'code' => '80502',
@@ -7986,11 +7320,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'K\'am Samnar',
                 'province_id' => 8,
                 'district_id' => 71,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            164 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            164 => [
                 'id' => 665,
                 'type' => 'ឃុំ',
                 'code' => '80503',
@@ -7998,11 +7331,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khpob Ateav',
                 'province_id' => 8,
                 'district_id' => 71,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            165 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            165 => [
                 'id' => 666,
                 'type' => 'ឃុំ',
                 'code' => '80504',
@@ -8010,11 +7342,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Peam Reang',
                 'province_id' => 8,
                 'district_id' => 71,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            166 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            166 => [
                 'id' => 667,
                 'type' => 'ឃុំ',
                 'code' => '80505',
@@ -8022,11 +7353,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Dach',
                 'province_id' => 8,
                 'district_id' => 71,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            167 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            167 => [
                 'id' => 668,
                 'type' => 'ឃុំ',
                 'code' => '80506',
@@ -8034,11 +7364,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Tonloab',
                 'province_id' => 8,
                 'district_id' => 71,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            168 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            168 => [
                 'id' => 669,
                 'type' => 'ឃុំ',
                 'code' => '80507',
@@ -8046,11 +7375,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sandar',
                 'province_id' => 8,
                 'district_id' => 71,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            169 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            169 => [
                 'id' => 670,
                 'type' => 'ឃុំ',
                 'code' => '80601',
@@ -8058,11 +7386,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Akreiy Ksatr',
                 'province_id' => 8,
                 'district_id' => 72,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            170 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            170 => [
                 'id' => 671,
                 'type' => 'ឃុំ',
                 'code' => '80602',
@@ -8070,11 +7397,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Barong',
                 'province_id' => 8,
                 'district_id' => 72,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            171 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            171 => [
                 'id' => 672,
                 'type' => 'ឃុំ',
                 'code' => '80603',
@@ -8082,11 +7408,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Krum',
                 'province_id' => 8,
                 'district_id' => 72,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            172 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            172 => [
                 'id' => 673,
                 'type' => 'ឃុំ',
                 'code' => '80604',
@@ -8094,11 +7419,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Kaev',
                 'province_id' => 8,
                 'district_id' => 72,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            173 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            173 => [
                 'id' => 674,
                 'type' => 'ឃុំ',
                 'code' => '80605',
@@ -8106,11 +7430,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Reah',
                 'province_id' => 8,
                 'district_id' => 72,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            174 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            174 => [
                 'id' => 675,
                 'type' => 'ឃុំ',
                 'code' => '80606',
@@ -8118,11 +7441,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Lvea Sar',
                 'province_id' => 8,
                 'district_id' => 72,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            175 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            175 => [
                 'id' => 676,
                 'type' => 'ឃុំ',
                 'code' => '80607',
@@ -8130,11 +7452,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Peam Oknha Ong',
                 'province_id' => 8,
                 'district_id' => 72,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            176 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            176 => [
                 'id' => 677,
                 'type' => 'ឃុំ',
                 'code' => '80608',
@@ -8142,11 +7463,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phum Thum',
                 'province_id' => 8,
                 'district_id' => 72,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            177 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            177 => [
                 'id' => 678,
                 'type' => 'ឃុំ',
                 'code' => '80609',
@@ -8154,11 +7474,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Kmeng',
                 'province_id' => 8,
                 'district_id' => 72,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            178 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            178 => [
                 'id' => 679,
                 'type' => 'ឃុំ',
                 'code' => '80610',
@@ -8166,11 +7485,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Rey',
                 'province_id' => 8,
                 'district_id' => 72,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            179 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            179 => [
                 'id' => 680,
                 'type' => 'ឃុំ',
                 'code' => '80611',
@@ -8178,11 +7496,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Ruessei',
                 'province_id' => 8,
                 'district_id' => 72,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            180 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            180 => [
                 'id' => 681,
                 'type' => 'ឃុំ',
                 'code' => '80612',
@@ -8190,11 +7507,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sambuor',
                 'province_id' => 8,
                 'district_id' => 72,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            181 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            181 => [
                 'id' => 682,
                 'type' => 'ឃុំ',
                 'code' => '80613',
@@ -8202,11 +7518,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sarikakaev',
                 'province_id' => 8,
                 'district_id' => 72,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            182 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            182 => [
                 'id' => 683,
                 'type' => 'ឃុំ',
                 'code' => '80614',
@@ -8214,11 +7529,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Thma Kor',
                 'province_id' => 8,
                 'district_id' => 72,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            183 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            183 => [
                 'id' => 684,
                 'type' => 'ឃុំ',
                 'code' => '80615',
@@ -8226,11 +7540,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuek Khleang',
                 'province_id' => 8,
                 'district_id' => 72,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            184 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            184 => [
                 'id' => 685,
                 'type' => 'ឃុំ',
                 'code' => '80703',
@@ -8238,11 +7551,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Anhchanh',
                 'province_id' => 8,
                 'district_id' => 73,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            185 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            185 => [
                 'id' => 686,
                 'type' => 'ឃុំ',
                 'code' => '80704',
@@ -8250,11 +7562,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Dambang',
                 'province_id' => 8,
                 'district_id' => 73,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            186 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            186 => [
                 'id' => 687,
                 'type' => 'ឃុំ',
                 'code' => '80707',
@@ -8262,11 +7573,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Roka Kong Ti Muoy',
                 'province_id' => 8,
                 'district_id' => 73,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            187 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            187 => [
                 'id' => 688,
                 'type' => 'ឃុំ',
                 'code' => '80708',
@@ -8274,11 +7584,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Roka Kong Ti Pir',
                 'province_id' => 8,
                 'district_id' => 73,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            188 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            188 => [
                 'id' => 689,
                 'type' => 'ឃុំ',
                 'code' => '80709',
@@ -8286,11 +7595,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ruessei Chrouy',
                 'province_id' => 8,
                 'district_id' => 73,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            189 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            189 => [
                 'id' => 690,
                 'type' => 'ឃុំ',
                 'code' => '80710',
@@ -8298,11 +7606,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sambuor Meas',
                 'province_id' => 8,
                 'district_id' => 73,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            190 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            190 => [
                 'id' => 691,
                 'type' => 'ឃុំ',
                 'code' => '80711',
@@ -8310,11 +7617,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Ampear',
                 'province_id' => 8,
                 'district_id' => 73,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            191 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            191 => [
                 'id' => 692,
                 'type' => 'ឃុំ',
                 'code' => '80801',
@@ -8322,11 +7628,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Baek Chan',
                 'province_id' => 8,
                 'district_id' => 74,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            192 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            192 => [
                 'id' => 693,
                 'type' => 'ឃុំ',
                 'code' => '80803',
@@ -8334,11 +7639,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chhak Chheu Neang',
                 'province_id' => 8,
                 'district_id' => 74,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            193 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            193 => [
                 'id' => 694,
                 'type' => 'ឃុំ',
                 'code' => '80804',
@@ -8346,11 +7650,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Damnak Ampil',
                 'province_id' => 8,
                 'district_id' => 74,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            194 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            194 => [
                 'id' => 695,
                 'type' => 'ឃុំ',
                 'code' => '80807',
@@ -8358,11 +7661,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Krang Mkak',
                 'province_id' => 8,
                 'district_id' => 74,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            195 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            195 => [
                 'id' => 696,
                 'type' => 'ឃុំ',
                 'code' => '80808',
@@ -8370,11 +7672,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Lumhach',
                 'province_id' => 8,
                 'district_id' => 74,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            196 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            196 => [
                 'id' => 697,
                 'type' => 'ឃុំ',
                 'code' => '80809',
@@ -8382,11 +7683,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Mkak',
                 'province_id' => 8,
                 'district_id' => 74,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            197 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            197 => [
                 'id' => 698,
                 'type' => 'ឃុំ',
                 'code' => '80811',
@@ -8394,11 +7694,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Peuk',
                 'province_id' => 8,
                 'district_id' => 74,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            198 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            198 => [
                 'id' => 699,
                 'type' => 'ឃុំ',
                 'code' => '80813',
@@ -8406,11 +7705,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Puoch',
                 'province_id' => 8,
                 'district_id' => 74,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            199 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            199 => [
                 'id' => 700,
                 'type' => 'ឃុំ',
                 'code' => '80814',
@@ -8418,11 +7716,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Samraong Leu',
                 'province_id' => 8,
                 'district_id' => 74,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            200 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            200 => [
                 'id' => 701,
                 'type' => 'ឃុំ',
                 'code' => '80816',
@@ -8430,11 +7727,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuol Prech',
                 'province_id' => 8,
                 'district_id' => 74,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            201 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            201 => [
                 'id' => 702,
                 'type' => 'ឃុំ',
                 'code' => '80901',
@@ -8442,11 +7738,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chhveang',
                 'province_id' => 8,
                 'district_id' => 75,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            202 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            202 => [
                 'id' => 703,
                 'type' => 'ឃុំ',
                 'code' => '80902',
@@ -8454,11 +7749,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chrey Loas',
                 'province_id' => 8,
                 'district_id' => 75,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            203 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            203 => [
                 'id' => 704,
                 'type' => 'ឃុំ',
                 'code' => '80903',
@@ -8466,11 +7760,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Luong',
                 'province_id' => 8,
                 'district_id' => 75,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            204 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            204 => [
                 'id' => 705,
                 'type' => 'ឃុំ',
                 'code' => '80904',
@@ -8478,11 +7771,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Os',
                 'province_id' => 8,
                 'district_id' => 75,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            205 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            205 => [
                 'id' => 706,
                 'type' => 'ឃុំ',
                 'code' => '80905',
@@ -8490,11 +7782,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Chen',
                 'province_id' => 8,
                 'district_id' => 75,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            206 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            206 => [
                 'id' => 707,
                 'type' => 'ឃុំ',
                 'code' => '80906',
@@ -8502,11 +7793,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phnum Bat',
                 'province_id' => 8,
                 'district_id' => 75,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            207 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            207 => [
                 'id' => 708,
                 'type' => 'ឃុំ',
                 'code' => '80907',
@@ -8514,11 +7804,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ponhea Lueu',
                 'province_id' => 8,
                 'district_id' => 75,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            208 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            208 => [
                 'id' => 709,
                 'type' => 'ឃុំ',
                 'code' => '80910',
@@ -8526,11 +7815,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Ta Teaen',
                 'province_id' => 8,
                 'district_id' => 75,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            209 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            209 => [
                 'id' => 710,
                 'type' => 'ឃុំ',
                 'code' => '80911',
@@ -8538,11 +7826,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phsar Daek',
                 'province_id' => 8,
                 'district_id' => 75,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            210 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            210 => [
                 'id' => 711,
                 'type' => 'ឃុំ',
                 'code' => '80913',
@@ -8550,11 +7837,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tumnob Thum',
                 'province_id' => 8,
                 'district_id' => 75,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            211 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            211 => [
                 'id' => 712,
                 'type' => 'ឃុំ',
                 'code' => '80914',
@@ -8562,11 +7848,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Vihear Luong',
                 'province_id' => 8,
                 'district_id' => 75,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            212 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            212 => [
                 'id' => 713,
                 'type' => 'ឃុំ',
                 'code' => '81001',
@@ -8574,11 +7859,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khpob',
                 'province_id' => 8,
                 'district_id' => 76,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            213 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            213 => [
                 'id' => 714,
                 'type' => 'ឃុំ',
                 'code' => '81003',
@@ -8586,11 +7870,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Khael',
                 'province_id' => 8,
                 'district_id' => 76,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            214 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            214 => [
                 'id' => 715,
                 'type' => 'ឃុំ',
                 'code' => '81004',
@@ -8598,11 +7881,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Khsach Tonlea',
                 'province_id' => 8,
                 'district_id' => 76,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            215 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            215 => [
                 'id' => 716,
                 'type' => 'ឃុំ',
                 'code' => '81005',
@@ -8610,11 +7892,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Krang Yov',
                 'province_id' => 8,
                 'district_id' => 76,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            216 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            216 => [
                 'id' => 717,
                 'type' => 'ឃុំ',
                 'code' => '81006',
@@ -8622,11 +7903,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prasat',
                 'province_id' => 8,
                 'district_id' => 76,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            217 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            217 => [
                 'id' => 718,
                 'type' => 'ឃុំ',
                 'code' => '81007',
@@ -8634,11 +7914,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Ambel',
                 'province_id' => 8,
                 'district_id' => 76,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            218 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            218 => [
                 'id' => 719,
                 'type' => 'ឃុំ',
                 'code' => '81008',
@@ -8646,11 +7925,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Koy',
                 'province_id' => 8,
                 'district_id' => 76,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            219 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            219 => [
                 'id' => 720,
                 'type' => 'ឃុំ',
                 'code' => '81010',
@@ -8658,11 +7936,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'S\'ang Phnum',
                 'province_id' => 8,
                 'district_id' => 76,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            220 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            220 => [
                 'id' => 721,
                 'type' => 'ឃុំ',
                 'code' => '81012',
@@ -8670,11 +7947,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Prateal',
                 'province_id' => 8,
                 'district_id' => 76,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            221 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            221 => [
                 'id' => 722,
                 'type' => 'ឃុំ',
                 'code' => '81014',
@@ -8682,11 +7958,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Lon',
                 'province_id' => 8,
                 'district_id' => 76,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            222 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            222 => [
                 'id' => 723,
                 'type' => 'ឃុំ',
                 'code' => '81015',
@@ -8694,11 +7969,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Traeuy Sla',
                 'province_id' => 8,
                 'district_id' => 76,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            223 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            223 => [
                 'id' => 724,
                 'type' => 'ឃុំ',
                 'code' => '81016',
@@ -8706,11 +7980,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuek Vil',
                 'province_id' => 8,
                 'district_id' => 76,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            224 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            224 => [
                 'id' => 725,
                 'type' => 'សង្កាត់',
                 'code' => '81101',
@@ -8718,11 +7991,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Kdol',
                 'province_id' => 8,
                 'district_id' => 77,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            225 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            225 => [
                 'id' => 726,
                 'type' => 'សង្កាត់',
                 'code' => '81102',
@@ -8730,11 +8002,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prek Ruessey',
                 'province_id' => 8,
                 'district_id' => 77,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            226 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            226 => [
                 'id' => 727,
                 'type' => 'សង្កាត់',
                 'code' => '81103',
@@ -8742,11 +8013,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Doeum Mien',
                 'province_id' => 8,
                 'district_id' => 77,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            227 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            227 => [
                 'id' => 728,
                 'type' => 'សង្កាត់',
                 'code' => '81104',
@@ -8754,11 +8024,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Khmao',
                 'province_id' => 8,
                 'district_id' => 77,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            228 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            228 => [
                 'id' => 729,
                 'type' => 'សង្កាត់',
                 'code' => '81105',
@@ -8766,11 +8035,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prek Ho',
                 'province_id' => 8,
                 'district_id' => 77,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            229 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            229 => [
                 'id' => 730,
                 'type' => 'សង្កាត់',
                 'code' => '81106',
@@ -8778,11 +8046,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Samnanh',
                 'province_id' => 8,
                 'district_id' => 77,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            230 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            230 => [
                 'id' => 731,
                 'type' => 'សង្កាត់',
                 'code' => '81107',
@@ -8790,11 +8057,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Rolum',
                 'province_id' => 8,
                 'district_id' => 77,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            231 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            231 => [
                 'id' => 732,
                 'type' => 'សង្កាត់',
                 'code' => '81108',
@@ -8802,11 +8068,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Anlong Chen',
                 'province_id' => 8,
                 'district_id' => 77,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            232 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            232 => [
                 'id' => 733,
                 'type' => 'សង្កាត់',
                 'code' => '81109',
@@ -8814,11 +8079,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Setbou',
                 'province_id' => 8,
                 'district_id' => 77,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            233 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            233 => [
                 'id' => 734,
                 'type' => 'សង្កាត់',
                 'code' => '81110',
@@ -8826,11 +8090,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Roka Khpos',
                 'province_id' => 8,
                 'district_id' => 77,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            234 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            234 => [
                 'id' => 735,
                 'type' => 'ឃុំ',
                 'code' => '90101',
@@ -8838,11 +8101,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Andoung Tuek',
                 'province_id' => 9,
                 'district_id' => 78,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            235 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            235 => [
                 'id' => 736,
                 'type' => 'ឃុំ',
                 'code' => '90102',
@@ -8850,11 +8112,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kandaol',
                 'province_id' => 9,
                 'district_id' => 78,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            236 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            236 => [
                 'id' => 737,
                 'type' => 'ឃុំ',
                 'code' => '90103',
@@ -8862,11 +8123,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Noun',
                 'province_id' => 9,
                 'district_id' => 78,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            237 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            237 => [
                 'id' => 738,
                 'type' => 'ឃុំ',
                 'code' => '90104',
@@ -8874,11 +8134,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Thma Sa',
                 'province_id' => 9,
                 'district_id' => 78,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            238 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            238 => [
                 'id' => 739,
                 'type' => 'ឃុំ',
                 'code' => '90201',
@@ -8886,11 +8145,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Sdach',
                 'province_id' => 9,
                 'district_id' => 79,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            239 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            239 => [
                 'id' => 740,
                 'type' => 'ឃុំ',
                 'code' => '90202',
@@ -8898,11 +8156,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phnhi Meas',
                 'province_id' => 9,
                 'district_id' => 79,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            240 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            240 => [
                 'id' => 741,
                 'type' => 'ឃុំ',
                 'code' => '90203',
@@ -8910,11 +8167,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Khsach',
                 'province_id' => 9,
                 'district_id' => 79,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            241 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            241 => [
                 'id' => 742,
                 'type' => 'ឃុំ',
                 'code' => '90301',
@@ -8922,11 +8178,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chrouy Pras',
                 'province_id' => 9,
                 'district_id' => 80,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            242 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            242 => [
                 'id' => 743,
                 'type' => 'ឃុំ',
                 'code' => '90302',
@@ -8934,11 +8189,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Kapi',
                 'province_id' => 9,
                 'district_id' => 80,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            243 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            243 => [
                 'id' => 744,
                 'type' => 'ឃុំ',
                 'code' => '90303',
@@ -8946,11 +8200,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Tai Kraom',
                 'province_id' => 9,
                 'district_id' => 80,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            244 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            244 => [
                 'id' => 745,
                 'type' => 'ឃុំ',
                 'code' => '90304',
@@ -8958,11 +8211,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Rung',
                 'province_id' => 9,
                 'district_id' => 80,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            245 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            245 => [
                 'id' => 746,
                 'type' => 'សង្កាត់',
                 'code' => '90401',
@@ -8970,11 +8222,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Smach Mean Chey',
                 'province_id' => 9,
                 'district_id' => 81,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            246 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            246 => [
                 'id' => 747,
                 'type' => 'សង្កាត់',
                 'code' => '90402',
@@ -8982,11 +8233,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Dang Tong',
                 'province_id' => 9,
                 'district_id' => 81,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            247 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            247 => [
                 'id' => 748,
                 'type' => 'សង្កាត់',
                 'code' => '90403',
@@ -8994,11 +8244,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Stueng Veaeng',
                 'province_id' => 9,
                 'district_id' => 81,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            248 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            248 => [
                 'id' => 749,
                 'type' => 'ឃុំ',
                 'code' => '90501',
@@ -9006,11 +8255,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pak Khlang',
                 'province_id' => 9,
                 'district_id' => 82,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            249 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            249 => [
                 'id' => 750,
                 'type' => 'ឃុំ',
                 'code' => '90502',
@@ -9018,11 +8266,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Peam Krasaob',
                 'province_id' => 9,
                 'district_id' => 82,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            250 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            250 => [
                 'id' => 751,
                 'type' => 'ឃុំ',
                 'code' => '90503',
@@ -9030,11 +8277,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuol Kokir',
                 'province_id' => 9,
                 'district_id' => 82,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            251 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            251 => [
                 'id' => 752,
                 'type' => 'ឃុំ',
                 'code' => '90601',
@@ -9042,11 +8288,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Preav',
                 'province_id' => 9,
                 'district_id' => 83,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            252 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            252 => [
                 'id' => 753,
                 'type' => 'ឃុំ',
                 'code' => '90602',
@@ -9054,11 +8299,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chi Kha Kraom',
                 'province_id' => 9,
                 'district_id' => 83,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            253 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            253 => [
                 'id' => 754,
                 'type' => 'ឃុំ',
                 'code' => '90603',
@@ -9066,11 +8310,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chi kha Leu',
                 'province_id' => 9,
                 'district_id' => 83,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            254 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            254 => [
                 'id' => 755,
                 'type' => 'ឃុំ',
                 'code' => '90604',
@@ -9078,11 +8321,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chrouy Svay',
                 'province_id' => 9,
                 'district_id' => 83,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            255 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            255 => [
                 'id' => 756,
                 'type' => 'ឃុំ',
                 'code' => '90605',
@@ -9090,11 +8332,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Dang Peaeng',
                 'province_id' => 9,
                 'district_id' => 83,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            256 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            256 => [
                 'id' => 757,
                 'type' => 'ឃុំ',
                 'code' => '90606',
@@ -9102,11 +8343,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srae Ambel',
                 'province_id' => 9,
                 'district_id' => 83,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            257 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            257 => [
                 'id' => 758,
                 'type' => 'ឃុំ',
                 'code' => '90701',
@@ -9114,11 +8354,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Tey Leu',
                 'province_id' => 9,
                 'district_id' => 84,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            258 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            258 => [
                 'id' => 759,
                 'type' => 'ឃុំ',
                 'code' => '90702',
@@ -9126,11 +8365,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pralay',
                 'province_id' => 9,
                 'district_id' => 84,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            259 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            259 => [
                 'id' => 760,
                 'type' => 'ឃុំ',
                 'code' => '90703',
@@ -9138,11 +8376,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chumnoab',
                 'province_id' => 9,
                 'district_id' => 84,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            260 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            260 => [
                 'id' => 761,
                 'type' => 'ឃុំ',
                 'code' => '90704',
@@ -9150,11 +8387,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ruessei Chrum',
                 'province_id' => 9,
                 'district_id' => 84,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            261 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            261 => [
                 'id' => 762,
                 'type' => 'ឃុំ',
                 'code' => '90705',
@@ -9162,11 +8398,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chi Phat',
                 'province_id' => 9,
                 'district_id' => 84,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            262 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            262 => [
                 'id' => 763,
                 'type' => 'ឃុំ',
                 'code' => '90706',
@@ -9174,11 +8409,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Thma Doun Pov',
                 'province_id' => 9,
                 'district_id' => 84,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            263 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            263 => [
                 'id' => 764,
                 'type' => 'ឃុំ',
                 'code' => '100101',
@@ -9186,11 +8420,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chhloung',
                 'province_id' => 10,
                 'district_id' => 85,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            264 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            264 => [
                 'id' => 765,
                 'type' => 'ឃុំ',
                 'code' => '100102',
@@ -9198,11 +8431,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Damrei Phong',
                 'province_id' => 10,
                 'district_id' => 85,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            265 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            265 => [
                 'id' => 766,
                 'type' => 'ឃុំ',
                 'code' => '100103',
@@ -9210,11 +8442,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Han Chey',
                 'province_id' => 10,
                 'district_id' => 85,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            266 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            266 => [
                 'id' => 767,
                 'type' => 'ឃុំ',
                 'code' => '100104',
@@ -9222,11 +8453,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Damrei',
                 'province_id' => 10,
                 'district_id' => 85,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            267 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            267 => [
                 'id' => 768,
                 'type' => 'ឃុំ',
                 'code' => '100105',
@@ -9234,11 +8464,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kanhchor',
                 'province_id' => 10,
                 'district_id' => 85,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            268 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            268 => [
                 'id' => 769,
                 'type' => 'ឃុំ',
                 'code' => '100106',
@@ -9246,11 +8475,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khsach Andeth',
                 'province_id' => 10,
                 'district_id' => 85,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            269 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            269 => [
                 'id' => 770,
                 'type' => 'ឃុំ',
                 'code' => '100107',
@@ -9258,11 +8486,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pongro',
                 'province_id' => 10,
                 'district_id' => 85,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            270 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            270 => [
                 'id' => 771,
                 'type' => 'ឃុំ',
                 'code' => '100108',
@@ -9270,11 +8497,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Saman',
                 'province_id' => 10,
                 'district_id' => 85,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            271 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            271 => [
                 'id' => 772,
                 'type' => 'សង្កាត់',
                 'code' => '100207',
@@ -9282,11 +8508,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Trong',
                 'province_id' => 10,
                 'district_id' => 86,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            272 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            272 => [
                 'id' => 773,
                 'type' => 'សង្កាត់',
                 'code' => '100208',
@@ -9294,11 +8519,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Krakor',
                 'province_id' => 10,
                 'district_id' => 86,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            273 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            273 => [
                 'id' => 774,
                 'type' => 'សង្កាត់',
                 'code' => '100209',
@@ -9306,11 +8530,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kracheh',
                 'province_id' => 10,
                 'district_id' => 86,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            274 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            274 => [
                 'id' => 775,
                 'type' => 'សង្កាត់',
                 'code' => '100210',
@@ -9318,11 +8541,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Ruessei',
                 'province_id' => 10,
                 'district_id' => 86,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            275 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            275 => [
                 'id' => 776,
                 'type' => 'សង្កាត់',
                 'code' => '100211',
@@ -9330,11 +8552,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Roka Kandal',
                 'province_id' => 10,
                 'district_id' => 86,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            276 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            276 => [
                 'id' => 777,
                 'type' => 'ឃុំ',
                 'code' => '100301',
@@ -9342,11 +8563,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chambâk',
                 'province_id' => 10,
                 'district_id' => 87,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            277 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            277 => [
                 'id' => 778,
                 'type' => 'ឃុំ',
                 'code' => '100302',
@@ -9354,11 +8574,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chrouy Banteay',
                 'province_id' => 10,
                 'district_id' => 87,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            278 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            278 => [
                 'id' => 779,
                 'type' => 'ឃុំ',
                 'code' => '100303',
@@ -9366,11 +8585,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Kor',
                 'province_id' => 10,
                 'district_id' => 87,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            279 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            279 => [
                 'id' => 780,
                 'type' => 'ឃុំ',
                 'code' => '100304',
@@ -9378,11 +8596,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Koh Ta Suy',
                 'province_id' => 10,
                 'district_id' => 87,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            280 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            280 => [
                 'id' => 781,
                 'type' => 'ឃុំ',
                 'code' => '100305',
@@ -9390,11 +8607,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Prasab',
                 'province_id' => 10,
                 'district_id' => 87,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            281 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            281 => [
                 'id' => 782,
                 'type' => 'ឃុំ',
                 'code' => '100306',
@@ -9402,11 +8618,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Russey Keo',
                 'province_id' => 10,
                 'district_id' => 87,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            282 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            282 => [
                 'id' => 783,
                 'type' => 'ឃុំ',
                 'code' => '100307',
@@ -9414,11 +8629,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Saob',
                 'province_id' => 10,
                 'district_id' => 87,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            283 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            283 => [
                 'id' => 784,
                 'type' => 'ឃុំ',
                 'code' => '100308',
@@ -9426,11 +8640,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Mao',
                 'province_id' => 10,
                 'district_id' => 87,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            284 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            284 => [
                 'id' => 785,
                 'type' => 'ឃុំ',
                 'code' => '100401',
@@ -9438,11 +8651,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Char',
                 'province_id' => 10,
                 'district_id' => 88,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            285 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            285 => [
                 'id' => 786,
                 'type' => 'ឃុំ',
                 'code' => '100402',
@@ -9450,11 +8662,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Cham',
                 'province_id' => 10,
                 'district_id' => 88,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            286 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            286 => [
                 'id' => 787,
                 'type' => 'ឃុំ',
                 'code' => '100403',
@@ -9462,11 +8673,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kbal Damrei',
                 'province_id' => 10,
                 'district_id' => 88,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            287 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            287 => [
                 'id' => 788,
                 'type' => 'ឃុំ',
                 'code' => '100404',
@@ -9474,11 +8684,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Khnhaer',
                 'province_id' => 10,
                 'district_id' => 88,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            288 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            288 => [
                 'id' => 789,
                 'type' => 'ឃុំ',
                 'code' => '100405',
@@ -9486,11 +8695,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Krieng',
                 'province_id' => 10,
                 'district_id' => 88,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            289 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            289 => [
                 'id' => 790,
                 'type' => 'ឃុំ',
                 'code' => '100406',
@@ -9498,11 +8706,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Roluos Mean Chey',
                 'province_id' => 10,
                 'district_id' => 88,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            290 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            290 => [
                 'id' => 791,
                 'type' => 'ឃុំ',
                 'code' => '100407',
@@ -9510,11 +8717,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sambour',
                 'province_id' => 10,
                 'district_id' => 88,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            291 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            291 => [
                 'id' => 792,
                 'type' => 'ឃុំ',
                 'code' => '100408',
@@ -9522,11 +8728,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sandan',
                 'province_id' => 10,
                 'district_id' => 88,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            292 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            292 => [
                 'id' => 793,
                 'type' => 'ឃុំ',
                 'code' => '100409',
@@ -9534,11 +8739,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srae Chis',
                 'province_id' => 10,
                 'district_id' => 88,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            293 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            293 => [
                 'id' => 794,
                 'type' => 'ឃុំ',
                 'code' => '100410',
@@ -9546,11 +8750,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Voadthonak',
                 'province_id' => 10,
                 'district_id' => 88,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            294 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            294 => [
                 'id' => 795,
                 'type' => 'ឃុំ',
                 'code' => '100501',
@@ -9558,11 +8761,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khsuem',
                 'province_id' => 10,
                 'district_id' => 89,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            295 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            295 => [
                 'id' => 796,
                 'type' => 'ឃុំ',
                 'code' => '100502',
@@ -9570,11 +8772,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pir Thnu',
                 'province_id' => 10,
                 'district_id' => 89,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            296 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            296 => [
                 'id' => 797,
                 'type' => 'ឃុំ',
                 'code' => '100503',
@@ -9582,11 +8783,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Snuol',
                 'province_id' => 10,
                 'district_id' => 89,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            297 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            297 => [
                 'id' => 798,
                 'type' => 'ឃុំ',
                 'code' => '100504',
@@ -9594,11 +8794,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srae Char',
                 'province_id' => 10,
                 'district_id' => 89,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            298 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            298 => [
                 'id' => 799,
                 'type' => 'ឃុំ',
                 'code' => '100505',
@@ -9606,11 +8805,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Chreah',
                 'province_id' => 10,
                 'district_id' => 89,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            299 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            299 => [
                 'id' => 800,
                 'type' => 'ឃុំ',
                 'code' => '100506',
@@ -9618,11 +8816,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kronhoung Saen Chey',
                 'province_id' => 10,
                 'district_id' => 89,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            300 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            300 => [
                 'id' => 801,
                 'type' => 'ឃុំ',
                 'code' => '100601',
@@ -9630,11 +8827,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Bos Leav',
                 'province_id' => 10,
                 'district_id' => 90,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            301 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            301 => [
                 'id' => 802,
                 'type' => 'ឃុំ',
                 'code' => '100602',
@@ -9642,11 +8838,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Changkrang',
                 'province_id' => 10,
                 'district_id' => 90,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            302 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            302 => [
                 'id' => 803,
                 'type' => 'ឃុំ',
                 'code' => '100603',
@@ -9654,11 +8849,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Dar',
                 'province_id' => 10,
                 'district_id' => 90,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            303 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            303 => [
                 'id' => 804,
                 'type' => 'ឃុំ',
                 'code' => '100604',
@@ -9666,11 +8860,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kantuot',
                 'province_id' => 10,
                 'district_id' => 90,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            304 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            304 => [
                 'id' => 805,
                 'type' => 'ឃុំ',
                 'code' => '100605',
@@ -9678,11 +8871,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kou Loab',
                 'province_id' => 10,
                 'district_id' => 90,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            305 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            305 => [
                 'id' => 806,
                 'type' => 'ឃុំ',
                 'code' => '100606',
@@ -9690,11 +8882,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Chraeng',
                 'province_id' => 10,
                 'district_id' => 90,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            306 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            306 => [
                 'id' => 807,
                 'type' => 'ឃុំ',
                 'code' => '100607',
@@ -9702,11 +8893,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sambok',
                 'province_id' => 10,
                 'district_id' => 90,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            307 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            307 => [
                 'id' => 808,
                 'type' => 'ឃុំ',
                 'code' => '100608',
@@ -9714,11 +8904,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Thma Andaeuk',
                 'province_id' => 10,
                 'district_id' => 90,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            308 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            308 => [
                 'id' => 809,
                 'type' => 'ឃុំ',
                 'code' => '100609',
@@ -9726,11 +8915,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Thma Kreae',
                 'province_id' => 10,
                 'district_id' => 90,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            309 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            309 => [
                 'id' => 810,
                 'type' => 'ឃុំ',
                 'code' => '100610',
@@ -9738,11 +8926,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Thmei',
                 'province_id' => 10,
                 'district_id' => 90,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            310 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            310 => [
                 'id' => 811,
                 'type' => 'ឃុំ',
                 'code' => '110101',
@@ -9750,11 +8937,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chong Phlah',
                 'province_id' => 11,
                 'district_id' => 91,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            311 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            311 => [
                 'id' => 812,
                 'type' => 'ឃុំ',
                 'code' => '110102',
@@ -9762,11 +8948,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Memang',
                 'province_id' => 11,
                 'district_id' => 91,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            312 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            312 => [
                 'id' => 813,
                 'type' => 'ឃុំ',
                 'code' => '110103',
@@ -9774,11 +8959,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srae Chhuk',
                 'province_id' => 11,
                 'district_id' => 91,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            313 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            313 => [
                 'id' => 814,
                 'type' => 'ឃុំ',
                 'code' => '110104',
@@ -9786,11 +8970,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srae Khtum',
                 'province_id' => 11,
                 'district_id' => 91,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            314 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            314 => [
                 'id' => 815,
                 'type' => 'ឃុំ',
                 'code' => '110105',
@@ -9798,11 +8981,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srae Preah',
                 'province_id' => 11,
                 'district_id' => 91,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            315 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            315 => [
                 'id' => 816,
                 'type' => 'ឃុំ',
                 'code' => '110201',
@@ -9810,11 +8992,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Nang Khi Lik',
                 'province_id' => 11,
                 'district_id' => 92,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            316 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            316 => [
                 'id' => 817,
                 'type' => 'ឃុំ',
                 'code' => '110202',
@@ -9822,11 +9003,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'A Buon Leu',
                 'province_id' => 11,
                 'district_id' => 92,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            317 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            317 => [
                 'id' => 818,
                 'type' => 'ឃុំ',
                 'code' => '110203',
@@ -9834,11 +9014,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Roya',
                 'province_id' => 11,
                 'district_id' => 92,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            318 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            318 => [
                 'id' => 819,
                 'type' => 'ឃុំ',
                 'code' => '110204',
@@ -9846,11 +9025,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sokh Sant',
                 'province_id' => 11,
                 'district_id' => 92,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            319 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            319 => [
                 'id' => 820,
                 'type' => 'ឃុំ',
                 'code' => '110205',
@@ -9858,11 +9036,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srae Huy',
                 'province_id' => 11,
                 'district_id' => 92,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            320 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            320 => [
                 'id' => 821,
                 'type' => 'ឃុំ',
                 'code' => '110206',
@@ -9870,11 +9047,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srae Sangkum',
                 'province_id' => 11,
                 'district_id' => 92,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            321 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            321 => [
                 'id' => 822,
                 'type' => 'ឃុំ',
                 'code' => '110301',
@@ -9882,11 +9058,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Dak Dam',
                 'province_id' => 11,
                 'district_id' => 93,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            322 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            322 => [
                 'id' => 823,
                 'type' => 'ឃុំ',
                 'code' => '110302',
@@ -9894,11 +9069,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Saen Monourom',
                 'province_id' => 11,
                 'district_id' => 93,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            323 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            323 => [
                 'id' => 824,
                 'type' => 'ឃុំ',
                 'code' => '110401',
@@ -9906,11 +9080,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Krang Teh',
                 'province_id' => 11,
                 'district_id' => 94,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            324 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            324 => [
                 'id' => 825,
                 'type' => 'ឃុំ',
                 'code' => '110402',
@@ -9918,11 +9091,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pu Chrey',
                 'province_id' => 11,
                 'district_id' => 94,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            325 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            325 => [
                 'id' => 826,
                 'type' => 'ឃុំ',
                 'code' => '110403',
@@ -9930,11 +9102,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srae Ampum',
                 'province_id' => 11,
                 'district_id' => 94,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            326 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            326 => [
                 'id' => 827,
                 'type' => 'ឃុំ',
                 'code' => '110404',
@@ -9942,11 +9113,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Bu Sra',
                 'province_id' => 11,
                 'district_id' => 94,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            327 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            327 => [
                 'id' => 828,
                 'type' => 'សង្កាត់',
                 'code' => '110501',
@@ -9954,11 +9124,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Monourom',
                 'province_id' => 11,
                 'district_id' => 95,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            328 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            328 => [
                 'id' => 829,
                 'type' => 'សង្កាត់',
                 'code' => '110502',
@@ -9966,11 +9135,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sokh Dom',
                 'province_id' => 11,
                 'district_id' => 95,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            329 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            329 => [
                 'id' => 830,
                 'type' => 'សង្កាត់',
                 'code' => '110503',
@@ -9978,11 +9146,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Spean Mean Chey',
                 'province_id' => 11,
                 'district_id' => 95,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            330 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            330 => [
                 'id' => 831,
                 'type' => 'សង្កាត់',
                 'code' => '110504',
@@ -9990,11 +9157,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Romonea',
                 'province_id' => 11,
                 'district_id' => 95,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            331 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            331 => [
                 'id' => 832,
                 'type' => 'សង្កាត់',
                 'code' => '120101',
@@ -10002,11 +9168,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tonle Basak',
                 'province_id' => 12,
                 'district_id' => 96,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            332 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            332 => [
                 'id' => 833,
                 'type' => 'សង្កាត់',
                 'code' => '120109',
@@ -10014,11 +9179,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuol Tumpung Ti Pir',
                 'province_id' => 12,
                 'district_id' => 96,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            333 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            333 => [
                 'id' => 834,
                 'type' => 'សង្កាត់',
                 'code' => '120110',
@@ -10026,11 +9190,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuol Tumpung Ti Muoy',
                 'province_id' => 12,
                 'district_id' => 96,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            334 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            334 => [
                 'id' => 835,
                 'type' => 'សង្កាត់',
                 'code' => '120111',
@@ -10038,11 +9201,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Trabaek',
                 'province_id' => 12,
                 'district_id' => 96,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            335 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            335 => [
                 'id' => 836,
                 'type' => 'សង្កាត់',
                 'code' => '120112',
@@ -10050,11 +9212,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phsar Daeum Thkov',
                 'province_id' => 12,
                 'district_id' => 96,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            336 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            336 => [
                 'id' => 837,
                 'type' => 'សង្កាត់',
                 'code' => '120201',
@@ -10062,11 +9223,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phsar Thmei Ti Muoy',
                 'province_id' => 12,
                 'district_id' => 97,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            337 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            337 => [
                 'id' => 838,
                 'type' => 'សង្កាត់',
                 'code' => '120202',
@@ -10074,11 +9234,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phsar Thmei Ti Pir',
                 'province_id' => 12,
                 'district_id' => 97,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            338 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            338 => [
                 'id' => 839,
                 'type' => 'សង្កាត់',
                 'code' => '120203',
@@ -10086,11 +9245,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phsar Thmei Ti Bei',
                 'province_id' => 12,
                 'district_id' => 97,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            339 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            339 => [
                 'id' => 840,
                 'type' => 'សង្កាត់',
                 'code' => '120204',
@@ -10098,11 +9256,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Reang',
                 'province_id' => 12,
                 'district_id' => 97,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            340 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            340 => [
                 'id' => 841,
                 'type' => 'សង្កាត់',
                 'code' => '120205',
@@ -10110,11 +9267,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phsar Kandal Ti Muoy',
                 'province_id' => 12,
                 'district_id' => 97,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            341 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            341 => [
                 'id' => 842,
                 'type' => 'សង្កាត់',
                 'code' => '120206',
@@ -10122,11 +9278,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phsar Kandal Ti Pir',
                 'province_id' => 12,
                 'district_id' => 97,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            342 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            342 => [
                 'id' => 843,
                 'type' => 'សង្កាត់',
                 'code' => '120207',
@@ -10134,11 +9289,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chakto Mukh',
                 'province_id' => 12,
                 'district_id' => 97,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            343 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            343 => [
                 'id' => 844,
                 'type' => 'សង្កាត់',
                 'code' => '120208',
@@ -10146,11 +9300,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chey Chummeah',
                 'province_id' => 12,
                 'district_id' => 97,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            344 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            344 => [
                 'id' => 845,
                 'type' => 'សង្កាត់',
                 'code' => '120209',
@@ -10158,11 +9311,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phsar Chas',
                 'province_id' => 12,
                 'district_id' => 97,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            345 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            345 => [
                 'id' => 846,
                 'type' => 'សង្កាត់',
                 'code' => '120210',
@@ -10170,11 +9322,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srah Chak',
                 'province_id' => 12,
                 'district_id' => 97,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            346 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            346 => [
                 'id' => 847,
                 'type' => 'សង្កាត់',
                 'code' => '120211',
@@ -10182,11 +9333,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Voat Phnum',
                 'province_id' => 12,
                 'district_id' => 97,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            347 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            347 => [
                 'id' => 848,
                 'type' => 'សង្កាត់',
                 'code' => '120301',
@@ -10194,11 +9344,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Ruessei Ti Muoy',
                 'province_id' => 12,
                 'district_id' => 98,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            348 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            348 => [
                 'id' => 849,
                 'type' => 'សង្កាត់',
                 'code' => '120302',
@@ -10206,11 +9355,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Ruessei Ti Pir',
                 'province_id' => 12,
                 'district_id' => 98,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            349 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            349 => [
                 'id' => 850,
                 'type' => 'សង្កាត់',
                 'code' => '120303',
@@ -10218,11 +9366,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Ruessei Ti Bei',
                 'province_id' => 12,
                 'district_id' => 98,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            350 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            350 => [
                 'id' => 851,
                 'type' => 'សង្កាត់',
                 'code' => '120304',
@@ -10230,11 +9377,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Ruessei Ti Buon',
                 'province_id' => 12,
                 'district_id' => 98,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            351 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            351 => [
                 'id' => 852,
                 'type' => 'សង្កាត់',
                 'code' => '120305',
@@ -10242,11 +9388,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Monourom',
                 'province_id' => 12,
                 'district_id' => 98,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            352 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            352 => [
                 'id' => 853,
                 'type' => 'សង្កាត់',
                 'code' => '120306',
@@ -10254,11 +9399,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Mittapheap',
                 'province_id' => 12,
                 'district_id' => 98,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            353 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            353 => [
                 'id' => 854,
                 'type' => 'សង្កាត់',
                 'code' => '120307',
@@ -10266,11 +9410,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Veal Vong',
                 'province_id' => 12,
                 'district_id' => 98,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            354 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            354 => [
                 'id' => 855,
                 'type' => 'សង្កាត់',
                 'code' => '120308',
@@ -10278,11 +9421,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Proluet',
                 'province_id' => 12,
                 'district_id' => 98,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            355 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            355 => [
                 'id' => 856,
                 'type' => 'សង្កាត់',
                 'code' => '120401',
@@ -10290,11 +9432,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phsar Depou Ti Muoy',
                 'province_id' => 12,
                 'district_id' => 99,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            356 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            356 => [
                 'id' => 857,
                 'type' => 'សង្កាត់',
                 'code' => '120402',
@@ -10302,11 +9443,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phsar Depou Ti Pir',
                 'province_id' => 12,
                 'district_id' => 99,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            357 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            357 => [
                 'id' => 858,
                 'type' => 'សង្កាត់',
                 'code' => '120403',
@@ -10314,11 +9454,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phsar Depou Ti Bei',
                 'province_id' => 12,
                 'district_id' => 99,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            358 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            358 => [
                 'id' => 859,
                 'type' => 'សង្កាត់',
                 'code' => '120404',
@@ -10326,11 +9465,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuek L\'ak Ti Muoy',
                 'province_id' => 12,
                 'district_id' => 99,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            359 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            359 => [
                 'id' => 860,
                 'type' => 'សង្កាត់',
                 'code' => '120405',
@@ -10338,11 +9476,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuek L\'ak Ti Pir',
                 'province_id' => 12,
                 'district_id' => 99,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            360 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            360 => [
                 'id' => 861,
                 'type' => 'សង្កាត់',
                 'code' => '120406',
@@ -10350,11 +9487,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuek L\'ak Ti Bei',
                 'province_id' => 12,
                 'district_id' => 99,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            361 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            361 => [
                 'id' => 862,
                 'type' => 'សង្កាត់',
                 'code' => '120407',
@@ -10362,11 +9498,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Kak Ti Muoy',
                 'province_id' => 12,
                 'district_id' => 99,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            362 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            362 => [
                 'id' => 863,
                 'type' => 'សង្កាត់',
                 'code' => '120408',
@@ -10374,11 +9509,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Kak Ti Pir',
                 'province_id' => 12,
                 'district_id' => 99,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            363 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            363 => [
                 'id' => 864,
                 'type' => 'សង្កាត់',
                 'code' => '120409',
@@ -10386,11 +9520,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phsar Daeum Kor',
                 'province_id' => 12,
                 'district_id' => 99,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            364 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            364 => [
                 'id' => 865,
                 'type' => 'សង្កាត់',
                 'code' => '120410',
@@ -10398,11 +9531,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Salang',
                 'province_id' => 12,
                 'district_id' => 99,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            365 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            365 => [
                 'id' => 866,
                 'type' => 'សង្កាត់',
                 'code' => '120501',
@@ -10410,11 +9542,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Dangkao',
                 'province_id' => 12,
                 'district_id' => 100,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            366 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            366 => [
                 'id' => 867,
                 'type' => 'សង្កាត់',
                 'code' => '120507',
@@ -10422,11 +9553,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pong Tuek',
                 'province_id' => 12,
                 'district_id' => 100,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            367 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            367 => [
                 'id' => 868,
                 'type' => 'សង្កាត់',
                 'code' => '120508',
@@ -10434,11 +9564,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Veaeng',
                 'province_id' => 12,
                 'district_id' => 100,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            368 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            368 => [
                 'id' => 869,
                 'type' => 'សង្កាត់',
                 'code' => '120510',
@@ -10446,11 +9575,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Sa',
                 'province_id' => 12,
                 'district_id' => 100,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            369 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            369 => [
                 'id' => 870,
                 'type' => 'សង្កាត់',
                 'code' => '120512',
@@ -10458,11 +9586,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Krang Pongro',
                 'province_id' => 12,
                 'district_id' => 100,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            370 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            370 => [
                 'id' => 871,
                 'type' => 'សង្កាត់',
                 'code' => '120514',
@@ -10470,11 +9597,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sak Sampov',
                 'province_id' => 12,
                 'district_id' => 100,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            371 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            371 => [
                 'id' => 872,
                 'type' => 'សង្កាត់',
                 'code' => '120515',
@@ -10482,11 +9608,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Cheung Aek',
                 'province_id' => 12,
                 'district_id' => 100,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            372 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            372 => [
                 'id' => 873,
                 'type' => 'សង្កាត់',
                 'code' => '120516',
@@ -10494,11 +9619,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kong Noy',
                 'province_id' => 12,
                 'district_id' => 100,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            373 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            373 => [
                 'id' => 874,
                 'type' => 'សង្កាត់',
                 'code' => '120517',
@@ -10506,11 +9630,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Kampues',
                 'province_id' => 12,
                 'district_id' => 100,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            374 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            374 => [
                 'id' => 875,
                 'type' => 'សង្កាត់',
                 'code' => '120518',
@@ -10518,11 +9641,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Roluos',
                 'province_id' => 12,
                 'district_id' => 100,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            375 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            375 => [
                 'id' => 876,
                 'type' => 'សង្កាត់',
                 'code' => '120519',
@@ -10530,11 +9652,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Spean Thma',
                 'province_id' => 12,
                 'district_id' => 100,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            376 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            376 => [
                 'id' => 877,
                 'type' => 'សង្កាត់',
                 'code' => '120520',
@@ -10542,11 +9663,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tien',
                 'province_id' => 12,
                 'district_id' => 100,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            377 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            377 => [
                 'id' => 878,
                 'type' => 'សង្កាត់',
                 'code' => '120606',
@@ -10554,11 +9674,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chak Angrae Leu',
                 'province_id' => 12,
                 'district_id' => 101,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            378 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            378 => [
                 'id' => 879,
                 'type' => 'សង្កាត់',
                 'code' => '120607',
@@ -10566,11 +9685,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chak Angrae Kraom',
                 'province_id' => 12,
                 'district_id' => 101,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            379 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            379 => [
                 'id' => 880,
                 'type' => 'សង្កាត់',
                 'code' => '120608',
@@ -10578,11 +9696,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Stueng Mean chey 1',
                 'province_id' => 12,
                 'district_id' => 101,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            380 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            380 => [
                 'id' => 881,
                 'type' => 'សង្កាត់',
                 'code' => '120609',
@@ -10590,11 +9707,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Stueng Mean chey 2',
                 'province_id' => 12,
                 'district_id' => 101,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            381 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            381 => [
                 'id' => 882,
                 'type' => 'សង្កាត់',
                 'code' => '120610',
@@ -10602,11 +9718,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Stueng Mean chey 3',
                 'province_id' => 12,
                 'district_id' => 101,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            382 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            382 => [
                 'id' => 883,
                 'type' => 'សង្កាត់',
                 'code' => '120611',
@@ -10614,11 +9729,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Tumpun 1',
                 'province_id' => 12,
                 'district_id' => 101,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            383 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            383 => [
                 'id' => 884,
                 'type' => 'សង្កាត់',
                 'code' => '120612',
@@ -10626,11 +9740,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Tumpun 2',
                 'province_id' => 12,
                 'district_id' => 101,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            384 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            384 => [
                 'id' => 885,
                 'type' => 'សង្កាត់',
                 'code' => '120703',
@@ -10638,11 +9751,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Pak',
                 'province_id' => 12,
                 'district_id' => 102,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            385 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            385 => [
                 'id' => 886,
                 'type' => 'សង្កាត់',
                 'code' => '120704',
@@ -10650,11 +9762,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kilomaetr Lekh Prammuoy',
                 'province_id' => 12,
                 'district_id' => 102,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            386 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            386 => [
                 'id' => 887,
                 'type' => 'សង្កាត់',
                 'code' => '120706',
@@ -10662,11 +9773,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ruessei Kaev',
                 'province_id' => 12,
                 'district_id' => 102,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            387 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            387 => [
                 'id' => 888,
                 'type' => 'សង្កាត់',
                 'code' => '120711',
@@ -10674,11 +9784,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chrang Chamreh Ti Muoy',
                 'province_id' => 12,
                 'district_id' => 102,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            388 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            388 => [
                 'id' => 889,
                 'type' => 'សង្កាត់',
                 'code' => '120712',
@@ -10686,11 +9795,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chrang Chamreh Ti Pir',
                 'province_id' => 12,
                 'district_id' => 102,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            389 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            389 => [
                 'id' => 890,
                 'type' => 'សង្កាត់',
                 'code' => '120713',
@@ -10698,11 +9806,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuol Sangkae 1',
                 'province_id' => 12,
                 'district_id' => 102,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            390 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            390 => [
                 'id' => 891,
                 'type' => 'សង្កាត់',
                 'code' => '120714',
@@ -10710,11 +9817,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuol Sangkae 2',
                 'province_id' => 12,
                 'district_id' => 102,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            391 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            391 => [
                 'id' => 892,
                 'type' => 'សង្កាត់',
                 'code' => '120801',
@@ -10722,11 +9828,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phnom Penh Thmei',
                 'province_id' => 12,
                 'district_id' => 103,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            392 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            392 => [
                 'id' => 893,
                 'type' => 'សង្កាត់',
                 'code' => '120802',
@@ -10734,11 +9839,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuek Thla',
                 'province_id' => 12,
                 'district_id' => 103,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            393 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            393 => [
                 'id' => 894,
                 'type' => 'សង្កាត់',
                 'code' => '120803',
@@ -10746,11 +9850,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khmuonh',
                 'province_id' => 12,
                 'district_id' => 103,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            394 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            394 => [
                 'id' => 895,
                 'type' => 'សង្កាត់',
                 'code' => '120807',
@@ -10758,11 +9861,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Krang Thnong',
                 'province_id' => 12,
                 'district_id' => 103,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            395 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            395 => [
                 'id' => 896,
                 'type' => 'សង្កាត់',
                 'code' => '120808',
@@ -10770,11 +9872,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Baek K\'am',
                 'province_id' => 12,
                 'district_id' => 103,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            396 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            396 => [
                 'id' => 897,
                 'type' => 'សង្កាត់',
                 'code' => '120809',
@@ -10782,11 +9883,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kouk Khleang',
                 'province_id' => 12,
                 'district_id' => 103,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            397 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            397 => [
                 'id' => 898,
                 'type' => 'សង្កាត់',
                 'code' => '120901',
@@ -10794,11 +9894,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Krasang',
                 'province_id' => 12,
                 'district_id' => 104,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            398 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            398 => [
                 'id' => 899,
                 'type' => 'សង្កាត់',
                 'code' => '120906',
@@ -10806,11 +9905,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Samraong Kraom',
                 'province_id' => 12,
                 'district_id' => 104,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            399 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            399 => [
                 'id' => 900,
                 'type' => 'សង្កាត់',
                 'code' => '120914',
@@ -10818,11 +9916,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chaom Chau 1',
                 'province_id' => 12,
                 'district_id' => 104,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            400 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            400 => [
                 'id' => 901,
                 'type' => 'សង្កាត់',
                 'code' => '120915',
@@ -10830,11 +9927,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chaom Chau 2',
                 'province_id' => 12,
                 'district_id' => 104,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            401 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            401 => [
                 'id' => 902,
                 'type' => 'សង្កាត់',
                 'code' => '120916',
@@ -10842,11 +9938,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chaom Chau 3',
                 'province_id' => 12,
                 'district_id' => 104,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            402 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            402 => [
                 'id' => 903,
                 'type' => 'សង្កាត់',
                 'code' => '120917',
@@ -10854,11 +9949,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kakab 1',
                 'province_id' => 12,
                 'district_id' => 104,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            403 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            403 => [
                 'id' => 904,
                 'type' => 'សង្កាត់',
                 'code' => '120918',
@@ -10866,11 +9960,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kakab 2',
                 'province_id' => 12,
                 'district_id' => 104,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            404 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            404 => [
                 'id' => 905,
                 'type' => 'សង្កាត់',
                 'code' => '121001',
@@ -10878,11 +9971,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chrouy Changvar',
                 'province_id' => 12,
                 'district_id' => 105,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            405 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            405 => [
                 'id' => 906,
                 'type' => 'សង្កាត់',
                 'code' => '121002',
@@ -10890,11 +9982,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Lieb',
                 'province_id' => 12,
                 'district_id' => 105,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            406 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            406 => [
                 'id' => 907,
                 'type' => 'សង្កាត់',
                 'code' => '121003',
@@ -10902,11 +9993,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Ta Sek',
                 'province_id' => 12,
                 'district_id' => 105,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            407 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            407 => [
                 'id' => 908,
                 'type' => 'សង្កាត់',
                 'code' => '121004',
@@ -10914,11 +10004,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Dach',
                 'province_id' => 12,
                 'district_id' => 105,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            408 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            408 => [
                 'id' => 909,
                 'type' => 'សង្កាត់',
                 'code' => '121005',
@@ -10926,11 +10015,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Bak Kaeng',
                 'province_id' => 12,
                 'district_id' => 105,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            409 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            409 => [
                 'id' => 910,
                 'type' => 'សង្កាត់',
                 'code' => '121101',
@@ -10938,11 +10026,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Phnov',
                 'province_id' => 12,
                 'district_id' => 106,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            410 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            410 => [
                 'id' => 911,
                 'type' => 'សង្កាត់',
                 'code' => '121102',
@@ -10950,11 +10037,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ponhea Pon',
                 'province_id' => 12,
                 'district_id' => 106,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            411 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            411 => [
                 'id' => 912,
                 'type' => 'សង្កាត់',
                 'code' => '121103',
@@ -10962,11 +10048,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Samraong',
                 'province_id' => 12,
                 'district_id' => 106,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            412 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            412 => [
                 'id' => 913,
                 'type' => 'សង្កាត់',
                 'code' => '121104',
@@ -10974,11 +10059,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kouk Roka',
                 'province_id' => 12,
                 'district_id' => 106,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            413 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            413 => [
                 'id' => 914,
                 'type' => 'សង្កាត់',
                 'code' => '121105',
@@ -10986,11 +10070,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ponsang',
                 'province_id' => 12,
                 'district_id' => 106,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            414 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            414 => [
                 'id' => 915,
                 'type' => 'សង្កាត់',
                 'code' => '121201',
@@ -10998,11 +10081,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chhbar Ampov Ti Muoy',
                 'province_id' => 12,
                 'district_id' => 107,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            415 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            415 => [
                 'id' => 916,
                 'type' => 'សង្កាត់',
                 'code' => '121202',
@@ -11010,11 +10092,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chbar Ampov Ti Pir',
                 'province_id' => 12,
                 'district_id' => 107,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            416 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            416 => [
                 'id' => 917,
                 'type' => 'សង្កាត់',
                 'code' => '121203',
@@ -11022,11 +10103,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Nirouth',
                 'province_id' => 12,
                 'district_id' => 107,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            417 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            417 => [
                 'id' => 918,
                 'type' => 'សង្កាត់',
                 'code' => '121204',
@@ -11034,11 +10114,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Pra',
                 'province_id' => 12,
                 'district_id' => 107,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            418 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            418 => [
                 'id' => 919,
                 'type' => 'សង្កាត់',
                 'code' => '121205',
@@ -11046,11 +10125,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Veal Sbov',
                 'province_id' => 12,
                 'district_id' => 107,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            419 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            419 => [
                 'id' => 920,
                 'type' => 'សង្កាត់',
                 'code' => '121206',
@@ -11058,11 +10136,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Aeng',
                 'province_id' => 12,
                 'district_id' => 107,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            420 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            420 => [
                 'id' => 921,
                 'type' => 'សង្កាត់',
                 'code' => '121207',
@@ -11070,11 +10147,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kbal Kaoh',
                 'province_id' => 12,
                 'district_id' => 107,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            421 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            421 => [
                 'id' => 922,
                 'type' => 'សង្កាត់',
                 'code' => '121208',
@@ -11082,11 +10158,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Thmei',
                 'province_id' => 12,
                 'district_id' => 107,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            422 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            422 => [
                 'id' => 923,
                 'type' => 'សង្កាត់',
                 'code' => '121301',
@@ -11094,11 +10169,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Keng Kang Ti Muoy',
                 'province_id' => 12,
                 'district_id' => 108,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            423 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            423 => [
                 'id' => 924,
                 'type' => 'សង្កាត់',
                 'code' => '121302',
@@ -11106,11 +10180,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Keng Kang Ti Pir',
                 'province_id' => 12,
                 'district_id' => 108,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            424 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            424 => [
                 'id' => 925,
                 'type' => 'សង្កាត់',
                 'code' => '121303',
@@ -11118,11 +10191,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Keng Kang Ti Bei',
                 'province_id' => 12,
                 'district_id' => 108,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            425 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            425 => [
                 'id' => 926,
                 'type' => 'សង្កាត់',
                 'code' => '121304',
@@ -11130,11 +10202,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Olympic',
                 'province_id' => 12,
                 'district_id' => 108,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            426 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            426 => [
                 'id' => 927,
                 'type' => 'សង្កាត់',
                 'code' => '121305',
@@ -11142,11 +10213,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tumnob Tuek',
                 'province_id' => 12,
                 'district_id' => 108,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            427 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            427 => [
                 'id' => 928,
                 'type' => 'សង្កាត់',
                 'code' => '121306',
@@ -11154,11 +10224,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuol Svay Prey Ti Muoy',
                 'province_id' => 12,
                 'district_id' => 108,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            428 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            428 => [
                 'id' => 929,
                 'type' => 'សង្កាត់',
                 'code' => '121307',
@@ -11166,11 +10235,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuol Svay Prey Ti Pir',
                 'province_id' => 12,
                 'district_id' => 108,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            429 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            429 => [
                 'id' => 930,
                 'type' => 'សង្កាត់',
                 'code' => '121401',
@@ -11178,11 +10246,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kamboul',
                 'province_id' => 12,
                 'district_id' => 109,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            430 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            430 => [
                 'id' => 931,
                 'type' => 'សង្កាត់',
                 'code' => '121402',
@@ -11190,11 +10257,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kantaok',
                 'province_id' => 12,
                 'district_id' => 109,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            431 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            431 => [
                 'id' => 932,
                 'type' => 'សង្កាត់',
                 'code' => '121403',
@@ -11202,11 +10268,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ovlaok',
                 'province_id' => 12,
                 'district_id' => 109,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            432 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            432 => [
                 'id' => 933,
                 'type' => 'សង្កាត់',
                 'code' => '121404',
@@ -11214,11 +10279,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Snaor',
                 'province_id' => 12,
                 'district_id' => 109,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            433 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            433 => [
                 'id' => 934,
                 'type' => 'សង្កាត់',
                 'code' => '121405',
@@ -11226,11 +10290,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phleung Chheh Roteh',
                 'province_id' => 12,
                 'district_id' => 109,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            434 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            434 => [
                 'id' => 935,
                 'type' => 'សង្កាត់',
                 'code' => '121406',
@@ -11238,11 +10301,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Thum',
                 'province_id' => 12,
                 'district_id' => 109,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            435 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            435 => [
                 'id' => 936,
                 'type' => 'សង្កាត់',
                 'code' => '121407',
@@ -11250,11 +10312,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prateah Lang',
                 'province_id' => 12,
                 'district_id' => 109,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            436 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            436 => [
                 'id' => 937,
                 'type' => 'ឃុំ',
                 'code' => '130101',
@@ -11262,11 +10323,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'S\'ang',
                 'province_id' => 13,
                 'district_id' => 110,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            437 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            437 => [
                 'id' => 938,
                 'type' => 'ឃុំ',
                 'code' => '130102',
@@ -11274,11 +10334,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tasu',
                 'province_id' => 13,
                 'district_id' => 110,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            438 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            438 => [
                 'id' => 939,
                 'type' => 'ឃុំ',
                 'code' => '130103',
@@ -11286,11 +10345,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khyang',
                 'province_id' => 13,
                 'district_id' => 110,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            439 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            439 => [
                 'id' => 940,
                 'type' => 'ឃុំ',
                 'code' => '130104',
@@ -11298,11 +10356,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chrach',
                 'province_id' => 13,
                 'district_id' => 110,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            440 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            440 => [
                 'id' => 941,
                 'type' => 'ឃុំ',
                 'code' => '130105',
@@ -11310,11 +10367,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Thmea',
                 'province_id' => 13,
                 'district_id' => 110,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            441 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            441 => [
                 'id' => 942,
                 'type' => 'ឃុំ',
                 'code' => '130106',
@@ -11322,11 +10378,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Putrea',
                 'province_id' => 13,
                 'district_id' => 110,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            442 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            442 => [
                 'id' => 943,
                 'type' => 'ឃុំ',
                 'code' => '130201',
@@ -11334,11 +10389,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chhaeb Muoy',
                 'province_id' => 13,
                 'district_id' => 111,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            443 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            443 => [
                 'id' => 944,
                 'type' => 'ឃុំ',
                 'code' => '130202',
@@ -11346,11 +10400,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chhaeb Pir',
                 'province_id' => 13,
                 'district_id' => 111,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            444 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            444 => [
                 'id' => 945,
                 'type' => 'ឃុំ',
                 'code' => '130203',
@@ -11358,11 +10411,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sangkae Muoy',
                 'province_id' => 13,
                 'district_id' => 111,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            445 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            445 => [
                 'id' => 946,
                 'type' => 'ឃុំ',
                 'code' => '130204',
@@ -11370,11 +10422,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sangkae Pir',
                 'province_id' => 13,
                 'district_id' => 111,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            446 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            446 => [
                 'id' => 947,
                 'type' => 'ឃុំ',
                 'code' => '130205',
@@ -11382,11 +10433,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Mlu Prey Muoy',
                 'province_id' => 13,
                 'district_id' => 111,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            447 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            447 => [
                 'id' => 948,
                 'type' => 'ឃុំ',
                 'code' => '130206',
@@ -11394,11 +10444,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Mlu Prey Pir',
                 'province_id' => 13,
                 'district_id' => 111,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            448 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            448 => [
                 'id' => 949,
                 'type' => 'ឃុំ',
                 'code' => '130207',
@@ -11406,11 +10455,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Sralau Muoy',
                 'province_id' => 13,
                 'district_id' => 111,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            449 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            449 => [
                 'id' => 950,
                 'type' => 'ឃុំ',
                 'code' => '130208',
@@ -11418,11 +10466,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Sralau Pir',
                 'province_id' => 13,
                 'district_id' => 111,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            450 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            450 => [
                 'id' => 951,
                 'type' => 'ឃុំ',
                 'code' => '130301',
@@ -11430,11 +10477,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Choam Ksant',
                 'province_id' => 13,
                 'district_id' => 112,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            451 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            451 => [
                 'id' => 952,
                 'type' => 'ឃុំ',
                 'code' => '130302',
@@ -11442,11 +10488,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuek Kraham',
                 'province_id' => 13,
                 'district_id' => 112,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            452 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            452 => [
                 'id' => 953,
                 'type' => 'ឃុំ',
                 'code' => '130303',
@@ -11454,11 +10499,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pring Thum',
                 'province_id' => 13,
                 'district_id' => 112,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            453 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            453 => [
                 'id' => 954,
                 'type' => 'ឃុំ',
                 'code' => '130304',
@@ -11466,11 +10510,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Rumdaoh Srae',
                 'province_id' => 13,
                 'district_id' => 112,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            454 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            454 => [
                 'id' => 955,
                 'type' => 'ឃុំ',
                 'code' => '130305',
@@ -11478,11 +10521,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Yeang',
                 'province_id' => 13,
                 'district_id' => 112,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            455 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            455 => [
                 'id' => 956,
                 'type' => 'ឃុំ',
                 'code' => '130306',
@@ -11490,11 +10532,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kantuot',
                 'province_id' => 13,
                 'district_id' => 112,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            456 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            456 => [
                 'id' => 957,
                 'type' => 'ឃុំ',
                 'code' => '130307',
@@ -11502,11 +10543,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sror Aem',
                 'province_id' => 13,
                 'district_id' => 112,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            457 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            457 => [
                 'id' => 958,
                 'type' => 'ឃុំ',
                 'code' => '130308',
@@ -11514,11 +10554,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Morokot',
                 'province_id' => 13,
                 'district_id' => 112,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            458 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            458 => [
                 'id' => 959,
                 'type' => 'ឃុំ',
                 'code' => '130401',
@@ -11526,11 +10565,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kuleaen Tboung',
                 'province_id' => 13,
                 'district_id' => 113,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            459 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            459 => [
                 'id' => 960,
                 'type' => 'ឃុំ',
                 'code' => '130402',
@@ -11538,11 +10576,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kuleaen Cheung',
                 'province_id' => 13,
                 'district_id' => 113,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            460 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            460 => [
                 'id' => 961,
                 'type' => 'ឃុំ',
                 'code' => '130403',
@@ -11550,11 +10587,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Thmei',
                 'province_id' => 13,
                 'district_id' => 113,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            461 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            461 => [
                 'id' => 962,
                 'type' => 'ឃុំ',
                 'code' => '130404',
@@ -11562,11 +10598,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phnum Penh',
                 'province_id' => 13,
                 'district_id' => 113,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            462 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            462 => [
                 'id' => 963,
                 'type' => 'ឃុំ',
                 'code' => '130405',
@@ -11574,11 +10609,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phnum Tbaeng Pir',
                 'province_id' => 13,
                 'district_id' => 113,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            463 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            463 => [
                 'id' => 964,
                 'type' => 'ឃុំ',
                 'code' => '130406',
@@ -11586,11 +10620,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srayang',
                 'province_id' => 13,
                 'district_id' => 113,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            464 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            464 => [
                 'id' => 965,
                 'type' => 'ឃុំ',
                 'code' => '130501',
@@ -11598,11 +10631,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Robieb',
                 'province_id' => 13,
                 'district_id' => 114,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            465 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            465 => [
                 'id' => 966,
                 'type' => 'ឃុំ',
                 'code' => '130502',
@@ -11610,11 +10642,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Reaksmei',
                 'province_id' => 13,
                 'district_id' => 114,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            466 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            466 => [
                 'id' => 967,
                 'type' => 'ឃុំ',
                 'code' => '130503',
@@ -11622,11 +10653,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Rohas',
                 'province_id' => 13,
                 'district_id' => 114,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            467 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            467 => [
                 'id' => 968,
                 'type' => 'ឃុំ',
                 'code' => '130504',
@@ -11634,11 +10664,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Rung Roeang',
                 'province_id' => 13,
                 'district_id' => 114,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            468 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            468 => [
                 'id' => 969,
                 'type' => 'ឃុំ',
                 'code' => '130505',
@@ -11646,11 +10675,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Rik Reay',
                 'province_id' => 13,
                 'district_id' => 114,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            469 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            469 => [
                 'id' => 970,
                 'type' => 'ឃុំ',
                 'code' => '130506',
@@ -11658,11 +10686,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ruos Roan',
                 'province_id' => 13,
                 'district_id' => 114,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            470 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            470 => [
                 'id' => 971,
                 'type' => 'ឃុំ',
                 'code' => '130507',
@@ -11670,11 +10697,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Rotanak',
                 'province_id' => 13,
                 'district_id' => 114,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            471 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            471 => [
                 'id' => 972,
                 'type' => 'ឃុំ',
                 'code' => '130508',
@@ -11682,11 +10708,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Rieb Roy',
                 'province_id' => 13,
                 'district_id' => 114,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            472 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            472 => [
                 'id' => 973,
                 'type' => 'ឃុំ',
                 'code' => '130509',
@@ -11694,11 +10719,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Reaksa',
                 'province_id' => 13,
                 'district_id' => 114,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            473 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            473 => [
                 'id' => 974,
                 'type' => 'ឃុំ',
                 'code' => '130510',
@@ -11706,11 +10730,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Rumdaoh',
                 'province_id' => 13,
                 'district_id' => 114,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            474 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            474 => [
                 'id' => 975,
                 'type' => 'ឃុំ',
                 'code' => '130511',
@@ -11718,11 +10741,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Romtum',
                 'province_id' => 13,
                 'district_id' => 114,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            475 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            475 => [
                 'id' => 976,
                 'type' => 'ឃុំ',
                 'code' => '130512',
@@ -11730,11 +10752,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Romoneiy',
                 'province_id' => 13,
                 'district_id' => 114,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            476 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            476 => [
                 'id' => 977,
                 'type' => 'ឃុំ',
                 'code' => '130601',
@@ -11742,11 +10763,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chamraeun',
                 'province_id' => 13,
                 'district_id' => 115,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            477 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            477 => [
                 'id' => 978,
                 'type' => 'ឃុំ',
                 'code' => '130602',
@@ -11754,11 +10774,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ro\'ang',
                 'province_id' => 13,
                 'district_id' => 115,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            478 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            478 => [
                 'id' => 979,
                 'type' => 'ឃុំ',
                 'code' => '130603',
@@ -11766,11 +10785,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phnum Tbaeng Muoy',
                 'province_id' => 13,
                 'district_id' => 115,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            479 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            479 => [
                 'id' => 980,
                 'type' => 'ឃុំ',
                 'code' => '130604',
@@ -11778,11 +10796,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sdau',
                 'province_id' => 13,
                 'district_id' => 115,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            480 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            480 => [
                 'id' => 981,
                 'type' => 'ឃុំ',
                 'code' => '130605',
@@ -11790,11 +10807,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ronak Ser',
                 'province_id' => 13,
                 'district_id' => 115,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            481 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            481 => [
                 'id' => 982,
                 'type' => 'ឃុំ',
                 'code' => '130703',
@@ -11802,11 +10818,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chhean Mukh',
                 'province_id' => 13,
                 'district_id' => 116,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            482 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            482 => [
                 'id' => 983,
                 'type' => 'ឃុំ',
                 'code' => '130704',
@@ -11814,11 +10829,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pou',
                 'province_id' => 13,
                 'district_id' => 116,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            483 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            483 => [
                 'id' => 984,
                 'type' => 'ឃុំ',
                 'code' => '130705',
@@ -11826,11 +10840,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prame',
                 'province_id' => 13,
                 'district_id' => 116,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            484 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            484 => [
                 'id' => 985,
                 'type' => 'ឃុំ',
                 'code' => '130706',
@@ -11838,11 +10851,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preah Khleang',
                 'province_id' => 13,
                 'district_id' => 116,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            485 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            485 => [
                 'id' => 986,
                 'type' => 'សង្កាត់',
                 'code' => '130801',
@@ -11850,11 +10862,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Pranak',
                 'province_id' => 13,
                 'district_id' => 117,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            486 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            486 => [
                 'id' => 987,
                 'type' => 'សង្កាត់',
                 'code' => '130802',
@@ -11862,11 +10873,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pal Hal',
                 'province_id' => 13,
                 'district_id' => 117,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            487 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            487 => [
                 'id' => 988,
                 'type' => 'ឃុំ',
                 'code' => '140101',
@@ -11874,11 +10884,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Preah',
                 'province_id' => 14,
                 'district_id' => 118,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            488 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            488 => [
                 'id' => 989,
                 'type' => 'ឃុំ',
                 'code' => '140102',
@@ -11886,11 +10895,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Cheung Phnum',
                 'province_id' => 14,
                 'district_id' => 118,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            489 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            489 => [
                 'id' => 990,
                 'type' => 'ឃុំ',
                 'code' => '140103',
@@ -11898,11 +10906,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chheu Kach',
                 'province_id' => 14,
                 'district_id' => 118,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            490 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            490 => [
                 'id' => 991,
                 'type' => 'ឃុំ',
                 'code' => '140104',
@@ -11910,11 +10917,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Reaks Chey',
                 'province_id' => 14,
                 'district_id' => 118,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            491 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            491 => [
                 'id' => 992,
                 'type' => 'ឃុំ',
                 'code' => '140105',
@@ -11922,11 +10928,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Roung Damrei',
                 'province_id' => 14,
                 'district_id' => 118,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            492 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            492 => [
                 'id' => 993,
                 'type' => 'ឃុំ',
                 'code' => '140106',
@@ -11934,11 +10939,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sdau Kaong',
                 'province_id' => 14,
                 'district_id' => 118,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            493 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            493 => [
                 'id' => 994,
                 'type' => 'ឃុំ',
                 'code' => '140107',
@@ -11946,11 +10950,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Spueu Ka',
                 'province_id' => 14,
                 'district_id' => 118,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            494 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            494 => [
                 'id' => 995,
                 'type' => 'ឃុំ',
                 'code' => '140108',
@@ -11958,11 +10961,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Spueu Kha',
                 'province_id' => 14,
                 'district_id' => 118,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            495 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            495 => [
                 'id' => 996,
                 'type' => 'ឃុំ',
                 'code' => '140109',
@@ -11970,11 +10972,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Theay',
                 'province_id' => 14,
                 'district_id' => 118,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            496 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            496 => [
                 'id' => 997,
                 'type' => 'ឃុំ',
                 'code' => '140201',
@@ -11982,11 +10983,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Cheach',
                 'province_id' => 14,
                 'district_id' => 119,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            497 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            497 => [
                 'id' => 998,
                 'type' => 'ឃុំ',
                 'code' => '140202',
@@ -11994,11 +10994,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Doun Koeng',
                 'province_id' => 14,
                 'district_id' => 119,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            498 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            498 => [
                 'id' => 999,
                 'type' => 'ឃុំ',
                 'code' => '140203',
@@ -12006,11 +11005,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kranhung',
                 'province_id' => 14,
                 'district_id' => 119,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            499 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            499 => [
                 'id' => 1000,
                 'type' => 'ឃុំ',
                 'code' => '140204',
@@ -12018,13 +11016,12 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Krabau',
                 'province_id' => 14,
                 'district_id' => 119,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-        ));
-        \DB::table('communes')->insert(array (
-            0 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+        ]);
+        \DB::table('communes')->insert([
+            0 => [
                 'id' => 1001,
                 'type' => 'ឃុំ',
                 'code' => '140205',
@@ -12032,11 +11029,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Seang Khveang',
                 'province_id' => 14,
                 'district_id' => 119,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            1 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            1 => [
                 'id' => 1002,
                 'type' => 'ឃុំ',
                 'code' => '140206',
@@ -12044,11 +11040,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Smaong Khang Cheung',
                 'province_id' => 14,
                 'district_id' => 119,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            2 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            2 => [
                 'id' => 1003,
                 'type' => 'ឃុំ',
                 'code' => '140207',
@@ -12056,11 +11051,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Smaong Khang Tboung',
                 'province_id' => 14,
                 'district_id' => 119,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            3 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            3 => [
                 'id' => 1004,
                 'type' => 'ឃុំ',
                 'code' => '140208',
@@ -12068,11 +11062,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trabaek',
                 'province_id' => 14,
                 'district_id' => 119,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            4 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            4 => [
                 'id' => 1005,
                 'type' => 'ឃុំ',
                 'code' => '140301',
@@ -12080,11 +11073,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ansaong',
                 'province_id' => 14,
                 'district_id' => 120,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            5 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            5 => [
                 'id' => 1006,
                 'type' => 'ឃុំ',
                 'code' => '140302',
@@ -12092,11 +11084,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Cham',
                 'province_id' => 14,
                 'district_id' => 120,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            6 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            6 => [
                 'id' => 1007,
                 'type' => 'ឃុំ',
                 'code' => '140303',
@@ -12104,11 +11095,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Cheang Daek',
                 'province_id' => 14,
                 'district_id' => 120,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            7 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            7 => [
                 'id' => 1008,
                 'type' => 'ឃុំ',
                 'code' => '140304',
@@ -12116,11 +11106,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chrey',
                 'province_id' => 14,
                 'district_id' => 120,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            8 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            8 => [
                 'id' => 1009,
                 'type' => 'ឃុំ',
                 'code' => '140305',
@@ -12128,11 +11117,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kansoam Ak',
                 'province_id' => 14,
                 'district_id' => 120,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            9 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            9 => [
                 'id' => 1010,
                 'type' => 'ឃុំ',
                 'code' => '140306',
@@ -12140,11 +11128,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kou Khchak',
                 'province_id' => 14,
                 'district_id' => 120,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            10 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            10 => [
                 'id' => 1011,
                 'type' => 'ឃុំ',
                 'code' => '140307',
@@ -12152,11 +11139,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Trabaek',
                 'province_id' => 14,
                 'district_id' => 120,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            11 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            11 => [
                 'id' => 1012,
                 'type' => 'ឃុំ',
                 'code' => '140308',
@@ -12164,11 +11150,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Peam Montear',
                 'province_id' => 14,
                 'district_id' => 120,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            12 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            12 => [
                 'id' => 1013,
                 'type' => 'ឃុំ',
                 'code' => '140309',
@@ -12176,11 +11161,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prasat',
                 'province_id' => 14,
                 'district_id' => 120,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            13 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            13 => [
                 'id' => 1014,
                 'type' => 'ឃុំ',
                 'code' => '140310',
@@ -12188,11 +11172,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pratheat',
                 'province_id' => 14,
                 'district_id' => 120,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            14 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            14 => [
                 'id' => 1015,
                 'type' => 'ឃុំ',
                 'code' => '140311',
@@ -12200,11 +11183,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Chhor',
                 'province_id' => 14,
                 'district_id' => 120,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            15 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            15 => [
                 'id' => 1016,
                 'type' => 'ឃុំ',
                 'code' => '140312',
@@ -12212,11 +11194,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Poun',
                 'province_id' => 14,
                 'district_id' => 120,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            16 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            16 => [
                 'id' => 1017,
                 'type' => 'ឃុំ',
                 'code' => '140313',
@@ -12224,11 +11205,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Thkov',
                 'province_id' => 14,
                 'district_id' => 120,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            17 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            17 => [
                 'id' => 1018,
                 'type' => 'ឃុំ',
                 'code' => '140401',
@@ -12236,11 +11216,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chong Ampil',
                 'province_id' => 14,
                 'district_id' => 121,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            18 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            18 => [
                 'id' => 1019,
                 'type' => 'ឃុំ',
                 'code' => '140402',
@@ -12248,11 +11227,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kanhchriech',
                 'province_id' => 14,
                 'district_id' => 121,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            19 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            19 => [
                 'id' => 1020,
                 'type' => 'ឃុំ',
                 'code' => '140403',
@@ -12260,11 +11238,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kdoeang Reay',
                 'province_id' => 14,
                 'district_id' => 121,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            20 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            20 => [
                 'id' => 1021,
                 'type' => 'ឃុំ',
                 'code' => '140404',
@@ -12272,11 +11249,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kouk Kong Kaeut',
                 'province_id' => 14,
                 'district_id' => 121,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            21 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            21 => [
                 'id' => 1022,
                 'type' => 'ឃុំ',
                 'code' => '140405',
@@ -12284,11 +11260,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kouk Kong Lech',
                 'province_id' => 14,
                 'district_id' => 121,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            22 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            22 => [
                 'id' => 1023,
                 'type' => 'ឃុំ',
                 'code' => '140406',
@@ -12296,11 +11271,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preal',
                 'province_id' => 14,
                 'district_id' => 121,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            23 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            23 => [
                 'id' => 1024,
                 'type' => 'ឃុំ',
                 'code' => '140407',
@@ -12308,11 +11282,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Thma Pun',
                 'province_id' => 14,
                 'district_id' => 121,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            24 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            24 => [
                 'id' => 1025,
                 'type' => 'ឃុំ',
                 'code' => '140408',
@@ -12320,11 +11293,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tnaot',
                 'province_id' => 14,
                 'district_id' => 121,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            25 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            25 => [
                 'id' => 1026,
                 'type' => 'ឃុំ',
                 'code' => '140501',
@@ -12332,11 +11304,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Angkor Sar',
                 'province_id' => 14,
                 'district_id' => 122,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            26 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            26 => [
                 'id' => 1027,
                 'type' => 'ឃុំ',
                 'code' => '140502',
@@ -12344,11 +11315,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chres',
                 'province_id' => 14,
                 'district_id' => 122,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            27 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            27 => [
                 'id' => 1028,
                 'type' => 'ឃុំ',
                 'code' => '140503',
@@ -12356,11 +11326,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chi Phoch',
                 'province_id' => 14,
                 'district_id' => 122,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            28 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            28 => [
                 'id' => 1029,
                 'type' => 'ឃុំ',
                 'code' => '140504',
@@ -12368,11 +11337,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Khnes',
                 'province_id' => 14,
                 'district_id' => 122,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            29 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            29 => [
                 'id' => 1030,
                 'type' => 'ឃុំ',
                 'code' => '140505',
@@ -12380,11 +11348,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Rumdeng',
                 'province_id' => 14,
                 'district_id' => 122,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            30 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            30 => [
                 'id' => 1031,
                 'type' => 'ឃុំ',
                 'code' => '140506',
@@ -12392,11 +11359,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Totueng',
                 'province_id' => 14,
                 'district_id' => 122,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            31 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            31 => [
                 'id' => 1032,
                 'type' => 'ឃុំ',
                 'code' => '140507',
@@ -12404,11 +11370,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Chrum',
                 'province_id' => 14,
                 'district_id' => 122,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            32 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            32 => [
                 'id' => 1033,
                 'type' => 'ឃុំ',
                 'code' => '140508',
@@ -12416,11 +11381,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Srae',
                 'province_id' => 14,
                 'district_id' => 122,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            33 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            33 => [
                 'id' => 1034,
                 'type' => 'ឃុំ',
                 'code' => '140601',
@@ -12428,11 +11392,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Angkor Angk',
                 'province_id' => 14,
                 'district_id' => 123,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            34 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            34 => [
                 'id' => 1035,
                 'type' => 'ឃុំ',
                 'code' => '140602',
@@ -12440,11 +11403,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Prasat',
                 'province_id' => 14,
                 'district_id' => 123,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            35 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            35 => [
                 'id' => 1036,
                 'type' => 'ឃុំ',
                 'code' => '140603',
@@ -12452,11 +11414,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Chek',
                 'province_id' => 14,
                 'district_id' => 123,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            36 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            36 => [
                 'id' => 1037,
                 'type' => 'ឃុំ',
                 'code' => '140604',
@@ -12464,11 +11425,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Roka',
                 'province_id' => 14,
                 'district_id' => 123,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            37 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            37 => [
                 'id' => 1038,
                 'type' => 'ឃុំ',
                 'code' => '140605',
@@ -12476,11 +11436,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Sampov',
                 'province_id' => 14,
                 'district_id' => 123,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            38 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            38 => [
                 'id' => 1039,
                 'type' => 'ឃុំ',
                 'code' => '140606',
@@ -12488,11 +11447,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Krang Ta Yang',
                 'province_id' => 14,
                 'district_id' => 123,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            39 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            39 => [
                 'id' => 1040,
                 'type' => 'ឃុំ',
                 'code' => '140607',
@@ -12500,11 +11458,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Krabau',
                 'province_id' => 14,
                 'district_id' => 123,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            40 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            40 => [
                 'id' => 1041,
                 'type' => 'ឃុំ',
                 'code' => '140608',
@@ -12512,11 +11469,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Sambuor',
                 'province_id' => 14,
                 'district_id' => 123,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            41 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            41 => [
                 'id' => 1042,
                 'type' => 'ឃុំ',
                 'code' => '140609',
@@ -12524,11 +11480,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ruessei Srok',
                 'province_id' => 14,
                 'district_id' => 123,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            42 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            42 => [
                 'id' => 1043,
                 'type' => 'ឃុំ',
                 'code' => '140610',
@@ -12536,11 +11491,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Phluoh',
                 'province_id' => 14,
                 'district_id' => 123,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            43 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            43 => [
                 'id' => 1044,
                 'type' => 'ឃុំ',
                 'code' => '140701',
@@ -12548,11 +11502,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ba Baong',
                 'province_id' => 14,
                 'district_id' => 124,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            44 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            44 => [
                 'id' => 1045,
                 'type' => 'ឃុំ',
                 'code' => '140702',
@@ -12560,11 +11513,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Banlich Prasat',
                 'province_id' => 14,
                 'district_id' => 124,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            45 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            45 => [
                 'id' => 1046,
                 'type' => 'ឃុំ',
                 'code' => '140703',
@@ -12572,11 +11524,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Neak Loeang',
                 'province_id' => 14,
                 'district_id' => 124,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            46 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            46 => [
                 'id' => 1047,
                 'type' => 'ឃុំ',
                 'code' => '140704',
@@ -12584,11 +11535,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Peam Mean Chey',
                 'province_id' => 14,
                 'district_id' => 124,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            47 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            47 => [
                 'id' => 1048,
                 'type' => 'ឃុំ',
                 'code' => '140705',
@@ -12596,11 +11546,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Peam Ro',
                 'province_id' => 14,
                 'district_id' => 124,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            48 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            48 => [
                 'id' => 1049,
                 'type' => 'ឃុំ',
                 'code' => '140706',
@@ -12608,11 +11557,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Khsay Ka',
                 'province_id' => 14,
                 'district_id' => 124,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            49 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            49 => [
                 'id' => 1050,
                 'type' => 'ឃុំ',
                 'code' => '140707',
@@ -12620,11 +11568,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Khsay Kha',
                 'province_id' => 14,
                 'district_id' => 124,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            50 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            50 => [
                 'id' => 1051,
                 'type' => 'ឃុំ',
                 'code' => '140708',
@@ -12632,11 +11579,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Kandieng',
                 'province_id' => 14,
                 'district_id' => 124,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            51 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            51 => [
                 'id' => 1052,
                 'type' => 'ឃុំ',
                 'code' => '140801',
@@ -12644,11 +11590,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Popil',
                 'province_id' => 14,
                 'district_id' => 125,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            52 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            52 => [
                 'id' => 1053,
                 'type' => 'ឃុំ',
                 'code' => '140802',
@@ -12656,11 +11601,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kanhcham',
                 'province_id' => 14,
                 'district_id' => 125,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            53 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            53 => [
                 'id' => 1054,
                 'type' => 'ឃុំ',
                 'code' => '140803',
@@ -12668,11 +11612,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Prang',
                 'province_id' => 14,
                 'district_id' => 125,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            54 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            54 => [
                 'id' => 1055,
                 'type' => 'ឃុំ',
                 'code' => '140805',
@@ -12680,11 +11623,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Mesar Prachan',
                 'province_id' => 14,
                 'district_id' => 125,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            55 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            55 => [
                 'id' => 1056,
                 'type' => 'ឃុំ',
                 'code' => '140807',
@@ -12692,11 +11634,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Pnov',
                 'province_id' => 14,
                 'district_id' => 125,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            56 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            56 => [
                 'id' => 1057,
                 'type' => 'ឃុំ',
                 'code' => '140808',
@@ -12704,11 +11645,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Sniet',
                 'province_id' => 14,
                 'district_id' => 125,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            57 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            57 => [
                 'id' => 1058,
                 'type' => 'ឃុំ',
                 'code' => '140809',
@@ -12716,11 +11656,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Sralet',
                 'province_id' => 14,
                 'district_id' => 125,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            58 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            58 => [
                 'id' => 1059,
                 'type' => 'ឃុំ',
                 'code' => '140810',
@@ -12728,11 +11667,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Reab',
                 'province_id' => 14,
                 'district_id' => 125,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            59 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            59 => [
                 'id' => 1060,
                 'type' => 'ឃុំ',
                 'code' => '140811',
@@ -12740,11 +11678,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Roka',
                 'province_id' => 14,
                 'district_id' => 125,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            60 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            60 => [
                 'id' => 1061,
                 'type' => 'ឃុំ',
                 'code' => '140901',
@@ -12752,11 +11689,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Angkor Reach',
                 'province_id' => 14,
                 'district_id' => 126,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            61 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            61 => [
                 'id' => 1062,
                 'type' => 'ឃុំ',
                 'code' => '140902',
@@ -12764,11 +11700,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Banteay Chakrei',
                 'province_id' => 14,
                 'district_id' => 126,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            62 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            62 => [
                 'id' => 1063,
                 'type' => 'ឃុំ',
                 'code' => '140903',
@@ -12776,11 +11711,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Daol',
                 'province_id' => 14,
                 'district_id' => 126,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            63 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            63 => [
                 'id' => 1064,
                 'type' => 'ឃុំ',
                 'code' => '140904',
@@ -12788,11 +11722,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chey Kampok',
                 'province_id' => 14,
                 'district_id' => 126,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            64 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            64 => [
                 'id' => 1065,
                 'type' => 'ឃុំ',
                 'code' => '140905',
@@ -12800,11 +11733,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Soeng',
                 'province_id' => 14,
                 'district_id' => 126,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            65 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            65 => [
                 'id' => 1066,
                 'type' => 'ឃុំ',
                 'code' => '140906',
@@ -12812,11 +11744,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Krang Svay',
                 'province_id' => 14,
                 'district_id' => 126,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            66 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            66 => [
                 'id' => 1067,
                 'type' => 'ឃុំ',
                 'code' => '140907',
@@ -12824,11 +11755,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Lvea',
                 'province_id' => 14,
                 'district_id' => 126,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            67 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            67 => [
                 'id' => 1068,
                 'type' => 'ឃុំ',
                 'code' => '140908',
@@ -12836,11 +11766,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preah Sdach',
                 'province_id' => 14,
                 'district_id' => 126,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            68 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            68 => [
                 'id' => 1069,
                 'type' => 'ឃុំ',
                 'code' => '140909',
@@ -12848,11 +11777,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Reathor',
                 'province_id' => 14,
                 'district_id' => 126,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            69 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            69 => [
                 'id' => 1070,
                 'type' => 'ឃុំ',
                 'code' => '140910',
@@ -12860,11 +11788,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Rumchek',
                 'province_id' => 14,
                 'district_id' => 126,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            70 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            70 => [
                 'id' => 1071,
                 'type' => 'ឃុំ',
                 'code' => '140911',
@@ -12872,11 +11799,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sena Reach Otdam',
                 'province_id' => 14,
                 'district_id' => 126,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            71 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            71 => [
                 'id' => 1072,
                 'type' => 'សង្កាត់',
                 'code' => '141001',
@@ -12884,11 +11810,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Baray',
                 'province_id' => 14,
                 'district_id' => 127,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            72 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            72 => [
                 'id' => 1073,
                 'type' => 'សង្កាត់',
                 'code' => '141002',
@@ -12896,11 +11821,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Cheung Tuek',
                 'province_id' => 14,
                 'district_id' => 127,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            73 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            73 => [
                 'id' => 1074,
                 'type' => 'សង្កាត់',
                 'code' => '141003',
@@ -12908,11 +11832,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Leav',
                 'province_id' => 14,
                 'district_id' => 127,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            74 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            74 => [
                 'id' => 1075,
                 'type' => 'សង្កាត់',
                 'code' => '141004',
@@ -12920,11 +11843,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Kao',
                 'province_id' => 14,
                 'district_id' => 127,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            75 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            75 => [
                 'id' => 1076,
                 'type' => 'ឃុំ',
                 'code' => '141101',
@@ -12932,11 +11854,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pou Rieng',
                 'province_id' => 14,
                 'district_id' => 128,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            76 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            76 => [
                 'id' => 1077,
                 'type' => 'ឃុំ',
                 'code' => '141102',
@@ -12944,11 +11865,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Anteah',
                 'province_id' => 14,
                 'district_id' => 128,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            77 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            77 => [
                 'id' => 1078,
                 'type' => 'ឃុំ',
                 'code' => '141103',
@@ -12956,11 +11876,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Chrey',
                 'province_id' => 14,
                 'district_id' => 128,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            78 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            78 => [
                 'id' => 1079,
                 'type' => 'ឃុំ',
                 'code' => '141104',
@@ -12968,11 +11887,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Kanlaong',
                 'province_id' => 14,
                 'district_id' => 128,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            79 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            79 => [
                 'id' => 1080,
                 'type' => 'ឃុំ',
                 'code' => '141106',
@@ -12980,11 +11898,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Ruessei',
                 'province_id' => 14,
                 'district_id' => 128,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            80 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            80 => [
                 'id' => 1081,
                 'type' => 'ឃុំ',
                 'code' => '141107',
@@ -12992,11 +11909,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Ta Sar',
                 'province_id' => 14,
                 'district_id' => 128,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            81 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            81 => [
                 'id' => 1082,
                 'type' => 'ឃុំ',
                 'code' => '141201',
@@ -13004,11 +11920,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ampil Krau',
                 'province_id' => 14,
                 'district_id' => 129,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            82 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            82 => [
                 'id' => 1083,
                 'type' => 'ឃុំ',
                 'code' => '141202',
@@ -13016,11 +11931,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chrey Khmum',
                 'province_id' => 14,
                 'district_id' => 129,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            83 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            83 => [
                 'id' => 1084,
                 'type' => 'ឃុំ',
                 'code' => '141203',
@@ -13028,11 +11942,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Lve',
                 'province_id' => 14,
                 'district_id' => 129,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            84 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            84 => [
                 'id' => 1085,
                 'type' => 'ឃុំ',
                 'code' => '141204',
@@ -13040,11 +11953,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pnov Ti Muoy',
                 'province_id' => 14,
                 'district_id' => 129,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            85 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            85 => [
                 'id' => 1086,
                 'type' => 'ឃុំ',
                 'code' => '141205',
@@ -13052,11 +11964,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pnov Ti Pir',
                 'province_id' => 14,
                 'district_id' => 129,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            86 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            86 => [
                 'id' => 1087,
                 'type' => 'ឃុំ',
                 'code' => '141206',
@@ -13064,11 +11975,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pou Ti',
                 'province_id' => 14,
                 'district_id' => 129,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            87 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            87 => [
                 'id' => 1088,
                 'type' => 'ឃុំ',
                 'code' => '141207',
@@ -13076,11 +11986,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Changkran',
                 'province_id' => 14,
                 'district_id' => 129,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            88 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            88 => [
                 'id' => 1089,
                 'type' => 'ឃុំ',
                 'code' => '141208',
@@ -13088,11 +11997,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Daeum Thnoeng',
                 'province_id' => 14,
                 'district_id' => 129,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            89 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            89 => [
                 'id' => 1090,
                 'type' => 'ឃុំ',
                 'code' => '141209',
@@ -13100,11 +12008,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Tueng',
                 'province_id' => 14,
                 'district_id' => 129,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            90 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            90 => [
                 'id' => 1091,
                 'type' => 'ឃុំ',
                 'code' => '141210',
@@ -13112,11 +12019,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Rumlech',
                 'province_id' => 14,
                 'district_id' => 129,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            91 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            91 => [
                 'id' => 1092,
                 'type' => 'ឃុំ',
                 'code' => '141211',
@@ -13124,11 +12030,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ruessei Sanh',
                 'province_id' => 14,
                 'district_id' => 129,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            92 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            92 => [
                 'id' => 1093,
                 'type' => 'ឃុំ',
                 'code' => '141301',
@@ -13136,11 +12041,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Angkor Tret',
                 'province_id' => 14,
                 'district_id' => 130,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            93 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            93 => [
                 'id' => 1094,
                 'type' => 'ឃុំ',
                 'code' => '141302',
@@ -13148,11 +12052,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chea Khlang',
                 'province_id' => 14,
                 'district_id' => 130,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            94 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            94 => [
                 'id' => 1095,
                 'type' => 'ឃុំ',
                 'code' => '141303',
@@ -13160,11 +12063,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chrey',
                 'province_id' => 14,
                 'district_id' => 130,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            95 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            95 => [
                 'id' => 1096,
                 'type' => 'ឃុំ',
                 'code' => '141304',
@@ -13172,11 +12074,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Damrei Puon',
                 'province_id' => 14,
                 'district_id' => 130,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            96 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            96 => [
                 'id' => 1097,
                 'type' => 'ឃុំ',
                 'code' => '141305',
@@ -13184,11 +12085,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Me Bon',
                 'province_id' => 14,
                 'district_id' => 130,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            97 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            97 => [
                 'id' => 1098,
                 'type' => 'ឃុំ',
                 'code' => '141306',
@@ -13196,11 +12096,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pean Roung',
                 'province_id' => 14,
                 'district_id' => 130,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            98 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            98 => [
                 'id' => 1099,
                 'type' => 'ឃុំ',
                 'code' => '141307',
@@ -13208,11 +12107,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Popueus',
                 'province_id' => 14,
                 'district_id' => 130,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            99 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            99 => [
                 'id' => 1100,
                 'type' => 'ឃុំ',
                 'code' => '141308',
@@ -13220,11 +12118,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Khla',
                 'province_id' => 14,
                 'district_id' => 130,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            100 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            100 => [
                 'id' => 1101,
                 'type' => 'ឃុំ',
                 'code' => '141309',
@@ -13232,11 +12129,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Samraong',
                 'province_id' => 14,
                 'district_id' => 130,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            101 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            101 => [
                 'id' => 1102,
                 'type' => 'ឃុំ',
                 'code' => '141310',
@@ -13244,11 +12140,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Antor',
                 'province_id' => 14,
                 'district_id' => 130,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            102 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            102 => [
                 'id' => 1103,
                 'type' => 'ឃុំ',
                 'code' => '141311',
@@ -13256,11 +12151,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuek Thla',
                 'province_id' => 14,
                 'district_id' => 130,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            103 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            103 => [
                 'id' => 1104,
                 'type' => 'ឃុំ',
                 'code' => '150101',
@@ -13268,11 +12162,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Bat Kandaol',
                 'province_id' => 15,
                 'district_id' => 131,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            104 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            104 => [
                 'id' => 1105,
                 'type' => 'ឃុំ',
                 'code' => '150102',
@@ -13280,11 +12173,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Khnar',
                 'province_id' => 15,
                 'district_id' => 131,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            105 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            105 => [
                 'id' => 1106,
                 'type' => 'ឃុំ',
                 'code' => '150103',
@@ -13292,11 +12184,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khnar Totueng',
                 'province_id' => 15,
                 'district_id' => 131,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            106 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            106 => [
                 'id' => 1107,
                 'type' => 'ឃុំ',
                 'code' => '150104',
@@ -13304,11 +12195,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Me Tuek',
                 'province_id' => 15,
                 'district_id' => 131,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            107 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            107 => [
                 'id' => 1108,
                 'type' => 'ឃុំ',
                 'code' => '150105',
@@ -13316,11 +12206,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Ta Paong',
                 'province_id' => 15,
                 'district_id' => 131,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            108 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            108 => [
                 'id' => 1109,
                 'type' => 'ឃុំ',
                 'code' => '150106',
@@ -13328,11 +12217,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Rumlech',
                 'province_id' => 15,
                 'district_id' => 131,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            109 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            109 => [
                 'id' => 1110,
                 'type' => 'ឃុំ',
                 'code' => '150107',
@@ -13340,11 +12228,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Snam Preah',
                 'province_id' => 15,
                 'district_id' => 131,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            110 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            110 => [
                 'id' => 1111,
                 'type' => 'ឃុំ',
                 'code' => '150108',
@@ -13352,11 +12239,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Doun Kaev',
                 'province_id' => 15,
                 'district_id' => 131,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            111 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            111 => [
                 'id' => 1112,
                 'type' => 'ឃុំ',
                 'code' => '150110',
@@ -13364,11 +12250,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang chorng',
                 'province_id' => 15,
                 'district_id' => 131,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            112 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            112 => [
                 'id' => 1113,
                 'type' => 'ឃុំ',
                 'code' => '150201',
@@ -13376,11 +12261,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Anlong Vil',
                 'province_id' => 15,
                 'district_id' => 132,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            113 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            113 => [
                 'id' => 1114,
                 'type' => 'ឃុំ',
                 'code' => '150203',
@@ -13388,11 +12272,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kandieng',
                 'province_id' => 15,
                 'district_id' => 132,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            114 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            114 => [
                 'id' => 1115,
                 'type' => 'ឃុំ',
                 'code' => '150204',
@@ -13400,11 +12283,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kanhchor',
                 'province_id' => 15,
                 'district_id' => 132,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            115 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            115 => [
                 'id' => 1116,
                 'type' => 'ឃុំ',
                 'code' => '150205',
@@ -13412,11 +12294,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Reang Til',
                 'province_id' => 15,
                 'district_id' => 132,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            116 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            116 => [
                 'id' => 1117,
                 'type' => 'ឃុំ',
                 'code' => '150206',
@@ -13424,11 +12305,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srae Sdok',
                 'province_id' => 15,
                 'district_id' => 132,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            117 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            117 => [
                 'id' => 1118,
                 'type' => 'ឃុំ',
                 'code' => '150207',
@@ -13436,11 +12316,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Luong',
                 'province_id' => 15,
                 'district_id' => 132,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            118 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            118 => [
                 'id' => 1119,
                 'type' => 'ឃុំ',
                 'code' => '150208',
@@ -13448,11 +12327,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sya',
                 'province_id' => 15,
                 'district_id' => 132,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            119 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            119 => [
                 'id' => 1120,
                 'type' => 'ឃុំ',
                 'code' => '150209',
@@ -13460,11 +12338,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Veal',
                 'province_id' => 15,
                 'district_id' => 132,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            120 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            120 => [
                 'id' => 1121,
                 'type' => 'ឃុំ',
                 'code' => '150210',
@@ -13472,11 +12349,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Chum',
                 'province_id' => 15,
                 'district_id' => 132,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            121 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            121 => [
                 'id' => 1122,
                 'type' => 'ឃុំ',
                 'code' => '150301',
@@ -13484,11 +12360,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Anlong Tnaot',
                 'province_id' => 15,
                 'district_id' => 133,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            122 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            122 => [
                 'id' => 1123,
                 'type' => 'ឃុំ',
                 'code' => '150302',
@@ -13496,11 +12371,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ansa Chambak',
                 'province_id' => 15,
                 'district_id' => 133,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            123 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            123 => [
                 'id' => 1124,
                 'type' => 'ឃុំ',
                 'code' => '150303',
@@ -13508,11 +12382,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Kantuot',
                 'province_id' => 15,
                 'district_id' => 133,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            124 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            124 => [
                 'id' => 1125,
                 'type' => 'ឃុំ',
                 'code' => '150304',
@@ -13520,11 +12393,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chheu Tom',
                 'province_id' => 15,
                 'district_id' => 133,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            125 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            125 => [
                 'id' => 1126,
                 'type' => 'ឃុំ',
                 'code' => '150305',
@@ -13532,11 +12404,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Luong',
                 'province_id' => 15,
                 'district_id' => 133,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            126 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            126 => [
                 'id' => 1127,
                 'type' => 'ឃុំ',
                 'code' => '150306',
@@ -13544,11 +12415,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Pou',
                 'province_id' => 15,
                 'district_id' => 133,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            127 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            127 => [
                 'id' => 1128,
                 'type' => 'ឃុំ',
                 'code' => '150307',
@@ -13556,11 +12426,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kbal Trach',
                 'province_id' => 15,
                 'district_id' => 133,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            128 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            128 => [
                 'id' => 1129,
                 'type' => 'ឃុំ',
                 'code' => '150308',
@@ -13568,11 +12437,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Sandan',
                 'province_id' => 15,
                 'district_id' => 133,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            129 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            129 => [
                 'id' => 1130,
                 'type' => 'ឃុំ',
                 'code' => '150309',
@@ -13580,11 +12448,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sna Ansa',
                 'province_id' => 15,
                 'district_id' => 133,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            130 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            130 => [
                 'id' => 1131,
                 'type' => 'ឃុំ',
                 'code' => '150310',
@@ -13592,11 +12459,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Sa',
                 'province_id' => 15,
                 'district_id' => 133,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            131 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            131 => [
                 'id' => 1132,
                 'type' => 'ឃុំ',
                 'code' => '150311',
@@ -13604,11 +12470,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tnaot Chum',
                 'province_id' => 15,
                 'district_id' => 133,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            132 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            132 => [
                 'id' => 1133,
                 'type' => 'ឃុំ',
                 'code' => '150401',
@@ -13616,11 +12481,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Bak Chenhchien',
                 'province_id' => 15,
                 'district_id' => 134,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            133 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            133 => [
                 'id' => 1134,
                 'type' => 'ឃុំ',
                 'code' => '150402',
@@ -13628,11 +12492,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Leach',
                 'province_id' => 15,
                 'district_id' => 134,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            134 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            134 => [
                 'id' => 1135,
                 'type' => 'ឃុំ',
                 'code' => '150404',
@@ -13640,11 +12503,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prongil',
                 'province_id' => 15,
                 'district_id' => 134,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            135 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            135 => [
                 'id' => 1136,
                 'type' => 'ឃុំ',
                 'code' => '150405',
@@ -13652,11 +12514,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Rokat',
                 'province_id' => 15,
                 'district_id' => 134,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            136 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            136 => [
                 'id' => 1137,
                 'type' => 'ឃុំ',
                 'code' => '150406',
@@ -13664,11 +12525,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Santreae',
                 'province_id' => 15,
                 'district_id' => 134,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            137 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            137 => [
                 'id' => 1138,
                 'type' => 'ឃុំ',
                 'code' => '150407',
@@ -13676,11 +12536,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Samraong',
                 'province_id' => 15,
                 'district_id' => 134,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            138 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            138 => [
                 'id' => 1139,
                 'type' => 'សង្កាត់',
                 'code' => '150501',
@@ -13688,11 +12547,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chamraeun Phal',
                 'province_id' => 15,
                 'district_id' => 135,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            139 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            139 => [
                 'id' => 1140,
                 'type' => 'សង្កាត់',
                 'code' => '150503',
@@ -13700,11 +12558,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Lolok Sa',
                 'province_id' => 15,
                 'district_id' => 135,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            140 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            140 => [
                 'id' => 1141,
                 'type' => 'សង្កាត់',
                 'code' => '150504',
@@ -13712,11 +12569,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phteah Prey',
                 'province_id' => 15,
                 'district_id' => 135,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            141 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            141 => [
                 'id' => 1142,
                 'type' => 'សង្កាត់',
                 'code' => '150505',
@@ -13724,11 +12580,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Nhi',
                 'province_id' => 15,
                 'district_id' => 135,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            142 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            142 => [
                 'id' => 1143,
                 'type' => 'សង្កាត់',
                 'code' => '150506',
@@ -13736,11 +12591,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Roleab',
                 'province_id' => 15,
                 'district_id' => 135,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            143 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            143 => [
                 'id' => 1144,
                 'type' => 'សង្កាត់',
                 'code' => '150507',
@@ -13748,11 +12602,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay At',
                 'province_id' => 15,
                 'district_id' => 135,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            144 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            144 => [
                 'id' => 1145,
                 'type' => 'សង្កាត់',
                 'code' => '150508',
@@ -13760,11 +12613,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Banteay Dei',
                 'province_id' => 15,
                 'district_id' => 135,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            145 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            145 => [
                 'id' => 1146,
                 'type' => 'ឃុំ',
                 'code' => '150601',
@@ -13772,11 +12624,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Saom',
                 'province_id' => 15,
                 'district_id' => 136,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            146 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            146 => [
                 'id' => 1147,
                 'type' => 'ឃុំ',
                 'code' => '150602',
@@ -13784,11 +12635,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Krapeu Pir',
                 'province_id' => 15,
                 'district_id' => 136,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            147 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            147 => [
                 'id' => 1148,
                 'type' => 'ឃុំ',
                 'code' => '150603',
@@ -13796,11 +12646,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Anlong Reab',
                 'province_id' => 15,
                 'district_id' => 136,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            148 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            148 => [
                 'id' => 1149,
                 'type' => 'ឃុំ',
                 'code' => '150604',
@@ -13808,11 +12657,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pramaoy',
                 'province_id' => 15,
                 'district_id' => 136,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            149 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            149 => [
                 'id' => 1150,
                 'type' => 'ឃុំ',
                 'code' => '150605',
@@ -13820,11 +12668,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Thma Da',
                 'province_id' => 15,
                 'district_id' => 136,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            150 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            150 => [
                 'id' => 1151,
                 'type' => 'ឃុំ',
                 'code' => '150701',
@@ -13832,11 +12679,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Lou',
                 'province_id' => 15,
                 'district_id' => 137,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            151 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            151 => [
                 'id' => 1152,
                 'type' => 'ឃុំ',
                 'code' => '150702',
@@ -13844,11 +12690,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phteah Rung',
                 'province_id' => 15,
                 'district_id' => 137,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            152 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            152 => [
                 'id' => 1153,
                 'type' => 'ឃុំ',
                 'code' => '160101',
@@ -13856,11 +12701,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Malik',
                 'province_id' => 16,
                 'district_id' => 138,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            153 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            153 => [
                 'id' => 1154,
                 'type' => 'ឃុំ',
                 'code' => '160103',
@@ -13868,11 +12712,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Nhang',
                 'province_id' => 16,
                 'district_id' => 138,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            154 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            154 => [
                 'id' => 1155,
                 'type' => 'ឃុំ',
                 'code' => '160104',
@@ -13880,11 +12723,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Lav',
                 'province_id' => 16,
                 'district_id' => 138,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            155 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            155 => [
                 'id' => 1156,
                 'type' => 'សង្កាត់',
                 'code' => '160201',
@@ -13892,11 +12734,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kachanh',
                 'province_id' => 16,
                 'district_id' => 139,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            156 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            156 => [
                 'id' => 1157,
                 'type' => 'សង្កាត់',
                 'code' => '160202',
@@ -13904,11 +12745,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Labansiek',
                 'province_id' => 16,
                 'district_id' => 139,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            157 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            157 => [
                 'id' => 1158,
                 'type' => 'សង្កាត់',
                 'code' => '160203',
@@ -13916,11 +12756,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Yeak Laom',
                 'province_id' => 16,
                 'district_id' => 139,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            158 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            158 => [
                 'id' => 1159,
                 'type' => 'សង្កាត់',
                 'code' => '160204',
@@ -13928,11 +12767,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Kansaeng',
                 'province_id' => 16,
                 'district_id' => 139,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            159 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            159 => [
                 'id' => 1160,
                 'type' => 'ឃុំ',
                 'code' => '160301',
@@ -13940,11 +12778,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kak',
                 'province_id' => 16,
                 'district_id' => 140,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            160 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            160 => [
                 'id' => 1161,
                 'type' => 'ឃុំ',
                 'code' => '160302',
@@ -13952,11 +12789,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Keh Chong',
                 'province_id' => 16,
                 'district_id' => 140,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            161 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            161 => [
                 'id' => 1162,
                 'type' => 'ឃុំ',
                 'code' => '160303',
@@ -13964,11 +12800,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'La Minh',
                 'province_id' => 16,
                 'district_id' => 140,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            162 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            162 => [
                 'id' => 1163,
                 'type' => 'ឃុំ',
                 'code' => '160304',
@@ -13976,11 +12811,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Lung Khung',
                 'province_id' => 16,
                 'district_id' => 140,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            163 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            163 => [
                 'id' => 1164,
                 'type' => 'ឃុំ',
                 'code' => '160305',
@@ -13988,11 +12822,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Saeung',
                 'province_id' => 16,
                 'district_id' => 140,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            164 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            164 => [
                 'id' => 1165,
                 'type' => 'ឃុំ',
                 'code' => '160306',
@@ -14000,11 +12833,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ting Chak',
                 'province_id' => 16,
                 'district_id' => 140,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            165 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            165 => [
                 'id' => 1166,
                 'type' => 'ឃុំ',
                 'code' => '160401',
@@ -14012,11 +12844,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Serei Mongkol',
                 'province_id' => 16,
                 'district_id' => 141,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            166 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            166 => [
                 'id' => 1167,
                 'type' => 'ឃុំ',
                 'code' => '160402',
@@ -14024,11 +12855,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srae Angkrorng',
                 'province_id' => 16,
                 'district_id' => 141,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            167 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            167 => [
                 'id' => 1168,
                 'type' => 'ឃុំ',
                 'code' => '160403',
@@ -14036,11 +12866,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Ang',
                 'province_id' => 16,
                 'district_id' => 141,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            168 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            168 => [
                 'id' => 1169,
                 'type' => 'ឃុំ',
                 'code' => '160404',
@@ -14048,11 +12877,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Teun',
                 'province_id' => 16,
                 'district_id' => 141,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            169 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            169 => [
                 'id' => 1170,
                 'type' => 'ឃុំ',
                 'code' => '160405',
@@ -14060,11 +12888,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Chres',
                 'province_id' => 16,
                 'district_id' => 141,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            170 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            170 => [
                 'id' => 1171,
                 'type' => 'ឃុំ',
                 'code' => '160406',
@@ -14072,11 +12899,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Kraham',
                 'province_id' => 16,
                 'district_id' => 141,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            171 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            171 => [
                 'id' => 1172,
                 'type' => 'ឃុំ',
                 'code' => '160501',
@@ -14084,11 +12910,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chey Otdam',
                 'province_id' => 16,
                 'district_id' => 142,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            172 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            172 => [
                 'id' => 1173,
                 'type' => 'ឃុំ',
                 'code' => '160502',
@@ -14096,11 +12921,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ka Laeng',
                 'province_id' => 16,
                 'district_id' => 142,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            173 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            173 => [
                 'id' => 1174,
                 'type' => 'ឃុំ',
                 'code' => '160503',
@@ -14108,11 +12932,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Lbang Muoy',
                 'province_id' => 16,
                 'district_id' => 142,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            174 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            174 => [
                 'id' => 1175,
                 'type' => 'ឃុំ',
                 'code' => '160504',
@@ -14120,11 +12943,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Lbang Pir',
                 'province_id' => 16,
                 'district_id' => 142,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            175 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            175 => [
                 'id' => 1176,
                 'type' => 'ឃុំ',
                 'code' => '160505',
@@ -14132,11 +12954,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ba Tang',
                 'province_id' => 16,
                 'district_id' => 142,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            176 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            176 => [
                 'id' => 1177,
                 'type' => 'ឃុំ',
                 'code' => '160506',
@@ -14144,11 +12965,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Seda',
                 'province_id' => 16,
                 'district_id' => 142,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            177 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            177 => [
                 'id' => 1178,
                 'type' => 'ឃុំ',
                 'code' => '160601',
@@ -14156,11 +12976,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Cha Ung',
                 'province_id' => 16,
                 'district_id' => 143,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            178 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            178 => [
                 'id' => 1179,
                 'type' => 'ឃុំ',
                 'code' => '160602',
@@ -14168,11 +12987,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pouy',
                 'province_id' => 16,
                 'district_id' => 143,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            179 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            179 => [
                 'id' => 1180,
                 'type' => 'ឃុំ',
                 'code' => '160603',
@@ -14180,11 +12998,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Aekakpheap',
                 'province_id' => 16,
                 'district_id' => 143,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            180 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            180 => [
                 'id' => 1181,
                 'type' => 'ឃុំ',
                 'code' => '160604',
@@ -14192,11 +13009,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kalai',
                 'province_id' => 16,
                 'district_id' => 143,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            181 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            181 => [
                 'id' => 1182,
                 'type' => 'ឃុំ',
                 'code' => '160605',
@@ -14204,11 +13020,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Chum',
                 'province_id' => 16,
                 'district_id' => 143,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            182 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            182 => [
                 'id' => 1183,
                 'type' => 'ឃុំ',
                 'code' => '160606',
@@ -14216,11 +13031,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sameakki',
                 'province_id' => 16,
                 'district_id' => 143,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            183 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            183 => [
                 'id' => 1184,
                 'type' => 'ឃុំ',
                 'code' => '160607',
@@ -14228,11 +13042,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'L\'ak',
                 'province_id' => 16,
                 'district_id' => 143,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            184 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            184 => [
                 'id' => 1185,
                 'type' => 'ឃុំ',
                 'code' => '160701',
@@ -14240,11 +13053,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Bar Kham',
                 'province_id' => 16,
                 'district_id' => 144,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            185 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            185 => [
                 'id' => 1186,
                 'type' => 'ឃុំ',
                 'code' => '160702',
@@ -14252,11 +13064,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Lum Choar',
                 'province_id' => 16,
                 'district_id' => 144,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            186 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            186 => [
                 'id' => 1187,
                 'type' => 'ឃុំ',
                 'code' => '160703',
@@ -14264,11 +13075,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pak Nhai',
                 'province_id' => 16,
                 'district_id' => 144,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            187 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            187 => [
                 'id' => 1188,
                 'type' => 'ឃុំ',
                 'code' => '160704',
@@ -14276,11 +13086,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pa Te',
                 'province_id' => 16,
                 'district_id' => 144,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            188 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            188 => [
                 'id' => 1189,
                 'type' => 'ឃុំ',
                 'code' => '160705',
@@ -14288,11 +13097,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sesan',
                 'province_id' => 16,
                 'district_id' => 144,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            189 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            189 => [
                 'id' => 1190,
                 'type' => 'ឃុំ',
                 'code' => '160706',
@@ -14300,11 +13108,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Saom Thum',
                 'province_id' => 16,
                 'district_id' => 144,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            190 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            190 => [
                 'id' => 1191,
                 'type' => 'ឃុំ',
                 'code' => '160707',
@@ -14312,11 +13119,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ya Tung',
                 'province_id' => 16,
                 'district_id' => 144,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            191 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            191 => [
                 'id' => 1192,
                 'type' => 'ឃុំ',
                 'code' => '160801',
@@ -14324,11 +13130,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Veaeng Leu',
                 'province_id' => 16,
                 'district_id' => 145,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            192 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            192 => [
                 'id' => 1193,
                 'type' => 'ឃុំ',
                 'code' => '160802',
@@ -14336,11 +13141,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Veaeng Kraom',
                 'province_id' => 16,
                 'district_id' => 145,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            193 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            193 => [
                 'id' => 1194,
                 'type' => 'ឃុំ',
                 'code' => '160901',
@@ -14348,11 +13152,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pong',
                 'province_id' => 16,
                 'district_id' => 146,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            194 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            194 => [
                 'id' => 1195,
                 'type' => 'ឃុំ',
                 'code' => '160903',
@@ -14360,11 +13163,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Hat Pak',
                 'province_id' => 16,
                 'district_id' => 146,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            195 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            195 => [
                 'id' => 1196,
                 'type' => 'ឃុំ',
                 'code' => '160904',
@@ -14372,11 +13174,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ka Choun',
                 'province_id' => 16,
                 'district_id' => 146,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            196 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            196 => [
                 'id' => 1197,
                 'type' => 'ឃុំ',
                 'code' => '160905',
@@ -14384,11 +13185,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Pang',
                 'province_id' => 16,
                 'district_id' => 146,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            197 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            197 => [
                 'id' => 1198,
                 'type' => 'ឃុំ',
                 'code' => '160906',
@@ -14396,11 +13196,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Peak',
                 'province_id' => 16,
                 'district_id' => 146,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            198 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            198 => [
                 'id' => 1199,
                 'type' => 'ឃុំ',
                 'code' => '160907',
@@ -14408,11 +13207,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kok Lak',
                 'province_id' => 16,
                 'district_id' => 146,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            199 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            199 => [
                 'id' => 1200,
                 'type' => 'ឃុំ',
                 'code' => '160908',
@@ -14420,11 +13218,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pa Kalan',
                 'province_id' => 16,
                 'district_id' => 146,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            200 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            200 => [
                 'id' => 1201,
                 'type' => 'ឃុំ',
                 'code' => '160909',
@@ -14432,11 +13229,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phnum Kok',
                 'province_id' => 16,
                 'district_id' => 146,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            201 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            201 => [
                 'id' => 1202,
                 'type' => 'ឃុំ',
                 'code' => '160910',
@@ -14444,11 +13240,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Veun Sai',
                 'province_id' => 16,
                 'district_id' => 146,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            202 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            202 => [
                 'id' => 1203,
                 'type' => 'ឃុំ',
                 'code' => '170101',
@@ -14456,11 +13251,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Char Chhuk',
                 'province_id' => 17,
                 'district_id' => 147,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            203 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            203 => [
                 'id' => 1204,
                 'type' => 'ឃុំ',
                 'code' => '170102',
@@ -14468,11 +13262,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Doun Peng',
                 'province_id' => 17,
                 'district_id' => 147,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            204 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            204 => [
                 'id' => 1205,
                 'type' => 'ឃុំ',
                 'code' => '170103',
@@ -14480,11 +13273,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kouk Doung',
                 'province_id' => 17,
                 'district_id' => 147,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            205 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            205 => [
                 'id' => 1206,
                 'type' => 'ឃុំ',
                 'code' => '170104',
@@ -14492,11 +13284,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Koul',
                 'province_id' => 17,
                 'district_id' => 147,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            206 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            206 => [
                 'id' => 1207,
                 'type' => 'ឃុំ',
                 'code' => '170105',
@@ -14504,11 +13295,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Nokor Pheas',
                 'province_id' => 17,
                 'district_id' => 147,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            207 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            207 => [
                 'id' => 1208,
                 'type' => 'ឃុំ',
                 'code' => '170106',
@@ -14516,11 +13306,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srae Khvav',
                 'province_id' => 17,
                 'district_id' => 147,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            208 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            208 => [
                 'id' => 1209,
                 'type' => 'ឃុំ',
                 'code' => '170107',
@@ -14528,11 +13317,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Saom',
                 'province_id' => 17,
                 'district_id' => 147,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            209 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            209 => [
                 'id' => 1210,
                 'type' => 'ឃុំ',
                 'code' => '170201',
@@ -14540,11 +13328,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chob Ta Trav',
                 'province_id' => 17,
                 'district_id' => 148,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            210 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            210 => [
                 'id' => 1211,
                 'type' => 'ឃុំ',
                 'code' => '170202',
@@ -14552,11 +13339,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Leang Dai',
                 'province_id' => 17,
                 'district_id' => 148,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            211 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            211 => [
                 'id' => 1212,
                 'type' => 'ឃុំ',
                 'code' => '170203',
@@ -14564,11 +13350,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Peak Snaeng',
                 'province_id' => 17,
                 'district_id' => 148,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            212 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            212 => [
                 'id' => 1213,
                 'type' => 'ឃុំ',
                 'code' => '170204',
@@ -14576,11 +13361,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Chek',
                 'province_id' => 17,
                 'district_id' => 148,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            213 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            213 => [
                 'id' => 1214,
                 'type' => 'ឃុំ',
                 'code' => '170301',
@@ -14588,11 +13372,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khnar Sanday',
                 'province_id' => 17,
                 'district_id' => 149,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            214 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            214 => [
                 'id' => 1215,
                 'type' => 'ឃុំ',
                 'code' => '170302',
@@ -14600,11 +13383,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khun Ream',
                 'province_id' => 17,
                 'district_id' => 149,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            215 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            215 => [
                 'id' => 1216,
                 'type' => 'ឃុំ',
                 'code' => '170303',
@@ -14612,11 +13394,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preah Dak',
                 'province_id' => 17,
                 'district_id' => 149,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            216 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            216 => [
                 'id' => 1217,
                 'type' => 'ឃុំ',
                 'code' => '170304',
@@ -14624,11 +13405,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Rumchek',
                 'province_id' => 17,
                 'district_id' => 149,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            217 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            217 => [
                 'id' => 1218,
                 'type' => 'ឃុំ',
                 'code' => '170305',
@@ -14636,11 +13416,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Run Ta Aek',
                 'province_id' => 17,
                 'district_id' => 149,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            218 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            218 => [
                 'id' => 1219,
                 'type' => 'ឃុំ',
                 'code' => '170306',
@@ -14648,11 +13427,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tbaeng',
                 'province_id' => 17,
                 'district_id' => 149,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            219 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            219 => [
                 'id' => 1220,
                 'type' => 'ឃុំ',
                 'code' => '170401',
@@ -14660,11 +13438,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Anlong Samnar',
                 'province_id' => 17,
                 'district_id' => 150,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            220 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            220 => [
                 'id' => 1221,
                 'type' => 'ឃុំ',
                 'code' => '170402',
@@ -14672,11 +13449,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chi Kraeng',
                 'province_id' => 17,
                 'district_id' => 150,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            221 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            221 => [
                 'id' => 1222,
                 'type' => 'ឃុំ',
                 'code' => '170403',
@@ -14684,11 +13460,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Kdei',
                 'province_id' => 17,
                 'district_id' => 150,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            222 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            222 => [
                 'id' => 1223,
                 'type' => 'ឃុំ',
                 'code' => '170404',
@@ -14696,11 +13471,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khvav',
                 'province_id' => 17,
                 'district_id' => 150,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            223 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            223 => [
                 'id' => 1224,
                 'type' => 'ឃុំ',
                 'code' => '170405',
@@ -14708,11 +13482,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kouk Thlok Kraom',
                 'province_id' => 17,
                 'district_id' => 150,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            224 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            224 => [
                 'id' => 1225,
                 'type' => 'ឃុំ',
                 'code' => '170406',
@@ -14720,11 +13493,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kouk Thlok Leu',
                 'province_id' => 17,
                 'district_id' => 150,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            225 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            225 => [
                 'id' => 1226,
                 'type' => 'ឃុំ',
                 'code' => '170407',
@@ -14732,11 +13504,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Lveaeng Ruessei',
                 'province_id' => 17,
                 'district_id' => 150,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            226 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            226 => [
                 'id' => 1227,
                 'type' => 'ឃុំ',
                 'code' => '170408',
@@ -14744,11 +13515,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pongro Kraom',
                 'province_id' => 17,
                 'district_id' => 150,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            227 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            227 => [
                 'id' => 1228,
                 'type' => 'ឃុំ',
                 'code' => '170409',
@@ -14756,11 +13526,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pongro Leu',
                 'province_id' => 17,
                 'district_id' => 150,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            228 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            228 => [
                 'id' => 1229,
                 'type' => 'ឃុំ',
                 'code' => '170410',
@@ -14768,11 +13537,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ruessei Lok',
                 'province_id' => 17,
                 'district_id' => 150,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            229 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            229 => [
                 'id' => 1230,
                 'type' => 'ឃុំ',
                 'code' => '170411',
@@ -14780,11 +13548,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sangvaeuy',
                 'province_id' => 17,
                 'district_id' => 150,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            230 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            230 => [
                 'id' => 1231,
                 'type' => 'ឃុំ',
                 'code' => '170412',
@@ -14792,11 +13559,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Spean Tnaot',
                 'province_id' => 17,
                 'district_id' => 150,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            231 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            231 => [
                 'id' => 1232,
                 'type' => 'ឃុំ',
                 'code' => '170601',
@@ -14804,11 +13570,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chanleas Dai',
                 'province_id' => 17,
                 'district_id' => 151,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            232 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            232 => [
                 'id' => 1233,
                 'type' => 'ឃុំ',
                 'code' => '170602',
@@ -14816,11 +13581,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Thkov',
                 'province_id' => 17,
                 'district_id' => 151,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            233 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            233 => [
                 'id' => 1234,
                 'type' => 'ឃុំ',
                 'code' => '170603',
@@ -14828,11 +13592,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kralanh',
                 'province_id' => 17,
                 'district_id' => 151,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            234 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            234 => [
                 'id' => 1235,
                 'type' => 'ឃុំ',
                 'code' => '170604',
@@ -14840,11 +13603,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Krouch Kor',
                 'province_id' => 17,
                 'district_id' => 151,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            235 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            235 => [
                 'id' => 1236,
                 'type' => 'ឃុំ',
                 'code' => '170605',
@@ -14852,11 +13614,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Roung Kou',
                 'province_id' => 17,
                 'district_id' => 151,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            236 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            236 => [
                 'id' => 1237,
                 'type' => 'ឃុំ',
                 'code' => '170606',
@@ -14864,11 +13625,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sambuor',
                 'province_id' => 17,
                 'district_id' => 151,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            237 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            237 => [
                 'id' => 1238,
                 'type' => 'ឃុំ',
                 'code' => '170607',
@@ -14876,11 +13636,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Saen Sokh',
                 'province_id' => 17,
                 'district_id' => 151,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            238 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            238 => [
                 'id' => 1239,
                 'type' => 'ឃុំ',
                 'code' => '170608',
@@ -14888,11 +13647,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Snuol',
                 'province_id' => 17,
                 'district_id' => 151,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            239 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            239 => [
                 'id' => 1240,
                 'type' => 'ឃុំ',
                 'code' => '170609',
@@ -14900,11 +13658,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sranal',
                 'province_id' => 17,
                 'district_id' => 151,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            240 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            240 => [
                 'id' => 1241,
                 'type' => 'ឃុំ',
                 'code' => '170610',
@@ -14912,11 +13669,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta An',
                 'province_id' => 17,
                 'district_id' => 151,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            241 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            241 => [
                 'id' => 1242,
                 'type' => 'ឃុំ',
                 'code' => '170701',
@@ -14924,11 +13680,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sasar Sdam',
                 'province_id' => 17,
                 'district_id' => 152,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            242 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            242 => [
                 'id' => 1243,
                 'type' => 'ឃុំ',
                 'code' => '170702',
@@ -14936,11 +13691,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Doun Kaev',
                 'province_id' => 17,
                 'district_id' => 152,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            243 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            243 => [
                 'id' => 1244,
                 'type' => 'ឃុំ',
                 'code' => '170703',
@@ -14948,11 +13702,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kdei Run',
                 'province_id' => 17,
                 'district_id' => 152,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            244 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            244 => [
                 'id' => 1245,
                 'type' => 'ឃុំ',
                 'code' => '170704',
@@ -14960,11 +13713,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaev Poar',
                 'province_id' => 17,
                 'district_id' => 152,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            245 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            245 => [
                 'id' => 1246,
                 'type' => 'ឃុំ',
                 'code' => '170705',
@@ -14972,11 +13724,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khnat',
                 'province_id' => 17,
                 'district_id' => 152,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            246 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            246 => [
                 'id' => 1247,
                 'type' => 'ឃុំ',
                 'code' => '170707',
@@ -14984,11 +13735,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Lvea',
                 'province_id' => 17,
                 'district_id' => 152,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            247 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            247 => [
                 'id' => 1248,
                 'type' => 'ឃុំ',
                 'code' => '170708',
@@ -14996,11 +13746,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Mukh Paen',
                 'province_id' => 17,
                 'district_id' => 152,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            248 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            248 => [
                 'id' => 1249,
                 'type' => 'ឃុំ',
                 'code' => '170709',
@@ -15008,11 +13757,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pou Treay',
                 'province_id' => 17,
                 'district_id' => 152,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            249 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            249 => [
                 'id' => 1250,
                 'type' => 'ឃុំ',
                 'code' => '170710',
@@ -15020,11 +13768,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Puok',
                 'province_id' => 17,
                 'district_id' => 152,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            250 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            250 => [
                 'id' => 1251,
                 'type' => 'ឃុំ',
                 'code' => '170711',
@@ -15032,11 +13779,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Chruk',
                 'province_id' => 17,
                 'district_id' => 152,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            251 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            251 => [
                 'id' => 1252,
                 'type' => 'ឃុំ',
                 'code' => '170712',
@@ -15044,11 +13790,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Reul',
                 'province_id' => 17,
                 'district_id' => 152,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            252 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            252 => [
                 'id' => 1253,
                 'type' => 'ឃុំ',
                 'code' => '170713',
@@ -15056,11 +13801,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Samraong Yea',
                 'province_id' => 17,
                 'district_id' => 152,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            253 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            253 => [
                 'id' => 1254,
                 'type' => 'ឃុំ',
                 'code' => '170715',
@@ -15068,11 +13812,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trei Nhoar',
                 'province_id' => 17,
                 'district_id' => 152,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            254 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            254 => [
                 'id' => 1255,
                 'type' => 'ឃុំ',
                 'code' => '170716',
@@ -15080,11 +13823,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Yeang',
                 'province_id' => 17,
                 'district_id' => 152,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            255 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            255 => [
                 'id' => 1256,
                 'type' => 'ឃុំ',
                 'code' => '170902',
@@ -15092,11 +13834,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Bakong',
                 'province_id' => 17,
                 'district_id' => 153,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            256 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            256 => [
                 'id' => 1257,
                 'type' => 'ឃុំ',
                 'code' => '170903',
@@ -15104,11 +13845,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ballangk',
                 'province_id' => 17,
                 'district_id' => 153,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            257 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            257 => [
                 'id' => 1258,
                 'type' => 'ឃុំ',
                 'code' => '170904',
@@ -15116,11 +13856,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Phluk',
                 'province_id' => 17,
                 'district_id' => 153,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            258 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            258 => [
                 'id' => 1259,
                 'type' => 'ឃុំ',
                 'code' => '170905',
@@ -15128,11 +13867,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kantreang',
                 'province_id' => 17,
                 'district_id' => 153,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            259 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            259 => [
                 'id' => 1260,
                 'type' => 'ឃុំ',
                 'code' => '170906',
@@ -15140,11 +13878,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kandaek',
                 'province_id' => 17,
                 'district_id' => 153,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            260 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            260 => [
                 'id' => 1261,
                 'type' => 'ឃុំ',
                 'code' => '170907',
@@ -15152,11 +13889,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Mean Chey',
                 'province_id' => 17,
                 'district_id' => 153,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            261 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            261 => [
                 'id' => 1262,
                 'type' => 'ឃុំ',
                 'code' => '170908',
@@ -15164,11 +13900,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Roluos',
                 'province_id' => 17,
                 'district_id' => 153,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            262 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            262 => [
                 'id' => 1263,
                 'type' => 'ឃុំ',
                 'code' => '170909',
@@ -15176,11 +13911,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Thum',
                 'province_id' => 17,
                 'district_id' => 153,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            263 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            263 => [
                 'id' => 1264,
                 'type' => 'ឃុំ',
                 'code' => '170910',
@@ -15188,11 +13922,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ampil',
                 'province_id' => 17,
                 'district_id' => 153,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            264 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            264 => [
                 'id' => 1265,
                 'type' => 'សង្កាត់',
                 'code' => '171001',
@@ -15200,11 +13933,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sla Kram',
                 'province_id' => 17,
                 'district_id' => 154,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            265 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            265 => [
                 'id' => 1266,
                 'type' => 'សង្កាត់',
                 'code' => '171002',
@@ -15212,11 +13944,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Dankum',
                 'province_id' => 17,
                 'district_id' => 154,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            266 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            266 => [
                 'id' => 1267,
                 'type' => 'សង្កាត់',
                 'code' => '171003',
@@ -15224,11 +13955,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kok Chak',
                 'province_id' => 17,
                 'district_id' => 154,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            267 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            267 => [
                 'id' => 1268,
                 'type' => 'សង្កាត់',
                 'code' => '171004',
@@ -15236,11 +13966,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sala Kamreuk',
                 'province_id' => 17,
                 'district_id' => 154,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            268 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            268 => [
                 'id' => 1269,
                 'type' => 'សង្កាត់',
                 'code' => '171005',
@@ -15248,11 +13977,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Nokor Thum',
                 'province_id' => 17,
                 'district_id' => 154,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            269 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            269 => [
                 'id' => 1270,
                 'type' => 'សង្កាត់',
                 'code' => '171006',
@@ -15260,11 +13988,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chreav',
                 'province_id' => 17,
                 'district_id' => 154,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            270 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            270 => [
                 'id' => 1271,
                 'type' => 'សង្កាត់',
                 'code' => '171007',
@@ -15272,11 +13999,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chong Khnies',
                 'province_id' => 17,
                 'district_id' => 154,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            271 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            271 => [
                 'id' => 1272,
                 'type' => 'សង្កាត់',
                 'code' => '171008',
@@ -15284,11 +14010,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sngkat Sambuor',
                 'province_id' => 17,
                 'district_id' => 154,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            272 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            272 => [
                 'id' => 1273,
                 'type' => 'សង្កាត់',
                 'code' => '171009',
@@ -15296,11 +14021,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Siem Reab',
                 'province_id' => 17,
                 'district_id' => 154,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            273 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            273 => [
                 'id' => 1274,
                 'type' => 'សង្កាត់',
                 'code' => '171010',
@@ -15308,11 +14032,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srangae',
                 'province_id' => 17,
                 'district_id' => 154,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            274 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            274 => [
                 'id' => 1275,
                 'type' => 'សង្កាត់',
                 'code' => '171012',
@@ -15320,11 +14043,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Krabei Riel',
                 'province_id' => 17,
                 'district_id' => 154,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            275 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            275 => [
                 'id' => 1276,
                 'type' => 'សង្កាត់',
                 'code' => '171013',
@@ -15332,11 +14054,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuek Vil',
                 'province_id' => 17,
                 'district_id' => 154,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            276 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            276 => [
                 'id' => 1277,
                 'type' => 'ឃុំ',
                 'code' => '171101',
@@ -15344,11 +14065,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chan Sa',
                 'province_id' => 17,
                 'district_id' => 155,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            277 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            277 => [
                 'id' => 1278,
                 'type' => 'ឃុំ',
                 'code' => '171102',
@@ -15356,11 +14076,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Dam Daek',
                 'province_id' => 17,
                 'district_id' => 155,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            278 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            278 => [
                 'id' => 1279,
                 'type' => 'ឃុំ',
                 'code' => '171103',
@@ -15368,11 +14087,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Dan Run',
                 'province_id' => 17,
                 'district_id' => 155,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            279 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            279 => [
                 'id' => 1280,
                 'type' => 'ឃុំ',
                 'code' => '171104',
@@ -15380,11 +14098,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Khleang',
                 'province_id' => 17,
                 'district_id' => 155,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            280 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            280 => [
                 'id' => 1281,
                 'type' => 'ឃុំ',
                 'code' => '171105',
@@ -15392,11 +14109,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kien Sangkae',
                 'province_id' => 17,
                 'district_id' => 155,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            281 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            281 => [
                 'id' => 1282,
                 'type' => 'ឃុំ',
                 'code' => '171106',
@@ -15404,11 +14120,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khchas',
                 'province_id' => 17,
                 'district_id' => 155,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            282 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            282 => [
                 'id' => 1283,
                 'type' => 'ឃុំ',
                 'code' => '171107',
@@ -15416,11 +14131,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khnar Pou',
                 'province_id' => 17,
                 'district_id' => 155,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            283 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            283 => [
                 'id' => 1284,
                 'type' => 'ឃុំ',
                 'code' => '171108',
@@ -15428,11 +14142,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Popel',
                 'province_id' => 17,
                 'district_id' => 155,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            284 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            284 => [
                 'id' => 1285,
                 'type' => 'ឃុំ',
                 'code' => '171109',
@@ -15440,11 +14153,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Samraong',
                 'province_id' => 17,
                 'district_id' => 155,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            285 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            285 => [
                 'id' => 1286,
                 'type' => 'ឃុំ',
                 'code' => '171110',
@@ -15452,11 +14164,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Yaek',
                 'province_id' => 17,
                 'district_id' => 155,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            286 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            286 => [
                 'id' => 1287,
                 'type' => 'ឃុំ',
                 'code' => '171201',
@@ -15464,11 +14175,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chrouy Neang Nguon',
                 'province_id' => 17,
                 'district_id' => 156,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            287 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            287 => [
                 'id' => 1288,
                 'type' => 'ឃុំ',
                 'code' => '171202',
@@ -15476,11 +14186,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Klang Hay',
                 'province_id' => 17,
                 'district_id' => 156,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            288 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            288 => [
                 'id' => 1289,
                 'type' => 'ឃុំ',
                 'code' => '171203',
@@ -15488,11 +14197,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tram Sasar',
                 'province_id' => 17,
                 'district_id' => 156,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            289 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            289 => [
                 'id' => 1290,
                 'type' => 'ឃុំ',
                 'code' => '171204',
@@ -15500,11 +14208,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Moung',
                 'province_id' => 17,
                 'district_id' => 156,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            290 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            290 => [
                 'id' => 1291,
                 'type' => 'ឃុំ',
                 'code' => '171205',
@@ -15512,11 +14219,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prei',
                 'province_id' => 17,
                 'district_id' => 156,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            291 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            291 => [
                 'id' => 1292,
                 'type' => 'ឃុំ',
                 'code' => '171206',
@@ -15524,11 +14230,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Slaeng Spean',
                 'province_id' => 17,
                 'district_id' => 156,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            292 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            292 => [
                 'id' => 1293,
                 'type' => 'ឃុំ',
                 'code' => '171301',
@@ -15536,11 +14241,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Mealea',
                 'province_id' => 17,
                 'district_id' => 157,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            293 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            293 => [
                 'id' => 1294,
                 'type' => 'ឃុំ',
                 'code' => '171302',
@@ -15548,11 +14252,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kantuot',
                 'province_id' => 17,
                 'district_id' => 157,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            294 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            294 => [
                 'id' => 1295,
                 'type' => 'ឃុំ',
                 'code' => '171303',
@@ -15560,11 +14263,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khnang Phnum',
                 'province_id' => 17,
                 'district_id' => 157,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            295 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            295 => [
                 'id' => 1296,
                 'type' => 'ឃុំ',
                 'code' => '171304',
@@ -15572,11 +14274,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Leu',
                 'province_id' => 17,
                 'district_id' => 157,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            296 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            296 => [
                 'id' => 1297,
                 'type' => 'ឃុំ',
                 'code' => '171305',
@@ -15584,11 +14285,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Siem',
                 'province_id' => 17,
                 'district_id' => 157,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            297 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            297 => [
                 'id' => 1298,
                 'type' => 'ឃុំ',
                 'code' => '171401',
@@ -15596,11 +14296,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prasat',
                 'province_id' => 17,
                 'district_id' => 158,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            298 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            298 => [
                 'id' => 1299,
                 'type' => 'ឃុំ',
                 'code' => '171402',
@@ -15608,11 +14307,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Lvea Krang',
                 'province_id' => 17,
                 'district_id' => 158,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            299 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            299 => [
                 'id' => 1300,
                 'type' => 'ឃុំ',
                 'code' => '171403',
@@ -15620,11 +14318,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srae Nouy',
                 'province_id' => 17,
                 'district_id' => 158,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            300 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            300 => [
                 'id' => 1301,
                 'type' => 'ឃុំ',
                 'code' => '171404',
@@ -15632,11 +14329,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Sa',
                 'province_id' => 17,
                 'district_id' => 158,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            301 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            301 => [
                 'id' => 1302,
                 'type' => 'ឃុំ',
                 'code' => '171405',
@@ -15644,11 +14340,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Varin',
                 'province_id' => 17,
                 'district_id' => 158,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            302 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            302 => [
                 'id' => 1303,
                 'type' => 'សង្កាត់',
                 'code' => '180101',
@@ -15656,11 +14351,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'lek Muoy',
                 'province_id' => 18,
                 'district_id' => 159,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            303 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            303 => [
                 'id' => 1304,
                 'type' => 'សង្កាត់',
                 'code' => '180102',
@@ -15668,11 +14362,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pir',
                 'province_id' => 18,
                 'district_id' => 159,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            304 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            304 => [
                 'id' => 1305,
                 'type' => 'សង្កាត់',
                 'code' => '180103',
@@ -15680,11 +14373,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Bei',
                 'province_id' => 18,
                 'district_id' => 159,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            305 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            305 => [
                 'id' => 1306,
                 'type' => 'សង្កាត់',
                 'code' => '180104',
@@ -15692,11 +14384,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Buon',
                 'province_id' => 18,
                 'district_id' => 159,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            306 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            306 => [
                 'id' => 1307,
                 'type' => 'ឃុំ',
                 'code' => '180201',
@@ -15704,11 +14395,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Andoung Thma',
                 'province_id' => 18,
                 'district_id' => 160,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            307 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            307 => [
                 'id' => 1308,
                 'type' => 'ឃុំ',
                 'code' => '180202',
@@ -15716,11 +14406,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Ta Prum',
                 'province_id' => 18,
                 'district_id' => 160,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            308 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            308 => [
                 'id' => 1309,
                 'type' => 'ឃុំ',
                 'code' => '180203',
@@ -15728,11 +14417,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Bet Trang',
                 'province_id' => 18,
                 'district_id' => 160,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            309 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            309 => [
                 'id' => 1310,
                 'type' => 'ឃុំ',
                 'code' => '180204',
@@ -15740,11 +14428,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Cheung Kou',
                 'province_id' => 18,
                 'district_id' => 160,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            310 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            310 => [
                 'id' => 1311,
                 'type' => 'ឃុំ',
                 'code' => '180205',
@@ -15752,11 +14439,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Chrov',
                 'province_id' => 18,
                 'district_id' => 160,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            311 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            311 => [
                 'id' => 1312,
                 'type' => 'ឃុំ',
                 'code' => '180206',
@@ -15764,11 +14450,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Oknha Heng',
                 'province_id' => 18,
                 'district_id' => 160,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            312 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            312 => [
                 'id' => 1313,
                 'type' => 'ឃុំ',
                 'code' => '180207',
@@ -15776,11 +14461,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Nob',
                 'province_id' => 18,
                 'district_id' => 160,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            313 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            313 => [
                 'id' => 1314,
                 'type' => 'ឃុំ',
                 'code' => '180208',
@@ -15788,11 +14472,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ream',
                 'province_id' => 18,
                 'district_id' => 160,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            314 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            314 => [
                 'id' => 1315,
                 'type' => 'ឃុំ',
                 'code' => '180209',
@@ -15800,11 +14483,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sameakki',
                 'province_id' => 18,
                 'district_id' => 160,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            315 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            315 => [
                 'id' => 1316,
                 'type' => 'ឃុំ',
                 'code' => '180210',
@@ -15812,11 +14494,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Samrong',
                 'province_id' => 18,
                 'district_id' => 160,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            316 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            316 => [
                 'id' => 1317,
                 'type' => 'ឃុំ',
                 'code' => '180211',
@@ -15824,11 +14505,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuek L\'ak',
                 'province_id' => 18,
                 'district_id' => 160,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            317 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            317 => [
                 'id' => 1318,
                 'type' => 'ឃុំ',
                 'code' => '180212',
@@ -15836,11 +14516,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuek Thla',
                 'province_id' => 18,
                 'district_id' => 160,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            318 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            318 => [
                 'id' => 1319,
                 'type' => 'ឃុំ',
                 'code' => '180213',
@@ -15848,11 +14527,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuol Totueng',
                 'province_id' => 18,
                 'district_id' => 160,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            319 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            319 => [
                 'id' => 1320,
                 'type' => 'ឃុំ',
                 'code' => '180214',
@@ -15860,11 +14538,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Veal Renh',
                 'province_id' => 18,
                 'district_id' => 160,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            320 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            320 => [
                 'id' => 1321,
                 'type' => 'ឃុំ',
                 'code' => '180215',
@@ -15872,11 +14549,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Ney',
                 'province_id' => 18,
                 'district_id' => 160,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            321 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            321 => [
                 'id' => 1322,
                 'type' => 'ឃុំ',
                 'code' => '180301',
@@ -15884,11 +14560,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampenh',
                 'province_id' => 18,
                 'district_id' => 161,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            322 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            322 => [
                 'id' => 1323,
                 'type' => 'ឃុំ',
                 'code' => '180302',
@@ -15896,11 +14571,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Treh',
                 'province_id' => 18,
                 'district_id' => 161,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            323 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            323 => [
                 'id' => 1324,
                 'type' => 'ឃុំ',
                 'code' => '180303',
@@ -15908,11 +14582,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tumnob Rolok',
                 'province_id' => 18,
                 'district_id' => 161,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            324 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            324 => [
                 'id' => 1325,
                 'type' => 'ឃុំ',
                 'code' => '180304',
@@ -15920,11 +14593,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaev Phos',
                 'province_id' => 18,
                 'district_id' => 161,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            325 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            325 => [
                 'id' => 1326,
                 'type' => 'ឃុំ',
                 'code' => '180401',
@@ -15932,11 +14604,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chamkar Luong',
                 'province_id' => 18,
                 'district_id' => 162,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            326 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            326 => [
                 'id' => 1327,
                 'type' => 'ឃុំ',
                 'code' => '180402',
@@ -15944,11 +14615,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Seila',
                 'province_id' => 18,
                 'district_id' => 162,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            327 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            327 => [
                 'id' => 1328,
                 'type' => 'ឃុំ',
                 'code' => '180403',
@@ -15956,11 +14626,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Bak Roteh',
                 'province_id' => 18,
                 'district_id' => 162,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            328 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            328 => [
                 'id' => 1329,
                 'type' => 'ឃុំ',
                 'code' => '180404',
@@ -15968,11 +14637,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Stueng Chhay',
                 'province_id' => 18,
                 'district_id' => 162,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            329 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            329 => [
                 'id' => 1330,
                 'type' => 'សង្កាត់',
                 'code' => '180501',
@@ -15980,11 +14648,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Rung',
                 'province_id' => 18,
                 'district_id' => 163,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            330 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            330 => [
                 'id' => 1331,
                 'type' => 'សង្កាត់',
                 'code' => '180502',
@@ -15992,11 +14659,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Koah Rung Sonlem',
                 'province_id' => 18,
                 'district_id' => 163,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            331 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            331 => [
                 'id' => 1332,
                 'type' => 'ឃុំ',
                 'code' => '190101',
@@ -16004,11 +14670,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kamphun',
                 'province_id' => 19,
                 'district_id' => 164,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            332 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            332 => [
                 'id' => 1333,
                 'type' => 'ឃុំ',
                 'code' => '190102',
@@ -16016,11 +14681,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kbal Romeas',
                 'province_id' => 19,
                 'district_id' => 164,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            333 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            333 => [
                 'id' => 1334,
                 'type' => 'ឃុំ',
                 'code' => '190103',
@@ -16028,11 +14692,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phluk',
                 'province_id' => 19,
                 'district_id' => 164,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            334 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            334 => [
                 'id' => 1335,
                 'type' => 'ឃុំ',
                 'code' => '190104',
@@ -16040,11 +14703,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Samkhuoy',
                 'province_id' => 19,
                 'district_id' => 164,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            335 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            335 => [
                 'id' => 1336,
                 'type' => 'ឃុំ',
                 'code' => '190105',
@@ -16052,11 +14714,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sdau',
                 'province_id' => 19,
                 'district_id' => 164,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            336 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            336 => [
                 'id' => 1337,
                 'type' => 'ឃុំ',
                 'code' => '190106',
@@ -16064,11 +14725,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srae Kor',
                 'province_id' => 19,
                 'district_id' => 164,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            337 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            337 => [
                 'id' => 1338,
                 'type' => 'ឃុំ',
                 'code' => '190107',
@@ -16076,11 +14736,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Lat',
                 'province_id' => 19,
                 'district_id' => 164,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            338 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            338 => [
                 'id' => 1339,
                 'type' => 'ឃុំ',
                 'code' => '190201',
@@ -16088,11 +14747,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Preah',
                 'province_id' => 19,
                 'district_id' => 165,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            339 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            339 => [
                 'id' => 1340,
                 'type' => 'ឃុំ',
                 'code' => '190202',
@@ -16100,11 +14758,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Sampeay',
                 'province_id' => 19,
                 'district_id' => 165,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            340 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            340 => [
                 'id' => 1341,
                 'type' => 'ឃុំ',
                 'code' => '190203',
@@ -16112,11 +14769,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Sralay',
                 'province_id' => 19,
                 'district_id' => 165,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            341 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            341 => [
                 'id' => 1342,
                 'type' => 'ឃុំ',
                 'code' => '190204',
@@ -16124,11 +14780,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Mreah',
                 'province_id' => 19,
                 'district_id' => 165,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            342 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            342 => [
                 'id' => 1343,
                 'type' => 'ឃុំ',
                 'code' => '190205',
@@ -16136,11 +14791,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Ruessei Kandal',
                 'province_id' => 19,
                 'district_id' => 165,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            343 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            343 => [
                 'id' => 1344,
                 'type' => 'ឃុំ',
                 'code' => '190206',
@@ -16148,11 +14802,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Siem Bouk',
                 'province_id' => 19,
                 'district_id' => 165,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            344 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            344 => [
                 'id' => 1345,
                 'type' => 'ឃុំ',
                 'code' => '190207',
@@ -16160,11 +14813,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srae Krasang',
                 'province_id' => 19,
                 'district_id' => 165,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            345 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            345 => [
                 'id' => 1346,
                 'type' => 'ឃុំ',
                 'code' => '190301',
@@ -16172,11 +14824,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Meas',
                 'province_id' => 19,
                 'district_id' => 166,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            346 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            346 => [
                 'id' => 1347,
                 'type' => 'ឃុំ',
                 'code' => '190302',
@@ -16184,11 +14835,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sekong',
                 'province_id' => 19,
                 'district_id' => 166,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            347 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            347 => [
                 'id' => 1348,
                 'type' => 'ឃុំ',
                 'code' => '190303',
@@ -16196,11 +14846,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Santepheap',
                 'province_id' => 19,
                 'district_id' => 166,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            348 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            348 => [
                 'id' => 1349,
                 'type' => 'ឃុំ',
                 'code' => '190304',
@@ -16208,11 +14857,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srae Sambour',
                 'province_id' => 19,
                 'district_id' => 166,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            349 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            349 => [
                 'id' => 1350,
                 'type' => 'ឃុំ',
                 'code' => '190305',
@@ -16220,11 +14868,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tma Kaev',
                 'province_id' => 19,
                 'district_id' => 166,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            350 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            350 => [
                 'id' => 1351,
                 'type' => 'សង្កាត់',
                 'code' => '190401',
@@ -16232,11 +14879,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Stueng Traeng',
                 'province_id' => 19,
                 'district_id' => 167,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            351 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            351 => [
                 'id' => 1352,
                 'type' => 'សង្កាត់',
                 'code' => '190402',
@@ -16244,11 +14890,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srah Ruessei',
                 'province_id' => 19,
                 'district_id' => 167,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            352 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            352 => [
                 'id' => 1353,
                 'type' => 'សង្កាត់',
                 'code' => '190403',
@@ -16256,11 +14901,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preah Bat',
                 'province_id' => 19,
                 'district_id' => 167,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            353 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            353 => [
                 'id' => 1354,
                 'type' => 'សង្កាត់',
                 'code' => '190404',
@@ -16268,11 +14912,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sameakki',
                 'province_id' => 19,
                 'district_id' => 167,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            354 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            354 => [
                 'id' => 1355,
                 'type' => 'ឃុំ',
                 'code' => '190501',
@@ -16280,11 +14923,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Anlong Phe',
                 'province_id' => 19,
                 'district_id' => 168,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            355 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            355 => [
                 'id' => 1356,
                 'type' => 'ឃុំ',
                 'code' => '190502',
@@ -16292,11 +14934,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chamkar Leu',
                 'province_id' => 19,
                 'district_id' => 168,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            356 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            356 => [
                 'id' => 1357,
                 'type' => 'ឃុំ',
                 'code' => '190503',
@@ -16304,11 +14945,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kang Cham',
                 'province_id' => 19,
                 'district_id' => 168,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            357 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            357 => [
                 'id' => 1358,
                 'type' => 'ឃុំ',
                 'code' => '190505',
@@ -16316,11 +14956,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Anlong Chrey',
                 'province_id' => 19,
                 'district_id' => 168,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            358 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            358 => [
                 'id' => 1359,
                 'type' => 'ឃុំ',
                 'code' => '190506',
@@ -16328,11 +14967,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Rai',
                 'province_id' => 19,
                 'district_id' => 168,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            359 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            359 => [
                 'id' => 1360,
                 'type' => 'ឃុំ',
                 'code' => '190509',
@@ -16340,11 +14978,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sam Ang',
                 'province_id' => 19,
                 'district_id' => 168,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            360 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            360 => [
                 'id' => 1361,
                 'type' => 'ឃុំ',
                 'code' => '190510',
@@ -16352,11 +14989,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srae Ruessei',
                 'province_id' => 19,
                 'district_id' => 168,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            361 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            361 => [
                 'id' => 1362,
                 'type' => 'ឃុំ',
                 'code' => '190511',
@@ -16364,11 +15000,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Thala Barivat',
                 'province_id' => 19,
                 'district_id' => 168,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            362 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            362 => [
                 'id' => 1363,
                 'type' => 'ឃុំ',
                 'code' => '190601',
@@ -16376,11 +15011,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Svay',
                 'province_id' => 19,
                 'district_id' => 169,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            363 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            363 => [
                 'id' => 1364,
                 'type' => 'ឃុំ',
                 'code' => '190602',
@@ -16388,11 +15022,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Snaeng',
                 'province_id' => 19,
                 'district_id' => 169,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            364 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            364 => [
                 'id' => 1365,
                 'type' => 'ឃុំ',
                 'code' => '190603',
@@ -16400,11 +15033,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preah Rumkel',
                 'province_id' => 19,
                 'district_id' => 169,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            365 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            365 => [
                 'id' => 1366,
                 'type' => 'ឃុំ',
                 'code' => '200103',
@@ -16412,11 +15044,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chantrea',
                 'province_id' => 20,
                 'district_id' => 170,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            366 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            366 => [
                 'id' => 1367,
                 'type' => 'ឃុំ',
                 'code' => '200104',
@@ -16424,11 +15055,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chres',
                 'province_id' => 20,
                 'district_id' => 170,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            367 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            367 => [
                 'id' => 1368,
                 'type' => 'ឃុំ',
                 'code' => '200105',
@@ -16436,11 +15066,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Me Sar Thngak',
                 'province_id' => 20,
                 'district_id' => 170,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            368 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            368 => [
                 'id' => 1369,
                 'type' => 'ឃុំ',
                 'code' => '200108',
@@ -16448,11 +15077,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Kokir',
                 'province_id' => 20,
                 'district_id' => 170,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            369 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            369 => [
                 'id' => 1370,
                 'type' => 'ឃុំ',
                 'code' => '200109',
@@ -16460,11 +15088,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Samraong',
                 'province_id' => 20,
                 'district_id' => 170,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            370 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            370 => [
                 'id' => 1371,
                 'type' => 'ឃុំ',
                 'code' => '200110',
@@ -16472,11 +15099,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuol Sdei',
                 'province_id' => 20,
                 'district_id' => 170,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            371 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            371 => [
                 'id' => 1372,
                 'type' => 'ឃុំ',
                 'code' => '200201',
@@ -16484,11 +15110,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Banteay Krang',
                 'province_id' => 20,
                 'district_id' => 171,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            372 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            372 => [
                 'id' => 1373,
                 'type' => 'ឃុំ',
                 'code' => '200202',
@@ -16496,11 +15121,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Nhor',
                 'province_id' => 20,
                 'district_id' => 171,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            373 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            373 => [
                 'id' => 1374,
                 'type' => 'ឃុំ',
                 'code' => '200203',
@@ -16508,11 +15132,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khsaetr',
                 'province_id' => 20,
                 'district_id' => 171,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            374 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            374 => [
                 'id' => 1375,
                 'type' => 'ឃុំ',
                 'code' => '200204',
@@ -16520,11 +15143,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preah Ponlea',
                 'province_id' => 20,
                 'district_id' => 171,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            375 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            375 => [
                 'id' => 1376,
                 'type' => 'ឃុំ',
                 'code' => '200205',
@@ -16532,11 +15154,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Thum',
                 'province_id' => 20,
                 'district_id' => 171,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            376 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            376 => [
                 'id' => 1377,
                 'type' => 'ឃុំ',
                 'code' => '200206',
@@ -16544,11 +15165,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Reach Montir',
                 'province_id' => 20,
                 'district_id' => 171,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            377 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            377 => [
                 'id' => 1378,
                 'type' => 'ឃុំ',
                 'code' => '200207',
@@ -16556,11 +15176,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Samlei',
                 'province_id' => 20,
                 'district_id' => 171,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            378 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            378 => [
                 'id' => 1379,
                 'type' => 'ឃុំ',
                 'code' => '200208',
@@ -16568,11 +15187,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Samyaong',
                 'province_id' => 20,
                 'district_id' => 171,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            379 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            379 => [
                 'id' => 1380,
                 'type' => 'ឃុំ',
                 'code' => '200209',
@@ -16580,11 +15198,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Ta Yean',
                 'province_id' => 20,
                 'district_id' => 171,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            380 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            380 => [
                 'id' => 1381,
                 'type' => 'ឃុំ',
                 'code' => '200211',
@@ -16592,11 +15209,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Thmei',
                 'province_id' => 20,
                 'district_id' => 171,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            381 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            381 => [
                 'id' => 1382,
                 'type' => 'ឃុំ',
                 'code' => '200212',
@@ -16604,11 +15220,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tnaot',
                 'province_id' => 20,
                 'district_id' => 171,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            382 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            382 => [
                 'id' => 1383,
                 'type' => 'ឃុំ',
                 'code' => '200301',
@@ -16616,11 +15231,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Bos Mon',
                 'province_id' => 20,
                 'district_id' => 172,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            383 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            383 => [
                 'id' => 1384,
                 'type' => 'ឃុំ',
                 'code' => '200302',
@@ -16628,11 +15242,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Thmea',
                 'province_id' => 20,
                 'district_id' => 172,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            384 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            384 => [
                 'id' => 1385,
                 'type' => 'ឃុំ',
                 'code' => '200303',
@@ -16640,11 +15253,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Chak',
                 'province_id' => 20,
                 'district_id' => 172,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            385 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            385 => [
                 'id' => 1386,
                 'type' => 'ឃុំ',
                 'code' => '200304',
@@ -16652,11 +15264,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chrung Popel',
                 'province_id' => 20,
                 'district_id' => 172,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            386 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            386 => [
                 'id' => 1387,
                 'type' => 'ឃុំ',
                 'code' => '200305',
@@ -16664,11 +15275,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Ampil',
                 'province_id' => 20,
                 'district_id' => 172,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            387 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            387 => [
                 'id' => 1388,
                 'type' => 'ឃុំ',
                 'code' => '200306',
@@ -16676,11 +15286,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Meun Chey',
                 'province_id' => 20,
                 'district_id' => 172,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            388 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            388 => [
                 'id' => 1389,
                 'type' => 'ឃុំ',
                 'code' => '200307',
@@ -16688,11 +15297,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pong Tuek',
                 'province_id' => 20,
                 'district_id' => 172,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            389 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            389 => [
                 'id' => 1390,
                 'type' => 'ឃុំ',
                 'code' => '200308',
@@ -16700,11 +15308,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sangkae',
                 'province_id' => 20,
                 'district_id' => 172,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            390 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            390 => [
                 'id' => 1391,
                 'type' => 'ឃុំ',
                 'code' => '200309',
@@ -16712,11 +15319,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Chek',
                 'province_id' => 20,
                 'district_id' => 172,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            391 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            391 => [
                 'id' => 1392,
                 'type' => 'ឃុំ',
                 'code' => '200310',
@@ -16724,11 +15330,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Thna Thnong',
                 'province_id' => 20,
                 'district_id' => 172,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            392 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            392 => [
                 'id' => 1393,
                 'type' => 'ឃុំ',
                 'code' => '200401',
@@ -16736,11 +15341,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ampil',
                 'province_id' => 20,
                 'district_id' => 173,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            393 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            393 => [
                 'id' => 1394,
                 'type' => 'ឃុំ',
                 'code' => '200402',
@@ -16748,11 +15352,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Andoung Pou',
                 'province_id' => 20,
                 'district_id' => 173,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            394 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            394 => [
                 'id' => 1395,
                 'type' => 'ឃុំ',
                 'code' => '200403',
@@ -16760,11 +15363,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Andoung Trabaek',
                 'province_id' => 20,
                 'district_id' => 173,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            395 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            395 => [
                 'id' => 1396,
                 'type' => 'ឃុំ',
                 'code' => '200404',
@@ -16772,11 +15374,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Angk Prasrae',
                 'province_id' => 20,
                 'district_id' => 173,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            396 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            396 => [
                 'id' => 1397,
                 'type' => 'ឃុំ',
                 'code' => '200405',
@@ -16784,11 +15385,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chantrei',
                 'province_id' => 20,
                 'district_id' => 173,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            397 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            397 => [
                 'id' => 1398,
                 'type' => 'ឃុំ',
                 'code' => '200406',
@@ -16796,11 +15396,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chrey Thum',
                 'province_id' => 20,
                 'district_id' => 173,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            398 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            398 => [
                 'id' => 1399,
                 'type' => 'ឃុំ',
                 'code' => '200407',
@@ -16808,11 +15407,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Doung',
                 'province_id' => 20,
                 'district_id' => 173,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            399 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            399 => [
                 'id' => 1400,
                 'type' => 'ឃុំ',
                 'code' => '200408',
@@ -16820,11 +15418,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Trach',
                 'province_id' => 20,
                 'district_id' => 173,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            400 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            400 => [
                 'id' => 1401,
                 'type' => 'ឃុំ',
                 'code' => '200409',
@@ -16832,11 +15429,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kokir',
                 'province_id' => 20,
                 'district_id' => 173,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            401 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            401 => [
                 'id' => 1402,
                 'type' => 'ឃុំ',
                 'code' => '200410',
@@ -16844,11 +15440,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Krasang',
                 'province_id' => 20,
                 'district_id' => 173,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            402 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            402 => [
                 'id' => 1403,
                 'type' => 'ឃុំ',
                 'code' => '200411',
@@ -16856,11 +15451,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Mukh Da',
                 'province_id' => 20,
                 'district_id' => 173,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            403 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            403 => [
                 'id' => 1404,
                 'type' => 'ឃុំ',
                 'code' => '200412',
@@ -16868,11 +15462,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Mream',
                 'province_id' => 20,
                 'district_id' => 173,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            404 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            404 => [
                 'id' => 1405,
                 'type' => 'ឃុំ',
                 'code' => '200413',
@@ -16880,11 +15473,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sambuor',
                 'province_id' => 20,
                 'district_id' => 173,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            405 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            405 => [
                 'id' => 1406,
                 'type' => 'ឃុំ',
                 'code' => '200414',
@@ -16892,11 +15484,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sambatt Mean Chey',
                 'province_id' => 20,
                 'district_id' => 173,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            406 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            406 => [
                 'id' => 1407,
                 'type' => 'ឃុំ',
                 'code' => '200415',
@@ -16904,11 +15495,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Sdau',
                 'province_id' => 20,
                 'district_id' => 173,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            407 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            407 => [
                 'id' => 1408,
                 'type' => 'ឃុំ',
                 'code' => '200416',
@@ -16916,11 +15506,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tras',
                 'province_id' => 20,
                 'district_id' => 173,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            408 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            408 => [
                 'id' => 1409,
                 'type' => 'ឃុំ',
                 'code' => '200501',
@@ -16928,11 +15517,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Angk Ta Sou',
                 'province_id' => 20,
                 'district_id' => 174,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            409 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            409 => [
                 'id' => 1410,
                 'type' => 'ឃុំ',
                 'code' => '200502',
@@ -16940,11 +15528,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Basak',
                 'province_id' => 20,
                 'district_id' => 174,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            410 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            410 => [
                 'id' => 1411,
                 'type' => 'ឃុំ',
                 'code' => '200503',
@@ -16952,11 +15539,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chambak',
                 'province_id' => 20,
                 'district_id' => 174,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            411 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            411 => [
                 'id' => 1412,
                 'type' => 'ឃុំ',
                 'code' => '200504',
@@ -16964,11 +15550,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Chamlang',
                 'province_id' => 20,
                 'district_id' => 174,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            412 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            412 => [
                 'id' => 1413,
                 'type' => 'ឃុំ',
                 'code' => '200505',
@@ -16976,11 +15561,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Suos',
                 'province_id' => 20,
                 'district_id' => 174,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            413 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            413 => [
                 'id' => 1414,
                 'type' => 'ឃុំ',
                 'code' => '200507',
@@ -16988,11 +15572,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chheu Teal',
                 'province_id' => 20,
                 'district_id' => 174,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            414 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            414 => [
                 'id' => 1415,
                 'type' => 'ឃុំ',
                 'code' => '200508',
@@ -17000,11 +15583,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Doun Sa',
                 'province_id' => 20,
                 'district_id' => 174,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            415 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            415 => [
                 'id' => 1416,
                 'type' => 'ឃុំ',
                 'code' => '200509',
@@ -17012,11 +15594,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kouk Pring',
                 'province_id' => 20,
                 'district_id' => 174,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            416 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            416 => [
                 'id' => 1417,
                 'type' => 'ឃុំ',
                 'code' => '200510',
@@ -17024,11 +15605,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kraol Kou',
                 'province_id' => 20,
                 'district_id' => 174,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            417 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            417 => [
                 'id' => 1418,
                 'type' => 'ឃុំ',
                 'code' => '200511',
@@ -17036,11 +15616,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kruos',
                 'province_id' => 20,
                 'district_id' => 174,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            418 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            418 => [
                 'id' => 1419,
                 'type' => 'ឃុំ',
                 'code' => '200512',
@@ -17048,11 +15627,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pouthi Reach',
                 'province_id' => 20,
                 'district_id' => 174,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            419 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            419 => [
                 'id' => 1420,
                 'type' => 'ឃុំ',
                 'code' => '200513',
@@ -17060,11 +15638,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Angk',
                 'province_id' => 20,
                 'district_id' => 174,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            420 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            420 => [
                 'id' => 1421,
                 'type' => 'ឃុំ',
                 'code' => '200514',
@@ -17072,11 +15649,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Chrum',
                 'province_id' => 20,
                 'district_id' => 174,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            421 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            421 => [
                 'id' => 1422,
                 'type' => 'ឃុំ',
                 'code' => '200515',
@@ -17084,11 +15660,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Thum',
                 'province_id' => 20,
                 'district_id' => 174,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            422 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            422 => [
                 'id' => 1423,
                 'type' => 'ឃុំ',
                 'code' => '200516',
@@ -17096,11 +15671,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Yea',
                 'province_id' => 20,
                 'district_id' => 174,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            423 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            423 => [
                 'id' => 1424,
                 'type' => 'ឃុំ',
                 'code' => '200517',
@@ -17108,11 +15682,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Thlok',
                 'province_id' => 20,
                 'district_id' => 174,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            424 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            424 => [
                 'id' => 1425,
                 'type' => 'សង្កាត់',
                 'code' => '200601',
@@ -17120,11 +15693,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Rieng',
                 'province_id' => 20,
                 'district_id' => 175,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            425 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            425 => [
                 'id' => 1426,
                 'type' => 'សង្កាត់',
                 'code' => '200602',
@@ -17132,11 +15704,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Chhlak',
                 'province_id' => 20,
                 'district_id' => 175,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            426 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            426 => [
                 'id' => 1427,
                 'type' => 'សង្កាត់',
                 'code' => '200603',
@@ -17144,11 +15715,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Koy Trabaek',
                 'province_id' => 20,
                 'district_id' => 175,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            427 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            427 => [
                 'id' => 1428,
                 'type' => 'សង្កាត់',
                 'code' => '200604',
@@ -17156,11 +15726,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pou Ta Hao',
                 'province_id' => 20,
                 'district_id' => 175,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            428 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            428 => [
                 'id' => 1429,
                 'type' => 'សង្កាត់',
                 'code' => '200605',
@@ -17168,11 +15737,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chek',
                 'province_id' => 20,
                 'district_id' => 175,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            429 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            429 => [
                 'id' => 1430,
                 'type' => 'សង្កាត់',
                 'code' => '200606',
@@ -17180,11 +15748,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Toea',
                 'province_id' => 20,
                 'district_id' => 175,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            430 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            430 => [
                 'id' => 1431,
                 'type' => 'សង្កាត់',
                 'code' => '200607',
@@ -17192,11 +15759,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sangkhoar',
                 'province_id' => 20,
                 'district_id' => 175,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            431 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            431 => [
                 'id' => 1432,
                 'type' => 'ឃុំ',
                 'code' => '200702',
@@ -17204,11 +15770,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Koki Saom',
                 'province_id' => 20,
                 'district_id' => 176,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            432 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            432 => [
                 'id' => 1433,
                 'type' => 'ឃុំ',
                 'code' => '200703',
@@ -17216,11 +15781,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kandieng Reay',
                 'province_id' => 20,
                 'district_id' => 176,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            433 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            433 => [
                 'id' => 1434,
                 'type' => 'ឃុំ',
                 'code' => '200704',
@@ -17228,11 +15792,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Monourom',
                 'province_id' => 20,
                 'district_id' => 176,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            434 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            434 => [
                 'id' => 1435,
                 'type' => 'ឃុំ',
                 'code' => '200705',
@@ -17240,11 +15803,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Popeaet',
                 'province_id' => 20,
                 'district_id' => 176,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            435 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            435 => [
                 'id' => 1436,
                 'type' => 'ឃុំ',
                 'code' => '200706',
@@ -17252,11 +15814,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Ta Ei',
                 'province_id' => 20,
                 'district_id' => 176,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            436 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            436 => [
                 'id' => 1437,
                 'type' => 'ឃុំ',
                 'code' => '200707',
@@ -17264,11 +15825,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prasoutr',
                 'province_id' => 20,
                 'district_id' => 176,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            437 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            437 => [
                 'id' => 1438,
                 'type' => 'ឃុំ',
                 'code' => '200708',
@@ -17276,11 +15836,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Romeang Thkaol',
                 'province_id' => 20,
                 'district_id' => 176,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            438 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            438 => [
                 'id' => 1439,
                 'type' => 'ឃុំ',
                 'code' => '200709',
@@ -17288,11 +15847,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sambuor',
                 'province_id' => 20,
                 'district_id' => 176,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            439 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            439 => [
                 'id' => 1440,
                 'type' => 'ឃុំ',
                 'code' => '200711',
@@ -17300,11 +15858,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Rumpear',
                 'province_id' => 20,
                 'district_id' => 176,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            440 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            440 => [
                 'id' => 1441,
                 'type' => 'សង្កាត់',
                 'code' => '200801',
@@ -17312,11 +15869,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Bati',
                 'province_id' => 20,
                 'district_id' => 177,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            441 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            441 => [
                 'id' => 1442,
                 'type' => 'សង្កាត់',
                 'code' => '200802',
@@ -17324,11 +15880,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Bavet',
                 'province_id' => 20,
                 'district_id' => 177,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            442 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            442 => [
                 'id' => 1443,
                 'type' => 'សង្កាត់',
                 'code' => '200803',
@@ -17336,11 +15891,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chrak Mtes',
                 'province_id' => 20,
                 'district_id' => 177,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            443 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            443 => [
                 'id' => 1444,
                 'type' => 'សង្កាត់',
                 'code' => '200804',
@@ -17348,11 +15902,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prasat',
                 'province_id' => 20,
                 'district_id' => 177,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            444 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            444 => [
                 'id' => 1445,
                 'type' => 'សង្កាត់',
                 'code' => '200805',
@@ -17360,11 +15913,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Angkunh',
                 'province_id' => 20,
                 'district_id' => 177,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            445 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            445 => [
                 'id' => 1446,
                 'type' => 'ឃុំ',
                 'code' => '210101',
@@ -17372,11 +15924,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Angkor Borei',
                 'province_id' => 21,
                 'district_id' => 178,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            446 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            446 => [
                 'id' => 1447,
                 'type' => 'ឃុំ',
                 'code' => '210102',
@@ -17384,11 +15935,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ba Srae',
                 'province_id' => 21,
                 'district_id' => 178,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            447 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            447 => [
                 'id' => 1448,
                 'type' => 'ឃុំ',
                 'code' => '210103',
@@ -17396,11 +15946,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kouk Thlok',
                 'province_id' => 21,
                 'district_id' => 178,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            448 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            448 => [
                 'id' => 1449,
                 'type' => 'ឃុំ',
                 'code' => '210104',
@@ -17408,11 +15957,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ponley',
                 'province_id' => 21,
                 'district_id' => 178,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            449 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            449 => [
                 'id' => 1450,
                 'type' => 'ឃុំ',
                 'code' => '210105',
@@ -17420,11 +15968,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek Phtoul',
                 'province_id' => 21,
                 'district_id' => 178,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            450 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            450 => [
                 'id' => 1451,
                 'type' => 'ឃុំ',
                 'code' => '210106',
@@ -17432,11 +15979,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Phkoam',
                 'province_id' => 21,
                 'district_id' => 178,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            451 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            451 => [
                 'id' => 1452,
                 'type' => 'ឃុំ',
                 'code' => '210201',
@@ -17444,11 +15990,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chambak',
                 'province_id' => 21,
                 'district_id' => 179,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            452 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            452 => [
                 'id' => 1453,
                 'type' => 'ឃុំ',
                 'code' => '210202',
@@ -17456,11 +16001,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Champei',
                 'province_id' => 21,
                 'district_id' => 179,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            453 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            453 => [
                 'id' => 1454,
                 'type' => 'ឃុំ',
                 'code' => '210203',
@@ -17468,11 +16012,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Doung',
                 'province_id' => 21,
                 'district_id' => 179,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            454 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            454 => [
                 'id' => 1455,
                 'type' => 'ឃុំ',
                 'code' => '210204',
@@ -17480,11 +16023,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kandoeng',
                 'province_id' => 21,
                 'district_id' => 179,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            455 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            455 => [
                 'id' => 1456,
                 'type' => 'ឃុំ',
                 'code' => '210205',
@@ -17492,11 +16034,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Komar Reachea',
                 'province_id' => 21,
                 'district_id' => 179,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            456 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            456 => [
                 'id' => 1457,
                 'type' => 'ឃុំ',
                 'code' => '210206',
@@ -17504,11 +16045,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Krang Leav',
                 'province_id' => 21,
                 'district_id' => 179,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            457 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            457 => [
                 'id' => 1458,
                 'type' => 'ឃុំ',
                 'code' => '210207',
@@ -17516,11 +16056,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Krang Thnong',
                 'province_id' => 21,
                 'district_id' => 179,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            458 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            458 => [
                 'id' => 1459,
                 'type' => 'ឃុំ',
                 'code' => '210208',
@@ -17528,11 +16067,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Lumpong',
                 'province_id' => 21,
                 'district_id' => 179,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            459 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            459 => [
                 'id' => 1460,
                 'type' => 'ឃុំ',
                 'code' => '210209',
@@ -17540,11 +16078,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pea Ream',
                 'province_id' => 21,
                 'district_id' => 179,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            460 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            460 => [
                 'id' => 1461,
                 'type' => 'ឃុំ',
                 'code' => '210210',
@@ -17552,11 +16089,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pot Sar',
                 'province_id' => 21,
                 'district_id' => 179,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            461 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            461 => [
                 'id' => 1462,
                 'type' => 'ឃុំ',
                 'code' => '210211',
@@ -17564,11 +16100,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sour Phi',
                 'province_id' => 21,
                 'district_id' => 179,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            462 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            462 => [
                 'id' => 1463,
                 'type' => 'ឃុំ',
                 'code' => '210212',
@@ -17576,11 +16111,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tang Doung',
                 'province_id' => 21,
                 'district_id' => 179,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            463 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            463 => [
                 'id' => 1464,
                 'type' => 'ឃុំ',
                 'code' => '210213',
@@ -17588,11 +16122,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tnaot',
                 'province_id' => 21,
                 'district_id' => 179,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            464 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            464 => [
                 'id' => 1465,
                 'type' => 'ឃុំ',
                 'code' => '210214',
@@ -17600,11 +16133,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Krasang',
                 'province_id' => 21,
                 'district_id' => 179,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            465 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            465 => [
                 'id' => 1466,
                 'type' => 'ឃុំ',
                 'code' => '210215',
@@ -17612,11 +16144,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Sab',
                 'province_id' => 21,
                 'district_id' => 179,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            466 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            466 => [
                 'id' => 1467,
                 'type' => 'ឃុំ',
                 'code' => '210301',
@@ -17624,11 +16155,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Borei Cholsar',
                 'province_id' => 21,
                 'district_id' => 180,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            467 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            467 => [
                 'id' => 1468,
                 'type' => 'ឃុំ',
                 'code' => '210302',
@@ -17636,11 +16166,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chey Chouk',
                 'province_id' => 21,
                 'district_id' => 180,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            468 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            468 => [
                 'id' => 1469,
                 'type' => 'ឃុំ',
                 'code' => '210303',
@@ -17648,11 +16177,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Doung Khpos',
                 'province_id' => 21,
                 'district_id' => 180,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            469 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            469 => [
                 'id' => 1470,
                 'type' => 'ឃុំ',
                 'code' => '210304',
@@ -17660,11 +16188,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Krasang',
                 'province_id' => 21,
                 'district_id' => 180,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            470 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            470 => [
                 'id' => 1471,
                 'type' => 'ឃុំ',
                 'code' => '210305',
@@ -17672,11 +16199,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kouk Pou',
                 'province_id' => 21,
                 'district_id' => 180,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            471 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            471 => [
                 'id' => 1472,
                 'type' => 'ឃុំ',
                 'code' => '210401',
@@ -17684,11 +16210,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Angk Prasat',
                 'province_id' => 21,
                 'district_id' => 181,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            472 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            472 => [
                 'id' => 1473,
                 'type' => 'ឃុំ',
                 'code' => '210402',
@@ -17696,11 +16221,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preah Bat Choan Chum',
                 'province_id' => 21,
                 'district_id' => 181,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            473 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            473 => [
                 'id' => 1474,
                 'type' => 'ឃុំ',
                 'code' => '210403',
@@ -17708,11 +16232,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kamnab',
                 'province_id' => 21,
                 'district_id' => 181,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            474 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            474 => [
                 'id' => 1475,
                 'type' => 'ឃុំ',
                 'code' => '210404',
@@ -17720,11 +16243,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampeaeng',
                 'province_id' => 21,
                 'district_id' => 181,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            475 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            475 => [
                 'id' => 1476,
                 'type' => 'ឃុំ',
                 'code' => '210405',
@@ -17732,11 +16254,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kiri Chong Kaoh',
                 'province_id' => 21,
                 'district_id' => 181,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            476 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            476 => [
                 'id' => 1477,
                 'type' => 'ឃុំ',
                 'code' => '210406',
@@ -17744,11 +16265,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kouk Prech',
                 'province_id' => 21,
                 'district_id' => 181,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            477 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            477 => [
                 'id' => 1478,
                 'type' => 'ឃុំ',
                 'code' => '210407',
@@ -17756,11 +16276,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Phnum Den',
                 'province_id' => 21,
                 'district_id' => 181,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            478 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            478 => [
                 'id' => 1479,
                 'type' => 'ឃុំ',
                 'code' => '210408',
@@ -17768,11 +16287,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Ampok',
                 'province_id' => 21,
                 'district_id' => 181,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            479 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            479 => [
                 'id' => 1480,
                 'type' => 'ឃុំ',
                 'code' => '210409',
@@ -17780,11 +16298,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Rumdeng',
                 'province_id' => 21,
                 'district_id' => 181,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            480 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            480 => [
                 'id' => 1481,
                 'type' => 'ឃុំ',
                 'code' => '210410',
@@ -17792,11 +16309,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ream Andaeuk',
                 'province_id' => 21,
                 'district_id' => 181,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            481 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            481 => [
                 'id' => 1482,
                 'type' => 'ឃុំ',
                 'code' => '210411',
@@ -17804,11 +16320,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Saom',
                 'province_id' => 21,
                 'district_id' => 181,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            482 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            482 => [
                 'id' => 1483,
                 'type' => 'ឃុំ',
                 'code' => '210412',
@@ -17816,11 +16331,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Ou',
                 'province_id' => 21,
                 'district_id' => 181,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            483 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            483 => [
                 'id' => 1484,
                 'type' => 'ឃុំ',
                 'code' => '210501',
@@ -17828,11 +16342,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Krapum Chhuk',
                 'province_id' => 21,
                 'district_id' => 182,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            484 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            484 => [
                 'id' => 1485,
                 'type' => 'ឃុំ',
                 'code' => '210502',
@@ -17840,11 +16353,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pech Sar',
                 'province_id' => 21,
                 'district_id' => 182,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            485 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            485 => [
                 'id' => 1486,
                 'type' => 'ឃុំ',
                 'code' => '210503',
@@ -17852,11 +16364,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Khla',
                 'province_id' => 21,
                 'district_id' => 182,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            486 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            486 => [
                 'id' => 1487,
                 'type' => 'ឃុំ',
                 'code' => '210504',
@@ -17864,11 +16375,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Yuthka',
                 'province_id' => 21,
                 'district_id' => 182,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            487 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            487 => [
                 'id' => 1488,
                 'type' => 'ឃុំ',
                 'code' => '210505',
@@ -17876,11 +16386,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Romenh',
                 'province_id' => 21,
                 'district_id' => 182,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            488 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            488 => [
                 'id' => 1489,
                 'type' => 'ឃុំ',
                 'code' => '210506',
@@ -17888,11 +16397,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Thlea Prachum',
                 'province_id' => 21,
                 'district_id' => 182,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            489 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            489 => [
                 'id' => 1490,
                 'type' => 'ឃុំ',
                 'code' => '210601',
@@ -17900,11 +16408,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Angkanh',
                 'province_id' => 21,
                 'district_id' => 183,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            490 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            490 => [
                 'id' => 1491,
                 'type' => 'ឃុំ',
                 'code' => '210602',
@@ -17912,11 +16419,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ban Kam',
                 'province_id' => 21,
                 'district_id' => 183,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            491 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            491 => [
                 'id' => 1492,
                 'type' => 'ឃុំ',
                 'code' => '210603',
@@ -17924,11 +16430,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Champa',
                 'province_id' => 21,
                 'district_id' => 183,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            492 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            492 => [
                 'id' => 1493,
                 'type' => 'ឃុំ',
                 'code' => '210604',
@@ -17936,11 +16441,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Char',
                 'province_id' => 21,
                 'district_id' => 183,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            493 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            493 => [
                 'id' => 1494,
                 'type' => 'ឃុំ',
                 'code' => '210605',
@@ -17948,11 +16452,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampeaeng',
                 'province_id' => 21,
                 'district_id' => 183,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            494 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            494 => [
                 'id' => 1495,
                 'type' => 'ឃុំ',
                 'code' => '210606',
@@ -17960,11 +16463,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Reab',
                 'province_id' => 21,
                 'district_id' => 183,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            495 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            495 => [
                 'id' => 1496,
                 'type' => 'ឃុំ',
                 'code' => '210607',
@@ -17972,11 +16474,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kdanh',
                 'province_id' => 21,
                 'district_id' => 183,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            496 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            496 => [
                 'id' => 1497,
                 'type' => 'ឃុំ',
                 'code' => '210608',
@@ -17984,11 +16485,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pou Rumchak',
                 'province_id' => 21,
                 'district_id' => 183,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            497 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            497 => [
                 'id' => 1498,
                 'type' => 'ឃុំ',
                 'code' => '210609',
@@ -17996,11 +16496,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Kabbas',
                 'province_id' => 21,
                 'district_id' => 183,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            498 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            498 => [
                 'id' => 1499,
                 'type' => 'ឃុំ',
                 'code' => '210610',
@@ -18008,11 +16507,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Lvea',
                 'province_id' => 21,
                 'district_id' => 183,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            499 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            499 => [
                 'id' => 1500,
                 'type' => 'ឃុំ',
                 'code' => '210611',
@@ -18020,13 +16518,12 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Phdau',
                 'province_id' => 21,
                 'district_id' => 183,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-        ));
-        \DB::table('communes')->insert(array (
-            0 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+        ]);
+        \DB::table('communes')->insert([
+            0 => [
                 'id' => 1501,
                 'type' => 'ឃុំ',
                 'code' => '210612',
@@ -18034,11 +16531,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Snao',
                 'province_id' => 21,
                 'district_id' => 183,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            1 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            1 => [
                 'id' => 1502,
                 'type' => 'ឃុំ',
                 'code' => '210613',
@@ -18046,11 +16542,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tang Yab',
                 'province_id' => 21,
                 'district_id' => 183,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            2 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            2 => [
                 'id' => 1503,
                 'type' => 'ឃុំ',
                 'code' => '210701',
@@ -18058,11 +16553,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Tranh Khang Cheung',
                 'province_id' => 21,
                 'district_id' => 184,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            3 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            3 => [
                 'id' => 1504,
                 'type' => 'ឃុំ',
                 'code' => '210702',
@@ -18070,11 +16564,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Tranh Khang Tboung',
                 'province_id' => 21,
                 'district_id' => 184,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            4 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            4 => [
                 'id' => 1505,
                 'type' => 'ឃុំ',
                 'code' => '210703',
@@ -18082,11 +16575,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Cheung Kuon',
                 'province_id' => 21,
                 'district_id' => 184,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            5 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            5 => [
                 'id' => 1506,
                 'type' => 'ឃុំ',
                 'code' => '210704',
@@ -18094,11 +16586,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chumreah Pen',
                 'province_id' => 21,
                 'district_id' => 184,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            6 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            6 => [
                 'id' => 1507,
                 'type' => 'ឃុំ',
                 'code' => '210705',
@@ -18106,11 +16597,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khvav',
                 'province_id' => 21,
                 'district_id' => 184,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            7 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            7 => [
                 'id' => 1508,
                 'type' => 'ឃុំ',
                 'code' => '210706',
@@ -18118,11 +16608,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Lumchang',
                 'province_id' => 21,
                 'district_id' => 184,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            8 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            8 => [
                 'id' => 1509,
                 'type' => 'ឃុំ',
                 'code' => '210707',
@@ -18130,11 +16619,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Rovieng',
                 'province_id' => 21,
                 'district_id' => 184,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            9 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            9 => [
                 'id' => 1510,
                 'type' => 'ឃុំ',
                 'code' => '210708',
@@ -18142,11 +16630,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Samraong',
                 'province_id' => 21,
                 'district_id' => 184,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            10 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            10 => [
                 'id' => 1511,
                 'type' => 'ឃុំ',
                 'code' => '210709',
@@ -18154,11 +16641,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Soengh',
                 'province_id' => 21,
                 'district_id' => 184,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            11 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            11 => [
                 'id' => 1512,
                 'type' => 'ឃុំ',
                 'code' => '210710',
@@ -18166,11 +16652,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sla',
                 'province_id' => 21,
                 'district_id' => 184,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            12 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            12 => [
                 'id' => 1513,
                 'type' => 'ឃុំ',
                 'code' => '210711',
@@ -18178,11 +16663,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trea',
                 'province_id' => 21,
                 'district_id' => 184,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            13 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            13 => [
                 'id' => 1514,
                 'type' => 'សង្កាត់',
                 'code' => '210801',
@@ -18190,11 +16674,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Baray',
                 'province_id' => 21,
                 'district_id' => 185,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            14 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            14 => [
                 'id' => 1515,
                 'type' => 'សង្កាត់',
                 'code' => '210802',
@@ -18202,11 +16685,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Roka Knong',
                 'province_id' => 21,
                 'district_id' => 185,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            15 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            15 => [
                 'id' => 1516,
                 'type' => 'សង្កាត់',
                 'code' => '210803',
@@ -18214,11 +16696,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Roka Krau',
                 'province_id' => 21,
                 'district_id' => 185,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            16 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            16 => [
                 'id' => 1517,
                 'type' => 'ឃុំ',
                 'code' => '210901',
@@ -18226,11 +16707,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Angk Ta Saom',
                 'province_id' => 21,
                 'district_id' => 186,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            17 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            17 => [
                 'id' => 1518,
                 'type' => 'ឃុំ',
                 'code' => '210902',
@@ -18238,11 +16718,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Cheang Tong',
                 'province_id' => 21,
                 'district_id' => 186,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            18 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            18 => [
                 'id' => 1519,
                 'type' => 'ឃុំ',
                 'code' => '210903',
@@ -18250,11 +16729,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kus',
                 'province_id' => 21,
                 'district_id' => 186,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            19 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            19 => [
                 'id' => 1520,
                 'type' => 'ឃុំ',
                 'code' => '210904',
@@ -18262,11 +16740,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Leay Bour',
                 'province_id' => 21,
                 'district_id' => 186,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            20 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            20 => [
                 'id' => 1521,
                 'type' => 'ឃុំ',
                 'code' => '210905',
@@ -18274,11 +16751,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Nhaeng Nhang',
                 'province_id' => 21,
                 'district_id' => 186,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            21 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            21 => [
                 'id' => 1522,
                 'type' => 'ឃុំ',
                 'code' => '210906',
@@ -18286,11 +16762,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Saray',
                 'province_id' => 21,
                 'district_id' => 186,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            22 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            22 => [
                 'id' => 1523,
                 'type' => 'ឃុំ',
                 'code' => '210907',
@@ -18298,11 +16773,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Kranhoung',
                 'province_id' => 21,
                 'district_id' => 186,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            23 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            23 => [
                 'id' => 1524,
                 'type' => 'ឃុំ',
                 'code' => '210908',
@@ -18310,11 +16784,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Otdam Soriya',
                 'province_id' => 21,
                 'district_id' => 186,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            24 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            24 => [
                 'id' => 1525,
                 'type' => 'ឃុំ',
                 'code' => '210909',
@@ -18322,11 +16795,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Popel',
                 'province_id' => 21,
                 'district_id' => 186,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            25 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            25 => [
                 'id' => 1526,
                 'type' => 'ឃុំ',
                 'code' => '210910',
@@ -18334,11 +16806,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Samraong',
                 'province_id' => 21,
                 'district_id' => 186,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            26 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            26 => [
                 'id' => 1527,
                 'type' => 'ឃុំ',
                 'code' => '210911',
@@ -18346,11 +16817,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srae Ronoung',
                 'province_id' => 21,
                 'district_id' => 186,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            27 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            27 => [
                 'id' => 1528,
                 'type' => 'ឃុំ',
                 'code' => '210912',
@@ -18358,11 +16828,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ta Phem',
                 'province_id' => 21,
                 'district_id' => 186,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            28 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            28 => [
                 'id' => 1529,
                 'type' => 'ឃុំ',
                 'code' => '210913',
@@ -18370,11 +16839,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tram Kak',
                 'province_id' => 21,
                 'district_id' => 186,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            29 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            29 => [
                 'id' => 1530,
                 'type' => 'ឃុំ',
                 'code' => '210914',
@@ -18382,11 +16850,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Thum Khang Cheung',
                 'province_id' => 21,
                 'district_id' => 186,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            30 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            30 => [
                 'id' => 1531,
                 'type' => 'ឃុំ',
                 'code' => '210915',
@@ -18394,11 +16861,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Thum Khang Tboung',
                 'province_id' => 21,
                 'district_id' => 186,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            31 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            31 => [
                 'id' => 1532,
                 'type' => 'ឃុំ',
                 'code' => '211001',
@@ -18406,11 +16872,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Angkanh',
                 'province_id' => 21,
                 'district_id' => 187,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            32 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            32 => [
                 'id' => 1533,
                 'type' => 'ឃុំ',
                 'code' => '211002',
@@ -18418,11 +16883,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Angk Khnor',
                 'province_id' => 21,
                 'district_id' => 187,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            33 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            33 => [
                 'id' => 1534,
                 'type' => 'ឃុំ',
                 'code' => '211003',
@@ -18430,11 +16894,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chi Khma',
                 'province_id' => 21,
                 'district_id' => 187,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            34 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            34 => [
                 'id' => 1535,
                 'type' => 'ឃុំ',
                 'code' => '211004',
@@ -18442,11 +16905,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Khvav',
                 'province_id' => 21,
                 'district_id' => 187,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            35 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            35 => [
                 'id' => 1536,
                 'type' => 'ឃុំ',
                 'code' => '211005',
@@ -18454,11 +16916,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prambei Mum',
                 'province_id' => 21,
                 'district_id' => 187,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            36 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            36 => [
                 'id' => 1537,
                 'type' => 'ឃុំ',
                 'code' => '211006',
@@ -18466,11 +16927,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Angk Kaev',
                 'province_id' => 21,
                 'district_id' => 187,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            37 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            37 => [
                 'id' => 1538,
                 'type' => 'ឃុំ',
                 'code' => '211007',
@@ -18478,11 +16938,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Sloek',
                 'province_id' => 21,
                 'district_id' => 187,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            38 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            38 => [
                 'id' => 1539,
                 'type' => 'ឃុំ',
                 'code' => '211008',
@@ -18490,11 +16949,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Roneam',
                 'province_id' => 21,
                 'district_id' => 187,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            39 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            39 => [
                 'id' => 1540,
                 'type' => 'ឃុំ',
                 'code' => '211009',
@@ -18502,11 +16960,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sambuor',
                 'province_id' => 21,
                 'district_id' => 187,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            40 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            40 => [
                 'id' => 1541,
                 'type' => 'ឃុំ',
                 'code' => '211010',
@@ -18514,11 +16971,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sanlung',
                 'province_id' => 21,
                 'district_id' => 187,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            41 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            41 => [
                 'id' => 1542,
                 'type' => 'ឃុំ',
                 'code' => '211011',
@@ -18526,11 +16982,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Smaong',
                 'province_id' => 21,
                 'district_id' => 187,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            42 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            42 => [
                 'id' => 1543,
                 'type' => 'ឃុំ',
                 'code' => '211012',
@@ -18538,11 +16993,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Srangae',
                 'province_id' => 21,
                 'district_id' => 187,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            43 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            43 => [
                 'id' => 1544,
                 'type' => 'ឃុំ',
                 'code' => '211013',
@@ -18550,11 +17004,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Thlok',
                 'province_id' => 21,
                 'district_id' => 187,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            44 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            44 => [
                 'id' => 1545,
                 'type' => 'ឃុំ',
                 'code' => '211014',
@@ -18562,11 +17015,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tralach',
                 'province_id' => 21,
                 'district_id' => 187,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            45 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            45 => [
                 'id' => 1546,
                 'type' => 'ឃុំ',
                 'code' => '220101',
@@ -18574,11 +17026,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Anlong Veaeng',
                 'province_id' => 22,
                 'district_id' => 188,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            46 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            46 => [
                 'id' => 1547,
                 'type' => 'ឃុំ',
                 'code' => '220103',
@@ -18586,11 +17037,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Tav',
                 'province_id' => 22,
                 'district_id' => 188,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            47 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            47 => [
                 'id' => 1548,
                 'type' => 'ឃុំ',
                 'code' => '220104',
@@ -18598,11 +17048,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Prei',
                 'province_id' => 22,
                 'district_id' => 188,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            48 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            48 => [
                 'id' => 1549,
                 'type' => 'ឃុំ',
                 'code' => '220105',
@@ -18610,11 +17059,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Thlat',
                 'province_id' => 22,
                 'district_id' => 188,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            49 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            49 => [
                 'id' => 1550,
                 'type' => 'ឃុំ',
                 'code' => '220106',
@@ -18622,11 +17070,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Lumtong',
                 'province_id' => 22,
                 'district_id' => 188,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            50 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            50 => [
                 'id' => 1551,
                 'type' => 'ឃុំ',
                 'code' => '220201',
@@ -18634,11 +17081,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ampil',
                 'province_id' => 22,
                 'district_id' => 189,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            51 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            51 => [
                 'id' => 1552,
                 'type' => 'ឃុំ',
                 'code' => '220202',
@@ -18646,11 +17092,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Beng',
                 'province_id' => 22,
                 'district_id' => 189,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            52 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            52 => [
                 'id' => 1553,
                 'type' => 'ឃុំ',
                 'code' => '220203',
@@ -18658,11 +17103,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kouk Khpos',
                 'province_id' => 22,
                 'district_id' => 189,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            53 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            53 => [
                 'id' => 1554,
                 'type' => 'ឃុំ',
                 'code' => '220204',
@@ -18670,11 +17114,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kouk Mon',
                 'province_id' => 22,
                 'district_id' => 189,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            54 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            54 => [
                 'id' => 1555,
                 'type' => 'ឃុំ',
                 'code' => '220301',
@@ -18682,11 +17125,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Cheung Tien',
                 'province_id' => 22,
                 'district_id' => 190,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            55 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            55 => [
                 'id' => 1556,
                 'type' => 'ឃុំ',
                 'code' => '220302',
@@ -18694,11 +17136,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chong Kal',
                 'province_id' => 22,
                 'district_id' => 190,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            56 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            56 => [
                 'id' => 1557,
                 'type' => 'ឃុំ',
                 'code' => '220303',
@@ -18706,11 +17147,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Krasang',
                 'province_id' => 22,
                 'district_id' => 190,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            57 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            57 => [
                 'id' => 1558,
                 'type' => 'ឃុំ',
                 'code' => '220304',
@@ -18718,11 +17158,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pongro',
                 'province_id' => 22,
                 'district_id' => 190,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            58 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            58 => [
                 'id' => 1559,
                 'type' => 'សង្កាត់',
                 'code' => '220401',
@@ -18730,11 +17169,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Bansay Reak',
                 'province_id' => 22,
                 'district_id' => 191,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            59 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            59 => [
                 'id' => 1560,
                 'type' => 'សង្កាត់',
                 'code' => '220402',
@@ -18742,11 +17180,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Bos Sbov',
                 'province_id' => 22,
                 'district_id' => 191,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            60 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            60 => [
                 'id' => 1561,
                 'type' => 'សង្កាត់',
                 'code' => '220403',
@@ -18754,11 +17191,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Koun Kriel',
                 'province_id' => 22,
                 'district_id' => 191,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            61 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            61 => [
                 'id' => 1562,
                 'type' => 'សង្កាត់',
                 'code' => '220404',
@@ -18766,11 +17202,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Samraong',
                 'province_id' => 22,
                 'district_id' => 191,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            62 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            62 => [
                 'id' => 1563,
                 'type' => 'សង្កាត់',
                 'code' => '220405',
@@ -18778,11 +17213,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Smach',
                 'province_id' => 22,
                 'district_id' => 191,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            63 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            63 => [
                 'id' => 1564,
                 'type' => 'ឃុំ',
                 'code' => '220501',
@@ -18790,11 +17224,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Bak Anloung',
                 'province_id' => 22,
                 'district_id' => 192,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            64 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            64 => [
                 'id' => 1565,
                 'type' => 'ឃុំ',
                 'code' => '220502',
@@ -18802,11 +17235,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ph\'av',
                 'province_id' => 22,
                 'district_id' => 192,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            65 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            65 => [
                 'id' => 1566,
                 'type' => 'ឃុំ',
                 'code' => '220503',
@@ -18814,11 +17246,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Svay',
                 'province_id' => 22,
                 'district_id' => 192,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            66 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            66 => [
                 'id' => 1567,
                 'type' => 'ឃុំ',
                 'code' => '220504',
@@ -18826,11 +17257,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preah Pralay',
                 'province_id' => 22,
                 'district_id' => 192,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            67 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            67 => [
                 'id' => 1568,
                 'type' => 'ឃុំ',
                 'code' => '220505',
@@ -18838,11 +17268,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tumnob Dach',
                 'province_id' => 22,
                 'district_id' => 192,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            68 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            68 => [
                 'id' => 1569,
                 'type' => 'ឃុំ',
                 'code' => '220506',
@@ -18850,11 +17279,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Prasat',
                 'province_id' => 22,
                 'district_id' => 192,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            69 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            69 => [
                 'id' => 1570,
                 'type' => 'ឃុំ',
                 'code' => '230101',
@@ -18862,11 +17290,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Angkaol',
                 'province_id' => 23,
                 'district_id' => 193,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            70 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            70 => [
                 'id' => 1571,
                 'type' => 'ឃុំ',
                 'code' => '230103',
@@ -18874,11 +17301,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pong Tuek',
                 'province_id' => 23,
                 'district_id' => 193,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            71 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            71 => [
                 'id' => 1572,
                 'type' => 'សង្កាត់',
                 'code' => '230201',
@@ -18886,11 +17312,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaeb',
                 'province_id' => 23,
                 'district_id' => 194,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            72 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            72 => [
                 'id' => 1573,
                 'type' => 'សង្កាត់',
                 'code' => '230202',
@@ -18898,11 +17323,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Prey Thum',
                 'province_id' => 23,
                 'district_id' => 194,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            73 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            73 => [
                 'id' => 1574,
                 'type' => 'សង្កាត់',
                 'code' => '230203',
@@ -18910,11 +17334,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Krasar',
                 'province_id' => 23,
                 'district_id' => 194,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            74 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            74 => [
                 'id' => 1575,
                 'type' => 'សង្កាត់',
                 'code' => '240101',
@@ -18922,11 +17345,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Pailin',
                 'province_id' => 24,
                 'district_id' => 195,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            75 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            75 => [
                 'id' => 1576,
                 'type' => 'សង្កាត់',
                 'code' => '240102',
@@ -18934,11 +17356,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Ta Vau',
                 'province_id' => 24,
                 'district_id' => 195,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            76 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            76 => [
                 'id' => 1577,
                 'type' => 'សង្កាត់',
                 'code' => '240103',
@@ -18946,11 +17367,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuol Lvea',
                 'province_id' => 24,
                 'district_id' => 195,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            77 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            77 => [
                 'id' => 1578,
                 'type' => 'សង្កាត់',
                 'code' => '240104',
@@ -18958,11 +17378,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Bar Yakha',
                 'province_id' => 24,
                 'district_id' => 195,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            78 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            78 => [
                 'id' => 1579,
                 'type' => 'ឃុំ',
                 'code' => '240201',
@@ -18970,11 +17389,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sala Krau',
                 'province_id' => 24,
                 'district_id' => 196,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            79 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            79 => [
                 'id' => 1580,
                 'type' => 'ឃុំ',
                 'code' => '240202',
@@ -18982,11 +17400,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Stueng Trang',
                 'province_id' => 24,
                 'district_id' => 196,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            80 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            80 => [
                 'id' => 1581,
                 'type' => 'ឃុំ',
                 'code' => '240203',
@@ -18994,11 +17411,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Stueng Kach',
                 'province_id' => 24,
                 'district_id' => 196,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            81 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            81 => [
                 'id' => 1582,
                 'type' => 'ឃុំ',
                 'code' => '240204',
@@ -19006,11 +17422,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ou Andoung',
                 'province_id' => 24,
                 'district_id' => 196,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            82 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            82 => [
                 'id' => 1583,
                 'type' => 'ឃុំ',
                 'code' => '250101',
@@ -19018,11 +17433,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chong Cheach',
                 'province_id' => 25,
                 'district_id' => 197,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            83 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            83 => [
                 'id' => 1584,
                 'type' => 'ឃុំ',
                 'code' => '250102',
@@ -19030,11 +17444,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Dambae',
                 'province_id' => 25,
                 'district_id' => 197,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            84 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            84 => [
                 'id' => 1585,
                 'type' => 'ឃុំ',
                 'code' => '250103',
@@ -19042,11 +17455,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kouk Srok',
                 'province_id' => 25,
                 'district_id' => 197,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            85 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            85 => [
                 'id' => 1586,
                 'type' => 'ឃុំ',
                 'code' => '250104',
@@ -19054,11 +17466,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Neang Teut',
                 'province_id' => 25,
                 'district_id' => 197,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            86 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            86 => [
                 'id' => 1587,
                 'type' => 'ឃុំ',
                 'code' => '250105',
@@ -19066,11 +17477,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Seda',
                 'province_id' => 25,
                 'district_id' => 197,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            87 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            87 => [
                 'id' => 1588,
                 'type' => 'ឃុំ',
                 'code' => '250106',
@@ -19078,11 +17488,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Pring',
                 'province_id' => 25,
                 'district_id' => 197,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            88 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            88 => [
                 'id' => 1589,
                 'type' => 'ឃុំ',
                 'code' => '250107',
@@ -19090,11 +17499,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuek Chrov',
                 'province_id' => 25,
                 'district_id' => 197,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            89 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            89 => [
                 'id' => 1590,
                 'type' => 'ឃុំ',
                 'code' => '250201',
@@ -19102,11 +17510,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chhuk',
                 'province_id' => 25,
                 'district_id' => 198,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            90 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            90 => [
                 'id' => 1591,
                 'type' => 'ឃុំ',
                 'code' => '250202',
@@ -19114,11 +17521,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chumnik',
                 'province_id' => 25,
                 'district_id' => 198,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            91 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            91 => [
                 'id' => 1592,
                 'type' => 'ឃុំ',
                 'code' => '250203',
@@ -19126,11 +17532,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampong Treas',
                 'province_id' => 25,
                 'district_id' => 198,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            92 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            92 => [
                 'id' => 1593,
                 'type' => 'ឃុំ',
                 'code' => '250204',
@@ -19138,11 +17543,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaoh Pir',
                 'province_id' => 25,
                 'district_id' => 198,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            93 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            93 => [
                 'id' => 1594,
                 'type' => 'ឃុំ',
                 'code' => '250205',
@@ -19150,11 +17554,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Krouch Chhmar',
                 'province_id' => 25,
                 'district_id' => 198,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            94 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            94 => [
                 'id' => 1595,
                 'type' => 'ឃុំ',
                 'code' => '250206',
@@ -19162,11 +17565,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Peus Muoy',
                 'province_id' => 25,
                 'district_id' => 198,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            95 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            95 => [
                 'id' => 1596,
                 'type' => 'ឃុំ',
                 'code' => '250207',
@@ -19174,11 +17576,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Peus Pir',
                 'province_id' => 25,
                 'district_id' => 198,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            96 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            96 => [
                 'id' => 1597,
                 'type' => 'ឃុំ',
                 'code' => '250208',
@@ -19186,11 +17587,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preaek A chi',
                 'province_id' => 25,
                 'district_id' => 198,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            97 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            97 => [
                 'id' => 1598,
                 'type' => 'ឃុំ',
                 'code' => '250209',
@@ -19198,11 +17598,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Roka Khnor',
                 'province_id' => 25,
                 'district_id' => 198,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            98 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            98 => [
                 'id' => 1599,
                 'type' => 'ឃុំ',
                 'code' => '250210',
@@ -19210,11 +17609,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Svay Khleang',
                 'province_id' => 25,
                 'district_id' => 198,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            99 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            99 => [
                 'id' => 1600,
                 'type' => 'ឃុំ',
                 'code' => '250211',
@@ -19222,11 +17620,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trea',
                 'province_id' => 25,
                 'district_id' => 198,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            100 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            100 => [
                 'id' => 1601,
                 'type' => 'ឃុំ',
                 'code' => '250212',
@@ -19234,11 +17631,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuol Snuol',
                 'province_id' => 25,
                 'district_id' => 198,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            101 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            101 => [
                 'id' => 1602,
                 'type' => 'ឃុំ',
                 'code' => '250301',
@@ -19246,11 +17642,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chan Mul',
                 'province_id' => 25,
                 'district_id' => 199,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            102 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            102 => [
                 'id' => 1603,
                 'type' => 'ឃុំ',
                 'code' => '250302',
@@ -19258,11 +17653,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Choam',
                 'province_id' => 25,
                 'district_id' => 199,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            103 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            103 => [
                 'id' => 1604,
                 'type' => 'ឃុំ',
                 'code' => '250303',
@@ -19270,11 +17664,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Choam Kravien',
                 'province_id' => 25,
                 'district_id' => 199,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            104 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            104 => [
                 'id' => 1605,
                 'type' => 'ឃុំ',
                 'code' => '250304',
@@ -19282,11 +17675,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Choam Ta Mau',
                 'province_id' => 25,
                 'district_id' => 199,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            105 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            105 => [
                 'id' => 1606,
                 'type' => 'ឃុំ',
                 'code' => '250305',
@@ -19294,11 +17686,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Dar',
                 'province_id' => 25,
                 'district_id' => 199,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            106 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            106 => [
                 'id' => 1607,
                 'type' => 'ឃុំ',
                 'code' => '250306',
@@ -19306,11 +17697,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kampoan',
                 'province_id' => 25,
                 'district_id' => 199,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            107 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            107 => [
                 'id' => 1608,
                 'type' => 'ឃុំ',
                 'code' => '250307',
@@ -19318,11 +17708,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kokir',
                 'province_id' => 25,
                 'district_id' => 199,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            108 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            108 => [
                 'id' => 1609,
                 'type' => 'ឃុំ',
                 'code' => '250308',
@@ -19330,11 +17719,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Memong',
                 'province_id' => 25,
                 'district_id' => 199,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            109 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            109 => [
                 'id' => 1610,
                 'type' => 'ឃុំ',
                 'code' => '250309',
@@ -19342,11 +17730,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Memot',
                 'province_id' => 25,
                 'district_id' => 199,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            110 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            110 => [
                 'id' => 1611,
                 'type' => 'ឃុំ',
                 'code' => '250310',
@@ -19354,11 +17741,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Rumchek',
                 'province_id' => 25,
                 'district_id' => 199,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            111 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            111 => [
                 'id' => 1612,
                 'type' => 'ឃុំ',
                 'code' => '250311',
@@ -19366,11 +17752,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Rung',
                 'province_id' => 25,
                 'district_id' => 199,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            112 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            112 => [
                 'id' => 1613,
                 'type' => 'ឃុំ',
                 'code' => '250312',
@@ -19378,11 +17763,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tonlung',
                 'province_id' => 25,
                 'district_id' => 199,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            113 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            113 => [
                 'id' => 1614,
                 'type' => 'ឃុំ',
                 'code' => '250313',
@@ -19390,11 +17774,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tramung',
                 'province_id' => 25,
                 'district_id' => 199,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            114 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            114 => [
                 'id' => 1615,
                 'type' => 'ឃុំ',
                 'code' => '250314',
@@ -19402,11 +17785,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Triek',
                 'province_id' => 25,
                 'district_id' => 199,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            115 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            115 => [
                 'id' => 1616,
                 'type' => 'ឃុំ',
                 'code' => '250401',
@@ -19414,11 +17796,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Ampil Ta Pok',
                 'province_id' => 25,
                 'district_id' => 200,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            116 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            116 => [
                 'id' => 1617,
                 'type' => 'ឃុំ',
                 'code' => '250402',
@@ -19426,11 +17807,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chak',
                 'province_id' => 25,
                 'district_id' => 200,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            117 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            117 => [
                 'id' => 1618,
                 'type' => 'ឃុំ',
                 'code' => '250403',
@@ -19438,11 +17818,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Damril',
                 'province_id' => 25,
                 'district_id' => 200,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            118 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            118 => [
                 'id' => 1619,
                 'type' => 'ឃុំ',
                 'code' => '250404',
@@ -19450,11 +17829,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kong Chey',
                 'province_id' => 25,
                 'district_id' => 200,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            119 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            119 => [
                 'id' => 1620,
                 'type' => 'ឃុំ',
                 'code' => '250405',
@@ -19462,11 +17840,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Mien',
                 'province_id' => 25,
                 'district_id' => 200,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            120 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            120 => [
                 'id' => 1621,
                 'type' => 'ឃុំ',
                 'code' => '250406',
@@ -19474,11 +17851,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Preah Theat',
                 'province_id' => 25,
                 'district_id' => 200,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            121 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            121 => [
                 'id' => 1622,
                 'type' => 'ឃុំ',
                 'code' => '250407',
@@ -19486,11 +17862,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tuol Souphi',
                 'province_id' => 25,
                 'district_id' => 200,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            122 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            122 => [
                 'id' => 1623,
                 'type' => 'ឃុំ',
                 'code' => '250501',
@@ -19498,11 +17873,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Dountei',
                 'province_id' => 25,
                 'district_id' => 201,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            123 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            123 => [
                 'id' => 1624,
                 'type' => 'ឃុំ',
                 'code' => '250502',
@@ -19510,11 +17884,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kak',
                 'province_id' => 25,
                 'district_id' => 201,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            124 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            124 => [
                 'id' => 1625,
                 'type' => 'ឃុំ',
                 'code' => '250503',
@@ -19522,11 +17895,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kandaol Chrum',
                 'province_id' => 25,
                 'district_id' => 201,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            125 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            125 => [
                 'id' => 1626,
                 'type' => 'ឃុំ',
                 'code' => '250504',
@@ -19534,11 +17906,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kaong Kang',
                 'province_id' => 25,
                 'district_id' => 201,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            126 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            126 => [
                 'id' => 1627,
                 'type' => 'ឃុំ',
                 'code' => '250505',
@@ -19546,11 +17917,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kraek',
                 'province_id' => 25,
                 'district_id' => 201,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            127 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            127 => [
                 'id' => 1628,
                 'type' => 'ឃុំ',
                 'code' => '250506',
@@ -19558,11 +17928,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Popel',
                 'province_id' => 25,
                 'district_id' => 201,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            128 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            128 => [
                 'id' => 1629,
                 'type' => 'ឃុំ',
                 'code' => '250507',
@@ -19570,11 +17939,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Trapeang Phlong',
                 'province_id' => 25,
                 'district_id' => 201,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            129 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            129 => [
                 'id' => 1630,
                 'type' => 'ឃុំ',
                 'code' => '250508',
@@ -19582,11 +17950,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Veal Mlu',
                 'province_id' => 25,
                 'district_id' => 201,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            130 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            130 => [
                 'id' => 1631,
                 'type' => 'សង្កាត់',
                 'code' => '250601',
@@ -19594,11 +17961,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Suong',
                 'province_id' => 25,
                 'district_id' => 202,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            131 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            131 => [
                 'id' => 1632,
                 'type' => 'សង្កាត់',
                 'code' => '250602',
@@ -19606,11 +17972,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Vihear Luong',
                 'province_id' => 25,
                 'district_id' => 202,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            132 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            132 => [
                 'id' => 1633,
                 'type' => 'ឃុំ',
                 'code' => '250701',
@@ -19618,11 +17983,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Anhchaeum',
                 'province_id' => 25,
                 'district_id' => 203,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            133 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            133 => [
                 'id' => 1634,
                 'type' => 'ឃុំ',
                 'code' => '250702',
@@ -19630,11 +17994,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Boeng Pruol',
                 'province_id' => 25,
                 'district_id' => 203,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            134 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            134 => [
                 'id' => 1635,
                 'type' => 'ឃុំ',
                 'code' => '250703',
@@ -19642,11 +18005,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chikor',
                 'province_id' => 25,
                 'district_id' => 203,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            135 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            135 => [
                 'id' => 1636,
                 'type' => 'ឃុំ',
                 'code' => '250704',
@@ -19654,11 +18016,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chirou Ti Muoy',
                 'province_id' => 25,
                 'district_id' => 203,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            136 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            136 => [
                 'id' => 1637,
                 'type' => 'ឃុំ',
                 'code' => '250705',
@@ -19666,11 +18027,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chirou Ti Pir',
                 'province_id' => 25,
                 'district_id' => 203,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            137 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            137 => [
                 'id' => 1638,
                 'type' => 'ឃុំ',
                 'code' => '250706',
@@ -19678,11 +18038,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Chob',
                 'province_id' => 25,
                 'district_id' => 203,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            138 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            138 => [
                 'id' => 1639,
                 'type' => 'ឃុំ',
                 'code' => '250707',
@@ -19690,11 +18049,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Kor',
                 'province_id' => 25,
                 'district_id' => 203,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            139 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            139 => [
                 'id' => 1640,
                 'type' => 'ឃុំ',
                 'code' => '250708',
@@ -19702,11 +18060,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Lngieng',
                 'province_id' => 25,
                 'district_id' => 203,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            140 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            140 => [
                 'id' => 1641,
                 'type' => 'ឃុំ',
                 'code' => '250709',
@@ -19714,11 +18071,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Mong Riev',
                 'province_id' => 25,
                 'district_id' => 203,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            141 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            141 => [
                 'id' => 1642,
                 'type' => 'ឃុំ',
                 'code' => '250710',
@@ -19726,11 +18082,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Peam Chileang',
                 'province_id' => 25,
                 'district_id' => 203,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            142 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            142 => [
                 'id' => 1643,
                 'type' => 'ឃុំ',
                 'code' => '250711',
@@ -19738,11 +18093,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Roka Po Pram',
                 'province_id' => 25,
                 'district_id' => 203,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            143 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            143 => [
                 'id' => 1644,
                 'type' => 'ឃុំ',
                 'code' => '250712',
@@ -19750,11 +18104,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Sralab',
                 'province_id' => 25,
                 'district_id' => 203,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            144 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            144 => [
                 'id' => 1645,
                 'type' => 'ឃុំ',
                 'code' => '250713',
@@ -19762,11 +18115,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Thma Pech',
                 'province_id' => 25,
                 'district_id' => 203,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            145 => 
-            array (
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            145 => [
                 'id' => 1646,
                 'type' => 'ឃុំ',
                 'code' => '250714',
@@ -19774,11 +18126,10 @@ class CommunesTableSeeder extends Seeder
                 'name_en' => 'Tonle Bet',
                 'province_id' => 25,
                 'district_id' => 203,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-        ));
-        
-        
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+        ]);
+
     }
 }

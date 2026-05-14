@@ -2,194 +2,203 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use App\Models\Product;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Validator;
 use Symfony\Component\HttpFoundation\Response;
 
 class ProductController extends Controller
 {
-  protected $prefix = 'product_';
+    protected $prefix = 'product_';
 
-  protected $crudRoutePath = 'products';
+    protected $crudRoutePath = 'products';
 
-  public function index()
-  {
-    abort_if(Gate::denies($this->prefix.'access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
-    $data['prefix'] = $this->prefix;
-    $data['crudRoutePath'] = $this->crudRoutePath;
-    $data['products'] = Product::latest()->get();
-    return view('admin.product.index',$data);
-  }
+    public function index()
+    {
+        abort_if(Gate::denies($this->prefix.'access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+        $data['prefix'] = $this->prefix;
+        $data['crudRoutePath'] = $this->crudRoutePath;
+        $data['products'] = Product::latest()->get();
 
-  public function store(Request $request)
-  {
-    abort_if(Gate::denies($this->prefix.'create'), Response::HTTP_FORBIDDEN, '403 Forbidden');
-    if($request->status){
-      $status = true;
-    } else {
-      $status = false;
+        return view('admin.product.index', $data);
     }
-    $object_id= $request->object_id;
-    $validator = Validator::make($request->all(),[
-      'p_name'=>'required',
-      'p_code'=>'required',
-      'unit'=>'required',
-      'strength'=>'required',
-      // 'country'=>'required',
-      // 'image'=>'mimes:jpeg,jpg,png,gif|max:4096'
-    ]);
-    if(!$validator->passes()){
-      $response = [
-        'status' => 400,
-        'error' =>$validator->errors()->toArray()
-      ];
-      return response()->json($response);
-    }else{
-      if($request->hasFile('image')){
-        $image = $request->file('image');
-        $mytime = date('d-M-Y');
-        $image_name = 'Product-'.$mytime.'-'.uniqid().'.'.$image->getClientOriginalExtension();
-        $image->move(public_path('uploads/product/'),$image_name);
-      } else {
-        if($request->old_image){
-          $image_name = $request->old_image;
+
+    public function store(Request $request)
+    {
+        abort_if(Gate::denies($this->prefix.'create'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+        if ($request->status) {
+            $status = true;
         } else {
-          $image_name = null;
+            $status = false;
         }
-      }
-      $all_data = [
-        'p_name' => $request->p_name,
-        'p_code' => $request->p_code,
-        'unit' => $request->unit,
-        'strength' => $request->strength,
-        'group_id' => 1,
-        'type_id' => 1,
-        'country' => $request->country?? "",
-        'description' => $request->description ?? "",
-        'image' =>  $image_name,
-        'status' => $status
-      ];
-      $datas   =   Product::updateOrCreate([
-        'id' => $object_id],$all_data);
-        if($object_id){
-          $type = 'update-object';
-          $success = 'Product has been Updated!';
+        $object_id = $request->object_id;
+        $validator = Validator::make($request->all(), [
+            'p_name' => 'required',
+            'p_code' => 'required',
+            'unit' => 'required',
+            'strength' => 'required',
+            // 'country'=>'required',
+            // 'image'=>'mimes:jpeg,jpg,png,gif|max:4096'
+        ]);
+        if (! $validator->passes()) {
+            $response = [
+                'status' => 400,
+                'error' => $validator->errors()->toArray(),
+            ];
+
+            return response()->json($response);
         } else {
-          $type = 'store-object';
-          $success = 'Product has been registered!';
+            if ($request->hasFile('image')) {
+                $image = $request->file('image');
+                $mytime = date('d-M-Y');
+                $image_name = 'Product-'.$mytime.'-'.uniqid().'.'.$image->getClientOriginalExtension();
+                $image->move(public_path('uploads/product/'), $image_name);
+            } else {
+                if ($request->old_image) {
+                    $image_name = $request->old_image;
+                } else {
+                    $image_name = null;
+                }
+            }
+            $all_data = [
+                'p_name' => $request->p_name,
+                'p_code' => $request->p_code,
+                'unit' => $request->unit,
+                'strength' => $request->strength,
+                'group_id' => 1,
+                'type_id' => 1,
+                'country' => $request->country ?? '',
+                'description' => $request->description ?? '',
+                'image' => $image_name,
+                'status' => $status,
+            ];
+            $datas = Product::updateOrCreate([
+                'id' => $object_id], $all_data);
+            if ($object_id) {
+                $type = 'update-object';
+                $success = 'Product has been Updated!';
+            } else {
+                $type = 'store-object';
+                $success = 'Product has been registered!';
+            }
+            $response = [
+                'status' => 200,
+                'type' => $type,
+                'data' => $datas,
+                'success' => $success,
+                // 'html'    => view('admin.product.templates.ajax_tr',[
+                //   'row'=> $datas,
+                //   'prefix'=>$this->prefix,
+                //   'crudRoutePath'=> $this->crudRoutePath])
+                //   ->render(),
+            ];
         }
-      $response = [
-        'status'    => 200,
-        'type'    => $type,
-        'data'    => $datas,
-        'success' => $success,
-        // 'html'    => view('admin.product.templates.ajax_tr',[
-        //   'row'=> $datas,
-        //   'prefix'=>$this->prefix,
-        //   'crudRoutePath'=> $this->crudRoutePath])
-        //   ->render(),
-      ];
+
+        return response()->json($response);
     }
-    return response()->json($response);
-  }
 
-  public function show(Product $product)
-  {
-    abort_if(Gate::denies($this->prefix.'edit'), Response::HTTP_FORBIDDEN, '403 Forbidden');
-    $response =['data' => $product];
-    return response()->json($response);
-  }
+    public function show(Product $product)
+    {
+        abort_if(Gate::denies($this->prefix.'edit'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+        $response = ['data' => $product];
 
-  public function edit(Product $product)
-  {
-    abort_if(Gate::denies($this->prefix.'edit'), Response::HTTP_FORBIDDEN, '403 Forbidden');
-    $response =['data' => $product];
-    return response()->json($response);
-  }
-
-  public function destroy(Product $product)
-  {
-    abort_if(Gate::denies($this->prefix.'delete'), Response::HTTP_FORBIDDEN, '403 Forbidden');
-    if($product->delete()){
-      unlink(public_path('uploads/product/'.$product->image));
+        return response()->json($response);
     }
-    return response()->json(['success'=>'Item has been deleted successfully!']);
-  }
 
-  public function changeStatus(Request $request)
-  {
-    abort_if(Gate::denies($this->prefix.'edit'), Response::HTTP_FORBIDDEN, '403 Forbidden');
-    $response = Product::find($request->object_id);
-    $response->status = $request->status;
-    $response->save();
-    return response()->json(['success'=>'Status has been change successfully!']);
-  }
+    public function edit(Product $product)
+    {
+        abort_if(Gate::denies($this->prefix.'edit'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+        $response = ['data' => $product];
 
-  public function storeNew(Request $request)
-  {
-    abort_if(Gate::denies($this->prefix.'create'), Response::HTTP_FORBIDDEN, '403 Forbidden');
-    if($request->status){
-      $status = true;
-    } else {
-      $status = false;
+        return response()->json($response);
     }
-    $object_id= $request->object_id;
-    $validator = Validator::make($request->all(),[
-      'p_name'=>'required',
-      'p_code'=>'required',
-      'unit'=>'required',
-      'strength'=>'required',
-    ]);
-    if(!$validator->passes()){
-      $response = [
-        'status' => 400,
-        'error' =>$validator->errors()->toArray()
-      ];
-      return response()->json($response);
-    }else{
-      if($request->hasFile('image')){
-        $image = $request->file('image');
-        $mytime = date('d-M-Y');
-        $image_name = 'Product-'.$mytime.'-'.uniqid().'.'.$image->getClientOriginalExtension();
-        $image->move(public_path('uploads/product/'),$image_name);
-      } else {
-        if($request->old_image){
-          $image_name = $request->old_image;
+
+    public function destroy(Product $product)
+    {
+        abort_if(Gate::denies($this->prefix.'delete'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+        if ($product->delete()) {
+            unlink(public_path('uploads/product/'.$product->image));
+        }
+
+        return response()->json(['success' => 'Item has been deleted successfully!']);
+    }
+
+    public function changeStatus(Request $request)
+    {
+        abort_if(Gate::denies($this->prefix.'edit'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+        $response = Product::find($request->object_id);
+        $response->status = $request->status;
+        $response->save();
+
+        return response()->json(['success' => 'Status has been change successfully!']);
+    }
+
+    public function storeNew(Request $request)
+    {
+        abort_if(Gate::denies($this->prefix.'create'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+        if ($request->status) {
+            $status = true;
         } else {
-          $image_name = null;
+            $status = false;
         }
-      }
-      $all_data = [
-        'p_name' => $request->p_name,
-        'p_code' => $request->p_code,
-        'unit' => $request->unit,
-        'strength' => $request->strength,
-        'group_id' => 1,
-        'type_id' => 1,
-        'country' => $request->country?? "",
-        'description' => $request->description ?? "",
-        'image' =>  $image_name,
-        'status' => $status
-      ];
-      $datas   =   Product::updateOrCreate([
-        'id' => $object_id],$all_data);
-        if($object_id){
-          $type = 'update-object';
-          $success = 'Product has been Updated!';
+        $object_id = $request->object_id;
+        $validator = Validator::make($request->all(), [
+            'p_name' => 'required',
+            'p_code' => 'required',
+            'unit' => 'required',
+            'strength' => 'required',
+        ]);
+        if (! $validator->passes()) {
+            $response = [
+                'status' => 400,
+                'error' => $validator->errors()->toArray(),
+            ];
+
+            return response()->json($response);
         } else {
-          $type = 'store-object';
-          $success = 'Product has been registered!';
+            if ($request->hasFile('image')) {
+                $image = $request->file('image');
+                $mytime = date('d-M-Y');
+                $image_name = 'Product-'.$mytime.'-'.uniqid().'.'.$image->getClientOriginalExtension();
+                $image->move(public_path('uploads/product/'), $image_name);
+            } else {
+                if ($request->old_image) {
+                    $image_name = $request->old_image;
+                } else {
+                    $image_name = null;
+                }
+            }
+            $all_data = [
+                'p_name' => $request->p_name,
+                'p_code' => $request->p_code,
+                'unit' => $request->unit,
+                'strength' => $request->strength,
+                'group_id' => 1,
+                'type_id' => 1,
+                'country' => $request->country ?? '',
+                'description' => $request->description ?? '',
+                'image' => $image_name,
+                'status' => $status,
+            ];
+            $datas = Product::updateOrCreate([
+                'id' => $object_id], $all_data);
+            if ($object_id) {
+                $type = 'update-object';
+                $success = 'Product has been Updated!';
+            } else {
+                $type = 'store-object';
+                $success = 'Product has been registered!';
+            }
+            $response = [
+                'status' => 200,
+                'type' => $type,
+                'data' => $datas,
+                'success' => $success,
+            ];
         }
-      $response = [
-        'status'    => 200,
-        'type'    => $type,
-        'data'    => $datas,
-        'success' => $success,
-      ];
+
+        return response()->json($response);
     }
-    return response()->json($response);
-  }
 }

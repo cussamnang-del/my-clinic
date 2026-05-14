@@ -2,10 +2,9 @@
 
 namespace App\Models;
 
-use App\Models\Hospital;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Room extends Model
 {
@@ -15,8 +14,6 @@ class Room extends Model
 
     /**
      * Get all of the hospitals for the Room
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
     public function hospitals(): HasMany
     {

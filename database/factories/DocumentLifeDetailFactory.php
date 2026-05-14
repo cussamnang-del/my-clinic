@@ -2,10 +2,11 @@
 
 namespace Database\Factories;
 
+use App\Models\DocumentLifeDetail;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\DocumentLifeDetail>
+ * @extends Factory<DocumentLifeDetail>
  */
 class DocumentLifeDetailFactory extends Factory
 {

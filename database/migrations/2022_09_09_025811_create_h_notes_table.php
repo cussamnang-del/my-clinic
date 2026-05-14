@@ -22,8 +22,8 @@ return new class extends Migration
             $table->string('todo')->nullable();
             $table->string('comment')->nullable();
             $table->foreign('hospital_id', 'hospital_id_fk_2049')
-                  ->references('id')->on('hospitals')
-                  ->onDelete('cascade');
+                ->references('id')->on('hospitals')
+                ->onDelete('cascade');
             $table->timestamps();
         });
     }

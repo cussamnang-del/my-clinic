@@ -20,30 +20,30 @@ return new class extends Migration
             $table->timestamps();
         });
         $permissions = [
-          [
-            'title' => 'item_group_management_access',
-            'group' => 'Item_Group Management'
-          ],
-          [
-            'title' => 'item_group_create',
-            'group' => 'Item_Group'
-          ],
-          [
-            'title' => 'item_group_edit',
-            'group' => 'Item_Group'
-          ],
-          [
-            'title' => 'item_group_show',
-            'group' => 'Item_Group'
-          ],
-          [
-            'title' => 'item_group_delete',
-            'group' => 'item_group'
-          ],
-          [
-            'title' => 'item_group_access',
-            'group' => 'item_group'
-          ],
+            [
+                'title' => 'item_group_management_access',
+                'group' => 'Item_Group Management',
+            ],
+            [
+                'title' => 'item_group_create',
+                'group' => 'Item_Group',
+            ],
+            [
+                'title' => 'item_group_edit',
+                'group' => 'Item_Group',
+            ],
+            [
+                'title' => 'item_group_show',
+                'group' => 'Item_Group',
+            ],
+            [
+                'title' => 'item_group_delete',
+                'group' => 'item_group',
+            ],
+            [
+                'title' => 'item_group_access',
+                'group' => 'item_group',
+            ],
         ];
         DB::table('permissions')->insert($permissions);
     }

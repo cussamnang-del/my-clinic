@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class HowToUse extends Model
 {
-  use HasFactory;
+    use HasFactory;
 
-  protected $guarded = [];
+    protected $guarded = [];
 }

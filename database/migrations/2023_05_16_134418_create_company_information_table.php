@@ -13,17 +13,17 @@ return new class extends Migration
      */
     public function up()
     {
-      Schema::create('company_information', function (Blueprint $table) {
-        $table->id();
-        $table->string('name_en')->nullable();
-        $table->string('name_kh')->nullable();
-        $table->string('address')->nullable();
-        $table->string('phone1')->nullable();
-        $table->string('phone2')->nullable();
-        $table->string('phone3')->nullable();
-        $table->string('logo')->nullable();
-        $table->timestamps();
-      });
+        Schema::create('company_information', function (Blueprint $table) {
+            $table->id();
+            $table->string('name_en')->nullable();
+            $table->string('name_kh')->nullable();
+            $table->string('address')->nullable();
+            $table->string('phone1')->nullable();
+            $table->string('phone2')->nullable();
+            $table->string('phone3')->nullable();
+            $table->string('logo')->nullable();
+            $table->timestamps();
+        });
     }
 
     /**
@@ -33,6 +33,6 @@ return new class extends Migration
      */
     public function down()
     {
-      Schema::dropIfExists('company_information');
+        Schema::dropIfExists('company_information');
     }
 };

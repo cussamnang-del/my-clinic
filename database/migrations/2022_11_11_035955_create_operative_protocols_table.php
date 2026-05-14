@@ -30,14 +30,14 @@ return new class extends Migration
             $table->unsignedBigInteger('user_id')->nullable();
             $table->boolean('status')->default(1);
             $table->foreign('document_id', 'document_id_fk_2062')
-                  ->references('id')->on('documents')
-                  ->onDelete('cascade');
+                ->references('id')->on('documents')
+                ->onDelete('cascade');
             $table->foreign('customer_id', 'customer_id_fk_2063')
-                  ->references('id')->on('customers')
-                  ->onDelete('cascade');
+                ->references('id')->on('customers')
+                ->onDelete('cascade');
             $table->foreign('user_id', 'user_id_fk_2064')
-                  ->references('id')->on('users')
-                  ->onDelete('set null');
+                ->references('id')->on('users')
+                ->onDelete('set null');
             $table->timestamps();
         });
     }
