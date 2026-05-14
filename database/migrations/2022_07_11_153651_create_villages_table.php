@@ -13,17 +13,17 @@ return new class extends Migration
      */
     public function up()
     {
-      Schema::create('villages', function (Blueprint $table) {
-        $table->id();
-        $table->string('type')->nullable();
-        $table->string('code')->nullable();
-        $table->string('name_kh')->nullable();
-        $table->string('name_en')->nullable();
-        $table->bigInteger('province_id')->nullable();
-        $table->bigInteger('district_id')->nullable();
-        $table->bigInteger('commune_id')->nullable();
-        $table->timestamps();
-      });
+        Schema::create('villages', function (Blueprint $table) {
+            $table->id();
+            $table->string('type')->nullable();
+            $table->string('code')->nullable();
+            $table->string('name_kh')->nullable();
+            $table->string('name_en')->nullable();
+            $table->bigInteger('province_id')->nullable();
+            $table->bigInteger('district_id')->nullable();
+            $table->bigInteger('commune_id')->nullable();
+            $table->timestamps();
+        });
     }
 
     /**

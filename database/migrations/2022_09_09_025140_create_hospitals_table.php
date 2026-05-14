@@ -22,14 +22,14 @@ return new class extends Migration
             $table->string('h_note')->nullable();
             $table->boolean('status')->default(true);
             $table->foreign('customer_id', 'customer_id_fk_2044')
-                    ->references('id')->on('customers')
-                    ->onDelete('cascade');
+                ->references('id')->on('customers')
+                ->onDelete('cascade');
             $table->foreign('document_id', 'document_id_fk_2045')
-                    ->references('id')->on('documents')
-                    ->onDelete('cascade');
+                ->references('id')->on('documents')
+                ->onDelete('cascade');
             $table->foreign('room_id', 'room_id_fk_20441')
-                    ->references('id')->on('rooms')
-                    ->onDelete('cascade');
+                ->references('id')->on('rooms')
+                ->onDelete('cascade');
             $table->timestamps();
         });
     }

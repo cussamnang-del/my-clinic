@@ -22,11 +22,11 @@ return new class extends Migration
             $table->string('desr')->nullable();
             $table->boolean('status')->default(1);
             $table->foreign('customer_id', 'customer_id_fk_2068')
-            ->references('id')->on('customers')
-            ->onDelete('cascade');
+                ->references('id')->on('customers')
+                ->onDelete('cascade');
             $table->foreign('user_id', 'user_id_fk_2069')
-            ->references('id')->on('users')
-            ->onDelete('set null');
+                ->references('id')->on('users')
+                ->onDelete('set null');
             $table->timestamps();
         });
     }

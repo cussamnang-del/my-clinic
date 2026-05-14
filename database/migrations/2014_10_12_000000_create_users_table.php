@@ -13,19 +13,19 @@ return new class extends Migration
      */
     public function up()
     {
-      Schema::create('users', function (Blueprint $table) {
-        $table->id();
-        $table->string('name');
-        $table->string('username')->unique();
-        $table->string('phone_no')->unique();
-        $table->string('email')->unique();
-        $table->timestamp('email_verified_at')->nullable();
-        $table->string('password');
-        $table->rememberToken();
-        $table->boolean('status')->default(true);
-        $table->timestamps();
-        $table->softDeletes();
-      });
+        Schema::create('users', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('username')->unique();
+            $table->string('phone_no')->unique();
+            $table->string('email')->unique();
+            $table->timestamp('email_verified_at')->nullable();
+            $table->string('password');
+            $table->rememberToken();
+            $table->boolean('status')->default(true);
+            $table->timestamps();
+            $table->softDeletes();
+        });
     }
 
     /**
