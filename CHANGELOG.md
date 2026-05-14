@@ -12,6 +12,69 @@ required by ISO 9001:2015 §7.5.
 
 ## [Unreleased]
 
+### Added — Phase 3 (ISO 9001 / ISO 15189 quality modules)
+- **Document Control (ISO 9001:2015 §7.5).** New tables
+  `sop_documents`, `sop_revisions`, `sop_acknowledgements`. Each SOP
+  has an explicit revision history (`draft → submitted → approved →
+  effective → superseded`), the document points at the currently
+  effective revision, and staff read-receipts are unique per
+  (revision × user). New `App\Services\SopReleaseService` enforces
+  the state machine, segregation of duties (submitter ≠ approver),
+  and atomic supersession of the previous effective revision.
+- **Equipment & Calibration (ISO 15189:2022 §6.4–§6.5).** New tables
+  `equipment` and `equipment_calibrations`. `Equipment::isCalibrationOverdue()`
+  returns `true` once `next_calibration_due_at` is in the past so the
+  UI can colour-code overdue assets without per-row work.
+- **Reagent Lots (ISO 15189:2022 §6.4.3).** New `reagent_lots` table
+  capturing lot #, manufacturer, receipt / open / expiry dates and
+  the in-use stability window (`open_use_days_allowed`). The model
+  exposes `isShelfExpired`, `isInUseExpired`, and a combined
+  `isUsable` helper.
+- **NCR & CAPA (ISO 9001:2015 §10.2, ISO 15189:2022 §8.7).** New
+  tables `non_conformances` and `capa_actions`. New
+  `App\Services\CapaWorkflowService` drives
+  `open → in_progress → effectiveness_check → closed` with hard
+  constraints — cannot submit for check without `action_taken`,
+  cannot close without `verification_evidence` — and automatically
+  flips the parent NCR to `closed_with_capa` once every CAPA is
+  closed/cancelled.
+- **Internal Audits (ISO 9001:2015 §9.2).** New tables
+  `internal_audits` and `audit_findings`. Non-conformance findings
+  can link directly to an `NonConformance` row, giving the auditor a
+  one-click path from finding to CAPA.
+- **Training & Competency (ISO 15189:2022 §6.2).** New tables
+  `competencies`, `training_records`, `competency_assessments`.
+  Competencies carry a `reassessment_interval_months` cadence;
+  `CompetencyAssessment::isReassessmentDue()` flags overdue
+  re-assessments.
+- **Risk Register (ISO 9001:2015 §6.1, ISO 15189:2022 §5.6).** New
+  `risks` table with inherent + residual likelihood/severity/score
+  columns. New `App\Services\RiskScoringService` enforces the 1–5
+  input range and computes scores; `Risk::band()` classifies scores
+  as `low` / `medium` / `high` / `extreme` using the standard 5×5
+  matrix bands.
+- **Permissions.** New `IsoModulesPermissionSeeder` adds
+  `<module>_management_access`, `_access`, `_create`, `_edit`,
+  `_show`, `_delete` entries for each of the seven new modules.
+  Idempotent (uses `firstOrCreate`).
+- **Tests.** New `tests/Feature/SopReleaseWorkflowTest`,
+  `EquipmentCalibrationTest`, `ReagentLotTest`, `CapaWorkflowTest`,
+  `InternalAuditTest`, `CompetencyTrainingTest`, `RiskScoringTest` —
+  18 new feature tests covering the happy paths and the
+  segregation-of-duties / evidence / range-checking rules.
+  Total suite is now **42 tests / 123 assertions**, all green.
+
+### Notes
+- All new clinical-style tables carry `created_by` / `updated_by` /
+  `deleted_by` audit columns and use `SoftDeletes` via the
+  `HasAuditColumns` + `IsLoggable` traits introduced in Phase 2 —
+  every state change in the new modules ends up in `activity_logs`.
+- This PR is **backend-first**: no Blade views or admin controllers
+  for the new modules yet. The UI work lives in Phase 4 alongside
+  the planned split of `DocumentController` so the new admin pages
+  land on top of the post-split service layer rather than the
+  current 1.5k-LOC God controller.
+
 ### Added — Phase 2 (Audit-ability foundation)
 - **Blameable columns on every clinical table.** New migration
   `2026_05_14_040001_add_audit_columns_to_clinical_tables.php` adds
