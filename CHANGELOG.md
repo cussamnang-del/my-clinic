@@ -12,6 +12,66 @@ required by ISO 9001:2015 §7.5.
 
 ## [Unreleased]
 
+### Added — Phase 1b (Security wrap-up: 2FA, password history, CI gates)
+- **Two-factor authentication (TOTP, RFC 6238).** New `App\Services\TwoFactorService`
+  generates 16-character base32 secrets via `pragmarx/google2fa-laravel`, renders
+  QR codes via `bacon/bacon-qr-code`, and issues / verifies 8 single-use bcrypt-
+  hashed recovery codes per user. New `users.two_factor_secret` (encrypted),
+  `users.two_factor_recovery_codes` (`encrypted:array`), and
+  `users.two_factor_confirmed_at` columns on `users`.
+- **2FA enrolment & challenge flow.** `Auth\TwoFactorController` exposes
+  `GET /two-factor/setup` (QR + recovery codes), `POST /two-factor/confirm`
+  (6-digit verification), `GET /two-factor/challenge` and
+  `POST /two-factor/verify` (login-time gate accepting either the TOTP or a
+  recovery code), and `POST /two-factor/disable` (password-confirmation).
+- **`EnsureTwoFactorVerified` middleware.** Applied to the entire
+  `routes/admin.php` group — once a user has 2FA enabled, they must complete
+  the challenge for every session before reaching any admin route.
+- **Password-history prevention.** New `password_histories` table records
+  bcrypt hashes (no plaintext) of the last *N* passwords per user, configured
+  via `config/security.php` → `password_history.length` (default 5). The new
+  `App\Rules\PreventPasswordReuse` validation rule blocks reuse and is wired
+  into `UpdateUserRequest` and the password-reset flow.
+  `App\Services\PasswordHistoryService` is invoked from `UserController` and
+  `Auth\ResetPasswordController` to record new passwords and prune older
+  entries.
+- **`config/security.php`** — central feature flags for the 2FA and
+  password-history features.
+- **Tests.** New `tests/Feature/SecurityHeadersTest`,
+  `tests/Feature/RateLimiterRegistrationTest`,
+  `tests/Feature/ExampleTest` (root-redirect + login-renders smoke tests),
+  and `tests/Unit/TwoFactorServiceTest` covering secret generation,
+  verification, and recovery-code generation.
+- **`pint.json`** — Laravel preset, excludes vendor/views/lang/seeders.
+
+### Changed — Phase 1b
+- **`bootstrap/app.php`** — moved the four named rate limiters
+  (`login`, `public`, `admin`, `api`) from `RouteServiceProvider` into the
+  `withRouting(then:)` closure so they are registered before any request
+  middleware runs (previously the `login` limiter was *not* defined at
+  request time in Laravel 12's bootstrap order, causing
+  `Rate limiter [login] is not defined`).
+- **`.github/workflows/ci.yml`** — un-gated the `pint` and `phpunit` jobs.
+  The PHPUnit job now uses in-memory SQLite (see `phpunit.xml`) instead of
+  spinning up a MySQL service; runs all tests on every push / PR.
+
+### Fixed — Phase 1b
+- **Critical: `SecurityHeaders` middleware was not applying any headers.**
+  The Phase 1 guard `method_exists($response, 'headers')` always returned
+  `false` because `headers` is a **property**, not a method, on Symfony's
+  `Response`. Fixed by switching to `property_exists()`. As of this PR all
+  responses correctly receive `X-Frame-Options`, `X-Content-Type-Options`,
+  `Referrer-Policy`, `Permissions-Policy`, `Cross-Origin-Opener-Policy`, and
+  `Content-Security-Policy`.
+
+### Security
+- Closes audit findings **M-1** (2FA), **M-2** (password history), and
+  silently re-asserts **H-3** (security headers — see "Fixed" above) from
+  [`docs/audit-report.md`](docs/audit-report.md).
+- Aligns the codebase with **ISO 27001:2022 A.5.17** (authentication
+  information), **NIST SP 800-63B §5.1.4** (Multi-Factor Authenticators),
+  and **NIST SP 800-63B §5.1.1.2** (memorised secret reuse).
+
 ### Added — Phase 1 (Security baseline)
 - `App\Http\Middleware\SecurityHeaders` — applies CSP, HSTS, X-Frame-Options,
   X-Content-Type-Options, Referrer-Policy, Permissions-Policy, and

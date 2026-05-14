@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\Admin\ProvinceDistrictCommuneVillageController;
+use App\Http\Controllers\Auth\TwoFactorController;
 use App\Http\Controllers\FullCalenderController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -9,7 +11,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
 
 Route::get('/', function () {
-  return redirect()->route('login');
+    return redirect()->route('login');
 });
 
 /*
@@ -27,12 +29,36 @@ Route::get('/', function () {
 |          OWASP ASVS v4 §2.2 (general authenticator).
 */
 Route::middleware(['throttle:login'])->group(function () {
-  Auth::routes();
+    Auth::routes();
 });
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])
-  ->middleware(['auth'])
-  ->name('home');
+Route::get('/home', [HomeController::class, 'index'])
+    ->middleware(['auth'])
+    ->name('home');
+
+/*
+|--------------------------------------------------------------------------
+| Two-Factor Authentication
+|--------------------------------------------------------------------------
+|
+| The setup pages are reachable as soon as the user is authenticated; the
+| EnsureTwoFactorVerified middleware (registered on the admin route group)
+| then forces the user through the challenge before they can access
+| anything else. Setup + challenge routes themselves are exempt from the
+| middleware so the user can actually complete the flow.
+|
+| Login-style throttle is reused so the verify endpoint cannot be brute-
+| forced into accepting a TOTP code (≈1M / 30s search space).
+|
+| Maps to: ISO 27001:2022 A.5.17, NIST SP 800-63B §5.1.4.
+*/
+Route::middleware(['auth', 'throttle:login'])->prefix('two-factor')->name('two-factor.')->group(function () {
+    Route::get('/setup', [TwoFactorController::class, 'showSetup'])->name('setup');
+    Route::post('/confirm', [TwoFactorController::class, 'confirmSetup'])->name('confirm');
+    Route::get('/challenge', [TwoFactorController::class, 'showChallenge'])->name('challenge');
+    Route::post('/verify', [TwoFactorController::class, 'verifyChallenge'])->name('verify');
+    Route::post('/disable', [TwoFactorController::class, 'disable'])->name('disable');
+});
 
 /*
 |--------------------------------------------------------------------------
@@ -44,44 +70,45 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])
 | them properly is tracked as a follow-up in audit-report.md (H-5 / M-1).
 */
 Route::middleware(['throttle:public'])->group(function () {
-  Route::get('/districts', [ProvinceDistrictCommuneVillageController::class, 'district'])
-    ->name('districts.index');
+    Route::get('/districts', [ProvinceDistrictCommuneVillageController::class, 'district'])
+        ->name('districts.index');
 
-  Route::get('/communes', [ProvinceDistrictCommuneVillageController::class, 'commune'])
-    ->name('communes.index');
+    Route::get('/communes', [ProvinceDistrictCommuneVillageController::class, 'commune'])
+        ->name('communes.index');
 
-  Route::get('/villages', [ProvinceDistrictCommuneVillageController::class, 'village'])
-    ->name('villages.index');
+    Route::get('/villages', [ProvinceDistrictCommuneVillageController::class, 'village'])
+        ->name('villages.index');
 
-  // Locale switcher — sets the per-session locale.
-  Route::get('/locale/{locale}', function (string $locale) {
-    // Whitelist supported locales to avoid arbitrary session writes.
-    $allowed = ['en', 'km'];
-    if (in_array($locale, $allowed, true)) {
-      Session::put('locale', $locale);
-    }
-    return redirect()->back();
-  });
+    // Locale switcher — sets the per-session locale.
+    Route::get('/locale/{locale}', function (string $locale) {
+        // Whitelist supported locales to avoid arbitrary session writes.
+        $allowed = ['en', 'km'];
+        if (in_array($locale, $allowed, true)) {
+            Session::put('locale', $locale);
+        }
 
-  Route::get('full-calendar', [FullCalenderController::class, 'calendar3']);
-  Route::post('full-calendar/action', [FullCalenderController::class, 'action']);
+        return redirect()->back();
+    });
 
-  Route::get('/auto', function () {
-    return view('autocomplete');
-  });
+    Route::get('full-calendar', [FullCalenderController::class, 'calendar3']);
+    Route::post('full-calendar/action', [FullCalenderController::class, 'action']);
 
-  Route::get('/get-countries', function (Request $request) {
-    $name = strtolower(trim((string) $request->get('name')));
-    $fieldName = (string) $request->get('fieldName');
-    $allowedFields = ['name', 'id', 'code'];
-    if ($fieldName === '' || !in_array($fieldName, $allowedFields, true)) {
-      $fieldName = 'name';
-    }
+    Route::get('/auto', function () {
+        return view('autocomplete');
+    });
 
-    return DB::table('country')
-      ->select('country.*')
-      ->whereRaw('LOWER(' . $fieldName . ') LIKE ?', ["$name%"])
-      ->limit(25)
-      ->get();
-  });
+    Route::get('/get-countries', function (Request $request) {
+        $name = strtolower(trim((string) $request->get('name')));
+        $fieldName = (string) $request->get('fieldName');
+        $allowedFields = ['name', 'id', 'code'];
+        if ($fieldName === '' || ! in_array($fieldName, $allowedFields, true)) {
+            $fieldName = 'name';
+        }
+
+        return DB::table('country')
+            ->select('country.*')
+            ->whereRaw('LOWER('.$fieldName.') LIKE ?', ["$name%"])
+            ->limit(25)
+            ->get();
+    });
 });

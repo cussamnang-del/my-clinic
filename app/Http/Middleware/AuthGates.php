@@ -23,60 +23,60 @@ use Symfony\Component\HttpFoundation\Response;
  */
 class AuthGates
 {
-  /**
-   * Cache key for the role/permission → permission-title map.
-   *
-   * Public + const so model observers can reference the same key when
-   * invalidating after Role/Permission changes.
-   */
-  public const CACHE_KEY = 'auth_gates.permission_role_map';
+    /**
+     * Cache key for the role/permission → permission-title map.
+     *
+     * Public + const so model observers can reference the same key when
+     * invalidating after Role/Permission changes.
+     */
+    public const CACHE_KEY = 'auth_gates.permission_role_map';
 
-  /**
-   * Time-to-live for the permission map cache.
-   */
-  public const CACHE_TTL = 86400; // 24 hours
+    /**
+     * Time-to-live for the permission map cache.
+     */
+    public const CACHE_TTL = 86400; // 24 hours
 
-  public function handle(Request $request, Closure $next): Response
-  {
-    if (!auth()->check()) {
-      return $next($request);
+    public function handle(Request $request, Closure $next): Response
+    {
+        if (! auth()->check()) {
+            return $next($request);
+        }
+
+        $map = Cache::remember(
+            self::CACHE_KEY,
+            self::CACHE_TTL,
+            static fn () => self::buildPermissionRoleMap(),
+        );
+
+        foreach ($map as $title => $roleIds) {
+            Gate::define($title, function ($user) use ($roleIds) {
+                return count(
+                    array_intersect($user->roles->pluck('id')->toArray(), $roleIds)
+                ) > 0;
+            });
+        }
+
+        return $next($request);
     }
 
-    $map = Cache::remember(
-      self::CACHE_KEY,
-      self::CACHE_TTL,
-      static fn () => self::buildPermissionRoleMap(),
-    );
+    /**
+     * Build the {permissionTitle => [roleId, ...]} map from the DB.
+     *
+     * Returned as a plain array so it can be cached as a value (Eloquent
+     * collections do not serialise/restore cleanly across drivers).
+     *
+     * @return array<string, int[]>
+     */
+    protected static function buildPermissionRoleMap(): array
+    {
+        $map = [];
 
-    foreach ($map as $title => $roleIds) {
-      Gate::define($title, function ($user) use ($roleIds) {
-        return count(
-          array_intersect($user->roles->pluck('id')->toArray(), $roleIds)
-        ) > 0;
-      });
+        foreach (Role::with('permissions')->get() as $role) {
+            foreach ($role->permissions as $permission) {
+                $map[$permission->title][] = $role->id;
+            }
+        }
+
+        return $map;
     }
-
-    return $next($request);
-  }
-
-  /**
-   * Build the {permissionTitle => [roleId, ...]} map from the DB.
-   *
-   * Returned as a plain array so it can be cached as a value (Eloquent
-   * collections do not serialise/restore cleanly across drivers).
-   *
-   * @return array<string, int[]>
-   */
-  protected static function buildPermissionRoleMap(): array
-  {
-    $map = [];
-
-    foreach (Role::with('permissions')->get() as $role) {
-      foreach ($role->permissions as $permission) {
-        $map[$permission->title][] = $role->id;
-      }
-    }
-
-    return $map;
-  }
 }

@@ -16,12 +16,12 @@ use Symfony\Component\HttpFoundation\Response;
  */
 class ForceHttpsInProduction
 {
-  public function handle(Request $request, Closure $next): Response
-  {
-    if (!$request->isSecure() && !app()->environment(['local', 'testing'])) {
-      return redirect()->secure($request->getRequestUri(), 301);
-    }
+    public function handle(Request $request, Closure $next): Response
+    {
+        if (! $request->isSecure() && ! app()->environment(['local', 'testing'])) {
+            return redirect()->secure($request->getRequestUri(), 301);
+        }
 
-    return $next($request);
-  }
+        return $next($request);
+    }
 }
