@@ -2,17 +2,38 @@
 
 namespace App\Models;
 
+use App\Concerns\HasAuditColumns;
+use App\Concerns\IsLoggable;
+use App\Services\MrnGenerator;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\Hash;
 
 class Customer extends Model
 {
+    use HasAuditColumns;
     use HasFactory;
+    use IsLoggable;
+    use SoftDeletes;
 
     protected $guarded = [];
+
+    /**
+     * Auto-assign an MRN on create when the caller hasn't provided one.
+     * Runs BEFORE the model is inserted so the column has its final
+     * value at the moment we hit the unique index.
+     */
+    protected static function booted(): void
+    {
+        static::creating(function (self $customer) {
+            if (empty($customer->mrn)) {
+                $customer->mrn = app(MrnGenerator::class)->nextFor($customer);
+            }
+        });
+    }
 
     protected $dates = [
         'dob',

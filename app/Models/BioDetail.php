@@ -2,16 +2,45 @@
 
 namespace App\Models;
 
+use App\Concerns\HasAuditColumns;
+use App\Concerns\IsLoggable;
+use App\Services\ResultReleaseService;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasOneThrough;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class BioDetail extends Model
 {
+    use HasAuditColumns;
     use HasFactory;
+    use IsLoggable;
+    use SoftDeletes;
 
     protected $guarded = [];
+
+    protected $casts = [
+        'submitted_at' => 'datetime',
+        'reviewed_at' => 'datetime',
+        'released_at' => 'datetime',
+        'amended_at' => 'datetime',
+    ];
+
+    public function isDraft(): bool
+    {
+        return $this->result_status === ResultReleaseService::STATE_DRAFT;
+    }
+
+    public function isReleased(): bool
+    {
+        return $this->result_status === ResultReleaseService::STATE_RELEASED;
+    }
+
+    public function amends(): BelongsTo
+    {
+        return $this->belongsTo(self::class, 'amends_id');
+    }
 
     /**
      * Get the itemGroup that owns the BioDetail
