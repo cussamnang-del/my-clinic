@@ -10,8 +10,8 @@ use Illuminate\Database\Eloquent\Model;
 class CompanyInformation extends Model
 {
     use HasAuditColumns;
-    use IsLoggable;
     use HasFactory;
+    use IsLoggable;
 
     protected $fillable = [
         'name_en',
