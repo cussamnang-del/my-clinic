@@ -19,6 +19,7 @@ class SopRevision extends Model
 
     protected $fillable = [
         'sop_document_id',
+        'revision_number',
         'content_path',
         'change_summary',
         'status',
