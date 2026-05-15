@@ -19,14 +19,7 @@ class OperativeController extends Controller
             return response()->json(['status' => 400, 'error' => 'Bad Request'], 400);
         }
         $datas = $request->all();
-        if ($datas['protocol_object_id']) {
-            $type = 'update-object';
-            $success = 'Operative has been Updated!';
-        } else {
-            $type = 'store-object';
-            $success = 'Operative has been Saved!';
-        }
-        $data = OperativeProtocol::create([
+        $attributes = [
             'date' => date('Y-m-d', \strtotime($datas['date'])),
             'time' => $datas['time'],
             'document_id' => $datas['protocol_document_id'],
@@ -41,7 +34,17 @@ class OperativeController extends Controller
             'note' => $datas['note'],
             'user_id' => auth()->id(),
             'status' => true,
-        ]);
+        ];
+        if ($datas['protocol_object_id']) {
+            $data = OperativeProtocol::findOrFail($datas['protocol_object_id']);
+            $data->update($attributes);
+            $type = 'update-object';
+            $success = 'Operative has been Updated!';
+        } else {
+            $data = OperativeProtocol::create($attributes);
+            $type = 'store-object';
+            $success = 'Operative has been Saved!';
+        }
         $response = [
             'status' => 200,
             'type' => $type,
@@ -76,14 +79,7 @@ class OperativeController extends Controller
             $is_other = false;
         }
         $datas = $request->all();
-        if ($datas['medicine_object_id']) {
-            $type = 'update-object';
-            $success = 'Medicine has been Updated!';
-        } else {
-            $type = 'store-object';
-            $success = 'Medicine has been Saved!';
-        }
-        $data = MedicalCertificate::create([
+        $attributes = [
             'date' => date('Y-m-d', \strtotime($datas['date'])),
             'time' => $datas['time'],
             'document_id' => $datas['medicine_document_id'],
@@ -101,7 +97,17 @@ class OperativeController extends Controller
             'note' => $datas['medicine_note'],
             'user_id' => auth()->id(),
             'status' => true,
-        ]);
+        ];
+        if ($datas['medicine_object_id']) {
+            $data = MedicalCertificate::findOrFail($datas['medicine_object_id']);
+            $data->update($attributes);
+            $type = 'update-object';
+            $success = 'Medicine has been Updated!';
+        } else {
+            $data = MedicalCertificate::create($attributes);
+            $type = 'store-object';
+            $success = 'Medicine has been Saved!';
+        }
         $response = [
             'status' => 200,
             'type' => $type,

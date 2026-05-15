@@ -107,7 +107,7 @@ class Customer extends Model
         return $address;
     }
 
-    public function setPasswordAttribue($value)
+    public function setPasswordAttribute($value)
     {
         return Hash::make($value);
     }
