@@ -147,7 +147,7 @@
           <table class="table table-borderless">
             <tr>
               <td width="100%">
-                {!! isset($OperativeProtocol)?$OperativeProtocol->note:'' !!}
+                {{ isset($OperativeProtocol)?$OperativeProtocol->note:'' }}
               </td>
             </tr>
           </table>

@@ -16,7 +16,13 @@ class RxDetail extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'rx_id',
+        'doctor_description_id',
+        'user_id',
+        'description',
+        'result',
+    ];
 
     /**
      * Get the rxdata that owns the RxDetail

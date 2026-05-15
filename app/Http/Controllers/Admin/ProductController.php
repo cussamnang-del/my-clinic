@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Admin\StoreProductRequest;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
@@ -34,14 +35,7 @@ class ProductController extends Controller
             $status = false;
         }
         $object_id = $request->object_id;
-        $validator = Validator::make($request->all(), [
-            'p_name' => 'required',
-            'p_code' => 'required',
-            'unit' => 'required',
-            'strength' => 'required',
-            // 'country'=>'required',
-            // 'image'=>'mimes:jpeg,jpg,png,gif|max:4096'
-        ]);
+        $validator = Validator::make($request->all(), StoreProductRequest::rulesFor());
         if (! $validator->passes()) {
             $response = [
                 'status' => 400,
@@ -53,7 +47,7 @@ class ProductController extends Controller
             if ($request->hasFile('image')) {
                 $image = $request->file('image');
                 $mytime = date('d-M-Y');
-                $image_name = 'Product-'.$mytime.'-'.uniqid().'.'.$image->getClientOriginalExtension();
+                $image_name = 'Product-'.$mytime.'-'.uniqid().'.'.($image->extension() ?: $image->getClientOriginalExtension());
                 $image->move(public_path('uploads/product/'), $image_name);
             } else {
                 if ($request->old_image) {
@@ -147,12 +141,7 @@ class ProductController extends Controller
             $status = false;
         }
         $object_id = $request->object_id;
-        $validator = Validator::make($request->all(), [
-            'p_name' => 'required',
-            'p_code' => 'required',
-            'unit' => 'required',
-            'strength' => 'required',
-        ]);
+        $validator = Validator::make($request->all(), StoreProductRequest::rulesFor());
         if (! $validator->passes()) {
             $response = [
                 'status' => 400,
@@ -164,7 +153,7 @@ class ProductController extends Controller
             if ($request->hasFile('image')) {
                 $image = $request->file('image');
                 $mytime = date('d-M-Y');
-                $image_name = 'Product-'.$mytime.'-'.uniqid().'.'.$image->getClientOriginalExtension();
+                $image_name = 'Product-'.$mytime.'-'.uniqid().'.'.($image->extension() ?: $image->getClientOriginalExtension());
                 $image->move(public_path('uploads/product/'), $image_name);
             } else {
                 if ($request->old_image) {

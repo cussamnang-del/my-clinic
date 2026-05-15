@@ -17,7 +17,18 @@ class SopRevision extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'sop_document_id',
+        'content_path',
+        'change_summary',
+        'status',
+        'submitted_by',
+        'submitted_at',
+        'approved_by',
+        'approved_at',
+        'effective_at',
+        'superseded_at',
+    ];
 
     protected $casts = [
         'submitted_at' => 'datetime',

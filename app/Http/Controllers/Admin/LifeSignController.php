@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Admin\StoreLifeSignRequest;
 use App\Models\LifeSign;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
@@ -35,9 +36,7 @@ class LifeSignController extends Controller
             $status = false;
         }
         $object_id = $request->object_id;
-        $validator = Validator::make($request->all(), [
-            'name' => ['required', 'string'],
-        ]);
+        $validator = Validator::make($request->all(), StoreLifeSignRequest::rulesFor());
         if ($validator->fails()) {
             $response = [
                 'status' => 400,

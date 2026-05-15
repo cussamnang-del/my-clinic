@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Admin\StoreRoomRequest;
 use App\Models\Room;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
@@ -34,9 +35,7 @@ class RoomController extends Controller
             $status = false;
         }
         $object_id = $request->object_id;
-        $validator = Validator::make($request->all(), [
-            'room_no' => ['required', 'string'],
-        ]);
+        $validator = Validator::make($request->all(), StoreRoomRequest::rulesFor());
         if (! $validator->passes()) {
             $response = [
                 'status' => 400,

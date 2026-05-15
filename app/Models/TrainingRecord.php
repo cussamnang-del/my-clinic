@@ -16,7 +16,15 @@ class TrainingRecord extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'user_id',
+        'competency_id',
+        'trainer_id',
+        'training_at',
+        'training_type',
+        'evidence_path',
+        'notes',
+    ];
 
     protected $casts = [
         'training_at' => 'date',

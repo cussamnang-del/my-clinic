@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Admin\StorePermissionRequest;
 use App\Models\Permission;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
@@ -34,10 +35,7 @@ class PermissionController extends Controller
             $status = false;
         }
         $object_id = $request->object_id;
-        $validator = Validator::make($request->all(), [
-            'group' => ['required', 'string'],
-            'title' => ['required', 'string'],
-        ]);
+        $validator = Validator::make($request->all(), StorePermissionRequest::rulesFor());
         if ($validator->fails()) {
             $response = [
                 'status' => 400,

@@ -16,7 +16,12 @@ class DocumentDetail extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'document_id',
+        'user_id',
+        'service_name',
+        'status',
+    ];
 
     /**
      * Get the Document that owns the DocumentDetail

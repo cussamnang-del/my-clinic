@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Admin\StoreItemRequest;
 use App\Models\Item;
 use App\Models\ItemGroup;
 use App\Models\ItemType;
@@ -40,16 +41,7 @@ class ItemController extends Controller
             $status = false;
         }
         $object_id = $request->object_id;
-        $validator = Validator::make($request->all(), [
-            'item_group_id' => ['required', 'string'],
-            'item_type_id' => ['required', 'string'],
-            'item_name' => ['required', 'string'],
-            'normal_value' => ['required', 'string'],
-            'min_value' => ['required', 'string'],
-            'max_value' => ['required', 'string'],
-            'numset' => ['required', 'numeric'],
-            'item_price' => ['required', 'numeric'],
-        ]);
+        $validator = Validator::make($request->all(), StoreItemRequest::rulesFor());
         if (! $validator->passes()) {
             $response = [
                 'status' => 400,

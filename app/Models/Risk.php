@@ -16,7 +16,21 @@ class Risk extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'code',
+        'category',
+        'description',
+        'mitigation',
+        'owner_user_id',
+        'status',
+        'next_review_at',
+        'inherent_likelihood',
+        'inherent_severity',
+        'inherent_score',
+        'residual_likelihood',
+        'residual_severity',
+        'residual_score',
+    ];
 
     protected $casts = [
         'next_review_at' => 'date',

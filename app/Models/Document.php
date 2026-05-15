@@ -19,7 +19,15 @@ class Document extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'customer_id',
+        'user_id',
+        'visit_date',
+        'checkout_date',
+        'checkout_status',
+        'status',
+        'hospital_status',
+    ];
 
     protected $dates = [
         'visit_date',

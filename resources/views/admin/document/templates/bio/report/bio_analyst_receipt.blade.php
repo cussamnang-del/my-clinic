@@ -147,7 +147,7 @@
                                 {{$item->item->normal_value}}
                               </td>
                               <td width="10%">
-                                {!!$item->item->uvn!!}
+                                {{ $item->item->uvn }}
                               </td>
                             </tr>
                           @endforeach

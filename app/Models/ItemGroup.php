@@ -2,15 +2,24 @@
 
 namespace App\Models;
 
+use App\Concerns\HasAuditColumns;
+use App\Concerns\IsLoggable;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class ItemGroup extends Model
 {
+    use HasAuditColumns;
+    use IsLoggable;
+    use SoftDeletes;
     use HasFactory;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'name',
+        'status',
+    ];
 
     /**
      * Get all of the itemTypes for the ItemGroup

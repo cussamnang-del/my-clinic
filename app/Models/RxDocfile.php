@@ -15,5 +15,8 @@ class RxDocfile extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'rx_id',
+        'filename',
+    ];
 }

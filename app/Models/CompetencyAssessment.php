@@ -17,7 +17,15 @@ class CompetencyAssessment extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'user_id',
+        'competency_id',
+        'assessor_id',
+        'assessed_at',
+        'result',
+        'notes',
+        'reassessment_due_at',
+    ];
 
     protected $casts = [
         'assessed_at' => 'date',

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Admin\StoreRoleRequest;
 use App\Models\Permission;
 use App\Models\Role;
 use Illuminate\Http\Request;
@@ -36,14 +37,7 @@ class RoleController extends Controller
             $status = false;
         }
         $object_id = $request->object_id;
-        $validator = Validator::make($request->all(), [
-            'title' => ['required', 'string'],
-            'permissions.*' => ['integer'],
-            'permissions' => [
-                'required',
-                'array',
-            ],
-        ]);
+        $validator = Validator::make($request->all(), StoreRoleRequest::rulesFor());
         if (! $validator->passes()) {
             $response = [
                 'status' => 400,

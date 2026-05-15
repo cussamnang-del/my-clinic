@@ -15,5 +15,12 @@ class HNote extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'hospital_id',
+        'date',
+        'mob',
+        'dia',
+        'todo',
+        'comment',
+    ];
 }

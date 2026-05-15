@@ -16,7 +16,12 @@ class HospitalTreatmentDetail extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'hospital_treatment_id',
+        'hospital_treatment_product_id',
+        'product_id',
+        'qty',
+    ];
 
     /**
      * Get the hospital_treatment that owns the HospitalTreatmentDetail

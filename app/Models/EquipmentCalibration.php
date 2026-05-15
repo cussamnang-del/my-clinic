@@ -16,7 +16,15 @@ class EquipmentCalibration extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'equipment_id',
+        'calibration_date',
+        'due_date',
+        'result',
+        'performed_by_external',
+        'certificate_path',
+        'notes',
+    ];
 
     protected $casts = [
         'calibration_date' => 'date',

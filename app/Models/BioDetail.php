@@ -18,7 +18,28 @@ class BioDetail extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'bio_id',
+        'customer_id',
+        'document_id',
+        'item_group_id',
+        'item_type_id',
+        'date',
+        'result',
+        'note',
+        'result_status',
+        'result_flag',
+        'amendment_reason',
+        'amends_id',
+        'submitted_by',
+        'submitted_at',
+        'reviewed_by',
+        'reviewed_at',
+        'released_by',
+        'released_at',
+        'amended_by',
+        'amended_at',
+    ];
 
     protected $casts = [
         'submitted_at' => 'datetime',

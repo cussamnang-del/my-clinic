@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Admin\StoreDocumentLifeDetailRequest;
 use App\Models\DocumentLife;
 use App\Models\DocumentLifeDetail;
 use Illuminate\Http\Request;
@@ -37,12 +38,7 @@ class DocumentLifeDetailController extends Controller
         }
         $object_id = $request->object_id;
 
-        $validator = Validator::make($request->all(), [
-            'document_lives_id' => 'required',
-            'colfield' => 'required',
-            'coldesr' => 'required',
-            'coldate' => 'required',
-        ]);
+        $validator = Validator::make($request->all(), StoreDocumentLifeDetailRequest::rulesFor());
 
         if (! $validator->passes()) {
             $response = [

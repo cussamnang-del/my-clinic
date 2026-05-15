@@ -17,7 +17,16 @@ class SopDocument extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'code',
+        'title',
+        'category',
+        'owner_user_id',
+        'current_revision_id',
+        'status',
+        'effective_at',
+        'retired_at',
+    ];
 
     protected $casts = [
         'effective_at' => 'datetime',
