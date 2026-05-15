@@ -21,7 +21,7 @@ return new class extends Migration
     public function up(): void
     {
         foreach ($this->tables as $table) {
-            if (! Schema::hasColumn($table, 'created_by')) {
+            if (Schema::hasTable($table) && ! Schema::hasColumn($table, 'created_by')) {
                 Schema::table($table, function (Blueprint $blueprint) use ($table) {
                     $blueprint->foreignId('created_by')->nullable()->after('updated_at')
                         ->constrained('users')->nullOnDelete();
@@ -41,6 +41,10 @@ return new class extends Migration
     public function down(): void
     {
         foreach ($this->tables as $table) {
+            if (! Schema::hasTable($table)) {
+                continue;
+            }
+
             Schema::table($table, function (Blueprint $blueprint) use ($table) {
                 $blueprint->dropForeign([$table.'_created_by_foreign']);
                 $blueprint->dropForeign([$table.'_updated_by_foreign']);
