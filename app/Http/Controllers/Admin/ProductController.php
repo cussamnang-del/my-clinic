@@ -119,7 +119,10 @@ class ProductController extends Controller
     {
         abort_if(Gate::denies($this->prefix.'delete'), Response::HTTP_FORBIDDEN, '403 Forbidden');
         if ($product->delete()) {
-            unlink(public_path('uploads/product/'.$product->image));
+            $imagePath = public_path('uploads/product/'.$product->image);
+            if (! empty($product->image) && is_file($imagePath)) {
+                @unlink($imagePath);
+            }
         }
 
         return response()->json(['success' => 'Item has been deleted successfully!']);
