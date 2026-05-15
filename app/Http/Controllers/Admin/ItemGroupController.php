@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Admin\StoreItemGroupRequest;
 use App\Models\ItemGroup;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
@@ -34,9 +35,7 @@ class ItemGroupController extends Controller
             $status = false;
         }
         $object_id = $request->object_id;
-        $validator = Validator::make($request->all(), [
-            'name' => ['required', 'string'],
-        ]);
+        $validator = Validator::make($request->all(), StoreItemGroupRequest::rulesFor());
         if (! $validator->passes()) {
             $response = [
                 'status' => 400,

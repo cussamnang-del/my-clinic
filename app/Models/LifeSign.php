@@ -16,7 +16,11 @@ class LifeSign extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'type_id',
+        'name',
+        'status',
+    ];
 
     public const TYPES = [
         '1' => 'TypeA',

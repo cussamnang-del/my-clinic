@@ -256,8 +256,7 @@ class DocumentController extends Controller
 
             return response()->json($response);
         } else {
-            date_default_timezone_set('Asia/Bangkok');
-            $mytime = date('h:i:s');
+            $mytime = now()->format('h:i:s');
             foreach ($request->type_name as $key => $colfield) {
                 if ($request->type_desr[$key] != null) {
                     // document life
@@ -369,8 +368,7 @@ class DocumentController extends Controller
                 return response()->json(['status' => 400, 'error' => 'Bad Request'], 400);
             }
             // document life detail
-            date_default_timezone_set('Asia/Bangkok');
-            $mytime = date('h:i:s');
+            $mytime = now()->format('h:i:s');
             if ($request->doclife_detail_id) {
                 $docLifeDetail = DocumentLifeDetail::findOrFail($request->doclife_detail_id);
                 // document life
@@ -868,7 +866,7 @@ class DocumentController extends Controller
                     // $mytime = Carbon\Carbon::now()->toDateString();
                     $cusName = Str::slug($request->name);
                     $mytime = date('d-M-Y');
-                    $docname = 'Docfile-'.$key.'-'.$cusName.'-'.$mytime.uniqid().'.'.$file->getClientOriginalExtension();
+                    $docname = 'Docfile-'.$key.'-'.$cusName.'-'.$mytime.uniqid().'.'.($file->extension() ?: $file->getClientOriginalExtension());
                     $file->move(public_path('uploads/rx/docfiles/'), $docname);
                     RxDocfile::create([
                         'rx_id' => $request->rx_id,
@@ -972,7 +970,7 @@ class DocumentController extends Controller
                 // $mytime = Carbon\Carbon::now()->toDateString();
                 $cusName = Str::slug($request->name);
                 $mytime = date('d-M-Y');
-                $docname = 'Docfile-'.$key.'-'.$cusName.'-'.$mytime.'-'.uniqid().'.'.$file->getClientOriginalExtension();
+                $docname = 'Docfile-'.$key.'-'.$cusName.'-'.$mytime.'-'.uniqid().'.'.($file->extension() ?: $file->getClientOriginalExtension());
                 $file->move(public_path('uploads/rx/docfiles/'), $docname);
                 RxDocfile::create([
                     'rx_id' => $request->rx_id,
@@ -1145,7 +1143,6 @@ class DocumentController extends Controller
 
     public function storeObjectHT(Request $request)
     {
-        date_default_timezone_set('Asia/Phnom_Penh');
         abort_if(Gate::denies($this->prefix.'create'), Response::HTTP_FORBIDDEN, '403 Forbidden');
         $data = $request->all();
         if ($data['status']) {
@@ -1824,7 +1821,7 @@ class DocumentController extends Controller
             }
             if ($request->hasFile('photo')) {
                 $image = $request->file('photo');
-                $image_name = Str::slug($request->name).'-'.uniqid().'.'.$image->getClientOriginalExtension();
+                $image_name = Str::slug($request->name).'-'.uniqid().'.'.($image->extension() ?: $image->getClientOriginalExtension());
                 $image->move(public_path('uploads/customer/'), $image_name);
             } else {
                 if ($request->old_image) {

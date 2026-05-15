@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Admin\StoreCompanyInformationRequest;
 use App\Models\CompanyInformation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
@@ -34,22 +35,11 @@ class CompanyInformationController extends Controller
             $status = false;
         }
         $object_id = $request->object_id;
-        if ($object_id) {
-            $validator = Validator::make($request->all(), [
-                'name_en' => ['required', 'string'],
-                'name_kh' => ['required', 'string'],
-                'address' => ['required', 'string'],
-                'phone1' => ['required', 'string'],
-            ]);
-        } else {
-            $validator = Validator::make($request->all(), [
-                'name_en' => ['required', 'string'],
-                'name_kh' => ['required', 'string'],
-                'address' => ['required', 'string'],
-                'phone1' => ['required', 'string'],
-                'photo' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048|dimensions:min_width=100,min_height=100,max_width=1920,max_height=1080',
-            ]);
+        $rules = StoreCompanyInformationRequest::rulesFor();
+        if (! $object_id) {
+            $rules['photo'] = 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048|dimensions:min_width=100,min_height=100,max_width=1920,max_height=1080';
         }
+        $validator = Validator::make($request->all(), $rules);
         if (! $validator->passes()) {
             $response = [
                 'status' => 400,
@@ -60,7 +50,7 @@ class CompanyInformationController extends Controller
         } else {
             if ($request->hasFile('photo')) {
                 $image = $request->file('photo');
-                $image_name = 'kong_rithy_logo_'.uniqid().'.'.$image->getClientOriginalExtension();
+                $image_name = 'kong_rithy_logo_'.uniqid().'.'.($image->extension() ?: $image->getClientOriginalExtension());
                 $image->move(public_path('uploads/logo/'), $image_name);
             } else {
                 if ($request->old_image) {

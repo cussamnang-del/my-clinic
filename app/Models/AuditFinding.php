@@ -16,7 +16,14 @@ class AuditFinding extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'internal_audit_id',
+        'finding_type',
+        'severity',
+        'description',
+        'clause_reference',
+        'non_conformance_id',
+    ];
 
     public function internalAudit(): BelongsTo
     {

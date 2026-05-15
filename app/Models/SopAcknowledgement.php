@@ -10,7 +10,13 @@ class SopAcknowledgement extends Model
 {
     use HasFactory;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'sop_revision_id',
+        'user_id',
+        'acknowledged_at',
+        'ip_address',
+        'user_agent',
+    ];
 
     protected $casts = [
         'acknowledged_at' => 'datetime',

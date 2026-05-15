@@ -16,7 +16,13 @@ class Competency extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'code',
+        'name',
+        'description',
+        'category',
+        'reassessment_interval_months',
+    ];
 
     public function trainingRecords(): HasMany
     {

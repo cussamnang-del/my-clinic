@@ -17,7 +17,14 @@ class Rx extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'rx_date',
+        'customer_id',
+        'document_id',
+        'user_id',
+        'rx_note',
+        'status',
+    ];
 
     /**
      * Get the customer that owns the Rx

@@ -17,7 +17,17 @@ class ReagentLot extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'item_id',
+        'lot_number',
+        'manufacturer',
+        'received_at',
+        'opened_at',
+        'expires_at',
+        'open_use_days_allowed',
+        'status',
+        'notes',
+    ];
 
     protected $casts = [
         'received_at' => 'date',

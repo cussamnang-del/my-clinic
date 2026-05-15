@@ -17,7 +17,23 @@ class Order extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'order_date',
+        'document_id',
+        'customer_id',
+        'user_id',
+        'chief_complain',
+        'past_history',
+        'blood_test',
+        'orl_ent',
+        'ultra_sound',
+        'ecg',
+        'x_ray',
+        'et_at',
+        'diagnosis',
+        'recommendation',
+        'order_type',
+    ];
 
     /**
      * Get all of the details for the Order

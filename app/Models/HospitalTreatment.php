@@ -17,7 +17,16 @@ class HospitalTreatment extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'hospital_id',
+        'ht_date',
+        'ht_time',
+        'product_id',
+        'qty',
+        'duration',
+        'user_id',
+        'status',
+    ];
 
     /**
      * Get all of the htdetails for the HospitalTreatment
