@@ -14,7 +14,12 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        // $schedule->command('inspire')->hourly();
+        // Logical database backup, daily at 02:00 server time.
+        // Tune retention via --keep and disk target via filesystems.php.
+        $schedule->command('db:backup --keep=14')
+            ->dailyAt('02:00')
+            ->onOneServer()
+            ->withoutOverlapping();
     }
 
     /**

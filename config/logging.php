@@ -117,6 +117,34 @@ return [
         'emergency' => [
             'path' => storage_path('logs/laravel.log'),
         ],
+
+        'audit' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/audit.log'),
+            'level' => env('LOG_AUDIT_LEVEL', 'info'),
+            'days' => env('LOG_AUDIT_DAYS', 365),
+        ],
+
+        'clinical' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/clinical.log'),
+            'level' => env('LOG_CLINICAL_LEVEL', 'info'),
+            'days' => env('LOG_CLINICAL_DAYS', 365),
+        ],
+
+        'slow_query' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/slow_query.log'),
+            'level' => env('LOG_SLOW_QUERY_LEVEL', 'warning'),
+            'days' => env('LOG_SLOW_QUERY_DAYS', 14),
+        ],
+
+        'failed_jobs' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/failed_jobs.log'),
+            'level' => env('LOG_FAILED_JOBS_LEVEL', 'warning'),
+            'days' => env('LOG_FAILED_JOBS_DAYS', 90),
+        ],
     ],
 
 ];

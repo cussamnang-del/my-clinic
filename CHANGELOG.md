@@ -12,6 +12,66 @@ required by ISO 9001:2015 §7.5.
 
 ## [Unreleased]
 
+### Added — Phase 4 (Operational excellence)
+- **Service layer.** New `App\Services\DocumentService` extracts
+  Document core CRUD out of the 1,938-LOC `DocumentController`
+  god-object. `store()`, `changeStatus()`, and `destroy()` now delegate
+  to the service. Behaviour-preserving — wraps `updateOrCreate` in a
+  transaction and continues to soft-delete via the Phase 2 trait.
+- **API resources** (`App\Http\Resources\*`) — `CustomerResource`,
+  `DocumentResource`, `ItemResource`, `ItemTypeResource`. Stable
+  JSON shapes for AJAX endpoints so we stop leaking raw model
+  columns to the front-end.
+- **Queue jobs.**
+  - `App\Jobs\GeneratePdfJob` — skeleton for off-request PDF
+    rendering. Picks any disk + writes the rendered HTML to it. Logs
+    to the `clinical` channel.
+  - `App\Jobs\ExportReportJob` — streamed CSV export. Writes via
+    `tempnam()` → `Storage::writeStream()` so memory and request
+    time stay bounded for large reports.
+- **Observability.**
+  - `App\Services\RequestContext` — request-scoped singleton holding
+    a UUID correlation id (lazy-generated, propagated to logs and
+    returned in the `X-Request-Id` response header).
+  - `App\Http\Middleware\AttachRequestContext` — global middleware
+    that adopts upstream `X-Request-Id` (max 64 chars) or generates a
+    new UUID, then `Log::withContext()`s `request_id`, `user_id`,
+    `route`, `method`, `path`, `ip` so every log line in a request
+    is correlatable.
+  - `config/observability.php` — central toggles for slow-query
+    capture and per-domain log channels.
+  - `config/logging.php` — new `audit` (365d), `clinical` (365d),
+    `slow_query` (14d), `failed_jobs` (90d) daily-rotating channels.
+  - `AppServiceProvider::registerSlowQueryLogging()` — logs every
+    query above `OBSERVABILITY_SLOW_QUERY_THRESHOLD_MS` (500ms
+    default) to the `slow_query` channel.
+  - `AppServiceProvider::registerFailedJobLogging()` — every
+    `Queue::failing` event is mirrored onto the `failed_jobs`
+    channel for off-DB log shipping.
+- **Backups.**
+  - `App\Console\Commands\BackupDatabase` (`php artisan db:backup`) —
+    `mysqldump --single-transaction` for MySQL/MariaDB, file copy +
+    WAL checkpoint for SQLite. Streams the artefact to a Laravel
+    Storage disk and prunes to `--keep=N` (default 14).
+  - Scheduled daily at 02:00 in `Console\Kernel` with
+    `onOneServer()->withoutOverlapping()`.
+  - New `backups` filesystem disk in `config/filesystems.php`,
+    pointable at S3/Spaces via `BACKUP_DISK_DRIVER` /
+    `BACKUP_DISK_ROOT` env vars.
+
+### Added — tests
+- `DocumentServiceTest` — create / update / changeStatus / soft-delete
+  invariants of the extracted service.
+- `RequestContextTest` — middleware generates IDs, adopts upstream
+  ones, rejects oversize headers, and echoes the chosen ID back in
+  the response.
+- `ApiResourcesTest` — JSON-shape invariants and `whenLoaded()`
+  passthrough for nested customer data.
+- `ExportReportJobTest` — CSV streaming + missing-key handling.
+- `BackupCommandTest` — `db:backup` boots and writes to the target
+  disk.
+- Suite now 55 tests / 154 assertions, all green.
+
 ### Added — Phase 3 (ISO 9001 / ISO 15189 quality modules)
 - **Document Control (ISO 9001:2015 §7.5).** New tables
   `sop_documents`, `sop_revisions`, `sop_acknowledgements`. Each SOP

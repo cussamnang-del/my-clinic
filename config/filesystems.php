@@ -56,6 +56,15 @@ return [
             'throw' => false,
         ],
 
+        // Dedicated disk for `db:backup` artefacts. Point this at S3 /
+        // Spaces / GCS in production via env. Locally it lands under
+        // storage/app/backups/.
+        'backups' => [
+            'driver' => env('BACKUP_DISK_DRIVER', 'local'),
+            'root' => env('BACKUP_DISK_ROOT', storage_path('app/backups')),
+            'throw' => false,
+        ],
+
     ],
 
     /*
