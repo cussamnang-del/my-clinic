@@ -19,7 +19,20 @@ class Equipment extends Model
 
     protected $table = 'equipment';
 
-    protected $guarded = [];
+    protected $fillable = [
+        'code',
+        'name',
+        'manufacturer',
+        'model',
+        'serial_no',
+        'location',
+        'status',
+        'commissioned_at',
+        'retired_at',
+        'last_calibrated_at',
+        'next_calibration_due_at',
+        'notes',
+    ];
 
     protected $casts = [
         'commissioned_at' => 'date',

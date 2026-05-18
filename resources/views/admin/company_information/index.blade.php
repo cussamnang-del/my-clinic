@@ -64,7 +64,7 @@
                 <td>{{ $row->name_kh }}</td>
                 <td>{{ $row->addess }}</td>
                 <td>{{ $row->phone1 }}</td>
-                <td>{!! $row->phone2 !!}</td>
+                <td>{{ $row->phone2 }}</td>
                 <td>{{ $row->phone3 }}</td>
                 <td>{{ date('d-M-Y',strtotime($row->created_at)) }}</td>
                 <td>

@@ -16,7 +16,15 @@ class DocumentLifeDetail extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'document_lives_id',
+        'colfield',
+        'coldesr',
+        'col_measure',
+        'coldate',
+        'coltime',
+        'status',
+    ];
 
     /**
      * Get the documentLife that owns the DocumentLifeDetail

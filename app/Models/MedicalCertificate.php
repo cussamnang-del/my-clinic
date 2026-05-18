@@ -16,7 +16,25 @@ class MedicalCertificate extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'date',
+        'time',
+        'document_id',
+        'customer_id',
+        'chief_complain',
+        'past_history',
+        'examination',
+        'diagnosis',
+        'treatment',
+        'is_sick',
+        'from_date',
+        'to_date',
+        'attending',
+        'is_other',
+        'note',
+        'user_id',
+        'status',
+    ];
 
     protected $dates = [
         'created_at',

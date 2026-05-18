@@ -16,7 +16,19 @@ class CapaAction extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'non_conformance_id',
+        'action_type',
+        'root_cause',
+        'action_plan',
+        'action_taken',
+        'verification_evidence',
+        'assignee_id',
+        'due_at',
+        'status',
+        'closed_by',
+        'closed_at',
+    ];
 
     protected $casts = [
         'due_at' => 'date',

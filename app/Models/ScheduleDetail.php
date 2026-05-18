@@ -15,5 +15,8 @@ class ScheduleDetail extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'schedule_id',
+        'note',
+    ];
 }

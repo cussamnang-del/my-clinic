@@ -4,7 +4,7 @@
   <td>{{ $row->itemType->name }}</td>
   <td>{{ $row->item_name }}</td>
   <td>{{ $row->numset }}</td>
-  <td>{!! $row->uvn !!}</td>
+  <td>{{ $row->uvn }}</td>
   <td>{{ $row->item_price }}</td>
   <td>{{ date('d-M-Y',strtotime($row->created_at)) }}</td>
   <td>

@@ -11,7 +11,15 @@ class Village extends Model
 {
     use HasFactory;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'type',
+        'code',
+        'name_kh',
+        'name_en',
+        'province_id',
+        'district_id',
+        'commune_id',
+    ];
 
     /**
      * Get the commune that owns the Village

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Admin\StoreItemTypeRequest;
 use App\Models\ItemGroup;
 use App\Models\ItemType;
 use Illuminate\Http\Request;
@@ -38,10 +39,7 @@ class ItemTypeController extends Controller
             $status = false;
         }
         $object_id = $request->object_id;
-        $validator = Validator::make($request->all(), [
-            'item_group_id' => ['required', 'string'],
-            'name' => ['required', 'string'],
-        ]);
+        $validator = Validator::make($request->all(), StoreItemTypeRequest::rulesFor());
         if (! $validator->passes()) {
             $response = [
                 'status' => 400,

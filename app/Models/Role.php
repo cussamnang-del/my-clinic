@@ -13,7 +13,10 @@ class Role extends Model
     use HasFactory;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'title',
+        'status',
+    ];
 
     // protected $with = 'permissions';
 

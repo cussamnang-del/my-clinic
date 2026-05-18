@@ -17,7 +17,11 @@ class Pbio extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'customer_id',
+        'document_id',
+        'status',
+    ];
 
     /**
      * Get all of the details for the Pbio

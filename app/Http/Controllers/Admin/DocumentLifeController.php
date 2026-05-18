@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Admin\StoreDocumentLifeRequest;
 use App\Models\Document;
 use App\Models\DocumentLife;
 use Illuminate\Http\Request;
@@ -37,12 +38,7 @@ class DocumentLifeController extends Controller
         }
         $object_id = $request->object_id;
 
-        $validator = Validator::make($request->all(), [
-            'type_id' => 'required',
-            'type_name' => 'required',
-            'type_desr' => 'required',
-            'num' => 'required',
-        ]);
+        $validator = Validator::make($request->all(), StoreDocumentLifeRequest::rulesFor());
 
         if ($validator->fails()) {
             $response = [

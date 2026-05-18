@@ -1,14 +1,14 @@
 <thead>
   @foreach ($typeA as $key => $row)
     <tr>
-      <th>{!! $row->lifesign->name !!}</th>
+      <th>{{ $row->lifesign->name }}</th>
       <td>
-        <a id="editLifeSign" data-id="{{ $row->id }}" data-lifetype="{!! $row->lifesign->name !!}" href="javascript:void(0)">
-          {!! $row->coldesr !!}&nbsp;({{$row->coltime}})
+        <a id="editLifeSign" data-id="{{ $row->id }}" data-lifetype="{{ $row->lifesign->name }}" href="javascript:void(0)">
+          {{ $row->coldesr }}&nbsp;({{$row->coltime}})
         </a>
       </td>
       <td width="30px">
-        <a id="objectDocLifeAdd" data-id="{{ $row->id }}" data-lifetype="{!! $row->lifesign->name !!}" href="javascript:void(0)" style="cursor:pointer" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Add New" aria-label="Add">
+        <a id="objectDocLifeAdd" data-id="{{ $row->id }}" data-lifetype="{{ $row->lifesign->name }}" href="javascript:void(0)" style="cursor:pointer" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Add New" aria-label="Add">
           <i class="bi bi-plus-circle-fill"></i>
         </a>
         <a id="objectDetailA" data-bs-toggle="collapse" data-bs-target="#detailA{{ $key }}" class="accordion-toggle objectShow {{ $row->colFields->count()>0? 'text-primary':'text-secondary' }}"
@@ -38,7 +38,7 @@
                     <td>{{ $detail->coldesr }} ({{$detail->coltime}})</td>
                     <td>{{ $detail->coldate }}</td>
                     <td width="30px" align="center">
-                      <a id="objectDocLifeEdit" data-id="{{ $detail->id }}" data-lifeid="{{ $row->id }}" data-lifetype="{!! $row->lifesign->name !!}" href="javascript:void(0)" style="cursor:pointer" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Edit" aria-label="Edit">
+                      <a id="objectDocLifeEdit" data-id="{{ $detail->id }}" data-lifeid="{{ $row->id }}" data-lifetype="{{ $row->lifesign->name }}" href="javascript:void(0)" style="cursor:pointer" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Edit" aria-label="Edit">
                         <i class="bi bi-pencil-square"></i>
                       </a>
                     </td>

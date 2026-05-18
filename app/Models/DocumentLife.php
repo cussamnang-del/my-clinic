@@ -17,7 +17,16 @@ class DocumentLife extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'document_id',
+        'coltype',
+        'colfield',
+        'coldesr',
+        'col_measure',
+        'coltime',
+        'num',
+        'status',
+    ];
 
     /**
      * Get the document that owns the DocumentLife

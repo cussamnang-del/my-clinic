@@ -2,16 +2,30 @@
 
 namespace App\Models;
 
+use App\Concerns\HasAuditColumns;
+use App\Concerns\IsLoggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Item extends Model
 {
+    use HasAuditColumns;
     use HasFactory;
+    use IsLoggable;
+    use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'item_group_id',
+        'item_type_id',
+        'item_name',
+        'numset',
+        'uvn',
+        'item_price',
+        'status',
+    ];
 
     /**
      * Get the itemType that owns the Item

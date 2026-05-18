@@ -17,7 +17,14 @@ class Bio extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'customer_id',
+        'document_id',
+        'user_id',
+        'item_id',
+        'note',
+        'status',
+    ];
 
     /**
      * Get all of the detail for the Bio

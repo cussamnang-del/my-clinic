@@ -58,7 +58,7 @@
                 <td>
                   {{ $row->child->name }}
                 </td>
-                <td>{!! $row->name !!}</td>
+                <td>{{ $row->name }}</td>
                 <td>{{ date('d-M-Y',strtotime($row->created_at)) }}</td>
                 <td>
                   <input id="status" name="status" data-id="{{ $row->id }}" {{ $row->status?'checked':'' }} title="Status" type="checkbox" class="ace-switch input-lg ace-switch-yesno bgc-green-d2 text-grey-m2" />

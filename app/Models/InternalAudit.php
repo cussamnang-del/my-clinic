@@ -17,7 +17,16 @@ class InternalAudit extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'code',
+        'scope',
+        'lead_auditor_id',
+        'status',
+        'scheduled_at',
+        'started_at',
+        'completed_at',
+        'summary',
+    ];
 
     protected $casts = [
         'scheduled_at' => 'date',

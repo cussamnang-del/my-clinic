@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Services\RequestContext;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Events\QueryExecuted;
 use Illuminate\Queue\Events\JobFailed;
 use Illuminate\Support\Facades\DB;
@@ -27,6 +28,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        Model::preventLazyLoading(! app()->isProduction() && ! app()->runningUnitTests());
+
         $this->registerSlowQueryLogging();
         $this->registerFailedJobLogging();
     }

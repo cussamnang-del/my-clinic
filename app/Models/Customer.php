@@ -19,7 +19,25 @@ class Customer extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'customer_code',
+        'name',
+        'sex',
+        'age',
+        'dob',
+        'province_id',
+        'district_id',
+        'commune_id',
+        'village_id',
+        'phone_no',
+        'nationality',
+        'passport_no',
+        'photo',
+        'register_date',
+        'register_by',
+        'status',
+        'mrn',
+    ];
 
     /**
      * Auto-assign an MRN on create when the caller hasn't provided one.
@@ -107,9 +125,9 @@ class Customer extends Model
         return $address;
     }
 
-    public function setPasswordAttribue($value)
+    public function setPasswordAttribute($value)
     {
-        return Hash::make($value);
+        $this->attributes['password'] = Hash::make($value);
     }
 
     // protected function serializeDate(\DateTimeInterface $date)

@@ -17,7 +17,18 @@ class NonConformance extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'code',
+        'title',
+        'description',
+        'immediate_action',
+        'source',
+        'severity',
+        'status',
+        'reported_by',
+        'reported_at',
+        'closed_at',
+    ];
 
     protected $casts = [
         'reported_at' => 'datetime',

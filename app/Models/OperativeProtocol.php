@@ -16,7 +16,22 @@ class OperativeProtocol extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'date',
+        'time',
+        'document_id',
+        'customer_id',
+        'operater',
+        'aide',
+        'anesth',
+        'diapre',
+        'diaper',
+        'indication',
+        'position',
+        'note',
+        'user_id',
+        'status',
+    ];
 
     /**
      * Get the customer that owns the OperativeProtocol

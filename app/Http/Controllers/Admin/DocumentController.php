@@ -239,7 +239,7 @@ class DocumentController extends Controller
         }
         $validator = Validator::make($request->all(), [
             'type_id' => 'required',
-            'type_name' => 'required|array|min:0',
+            'type_name' => 'required|array|min:1',
             'type_date' => 'required',
         ]);
         if ($validator->fails()) {
@@ -250,8 +250,7 @@ class DocumentController extends Controller
 
             return response()->json($response);
         } else {
-            date_default_timezone_set('Asia/Bangkok');
-            $mytime = date('h:i:s');
+            $mytime = now()->format('h:i:s');
             foreach ($request->type_name as $key => $colfield) {
                 if ($request->type_desr[$key] != null) {
                     // document life
@@ -325,19 +324,21 @@ class DocumentController extends Controller
 
     public function editDocumentLife(Request $request)
     {
-        if ($request->ajax()) {
-            if ($request->lifeid) {
-                $response = [
-                    'docLife' => DocumentLife::findOrFail($request->lifeid),
-                    'liveDetail' => DocumentLifeDetail::findOrFail($request->id),
-                    'lifetype' => $request->lifetype,
-                ];
-            } else {
-                $response = [
-                    'docLife' => DocumentLife::findOrFail($request->id),
-                    'lifetype' => $request->lifetype,
-                ];
-            }
+        if (! $request->ajax()) {
+            return response()->json(['status' => 400, 'error' => 'Bad Request'], 400);
+        }
+
+        if ($request->lifeid) {
+            $response = [
+                'docLife' => DocumentLife::findOrFail($request->lifeid),
+                'liveDetail' => DocumentLifeDetail::findOrFail($request->id),
+                'lifetype' => $request->lifetype,
+            ];
+        } else {
+            $response = [
+                'docLife' => DocumentLife::findOrFail($request->id),
+                'lifetype' => $request->lifetype,
+            ];
         }
 
         return response()->json($response);
@@ -357,43 +358,43 @@ class DocumentController extends Controller
 
             return response()->json($response);
         } else {
-            if ($request->ajax()) {
-                // document life detail
-                date_default_timezone_set('Asia/Bangkok');
-                $mytime = date('h:i:s');
-                if ($request->doclife_detail_id) {
-                    $docLifeDetail = DocumentLifeDetail::findOrFail($request->doclife_detail_id);
-                    // document life
-                    if ($docLifeDetail->coldate == date('Y-m-d')) {
-                        $docLife = DocumentLife::findOrFail($request->doclife_id);
-                        $docLife->update([
-                            'coldesr' => $request->type_desr,
-                            'col_measure' => $request->type_measure,
-                            'coltime' => $mytime,
-                        ]);
-                    }
-                    $docLifeDetail->update([
-                        'coldesr' => $request->type_desr,
-                        'col_measure' => $request->type_measure,
-                        'coltime' => $mytime,
-                    ]);
-                } else {
+            if (! $request->ajax()) {
+                return response()->json(['status' => 400, 'error' => 'Bad Request'], 400);
+            }
+            // document life detail
+            $mytime = now()->format('h:i:s');
+            if ($request->doclife_detail_id) {
+                $docLifeDetail = DocumentLifeDetail::findOrFail($request->doclife_detail_id);
+                // document life
+                if ($docLifeDetail->coldate == date('Y-m-d')) {
                     $docLife = DocumentLife::findOrFail($request->doclife_id);
                     $docLife->update([
                         'coldesr' => $request->type_desr,
                         'col_measure' => $request->type_measure,
                         'coltime' => $mytime,
                     ]);
-                    DocumentLifeDetail::create([
-                        'document_lives_id' => $request->doclife_id,
-                        'colfield' => $request->colfield,
-                        'coldesr' => $request->type_desr,
-                        'col_measure' => $request->type_measure,
-                        'coldate' => date('Y-m-d', strtotime($request->type_date)),
-                        'coltime' => $mytime,
-                        'status' => true,
-                    ]);
                 }
+                $docLifeDetail->update([
+                    'coldesr' => $request->type_desr,
+                    'col_measure' => $request->type_measure,
+                    'coltime' => $mytime,
+                ]);
+            } else {
+                $docLife = DocumentLife::findOrFail($request->doclife_id);
+                $docLife->update([
+                    'coldesr' => $request->type_desr,
+                    'col_measure' => $request->type_measure,
+                    'coltime' => $mytime,
+                ]);
+                DocumentLifeDetail::create([
+                    'document_lives_id' => $request->doclife_id,
+                    'colfield' => $request->colfield,
+                    'coldesr' => $request->type_desr,
+                    'col_measure' => $request->type_measure,
+                    'coldate' => date('Y-m-d', strtotime($request->type_date)),
+                    'coltime' => $mytime,
+                    'status' => true,
+                ]);
             }
             $response = [
                 'status' => 200,
@@ -807,7 +808,10 @@ class DocumentController extends Controller
             ->where('rx_id', $request->rx_id)
             ->first();
         if ($file->delete()) {
-            unlink(public_path('uploads/rx/docfiles/'.$file->filename));
+            $filePath = public_path('uploads/rx/docfiles/'.$file->filename);
+            if (! empty($file->filename) && is_file($filePath)) {
+                @unlink($filePath);
+            }
             $response = [
                 'status' => 200,
                 'success' => 'This file has been deleted!',
@@ -856,7 +860,7 @@ class DocumentController extends Controller
                     // $mytime = Carbon\Carbon::now()->toDateString();
                     $cusName = Str::slug($request->name);
                     $mytime = date('d-M-Y');
-                    $docname = 'Docfile-'.$key.'-'.$cusName.'-'.$mytime.uniqid().'.'.$file->getClientOriginalExtension();
+                    $docname = 'Docfile-'.$key.'-'.$cusName.'-'.$mytime.uniqid().'.'.($file->extension() ?: $file->getClientOriginalExtension());
                     $file->move(public_path('uploads/rx/docfiles/'), $docname);
                     RxDocfile::create([
                         'rx_id' => $request->rx_id,
@@ -960,7 +964,7 @@ class DocumentController extends Controller
                 // $mytime = Carbon\Carbon::now()->toDateString();
                 $cusName = Str::slug($request->name);
                 $mytime = date('d-M-Y');
-                $docname = 'Docfile-'.$key.'-'.$cusName.'-'.$mytime.'-'.uniqid().'.'.$file->getClientOriginalExtension();
+                $docname = 'Docfile-'.$key.'-'.$cusName.'-'.$mytime.'-'.uniqid().'.'.($file->extension() ?: $file->getClientOriginalExtension());
                 $file->move(public_path('uploads/rx/docfiles/'), $docname);
                 RxDocfile::create([
                     'rx_id' => $request->rx_id,
@@ -1133,7 +1137,6 @@ class DocumentController extends Controller
 
     public function storeObjectHT(Request $request)
     {
-        date_default_timezone_set('Asia/Phnom_Penh');
         abort_if(Gate::denies($this->prefix.'create'), Response::HTTP_FORBIDDEN, '403 Forbidden');
         $data = $request->all();
         if ($data['status']) {
@@ -1165,7 +1168,7 @@ class DocumentController extends Controller
                     'user_id' => auth()->id(),
                     'status' => $status,
                 ]);
-                if (! count(array_filter($data['more_product'])) == 0) {
+                if (count(array_filter($data['more_product'])) > 0) {
                     foreach ($data['more_product'] as $key => $value) {
                         if ($htd = HospitalTreatmentDetail::where('hospital_treatment_id', $data['htd_hospital_id'])
                             ->where('hospital_treatment_product_id', $data['htd_hospital_treatment_product_id'])
@@ -1218,7 +1221,7 @@ class DocumentController extends Controller
                             'name' => $howToUse,
                         ]);
                     }
-                    if (! count(array_filter($data['more_product'])) == 0) {
+                    if (count(array_filter($data['more_product'])) > 0) {
                         foreach ($data['more_product'] as $key => $value) {
                             HospitalTreatmentDetail::create([
                                 'hospital_treatment_id' => $datas->id,
@@ -1812,7 +1815,7 @@ class DocumentController extends Controller
             }
             if ($request->hasFile('photo')) {
                 $image = $request->file('photo');
-                $image_name = Str::slug($request->name).'-'.uniqid().'.'.$image->getClientOriginalExtension();
+                $image_name = Str::slug($request->name).'-'.uniqid().'.'.($image->extension() ?: $image->getClientOriginalExtension());
                 $image->move(public_path('uploads/customer/'), $image_name);
             } else {
                 if ($request->old_image) {
@@ -1839,7 +1842,7 @@ class DocumentController extends Controller
                     'register_by' => Auth::id(),
                     'status' => $status,
                 ]);
-            if ($datas) {
+            if (! $object_id && $datas) {
                 Document::create([
                     'customer_id' => $datas->id,
                     'user_id' => Auth::id(),

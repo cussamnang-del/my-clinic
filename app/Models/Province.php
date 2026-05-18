@@ -10,7 +10,12 @@ class Province extends Model
 {
     use HasFactory;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'type',
+        'code',
+        'name_kh',
+        'name_en',
+    ];
 
     /**
      * Get all of the districts for the Province

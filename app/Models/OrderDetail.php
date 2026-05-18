@@ -16,7 +16,17 @@ class OrderDetail extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'order_id',
+        'product_id',
+        'unit',
+        'strength',
+        'qty',
+        'price',
+        'total',
+        'how_to_use',
+        'before_after',
+    ];
 
     /**
      * Get the order that owns the OrderDetail

@@ -16,7 +16,14 @@ class Schedule extends Model
     use IsLoggable;
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'ap_date',
+        'ap_time',
+        'customer_id',
+        'user_id',
+        'desr',
+        'status',
+    ];
 
     protected $dates = [
         'ap_date',

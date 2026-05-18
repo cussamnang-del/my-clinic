@@ -75,7 +75,7 @@
                 {{ trans('cruds.schedule.fields.user_id') }}
               </th>
               <td>
-                {!! $schedule->user->name !!}
+                {{ $schedule->user->name }}
               </td>
             </tr>
             <tr>
@@ -83,7 +83,7 @@
                 {{ trans('cruds.schedule.fields.desr') }}
               </th>
               <td>
-                {!! $schedule->desr !!}
+                {{ $schedule->desr }}
               </td>
             </tr>
             <tr>
@@ -91,7 +91,7 @@
                 {{ trans('cruds.schedule.fields.status') }}
               </th>
               <td>
-                {!! $schedule->status !!}
+                {{ $schedule->status }}
               </td>
             </tr>
           </tbody>
