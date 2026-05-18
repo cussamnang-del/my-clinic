@@ -16,6 +16,6 @@ class Event extends Model
     use SoftDeletes;
 
     protected $fillable = [
-        'title', 'start', 'end', 'color',
+        'title', 'start', 'end', 'color', 'allDay',
     ];
 }

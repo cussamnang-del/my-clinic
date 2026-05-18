@@ -503,6 +503,7 @@ class DocumentController extends Controller
 
     public function deletePBio(Request $request)
     {
+        abort_if(Gate::denies($this->prefix.'delete'), Response::HTTP_FORBIDDEN, '403 Forbidden');
         $pbio = Pbio::findOrFail($request->pbio_id);
         if ($pbio->delete()) {
             $pbio_details = PbioDetail::where('pbio_id', $request->pbio_id)->get();
@@ -839,6 +840,7 @@ class DocumentController extends Controller
         $validator = Validator::make($request->all(), [
             'nuse_description' => 'required',
             'nurse_result' => 'required',
+            'docfile.*' => 'nullable|mimes:jpeg,jpg,png,gif,csv,txt,pdf|max:10240',
         ]);
         if ($validator->fails()) {
             $response = [
@@ -1293,6 +1295,7 @@ class DocumentController extends Controller
 
     public function deleteObjectHT(Request $request)
     {
+        abort_if(Gate::denies($this->prefix.'delete'), Response::HTTP_FORBIDDEN, '403 Forbidden');
         $datas = HospitalTreatment::findOrFail($request->ht_id);
         $datas->delete();
         $htds = HospitalTreatmentDetail::where('hospital_treatment_id', $request->ht_id)->get();
@@ -1312,6 +1315,7 @@ class DocumentController extends Controller
 
     public function deleteObjectHTD(Request $request)
     {
+        abort_if(Gate::denies($this->prefix.'delete'), Response::HTTP_FORBIDDEN, '403 Forbidden');
         $htd = HospitalTreatmentDetail::findOrFail($request->htd_id);
         $htd->delete();
         $response = [
@@ -1414,6 +1418,7 @@ class DocumentController extends Controller
 
     public function deleteObjectHNote(Request $request)
     {
+        abort_if(Gate::denies($this->prefix.'delete'), Response::HTTP_FORBIDDEN, '403 Forbidden');
         $datas = HNote::findOrFail($request->hnote_id);
         $datas->delete();
         $response = [
@@ -1427,6 +1432,7 @@ class DocumentController extends Controller
 
     public function storeObjectOrder(Request $request)
     {
+        abort_if(Gate::denies($this->prefix.'create'), Response::HTTP_FORBIDDEN, '403 Forbidden');
         $datas = $request->all();
         $validator = Validator::make($request->all(), [
             'chief_complain' => 'required',
@@ -1635,6 +1641,7 @@ class DocumentController extends Controller
 
     public function storeObjectInjection(Request $request)
     {
+        abort_if(Gate::denies($this->prefix.'create'), Response::HTTP_FORBIDDEN, '403 Forbidden');
         $datas = $request->all();
         $validator = Validator::make($request->all(), [
             'injection_product_save' => 'required|array',
@@ -1769,6 +1776,7 @@ class DocumentController extends Controller
 
     public function checkout(Request $request)
     {
+        abort_if(Gate::denies($this->prefix.'edit'), Response::HTTP_FORBIDDEN, '403 Forbidden');
         $document = Document::findOrFail($request->document_id);
         $document->update([
             'checkout_date' => date('Y-m-d'),
@@ -1815,7 +1823,7 @@ class DocumentController extends Controller
             }
             if ($request->hasFile('photo')) {
                 $image = $request->file('photo');
-                $image_name = Str::slug($request->name).'-'.uniqid().'.'.($image->extension() ?: $image->getClientOriginalExtension());
+                $image_name = Str::uuid().'.'.($image->extension() ?: $image->getClientOriginalExtension());
                 $image->move(public_path('uploads/customer/'), $image_name);
             } else {
                 if ($request->old_image) {
@@ -1919,6 +1927,7 @@ class DocumentController extends Controller
 
     public function removeOrder(Request $request)
     {
+        abort_if(Gate::denies($this->prefix.'delete'), Response::HTTP_FORBIDDEN, '403 Forbidden');
         $order = OrderDetail::Find($request->order_id);
         $order->delete();
 
@@ -1927,6 +1936,7 @@ class DocumentController extends Controller
 
     public function removeInjection(Request $request)
     {
+        abort_if(Gate::denies($this->prefix.'delete'), Response::HTTP_FORBIDDEN, '403 Forbidden');
         $injection = OrderDetail::Find($request->injection_id);
         $injection->delete();
 

@@ -90,8 +90,10 @@ Route::middleware(['throttle:public'])->group(function () {
         return redirect()->back();
     });
 
-    Route::get('full-calendar', [FullCalenderController::class, 'calendar3']);
-    Route::post('full-calendar/action', [FullCalenderController::class, 'action']);
+    Route::get('full-calendar', [FullCalenderController::class, 'calendar3'])
+        ->middleware('auth');
+    Route::post('full-calendar/action', [FullCalenderController::class, 'action'])
+        ->middleware('auth');
 
     Route::get('/auto', function () {
         return view('autocomplete');
@@ -107,7 +109,7 @@ Route::middleware(['throttle:public'])->group(function () {
 
         return DB::table('country')
             ->select('country.*')
-            ->whereRaw('LOWER('.$fieldName.') LIKE ?', ["$name%"])
+            ->whereRaw('LOWER(`'.$fieldName.'`) LIKE ?', ["$name%"])
             ->limit(25)
             ->get();
     });

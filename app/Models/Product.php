@@ -25,5 +25,7 @@ class Product extends Model
         'country',
         'image',
         'status',
+        'unit',
+        'strength',
     ];
 }

@@ -34,9 +34,6 @@ class User extends Authenticatable
         'remember_token',
         'status',
         'profile_image',
-        'created_at',
-        'updated_at',
-        'deleted_at',
     ];
 
     /**
