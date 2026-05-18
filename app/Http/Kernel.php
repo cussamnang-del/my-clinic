@@ -2,6 +2,7 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\AttachRequestContext;
 use App\Http\Middleware\Authenticate;
 use App\Http\Middleware\AuthGates;
 use App\Http\Middleware\EncryptCookies;
@@ -50,6 +51,7 @@ class Kernel extends HttpKernel
         TrimStrings::class,
         ConvertEmptyStringsToNull::class,
         SecurityHeaders::class,
+        AttachRequestContext::class,
     ];
 
     /**

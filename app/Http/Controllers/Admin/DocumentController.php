@@ -31,6 +31,7 @@ use App\Models\Room;
 use App\Models\Rx;
 use App\Models\RxDetail;
 use App\Models\RxDocfile;
+use App\Services\DocumentService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Gate;
@@ -43,6 +44,8 @@ class DocumentController extends Controller
     protected $prefix = 'document_';
 
     protected $crudRoutePath = 'documents';
+
+    public function __construct(private readonly DocumentService $documents) {}
 
     public function index(Request $request)
     {
@@ -80,11 +83,6 @@ class DocumentController extends Controller
     public function store(Request $request)
     {
         abort_if(Gate::denies($this->prefix.'create'), Response::HTTP_FORBIDDEN, '403 Forbidden');
-        if ($request->status) {
-            $status = true;
-        } else {
-            $status = false;
-        }
         $object_id = $request->object_id;
 
         $validator = Validator::make($request->all(), [
@@ -98,14 +96,12 @@ class DocumentController extends Controller
                 'error' => $validator->errors()->toArray(),
             ];
         } else {
-            $datas = Document::updateOrCreate([
-                'id' => $object_id],
-                [
-                    'customer_id' => $request->customer_id,
-                    'user_id' => Auth::id(),
-                    'visit_date' => date('Y-m-d H:i:s', strtotime($request->visit_date)),
-                    'status' => $status,
-                ]);
+            $datas = $this->documents->createOrUpdate([
+                'id' => $object_id ?: null,
+                'customer_id' => (int) $request->customer_id,
+                'visit_date' => $request->visit_date,
+                'status' => (bool) $request->status,
+            ]);
             if ($object_id) {
                 $type = 'update-object';
                 $success = 'Document has been Updated!';
@@ -148,7 +144,7 @@ class DocumentController extends Controller
     public function destroy(Document $document)
     {
         abort_if(Gate::denies($this->prefix.'delete'), Response::HTTP_FORBIDDEN, '403 Forbidden');
-        $document->delete();
+        $this->documents->delete($document);
 
         return response()->json(['success' => 'Item has been deleted successfully!']);
     }
@@ -156,9 +152,7 @@ class DocumentController extends Controller
     public function changeStatus(Request $request)
     {
         abort_if(Gate::denies($this->prefix.'edit'), Response::HTTP_FORBIDDEN, '403 Forbidden');
-        $response = Document::find($request->object_id);
-        $response->status = $request->status;
-        $response->save();
+        $this->documents->changeStatus((int) $request->object_id, (bool) $request->status);
 
         return response()->json(['success' => 'Status has been change successfully!']);
     }
