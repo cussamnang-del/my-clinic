@@ -82,11 +82,6 @@ class ProductController extends Controller
                 'type' => $type,
                 'data' => $datas,
                 'success' => $success,
-                // 'html'    => view('admin.product.templates.ajax_tr',[
-                //   'row'=> $datas,
-                //   'prefix'=>$this->prefix,
-                //   'crudRoutePath'=> $this->crudRoutePath])
-                //   ->render(),
             ];
         }
 
@@ -130,67 +125,5 @@ class ProductController extends Controller
         $response->save();
 
         return response()->json(['success' => 'Status has been change successfully!']);
-    }
-
-    public function storeNew(Request $request)
-    {
-        abort_if(Gate::denies($this->prefix.'create'), Response::HTTP_FORBIDDEN, '403 Forbidden');
-        if ($request->status) {
-            $status = true;
-        } else {
-            $status = false;
-        }
-        $object_id = $request->object_id;
-        $validator = Validator::make($request->all(), StoreProductRequest::rulesFor());
-        if (! $validator->passes()) {
-            $response = [
-                'status' => 400,
-                'error' => $validator->errors()->toArray(),
-            ];
-
-            return response()->json($response);
-        } else {
-            if ($request->hasFile('image')) {
-                $image = $request->file('image');
-                $mytime = date('d-M-Y');
-                $image_name = 'Product-'.$mytime.'-'.uniqid().'.'.($image->extension() ?: $image->getClientOriginalExtension());
-                $image->move(public_path('uploads/product/'), $image_name);
-            } else {
-                if ($request->old_image) {
-                    $image_name = $request->old_image;
-                } else {
-                    $image_name = null;
-                }
-            }
-            $all_data = [
-                'p_name' => $request->p_name,
-                'p_code' => $request->p_code,
-                'unit' => $request->unit,
-                'strength' => $request->strength,
-                'group_id' => 1,
-                'type_id' => 1,
-                'country' => $request->country ?? '',
-                'description' => $request->description ?? '',
-                'image' => $image_name,
-                'status' => $status,
-            ];
-            $datas = Product::updateOrCreate([
-                'id' => $object_id], $all_data);
-            if ($object_id) {
-                $type = 'update-object';
-                $success = 'Product has been Updated!';
-            } else {
-                $type = 'store-object';
-                $success = 'Product has been registered!';
-            }
-            $response = [
-                'status' => 200,
-                'type' => $type,
-                'data' => $datas,
-                'success' => $success,
-            ];
-        }
-
-        return response()->json($response);
     }
 }

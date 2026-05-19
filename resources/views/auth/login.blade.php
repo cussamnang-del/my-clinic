@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="{{ assetUrl() }}/plugins/bootstrap-icons/font/bootstrap-icons.css">
   <!-- loader-->
   <link href="{{ assetUrl() }}/css/pace.min.css" rel="stylesheet" />
-  <title>Clinic Management Syste Login Form</title>
+  <title>Clinic Management System Login Form</title>
 </head>
 
 <body>
