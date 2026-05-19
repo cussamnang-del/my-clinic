@@ -20,7 +20,7 @@
   <link href="{{ assetUrl() }}/css/bootstrap-extended.css" rel="stylesheet" />
   <link href="{{ assetUrl() }}/css/style.css" rel="stylesheet" />
   <link href="{{ assetUrl() }}/css/icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="{{ assetUrl() }}/plugins//bootstrap-icons1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="{{ assetUrl() }}/plugins/bootstrap-icons1.5.0/font/bootstrap-icons.css">
   <!-- loader-->
 	<link href="{{ assetUrl() }}/css/pace.min.css" rel="stylesheet" />
   <!--Theme Styles-->

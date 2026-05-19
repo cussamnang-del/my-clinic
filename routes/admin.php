@@ -101,10 +101,9 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth', 't
     Route::get('document_life_details/changeStatus', [DocumentLifeDetailController::class, 'changeStatus'])->name('document_life_detail.changeStatus');
     Route::resource('document_life_details', DocumentLifeDetailController::class)->except('create', 'update');
     Route::get('products/changeStatus', [ProductController::class, 'changeStatus'])->name('products.changeStatus');
-    Route::post('products/storeOrder', [ProductController::class, 'storeNew'])->name('products.storeNew');
+    Route::post('products/storeOrder', [ProductController::class, 'store'])->name('products.storeNew');
     Route::resource('products', ProductController::class)->except('create', 'update');
     Route::get('rooms/changeStatus', [RoomController::class, 'changeStatus'])->name('rooms.changeStatus');
-    // Route::get('rooms/getParameeters/{param1}/{param2}',[App\Http\Controllers\Admin\RoomController::class,'getParameeters'])->name('rooms.getParameeters');
     Route::resource('rooms', RoomController::class)->except('create', 'update');
     Route::controller(CustomerHistory::class)->group(function () {
         Route::get('histories/showHistory', 'showHistory')->name('histories.showHistory');

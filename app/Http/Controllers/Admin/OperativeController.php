@@ -6,6 +6,9 @@ use App\Http\Controllers\Controller;
 use App\Models\MedicalCertificate;
 use App\Models\OperativeProtocol;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\Validator;
+use Symfony\Component\HttpFoundation\Response;
 
 class OperativeController extends Controller
 {
@@ -15,10 +18,29 @@ class OperativeController extends Controller
 
     public function storeProtocol(Request $request)
     {
+        abort_if(Gate::denies($this->prefix.'create'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+
         if (! $request->ajax()) {
             return response()->json(['status' => 400, 'error' => 'Bad Request'], 400);
         }
-        $datas = $request->all();
+
+        $validator = Validator::make($request->all(), [
+            'date' => 'required|date',
+            'time' => 'required',
+            'protocol_document_id' => 'required|integer',
+            'protocol_customer_id' => 'required|integer',
+            'operater' => 'nullable|string|max:255',
+            'aide' => 'nullable|string|max:255',
+            'anesth' => 'nullable|string|max:255',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json(['status' => 400, 'error' => $validator->errors()->toArray()]);
+        }
+
+        $datas = $validator->validated() + $request->only([
+            'diapre', 'diaper', 'indication', 'position', 'note', 'protocol_object_id',
+        ]);
         $attributes = [
             'date' => date('Y-m-d', \strtotime($datas['date'])),
             'time' => $datas['time'],
@@ -57,6 +79,8 @@ class OperativeController extends Controller
 
     public function receiptProtocol(OperativeProtocol $OperativeProtocol)
     {
+        abort_if(Gate::denies($this->prefix.'access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+
         $data['OperativeProtocol'] = $OperativeProtocol;
         $OperativeProtocol->load(['customer', 'document']);
 
@@ -65,19 +89,26 @@ class OperativeController extends Controller
 
     public function storeMedicine(Request $request)
     {
+        abort_if(Gate::denies($this->prefix.'create'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+
         if (! $request->ajax()) {
             return response()->json(['status' => 400, 'error' => 'Bad Request'], 400);
         }
-        if ($request->sick_leave) {
-            $is_sick = true;
-        } else {
-            $is_sick = false;
+
+        $validator = Validator::make($request->all(), [
+            'date' => 'required|date',
+            'time' => 'required',
+            'medicine_document_id' => 'required|integer',
+            'medicine_customer_id' => 'required|integer',
+            'diagnosis' => 'nullable|string|max:1000',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json(['status' => 400, 'error' => $validator->errors()->toArray()]);
         }
-        if ($request->is_other) {
-            $is_other = true;
-        } else {
-            $is_other = false;
-        }
+
+        $is_sick = (bool) $request->sick_leave;
+        $is_other = (bool) $request->is_other;
         $datas = $request->all();
         $attributes = [
             'date' => date('Y-m-d', \strtotime($datas['date'])),
@@ -120,6 +151,8 @@ class OperativeController extends Controller
 
     public function receiptMedicine(MedicalCertificate $MedicalCertificate)
     {
+        abort_if(Gate::denies($this->prefix.'access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+
         $data['MedicalCertificate'] = $MedicalCertificate;
         $MedicalCertificate->load(['customer', 'document']);
 

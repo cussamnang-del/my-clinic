@@ -54,7 +54,6 @@ class DocumentController extends Controller
         $data['provinces'] = Province::all();
         $data['types'] = LifeSign::where('type_id', '=', 0)->pluck('name', 'id');
         $data['rooms'] = Room::pluck('room_no', 'id');
-        // $data['products'] = Product::orderBy('p_name')->get();
         $data['prefix'] = $this->prefix;
         $data['crudRoutePath'] = $this->crudRoutePath;
         if ($request->from_date != '' && $request->to_date != '') {
@@ -159,6 +158,8 @@ class DocumentController extends Controller
 
     public function getCustomer(Request $request)
     {
+        $request->validate(['object_id' => 'required|integer']);
+
         $response = ['data' => Customer::FindOrFail($request->object_id)
             ->load(['province', 'district', 'commune', 'village'])];
 
@@ -224,6 +225,8 @@ class DocumentController extends Controller
 
     public function getLifeSign(Request $request)
     {
+        $request->validate(['type_id' => 'required|integer']);
+
         $response = LifeSign::where('type_id', '=', $request->type_id)->get();
 
         return response()->json($response);
@@ -327,6 +330,12 @@ class DocumentController extends Controller
         if (! $request->ajax()) {
             return response()->json(['status' => 400, 'error' => 'Bad Request'], 400);
         }
+
+        $request->validate([
+            'id' => 'required|integer',
+            'lifeid' => 'nullable|integer',
+            'lifetype' => 'required|string',
+        ]);
 
         if ($request->lifeid) {
             $response = [
@@ -435,6 +444,8 @@ class DocumentController extends Controller
 
     public function getGroupType(Request $request)
     {
+        $request->validate(['item_group_id' => 'required|integer']);
+
         $response = [
             'items' => view('admin.document.templates.bio.item_type_list', [
                 'itemTypes' => ItemType::where('item_group_id', $request->item_group_id)->get(),
@@ -446,6 +457,8 @@ class DocumentController extends Controller
 
     public function getItemTypeByName(Request $request)
     {
+        $request->validate(['item_type_id' => 'required|integer']);
+
         $response = [
             'items' => view('admin.document.templates.bio.item_list', [
                 'itemLists' => Item::where('item_type_id', $request->item_type_id)->get(),
@@ -548,7 +561,6 @@ class DocumentController extends Controller
 
     public function storeBio(Request $request)
     {
-        // return response($request);
         abort_if(Gate::denies($this->prefix.'create'), Response::HTTP_FORBIDDEN, '403 Forbidden');
         $validator = Validator::make($request->all(), [
             'bio_item_id.*' => ['integer'],
@@ -558,7 +570,6 @@ class DocumentController extends Controller
             ],
             'bio_result' => 'required|array',
             'bio_result.*' => 'required|string',
-            // 'bio_result'=>'required',
             'bio_date' => 'required|date|max:50',
         ]);
         $itemids = $request->bio_item_id;
@@ -818,8 +829,6 @@ class DocumentController extends Controller
                 'success' => 'This file has been deleted!',
                 'nurse_form' => view('admin.document.templates.rx.edit_nurse_form', [
                     'nurses' => RxDetail::with('rxdata')->where('rx_id', $request->rx_id)
-                                // ->where('customer_id',$request->customer_id)
-                                // ->where('document_id',$request->document_id)
                         ->get(),
                     'docfiles' => RxDocfile::where('rx_id', $request->rx_id)->get(),
                 ])->render(),
@@ -836,7 +845,6 @@ class DocumentController extends Controller
 
     public function updateRxNurse(Request $request)
     {
-        // return response()->json($request->all());
         $validator = Validator::make($request->all(), [
             'nuse_description' => 'required',
             'nurse_result' => 'required',
@@ -859,10 +867,7 @@ class DocumentController extends Controller
             if ($request->hasFile('docfile')) {
                 $docfiles = $request->file('docfile');
                 foreach ($docfiles as $key => $file) {
-                    // $mytime = Carbon\Carbon::now()->toDateString();
-                    $cusName = Str::slug($request->name);
-                    $mytime = date('d-M-Y');
-                    $docname = 'Docfile-'.$key.'-'.$cusName.'-'.$mytime.uniqid().'.'.($file->extension() ?: $file->getClientOriginalExtension());
+                    $docname = Str::uuid()->toString().'.'.($file->extension() ?: $file->getClientOriginalExtension());
                     $file->move(public_path('uploads/rx/docfiles/'), $docname);
                     RxDocfile::create([
                         'rx_id' => $request->rx_id,
@@ -963,10 +968,7 @@ class DocumentController extends Controller
             }
             $docfiles = $request->file('docfile');
             foreach ($docfiles as $key => $file) {
-                // $mytime = Carbon\Carbon::now()->toDateString();
-                $cusName = Str::slug($request->name);
-                $mytime = date('d-M-Y');
-                $docname = 'Docfile-'.$key.'-'.$cusName.'-'.$mytime.'-'.uniqid().'.'.($file->extension() ?: $file->getClientOriginalExtension());
+                $docname = Str::uuid()->toString().'.'.($file->extension() ?: $file->getClientOriginalExtension());
                 $file->move(public_path('uploads/rx/docfiles/'), $docname);
                 RxDocfile::create([
                     'rx_id' => $request->rx_id,
@@ -1092,7 +1094,6 @@ class DocumentController extends Controller
                     ->first();
                 $datas->update([
                     'room_id' => $request->room_no,
-                    // 'h_note' => $request->h_note,
                 ]);
                 $response = [
                     'status' => 200,
@@ -1333,9 +1334,6 @@ class DocumentController extends Controller
         $data = $request->all();
         $validator = Validator::make($request->all(), [
             'mob' => 'required',
-            // 'dia' => 'required',
-            // 'todo' => 'required',
-            // 'comment' => 'required',
         ]);
         if ($validator->fails()) {
             $response = [
@@ -1436,21 +1434,6 @@ class DocumentController extends Controller
         $datas = $request->all();
         $validator = Validator::make($request->all(), [
             'chief_complain' => 'required',
-            // 'past_history' => 'required',
-            // 'blood_test' => 'required',
-            // 'orl_ent' => 'required',
-            // 'ultra_sound' => 'required',
-            // 'ecg' => 'required',
-            // 'x_ray' => 'required',
-            // 'et_at' => 'required',
-            // 'diagnosis' => 'required',
-            // 'recommendation' => 'required',
-            // 'order_product' => 'required|array',
-            // 'unit_save' => 'required|array',
-            // 'strength_save' => 'required|array',
-            // 'qty_save' => 'required|array',
-            // 'how_to_use_save' => 'required|array',
-            // 'before_after_save' => 'required|array',
         ]);
         if ($validator->fails()) {
             $response = [
@@ -1575,10 +1558,6 @@ class DocumentController extends Controller
             $response = [
                 'status' => 200,
                 'success' => $success,
-                // 'data' => $data,
-                // 'receipt' => view('admin.document.templates.order.receipt',[
-                //   'order' => $data->load('details'),
-                // ])->render(),
             ];
         }
 
@@ -1608,15 +1587,6 @@ class DocumentController extends Controller
             } else {
                 return ['name' => ''];
             }
-            // $output = '<ul class="dropdown-menu" style="display:block; position:relative">';
-            // foreach($data as $row)
-            // {
-            //  $output .= '
-            //  <li><a href="#">'.$row->name.'</a></li>
-            //  ';
-            // }
-            // $output .= '</ul>';
-            // echo $output;;
         }
     }
 
@@ -1764,10 +1734,6 @@ class DocumentController extends Controller
             $response = [
                 'status' => 200,
                 'success' => $success,
-                // 'data' => $data,
-                // 'receipt' => view('admin.document.templates.order.receipt',[
-                //   'order' => $data->load('details'),
-                // ])->render(),
             ];
         }
 
@@ -1800,11 +1766,6 @@ class DocumentController extends Controller
             'sex' => ['required', 'string'],
             'age' => ['required', 'string'],
             'dob' => ['required', 'date'],
-            // 'province_id' => ['required'],
-            // 'district_id' => ['required'],
-            // 'commune_id' => ['required'],
-            // 'village_id' => ['required'],
-            // 'phone_no' => ['required'],
         ];
 
         $validator = Validator::make($request->all(), $rules);
@@ -1905,6 +1866,8 @@ class DocumentController extends Controller
 
     public function searchProduct(Request $request)
     {
+        $request->validate(['term' => 'required|string|max:255']);
+
         if ($request->get('term', '')) {
             $query = $request->get('term');
             $products = Product::where('p_name', 'LIKE', "%{$query}%")->get();

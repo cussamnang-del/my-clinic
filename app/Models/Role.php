@@ -18,8 +18,6 @@ class Role extends Model
         'status',
     ];
 
-    // protected $with = 'permissions';
-
     public $table = 'roles';
 
     /**
@@ -42,11 +40,6 @@ class Role extends Model
     {
         return $this->belongsToMany(Permission::class);
     }
-
-    // protected function serializeDate(DateTimeInterface $date)
-    // {
-    //   return $date->format('Y-m-d H:i:s');
-    // }
 
     public function users()
     {

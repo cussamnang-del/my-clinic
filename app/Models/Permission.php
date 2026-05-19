@@ -3,7 +3,6 @@
 namespace App\Models;
 
 use App\Http\Middleware\AuthGates;
-use DateTimeInterface;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -25,27 +24,12 @@ class Permission extends Model
         'group',
         'title',
         'status',
-        'created_at',
-        'updated_at',
-        'deleted_at',
     ];
 
-    // public $orderable = [
-    //     'id',
-    //     'group',
-    //     'title',
-    // ];
-
-    // public $filterable = [
-    //     'id',
-    //     'group',
-    //     'title',
-    // ];
-
-    protected $dates = [
-        'created_at',
-        'updated_at',
-        'deleted_at',
+    protected $casts = [
+        'created_at' => 'datetime',
+        'updated_at' => 'datetime',
+        'deleted_at' => 'datetime',
     ];
 
     /**
@@ -64,9 +48,4 @@ class Permission extends Model
         static::deleted($invalidate);
         static::restored($invalidate);
     }
-
-    // protected function serializeDate(DateTimeInterface $date)
-    // {
-    //   return $date->format('Y-m-d H:i:s');
-    // }
 }
