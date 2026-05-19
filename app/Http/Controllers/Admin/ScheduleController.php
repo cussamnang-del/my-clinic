@@ -57,7 +57,10 @@ class ScheduleController extends Controller
             'user_id' => 'required',
         ]);
         //  Store data in database
-        Schedule::create($request->all());
+        Schedule::create($request->only([
+            'title', 'ap_date', 'ap_time', 'customer_id', 'user_id',
+            'desr', 'status', 'start_time', 'finish_time', 'color',
+        ]));
 
         return back()->with('success', 'Your Schedule has been created Successfully!');
     }
@@ -99,7 +102,10 @@ class ScheduleController extends Controller
             'user_id' => 'required',
         ]);
         //  Store data in database
-        $schedule->update($request->all());
+        $schedule->update($request->only([
+            'title', 'ap_date', 'ap_time', 'customer_id', 'user_id',
+            'desr', 'status', 'start_time', 'finish_time', 'color',
+        ]));
 
         return back()->with('success', 'Your Schedule has been updated Successfully!');
     }

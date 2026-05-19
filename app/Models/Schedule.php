@@ -17,12 +17,16 @@ class Schedule extends Model
     use SoftDeletes;
 
     protected $fillable = [
+        'title',
         'ap_date',
         'ap_time',
         'customer_id',
         'user_id',
         'desr',
         'status',
+        'start_time',
+        'finish_time',
+        'color',
     ];
 
     protected $dates = [
