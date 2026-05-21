@@ -56,7 +56,6 @@ class ScheduleController extends Controller
             'customer_id' => 'required',
             'user_id' => 'required',
         ]);
-        //  Store data in database
         Schedule::create($request->only([
             'title', 'ap_date', 'ap_time', 'customer_id', 'user_id',
             'desr', 'status', 'start_time', 'finish_time', 'color',
@@ -101,7 +100,6 @@ class ScheduleController extends Controller
             'customer_id' => 'required',
             'user_id' => 'required',
         ]);
-        //  Store data in database
         $schedule->update($request->only([
             'title', 'ap_date', 'ap_time', 'customer_id', 'user_id',
             'desr', 'status', 'start_time', 'finish_time', 'color',
@@ -161,7 +159,7 @@ class ScheduleController extends Controller
 
     public function showScheduleDocument(Schedule $schedule)
     {
-        // abort_if(Gate::denies($this->prefix.'access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+        abort_if(Gate::denies($this->prefix.'access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
         $data['document'] = Document::where('customer_id', $schedule->customer_id)->get();
         $data['customer'] = Customer::findOrFail($schedule->customer_id);
         $data['prefix'] = $this->prefix;
@@ -206,7 +204,6 @@ class ScheduleController extends Controller
         $data['hospital_treatments'] = HospitalTreatment::whereIn('hospital_id', $hids)->orderBy('ht_date', 'DESC')->get()->groupBy('ht_date');
         $data['hnotes'] = HNote::whereIn('hospital_id', $hids)->orderBy('date', 'DESC')->get()->groupBy('date');
 
-        // return $data;
         return view('admin.schedule.schedule_document_detail', $data);
     }
 }

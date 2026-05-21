@@ -1007,7 +1007,6 @@ class DocumentController extends Controller
             $order_id = null;
             $customer_order = [];
         }
-        // return response()->json($customer_order);
         if ($customer_order) {
             $kcustomer_order_details = OrderDetail::where('order_id', '=', $customer_order->id)->get();
             if ($kcustomer_order_details) {
@@ -1467,7 +1466,6 @@ class DocumentController extends Controller
                 if ($countProducts) {
                     foreach ($countProducts as $key => $product_id) {
                         if ($request->idUpdate[$key] == null) {
-                            // return 'no ID Update';
                             OrderDetail::create([
                                 'order_id' => $datas['order_id'],
                                 'product_id' => $product_id,
@@ -1487,10 +1485,8 @@ class DocumentController extends Controller
                                 'how_to_use' => $datas['how_to_use_save'][$key],
                                 'before_after' => $datas['before_after_save'][$key],
                             ]);
-                            // return 'have ID to Update';
                         }
                     }
-                    // //insert to table how_to_use
                     $howToUse = $request->how_to_use_save;
                     $uniques = array_unique($howToUse);
                     foreach ($uniques as $value) {
@@ -1509,13 +1505,10 @@ class DocumentController extends Controller
                 $order_data = Order::create($all_order_data);
                 if ($order_data) {
                     $orderCount = $request->order_product_save;
-                    // $countrow=count($request->order_product_save)-1;
                     if ($orderCount) {
                         foreach ($orderCount as $key => $product_id) {
-                            // for($key=$countrow;$key>=0;$key--){
                             OrderDetail::create([
                                 'order_id' => $order_data->id,
-                                // 'product_id' => $datas['order_product_save'][$key],
                                 'product_id' => $product_id,
                                 'unit' => $datas['unit_save'][$key],
                                 'strength' => $datas['strength_save'][$key],
@@ -1524,7 +1517,6 @@ class DocumentController extends Controller
                                 'before_after' => $datas['before_after_save'][$key],
                             ]);
                         }
-                        // //insert to table how_to_use
                         $howToUse = $request->how_to_use_save;
                         $uniques = array_unique($howToUse);
                         foreach ($uniques as $value) {
@@ -1638,7 +1630,6 @@ class DocumentController extends Controller
                 'recommendation' => 'recommendation',
                 'order_type' => 'Injection',
             ];
-            // return response()->json($datas);
             if ($datas['injection_id']) {
                 $existData = Order::findOrFail($datas['injection_id']);
                 $existData->update($all_data);
@@ -1668,7 +1659,6 @@ class DocumentController extends Controller
                                 ]);
                             }
                         }
-                        // insert to table how_to_use
                         $howToUse = $request->injection_how_to_use_save;
                         $uniques = array_unique($howToUse);
                         foreach ($uniques as $value) {
@@ -1700,7 +1690,6 @@ class DocumentController extends Controller
                                 'before_after' => $datas['injection_before_after_save'][$key],
                             ]);
                         }
-                        // //insert to table how_to_use
                         $howToUse = $request->injection_how_to_use_save;
                         $uniques = array_unique($howToUse);
                         foreach ($uniques as $value) {

@@ -110,9 +110,4 @@ class RoomController extends Controller
 
         return response()->json(['success' => 'Status has been change successfully!']);
     }
-
-    // public function getParameeters($param1,$param2)
-    // {
-    //   return $param1. '-' .$param2;
-    // }
 }
