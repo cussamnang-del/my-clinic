@@ -109,7 +109,10 @@ class OperativeController extends Controller
 
         $is_sick = (bool) $request->sick_leave;
         $is_other = (bool) $request->is_other;
-        $datas = $request->all();
+        $datas = $validator->validated() + $request->only([
+            'chief_complain', 'past_history', 'treatment_plan', 'physical_examination',
+            'from_date', 'to_date', 'attending_physician', 'medicine_note', 'medicine_object_id',
+        ]);
         $attributes = [
             'date' => date('Y-m-d', \strtotime($datas['date'])),
             'time' => $datas['time'],
