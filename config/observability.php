@@ -42,4 +42,17 @@ return [
         'clinical' => env('OBSERVABILITY_CLINICAL_CHANNEL', 'clinical'),
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | TAT (Turn-Around Time) target
+    |--------------------------------------------------------------------------
+    |
+    | Default lab-wide TAT target in minutes used by TatKpiService when the
+    | individual test row does not specify one. ISO 15189:2022 §7.4.1
+    | requires labs to define & monitor TAT — flip via env so the
+    | clinical lead can tune it without a code change.
+    |
+    */
+    'tat_target_minutes' => env('TAT_TARGET_MINUTES', 240),
+
 ];

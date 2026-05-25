@@ -160,6 +160,32 @@
         <div class="menu-title">{{ trans('cruds.company_information.title') }}</div>
       </a>
     </li>
+
+    {{--
+      Phase 5 — Quality / ISO modules.
+      Read-only listings + TAT/QC reporting + the result-release
+      worklist. Write paths intentionally not linked here yet;
+      mutators stay behind the service layer.
+    --}}
+    <li>
+      <a href="javascript:;" class="has-arrow">
+        <div class="parent-icon"><i class="fadeIn animated bx bx-shield-quarter"></i></div>
+        <div class="menu-title">Quality</div>
+      </a>
+      <ul>
+        <li><a href="{{ route('admin.quality.dashboard') }}"><i class="bi bi-arrow-right-short"></i>Dashboard</a></li>
+        <li><a href="{{ route('admin.quality.results.index') }}"><i class="bi bi-arrow-right-short"></i>Result Release</a></li>
+        <li><a href="{{ route('admin.quality.tat.index') }}"><i class="bi bi-arrow-right-short"></i>TAT KPIs</a></li>
+        <li><a href="{{ route('admin.quality.qc.index') }}"><i class="bi bi-arrow-right-short"></i>QC / Levey-Jennings</a></li>
+        <li><a href="{{ route('admin.quality.sop.index') }}"><i class="bi bi-arrow-right-short"></i>SOP / Documents</a></li>
+        <li><a href="{{ route('admin.quality.equipment.index') }}"><i class="bi bi-arrow-right-short"></i>Equipment</a></li>
+        <li><a href="{{ route('admin.quality.reagents.index') }}"><i class="bi bi-arrow-right-short"></i>Reagent Lots</a></li>
+        <li><a href="{{ route('admin.quality.ncrs.index') }}"><i class="bi bi-arrow-right-short"></i>NCR / CAPA</a></li>
+        <li><a href="{{ route('admin.quality.risks.index') }}"><i class="bi bi-arrow-right-short"></i>Risk Register</a></li>
+        <li><a href="{{ route('admin.quality.internal_audits.index') }}"><i class="bi bi-arrow-right-short"></i>Internal Audits</a></li>
+        <li><a href="{{ route('admin.quality.training.index') }}"><i class="bi bi-arrow-right-short"></i>Training</a></li>
+      </ul>
+    </li>
   </ul>
   <!--end navigation-->
 </aside>

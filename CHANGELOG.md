@@ -12,6 +12,43 @@ required by ISO 9001:2015 §7.5.
 
 ## [Unreleased]
 
+### Added — Phase 5 (Reporting & dashboards)
+- **Quality dashboard.** New `/admin/quality` surface (controller +
+  Blade) summarises every Phase 3 ISO module — counts, "needs
+  attention" badges (calibration due ≤30d, expiring reagent lots,
+  high-score risks, …), plus a 7-day TAT card and shortcuts into
+  the QC and result-release worklists.
+- **Result-release UI.** `/admin/quality/results` lists pending /
+  released / amended results. The detail view renders the e-signature
+  form for the next legal transition (submit → review → release) and a
+  separate amendment form (value + reason + password) that posts to
+  the existing Phase 2 `ResultReleaseController`. All state-machine
+  enforcement stays in `ResultReleaseService`; the UI just wires it.
+- **TAT KPI service + dashboard.** `App\Services\TatKpiService` computes
+  on-time %, mean / median / p90 TAT, per-day released counts, and
+  recent breaches (released-slow OR pending past target) over a
+  configurable window (today / 7d / 30d). Configurable target via
+  `config/observability.php → tat_target_minutes`.
+- **QC Levey-Jennings + Westgard rules.** New `qc_results` table,
+  `QcResult` model, and `App\Services\QcStatisticsService` evaluating
+  1-3s / 2-2s / R-4s (reject) + 1-2s (warning) per ISO 15189:2022
+  §7.3.7.2. The chart view renders a server-side SVG Levey-Jennings
+  plot with ±1/2/3 SD bands so the chart works without JS.
+- **Read-only admin index pages** for Phase 3 modules: SOP / Document
+  Control, Equipment & Calibration, Reagent Lots, NCR / CAPA, Risk
+  Register, Internal Audits, Training & Competency. Mutations remain
+  behind the existing service layer so workflow rules stay enforced.
+- **Permissions.** `IsoModulesPermissionSeeder` now also seeds the
+  `quality_access` / `qc_result_access` permission set so a "QMS
+  reviewer" role can be granted dashboard access without every
+  per-module permission.
+- **Navigation.** Sidebar gains a single "Quality" menu grouping every
+  new page.
+- **Tests.** `QcStatisticsTest` (8 cases — every Westgard rule plus
+  chart-shape), `TatKpiServiceTest` (summary + pending-breach
+  detection), and `QualityDashboardRoutesTest` (route + view-layer
+  smoke for 5 surfaces).
+
 ### Added — Phase 4 (Operational excellence)
 - **Service layer.** New `App\Services\DocumentService` extracts
   Document core CRUD out of the 1,938-LOC `DocumentController`

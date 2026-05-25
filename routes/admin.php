@@ -13,6 +13,17 @@ use App\Http\Controllers\Admin\LifeSignController;
 use App\Http\Controllers\Admin\OperativeController;
 use App\Http\Controllers\Admin\PermissionController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\Quality\EquipmentController;
+use App\Http\Controllers\Admin\Quality\InternalAuditController;
+use App\Http\Controllers\Admin\Quality\NonConformanceController;
+use App\Http\Controllers\Admin\Quality\PendingResultsController;
+use App\Http\Controllers\Admin\Quality\QcResultController;
+use App\Http\Controllers\Admin\Quality\QualityDashboardController;
+use App\Http\Controllers\Admin\Quality\ReagentLotController;
+use App\Http\Controllers\Admin\Quality\RiskController;
+use App\Http\Controllers\Admin\Quality\SopDocumentController;
+use App\Http\Controllers\Admin\Quality\TatDashboardController;
+use App\Http\Controllers\Admin\Quality\TrainingRecordController;
 use App\Http\Controllers\Admin\ResultReleaseController;
 use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\Admin\RoomController;
@@ -145,4 +156,49 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth', 't
             Route::post('{biodetail}/release', 'release')->name('release');
             Route::post('{biodetail}/amend', 'amend')->name('amend');
         });
+
+    /*
+    |--------------------------------------------------------------------------
+    | Quality dashboard & ISO module listings (Phase 5)
+    |--------------------------------------------------------------------------
+    |
+    | Backends for these modules shipped in Phase 2 / Phase 3; Phase 5
+    | wires read-only Blade UIs + the TAT / QC reporting surfaces.
+    | Write operations are intentionally NOT exposed here yet — the
+    | existing service layer (SopReleaseService, CapaWorkflowService,
+    | RiskScoringService, ResultReleaseService) remains the only
+    | mutator so workflow rules stay enforced.
+    |
+    */
+    Route::prefix('quality')->name('quality.')->group(function () {
+        Route::get('/', [QualityDashboardController::class, 'index'])
+            ->name('dashboard');
+
+        Route::get('sop', [SopDocumentController::class, 'index'])->name('sop.index');
+        Route::get('sop/{sop}', [SopDocumentController::class, 'show'])->name('sop.show');
+
+        Route::get('equipment', [EquipmentController::class, 'index'])->name('equipment.index');
+        Route::get('equipment/{equipment}', [EquipmentController::class, 'show'])->name('equipment.show');
+
+        Route::get('reagents', [ReagentLotController::class, 'index'])->name('reagents.index');
+
+        Route::get('ncrs', [NonConformanceController::class, 'index'])->name('ncrs.index');
+        Route::get('ncrs/{ncr}', [NonConformanceController::class, 'show'])->name('ncrs.show');
+
+        Route::get('risks', [RiskController::class, 'index'])->name('risks.index');
+        Route::get('risks/{risk}', [RiskController::class, 'show'])->name('risks.show');
+
+        Route::get('internal-audits', [InternalAuditController::class, 'index'])->name('internal_audits.index');
+        Route::get('internal-audits/{audit}', [InternalAuditController::class, 'show'])->name('internal_audits.show');
+
+        Route::get('training', [TrainingRecordController::class, 'index'])->name('training.index');
+
+        Route::get('tat', [TatDashboardController::class, 'index'])->name('tat.index');
+
+        Route::get('qc', [QcResultController::class, 'index'])->name('qc.index');
+        Route::get('qc/chart', [QcResultController::class, 'chart'])->name('qc.chart');
+
+        Route::get('results', [PendingResultsController::class, 'index'])->name('results.index');
+        Route::get('results/{biodetail}', [PendingResultsController::class, 'show'])->name('results.show');
+    });
 });
