@@ -45,5 +45,26 @@ class IsoModulesPermissionSeeder extends Seeder
                 );
             }
         }
+
+        // Phase 5 — quality dashboard + cross-module reporting (TAT / QC /
+        // pending result-release worklist). Kept separate from the
+        // module-specific permissions so a "QMS reviewer" role can be
+        // granted access to dashboards without needing every individual
+        // module permission.
+        $qualityTitles = [
+            'quality_management_access',
+            'quality_access',
+            'quality_show',
+            'qc_result_management_access',
+            'qc_result_access',
+            'qc_result_show',
+        ];
+
+        foreach ($qualityTitles as $title) {
+            Permission::firstOrCreate(
+                ['title' => $title],
+                ['group' => 'Quality — Dashboards & Reporting'],
+            );
+        }
     }
 }
