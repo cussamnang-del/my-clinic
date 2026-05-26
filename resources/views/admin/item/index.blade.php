@@ -276,7 +276,7 @@
         $.ajax({
           type : 'GET',
           dataType: 'JSON',
-          url :'{{ route('admin.item.changeStatus') }}',
+          url :'{{ route('admin.items.changeStatus') }}',
           data: {
             'status':status,
             'object_id':object_id

@@ -12,6 +12,45 @@ required by ISO 9001:2015 §7.5.
 
 ## [Unreleased]
 
+### Fixed — Audit cleanup (Tier 1 + Tier 2)
+- **H-1.** `resources/views/admin/item/index.blade.php`
+  status-toggle AJAX referenced `route('admin.item.changeStatus')`
+  (singular) but the registered name is
+  `admin.items.changeStatus` (plural). The toggle silently 404'd.
+  One-word route name corrected.
+- **M-1.** Removed orphan `GET /full-calendar` + `POST
+  /full-calendar/action` routes and `FullCalenderController`.
+  Direct browser hit rendered a missing view
+  (`full-calender.blade.php` was never created); AJAX path was a
+  duplicate of the live `admin.schedules.*` flow.
+- **M-2.** Removed orphan `GET /get-countries` endpoint. The route
+  queried `DB::table('country')` but no `country` table exists in
+  the schema and no view ever called this endpoint.
+- **L-1.** Removed orphan
+  `resources/views/admin/document/templates/service.blade.php`
+  (2 555 LOC). No `view()` call resolves to it; the only references
+  inside the file are in commented-out JS.
+- **L-2.** Removed `resources/views/vendor/translation/**`. These
+  were published by a translation package no longer in `composer.json`;
+  the views reference a `translation::` view namespace that no
+  longer exists.
+- **L-3.** Removed `resources/views/auth/verify.blade.php`. The
+  view referenced `route('verification.resend')` which is not
+  registered (this project uses `Auth::routes()` without email
+  verification).
+- **L-4.** Removed `resources/views/welcome.blade.php`. The root
+  `/` route already redirects to `login`; the welcome view is
+  never rendered.
+- **L-5.** Removed `app/Jobs/ExportReportJob.php` and its test.
+  The job was implemented + tested but never dispatched from any
+  controller, route, command, or schedule. Forward-looking
+  scaffolding will be reintroduced when a concrete CSV export
+  page is added.
+- **L-6.** Removed `app/Providers/BroadcastServiceProvider.php`
+  and `routes/channels.php`. The provider was not registered in
+  `bootstrap/providers.php`, so `routes/channels.php` was never
+  loaded; both were stale Laravel 5-style scaffolding.
+
 ### Added — Phase 4 (Operational excellence)
 - **Service layer.** New `App\Services\DocumentService` extracts
   Document core CRUD out of the 1,938-LOC `DocumentController`
