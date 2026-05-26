@@ -2,11 +2,8 @@
 
 use App\Http\Controllers\Admin\ProvinceDistrictCommuneVillageController;
 use App\Http\Controllers\Auth\TwoFactorController;
-use App\Http\Controllers\FullCalenderController;
 use App\Http\Controllers\HomeController;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
 
@@ -90,27 +87,7 @@ Route::middleware(['throttle:public'])->group(function () {
         return redirect()->back();
     });
 
-    Route::get('full-calendar', [FullCalenderController::class, 'calendar3'])
-        ->middleware('auth');
-    Route::post('full-calendar/action', [FullCalenderController::class, 'action'])
-        ->middleware('auth');
-
     Route::get('/auto', function () {
         return view('autocomplete');
-    });
-
-    Route::get('/get-countries', function (Request $request) {
-        $name = strtolower(trim((string) $request->get('name')));
-        $fieldName = (string) $request->get('fieldName');
-        $allowedFields = ['name', 'id', 'code'];
-        if ($fieldName === '' || ! in_array($fieldName, $allowedFields, true)) {
-            $fieldName = 'name';
-        }
-
-        return DB::table('country')
-            ->select('country.*')
-            ->whereRaw('LOWER(`'.$fieldName.'`) LIKE ?', ["$name%"])
-            ->limit(25)
-            ->get();
     });
 });
